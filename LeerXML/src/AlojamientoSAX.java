@@ -36,7 +36,6 @@ public class AlojamientoSAX extends DefaultHandler {
 
 	@Override
 	public void characters(char[] ch, int start, int length) throws SAXException {
-		// TODO Auto-generated method stub
 		valorAux = new String(ch, start, length);
 	}
 
@@ -46,7 +45,7 @@ public class AlojamientoSAX extends DefaultHandler {
 		if (localName.compareToIgnoreCase("documentname") == 0)
 			alojamientos.get(alojamientos.size() - 1).setNombre(valorAux);
 		// Guarda la descripción abreviada y ampliada del último Alojamiento
-		if (localName.compareToIgnoreCase("turismdescription") == 0
+		if (localName.compareToIgnoreCase("turismdescription") == 0 
 				&& alojamientos.get(alojamientos.size() - 1).getDescripcionAbreviada() == null)
 			alojamientos.get(alojamientos.size() - 1).setDescripcionAbreviada(valorAux);
 		else if (localName.compareToIgnoreCase("turismdescription") == 0
@@ -147,7 +146,7 @@ public class AlojamientoSAX extends DefaultHandler {
 				alojamientos.get(alojamientos.size() - 1).setCp(codigosPostales.get(codigosPostales.size() - 1));
 			}
 		}
-		// Guarda Latitud
+		// Guarda Latitud Y Longitud
 		if (localName.compareToIgnoreCase("latitudelongitude") == 0)
 			alojamientos.get(alojamientos.size() - 1).setCoordenadas(valorAux);
 		// Guarda Municipio
