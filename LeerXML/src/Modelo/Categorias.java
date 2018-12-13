@@ -1,5 +1,10 @@
 package Modelo;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="CATEGORIAS")
 public class Categorias {
 	private int id; //ID AUTONUMERICO
 	private char categoria; //CATEGORIA VHARCHJAR(20)

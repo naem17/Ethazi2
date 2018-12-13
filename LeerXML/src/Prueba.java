@@ -4,10 +4,14 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import org.hibernate.cfg.Configuration;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
 import org.xml.sax.helpers.XMLReaderFactory;
+
+import com.mysql.cj.Session;
+import com.mysql.cj.xdevapi.SessionFactory;
 
 public class Prueba {
 
@@ -29,6 +33,14 @@ public class Prueba {
 			for(int i=0; i<alojamientos.size();i++)
 				System.out.println(alojamientos.get(i).toString());
 			creacionBBDD_Tablas("localhost","root","");
+			
+			//Hibernate 
+			org.hibernate.SessionFactory sessionFactory=new Configuration().configure().buildSessionFactory();
+			org.hibernate.Session session= sessionFactory.openSession();
+			session.beginTransaction();
+			
+			for(int i=0; i<municipios.size();i++)
+				session.save(municipios.get(i));
 			Conexion.cerrar1();
 			
 		} catch (SAXException e) {
@@ -137,7 +149,7 @@ public class Prueba {
 				+ "NOMBRE VARCHAR(20) NOT NULL, "
 				+ "APELLIDOS VARCHAR(50) NOT NULL, "
 				+ "EMAIL VARCHAR(50) UNIQUE NOT NULL, "
-				+ "TELEFONO NOT NULL VARCHAR(15));");
+				+ "TELEFONO VARCHAR(15) NOT NULL);");
 		
 		//TABLA RESERVAS
 		Sentencias.sentenciaNoSelectiva("CREATE TABLE IF NOT EXISTS RESERVAS("
@@ -145,14 +157,11 @@ public class Prueba {
 				+ "NOMBRE_REVERVA VARCHAR(20), "
 				+ "NOMBRE_CLIENTE VARCHAR(15) NOT NULL, "
 				+ "NOMBRE_ALOJAMIENTO VARCHAR(50) NOT NULL, "
-				+ "DIRECCION_ALOJAMIENTO VARCHAR(250) NOT NULL, "
-				+ "COORDENADAS_ALOJAMIENTO VARCHAR(200) NOT NULL, "
+				+ "DIRECCION_ALOJAMIENTO VARCHAR(250), "
+				+ "COORDENADAS_ALOJAMIENTO VARCHAR(200), "
 				//CLAVES FORÁNEAS
 				+ "FOREIGN KEY (NOMBRE_CLIENTE) REFERENCES CLIENTES(NOMBRE_USUARIO), "
-				+ "FOREIGN KEY (NOMBRE_ALOJAMIENTO) REFERENCES ALOJAMIENTOS(NOMBRE), "
-				+ "FOREIGN KEY (DIRECCION_ALOJAMIENTO) REFERENCES ALOJAMIENTOS(DIRECCION), "
-				+ "FOREIGN KEY (COORDENADAS:ALOJAMIENTO) REFERENCES ALOJAMIENTOS(COORDENADAS)"
-				+ ");");
+				+ "FOREIGN KEY (NOMBRE_ALOJAMIENTO, DIRECCION_ALOJAMIENTO, COORDENADAS_ALOJAMIENTO) REFERENCES ALOJAMIENTOS(NOMBRE, DIRECCION, COORDENADAS));");
 	}
 
 }
