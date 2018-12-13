@@ -1,7 +1,15 @@
 package Modelo;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name= "ALOJAMIENTOS")
 public class Alojamiento {
+	@Column(name="NOMBRE")
 	private String nombre; //NOMBRE VARCHAR(50)
+	@Column(name="DESCRIPCION")
 	private String descripcionAbreviada; //DESCRIPCION_ABREVIADA VARCHAR(100)
 	private String descripcionNOAbreviada; //DESCRIPCION_NO_ABREVIADA VARCHAR(1500)
 	private String telefono; //TELEFONO VARCHAR(15)

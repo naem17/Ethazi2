@@ -4,10 +4,14 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import org.hibernate.cfg.Configuration;
 import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
 import org.xml.sax.helpers.XMLReaderFactory;
+
+import com.mysql.cj.Session;
+import com.mysql.cj.xdevapi.SessionFactory;
 
 public class Prueba {
 
@@ -29,6 +33,14 @@ public class Prueba {
 			for(int i=0; i<alojamientos.size();i++)
 				System.out.println(alojamientos.get(i).toString());
 			creacionBBDD_Tablas("localhost","root","");
+			
+			//Hibernate 
+			org.hibernate.SessionFactory sessionFactory=new Configuration().configure().buildSessionFactory();
+			org.hibernate.Session session= sessionFactory.openSession();
+			session.beginTransaction();
+			
+			for(int i=0; i<municipios.size();i++)
+				session.save(municipios.get(i));
 			Conexion.cerrar1();
 			
 		} catch (SAXException e) {
@@ -60,7 +72,7 @@ public class Prueba {
 		Conexion.conectarNoAUnaBD(url, user, password);
 		Sentencias.sentenciaNoSelectiva("CREATE DATABASE IF NOT EXISTS LABETXE;");
 		Conexion.cerrar1();
-
+		
 		Conexion.conectar1("LABETXE", url, user, password);
 		
 		//TABLA MUNICIPIOS
@@ -128,10 +140,28 @@ public class Prueba {
 				+ "NOMBRE VARCHAR(15) NOT NULL, "
 				+ "APELLIDOS VARCHAR(50) NOT NULL, "
 				+ "EMAIL VARCHAR(50) UNIQUE NOT NULL, "
-				+ "PERFIL VARCHAR(1), ");
+				+ "PERFIL VARCHAR(1));");
 		
 		//TABLA CLIENTES
-		Sentencias.sentenciaNoSelectiva("");
+		Sentencias.sentenciaNoSelectiva("CREATE TABLE IF NOT EXISTS CLIENTES( "
+				+ "NOMBRE_USUARIO VARCHAR(15) PRIMARY KEY, "
+				+ "CONTRASENIA VARCHAR(10) NOT NULL, "
+				+ "NOMBRE VARCHAR(20) NOT NULL, "
+				+ "APELLIDOS VARCHAR(50) NOT NULL, "
+				+ "EMAIL VARCHAR(50) UNIQUE NOT NULL, "
+				+ "TELEFONO VARCHAR(15) NOT NULL);");
+		
+		//TABLA RESERVAS
+		Sentencias.sentenciaNoSelectiva("CREATE TABLE IF NOT EXISTS RESERVAS("
+				+ "ID NUMERIC(4) PRIMARY KEY, "
+				+ "NOMBRE_REVERVA VARCHAR(20), "
+				+ "NOMBRE_CLIENTE VARCHAR(15) NOT NULL, "
+				+ "NOMBRE_ALOJAMIENTO VARCHAR(50) NOT NULL, "
+				+ "DIRECCION_ALOJAMIENTO VARCHAR(250), "
+				+ "COORDENADAS_ALOJAMIENTO VARCHAR(200), "
+				//CLAVES FORÁNEAS
+				+ "FOREIGN KEY (NOMBRE_CLIENTE) REFERENCES CLIENTES(NOMBRE_USUARIO), "
+				+ "FOREIGN KEY (NOMBRE_ALOJAMIENTO, DIRECCION_ALOJAMIENTO, COORDENADAS_ALOJAMIENTO) REFERENCES ALOJAMIENTOS(NOMBRE, DIRECCION, COORDENADAS));");
 	}
 
 }
