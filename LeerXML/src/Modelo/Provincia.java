@@ -15,6 +15,7 @@ public class Provincia {
 	public Provincia(String provincia) {
 		super();
 		this.provincia = provincia;
+		this.cod=-1;
 	}
 
 	public int getCod() {
@@ -32,6 +33,11 @@ public class Provincia {
 	@Override
 	public String toString() {
 		return "Provincia [cod=" + cod + ", provincia=" + provincia + "]";
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		return obj instanceof Provincia && ((Provincia)obj).getCod()==this.cod && ((Provincia)obj).getProvincia().compareToIgnoreCase(this.provincia)==0;
 	}
 	
 

@@ -1,11 +1,12 @@
+package Sentencias_BBDD;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 public class Sentencias {
 
-	private static PreparedStatement statement = null;
-	private static ResultSet rs = null;
+	protected static PreparedStatement statement = null;
+	protected static ResultSet rs = null;
 	static int indice=0;
 
 	public static void consulta(String sentencia) {
