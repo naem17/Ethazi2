@@ -1,10 +1,5 @@
 package Modelo;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
-
-@Entity
-@Table(name= "ALOJAMIENTOS")
 public class Alojamiento {
 	private String firma; //FIRMA VARCHAR(8)
 	private String nombre; //NOMBRE VARCHAR(50)

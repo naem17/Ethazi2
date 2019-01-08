@@ -1,0 +1,1455 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rows num="41"  lang="eus">
+  <row num="1">
+    <documentname>ALL IRON HOSTEL</documentname>
+    <turismdescription>All Iron Hostel aterpetxea Begoña auzoan dago, izen bereko basilikaren ondoan, zeinak, gain batea...</turismdescription>
+    <turismdescription>All Iron Hostel aterpetxea Begoña auzoan dago, izen bereko basilikaren ondoan, zeinak, gain batean kokatuta, Bilbo osoa duen ikusmenean. Ostatuak hiriaren panoramika bikaina eskaintzen du, eta, Donejakue bidean bertan kokatuta dagoenez, erromes ugari izaten dira bertan. &amp;lt;br/&amp;gt; &amp;lt;br/&amp;gt;Oso ongi komunikatuta dago garraio publikoaren bidez: metro geltoki bat du 500 metrora, eta autobus geltoki baten ondoan dago. Alde Zaharrera 15 minutuan baino gutxiagoan iristen da oinez.  &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Aterpetxea erabat berrituta dago, eta ohe edo ohatzedun logela partekatuak ditu, talde handientzat ezin hobeak.  Terraza eta lorategia, sukalde partekatua, doako WiFia, berogailua, armairu indibidualak eta garbiketa zerbitzua ditu. Horrez gainera, ostalariak aireportura eramateko bidaiak antolatzen dituzte. &amp;lt;br/&amp;gt;</turismdescription>
+    <templatetype>Ostatuak</templatetype>
+    <phone>944036534</phone>
+    <address>Calle Jose María Ugarteburu, Nº 2 ENTREPLANTA 1ª</address>
+    <marks>Bilbao</marks>
+    <physical>0</physical>
+    <visual>0</visual>
+    <auditive>0</auditive>
+    <intellectual>0</intellectual>
+    <organic>0</organic>
+    <tourismemail>info@allironhostel.com</tourismemail>
+    <web>www.allironhostel.com</web>
+    <lodgingtype>Aterpetxeak</lodgingtype>
+    <category>S</category>
+    <signatura>BBI00027</signatura>
+    <capacity>84</capacity>
+    <postalcode>48007</postalcode>
+    <latitudelongitude>43.2613455,-2.9121878999999353</latitudelongitude>
+    <latwgs84>43.2613455</latwgs84>
+    <lonwgs84>-2.9121878999999353</lonwgs84>
+    <municipality>Bilbao</municipality>
+    <municipalitycode>020</municipalitycode>
+    <territory>Bizkaia</territory>
+    <territorycode>48</territorycode>
+    <country>España</country>
+    <countrycode>108</countrycode>
+    <friendlyurl>http://opendata.euskadi.eus/katalogoa/-/eu/ostatuak/all-iron-hostel/</friendlyurl>
+    <physicalurl>http://opendata.euskadi.eus/katalogoa/contenidos/a_alojamiento/0000088441_a1_rec_turismo/eu_88441/88441-ficha2.html</physicalurl>
+    <dataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000088441_a1_rec_turismo/eu_88441/data/88441_openData.xml</dataxml>
+    <metadataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000088441_a1_rec_turismo/r01Index/0000088441_a1_rec_turismo-idxContent.xml</metadataxml>
+    <zipfile>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000088441_a1_rec_turismo/opendata/0000088441_a1_rec_turismo.zip</zipfile>
+  </row>
+  <row num="2">
+    <documentname>BARRIKA SURF CAMP</documentname>
+    <turismdescription>Barrika Surf Camp aterpetxea Barrikan dago, labarrez inguraturiko herrixka batean, eta surfaren e...</turismdescription>
+    <turismdescription>Barrika Surf Camp aterpetxea Barrikan dago, labarrez inguraturiko herrixka batean, eta surfaren eta naturaren zaleentzako landa gune estrategikoa da. &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Aterpetxearen eraikina, Garramune baserria, XVI. mendekoa da, eta guztiz zaharberrituta dago  etxeak 6 eta 20 lagunentzako logelak ditu. &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Hasi berrientzako surf ikastaroak egiten dituzte, baita hainbat tailer eta jarduera ere, hala nola, nork bere surf ohola egiten ikastekoa, yoga eskolak, ingeles eskolak, etab.&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Barrika Surf Campetik bizikletaz edo oinez 7 minutura, hondartza apartak daude, surflari trebatuek olatu bikainez gozatzeko aproposak.&amp;lt;br/&amp;gt;</turismdescription>
+    <templatetype>Ostatuak</templatetype>
+    <locality>Elexalde | Diseminado</locality>
+    <phone>946 774 497</phone>
+    <address>Garramune Urbanizazioa 40</address>
+    <marks>Euskal Kostaldea</marks>
+    <physical>0</physical>
+    <visual>0</visual>
+    <auditive>0</auditive>
+    <intellectual>0</intellectual>
+    <organic>0</organic>
+    <tourismemail>info@barrikasurfcamp.com</tourismemail>
+    <web>http://www.barrikasurfcamp.com</web>
+    <lodgingtype>Aterpetxeak</lodgingtype>
+    <category>S</category>
+    <signatura>BBI00002</signatura>
+    <capacity>26</capacity>
+    <surfing>1</surfing>
+    <postalcode>48450</postalcode>
+    <latitudelongitude>43.4051437,-2.9657849999999826</latitudelongitude>
+    <latwgs84>43.4051437</latwgs84>
+    <lonwgs84>-2.9657849999999826</lonwgs84>
+    <municipality>Barrika</municipality>
+    <municipalitycode>014</municipalitycode>
+    <territory>Bizkaia</territory>
+    <territorycode>48</territorycode>
+    <country>España</country>
+    <countrycode>108</countrycode>
+    <friendlyurl>http://opendata.euskadi.eus/katalogoa/-/eu/ostatuak/barrika-surf-camp-bizkaia/</friendlyurl>
+    <physicalurl>http://opendata.euskadi.eus/katalogoa/contenidos/a_alojamiento/0000066641_a1_rec_turismo/eu_66641/66641-ficha2.html</physicalurl>
+    <dataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000066641_a1_rec_turismo/eu_66641/data/66641_openData.xml</dataxml>
+    <metadataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000066641_a1_rec_turismo/r01Index/0000066641_a1_rec_turismo-idxContent.xml</metadataxml>
+    <zipfile>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000066641_a1_rec_turismo/opendata/0000066641_a1_rec_turismo.zip</zipfile>
+  </row>
+  <row num="3">
+    <documentname>BBK BILBAO GOOD HOSTEL</documentname>
+    <turismdescription>BBk Bilbao Good Hostel aterpetxea Bilboko Bolueta auzoan dago, Bilboko erdigunetik 5 minutura met...</turismdescription>
+    <turismdescription>BBk Bilbao Good Hostel aterpetxea Bilboko Bolueta auzoan dago, Bilboko erdigunetik 5 minutura metroan.. Askotariko gelak dituenez, bakarrik doazen bidaiariek, familiek, taldeek eta erromesek eta abarrek har dezakete ostatu. 2, 4, 6, 8 eta 10 oheko logelak ditu, eta guztietara sartzen da giltza elektronikoarekin. Gainera, guztiek dituzte homologatutako ohatzeak, GB eta EU motako entxufeak, banakako argiak, banakako segurtasun-armairuak, maindireak eta nordikoak, berogailua eta doako wifia eraikin guztian.&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Arkitektura oztoporik gabeko aterpetxea da eta mugikortasun mugatuko pertsonentzat egokituta dago. 2 aisialdi gela ditu, Interneteko gunea, coffee corner bat eta 3 terraza kanpoan. &amp;lt;br/&amp;gt;</turismdescription>
+    <templatetype>Ostatuak</templatetype>
+    <locality>Bilbao</locality>
+    <phone>944597759</phone>
+    <address>Miraflores Etorbidea 16</address>
+    <marks>Bilbao</marks>
+    <physical>0</physical>
+    <visual>0</visual>
+    <auditive>0</auditive>
+    <intellectual>0</intellectual>
+    <organic>0</organic>
+    <tourismemail>info@bbkbilbaogoodhostel.com</tourismemail>
+    <web>http://www.bbkbilbaogoodhostel.com</web>
+    <lodgingtype>Aterpetxeak</lodgingtype>
+    <category>S</category>
+    <room>1</room>
+    <signatura>BBI00012</signatura>
+    <capacity>104</capacity>
+    <postalcode>48004</postalcode>
+    <latitudelongitude>43.2467587,-2.909747100000004</latitudelongitude>
+    <latwgs84>43.2467587</latwgs84>
+    <lonwgs84>-2.909747100000004</lonwgs84>
+    <municipality>Bilbao</municipality>
+    <municipalitycode>020</municipalitycode>
+    <territory>Bizkaia</territory>
+    <territorycode>48</territorycode>
+    <country>España</country>
+    <countrycode>108</countrycode>
+    <friendlyurl>http://opendata.euskadi.eus/katalogoa/-/eu/ostatuak/bbk-bilbao-good-hostel/</friendlyurl>
+    <physicalurl>http://opendata.euskadi.eus/katalogoa/contenidos/a_alojamiento/0000071221_a1_rec_turismo/eu_71221/71221-ficha2.html</physicalurl>
+    <dataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000071221_a1_rec_turismo/eu_71221/data/71221_openData.xml</dataxml>
+    <metadataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000071221_a1_rec_turismo/r01Index/0000071221_a1_rec_turismo-idxContent.xml</metadataxml>
+    <zipfile>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000071221_a1_rec_turismo/opendata/0000071221_a1_rec_turismo.zip</zipfile>
+  </row>
+  <row num="4">
+    <documentname>BCOOL</documentname>
+    <turismdescription>BCool ez da edozein aterpetxe. Bere diseinu berritzaile eta modernoarekin jomugako bidaiarien beh...</turismdescription>
+    <turismdescription>BCool ez da edozein aterpetxe. Bere diseinu berritzaile eta modernoarekin jomugako bidaiarien behar eta nortasunera egokitzen da: hiriaren turismo-guneak bisitatzeaz harago hiria bete-betean, tokiko aisia, kultura eta gastronomia ezagutuz, bizi nahi dutenak.  BCool-ek espazio praktiko eta poltsiko guztien eskura dagoena eskaintzen du horretarako Bilboko Alde Zaharraren erdi-erdian, hots, hiriari kultura-bizitasun eta aniztasun gehien eskaintzen ari zaion gune batean. &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Baina ostatu honek ez du gaua igarotzeko toki aproposa bakarrik eskaintzen: bisitariak Bilboko bazter bene-benetakoenak ezagutu ditzake bere superhost eta Bcooler taldeari esker, eta terrazan edo tabernan bere bizipenak beste bidaiariekin parteka ditzake etxean egindako garagardo baten inguruan.&amp;lt;br/&amp;gt;</turismdescription>
+    <templatetype>Ostatuak</templatetype>
+    <phone>946066200</phone>
+    <address>San Francisco Kalea/Calle, Nº 18</address>
+    <marks>Bilbao</marks>
+    <physical>0</physical>
+    <visual>0</visual>
+    <auditive>0</auditive>
+    <intellectual>0</intellectual>
+    <organic>0</organic>
+    <web>www.bcoolhostels.com</web>
+    <lodgingtype>Aterpetxeak</lodgingtype>
+    <category>S</category>
+    <signatura>BBI00031</signatura>
+    <capacity>118</capacity>
+    <postalcode>48003</postalcode>
+    <latitudelongitude>43.25602019999999,-2.9286334999999326</latitudelongitude>
+    <latwgs84>43.25602019999999</latwgs84>
+    <lonwgs84>-2.9286334999999326</lonwgs84>
+    <municipality>Bilbao</municipality>
+    <municipalitycode>020</municipalitycode>
+    <territory>Bizkaia</territory>
+    <territorycode>48</territorycode>
+    <country>España</country>
+    <countrycode>108</countrycode>
+    <friendlyurl>http://opendata.euskadi.eus/katalogoa/-/eu/ostatuak/bcool-bilbao/</friendlyurl>
+    <physicalurl>http://opendata.euskadi.eus/katalogoa/contenidos/a_alojamiento/0000092942_a1_rec_turismo/eu_92942/92942-ficha2.html</physicalurl>
+    <dataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000092942_a1_rec_turismo/eu_92942/data/92942_openData.xml</dataxml>
+    <metadataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000092942_a1_rec_turismo/r01Index/0000092942_a1_rec_turismo-idxContent.xml</metadataxml>
+    <zipfile>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000092942_a1_rec_turismo/opendata/0000092942_a1_rec_turismo.zip</zipfile>
+  </row>
+  <row num="5">
+    <documentname>BEIZAMAKO ATERPETXEA</documentname>
+    <turismdescription>Espazio zabala du, naturaren bihotzean  bereziki, ahalegin handia egiten du ekoturismoaren arloan...</turismdescription>
+    <turismdescription>Espazio zabala du, naturaren bihotzean  bereziki, ahalegin handia egiten du ekoturismoaren arloan, eta lantegiak eta jolasak antolatzen dituzte. Ostatu ezin hobea da ikastetxeentzat, taldeentzat, elkarteentzat eta familientzat.&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Ostatuak bazkariak eta afariak eskaintzen ditu, tokiko produktuekin eta kontsumo arduratsuko irizpideen arabera eginak. Era berean, ostalariei janaria prestatzeko aukera eskaintzen zaie, erabilgarritasuna kontsultatuz gero. &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Bisita gidatuak antolatzen ditu landa eremuetara, ondareetara eta baserrietara, inguru horretako produktuak nola egiten diren ezagutze aldera. &amp;lt;br/&amp;gt;</turismdescription>
+    <templatetype>Ostatuak</templatetype>
+    <address>Eskola Zaharra z.g.</address>
+    <marks>Gure Mendiak eta Haranak</marks>
+    <physical>0</physical>
+    <visual>0</visual>
+    <auditive>0</auditive>
+    <intellectual>0</intellectual>
+    <organic>0</organic>
+    <tourismemail>beizamabizia@gmail.com</tourismemail>
+    <web>http://www.beizamakoaterpetxea.com</web>
+    <lodgingtype>Aterpetxeak</lodgingtype>
+    <category>S</category>
+    <visit>1</visit>
+    <signatura>BSS00019</signatura>
+    <capacity>20</capacity>
+    <postalcode>20739</postalcode>
+    <latitudelongitude>43.13396891219535,-2.1995434547866353</latitudelongitude>
+    <latwgs84>43.13396891219535</latwgs84>
+    <lonwgs84>-2.1995434547866353</lonwgs84>
+    <municipality>Beizama</municipality>
+    <municipalitycode>020</municipalitycode>
+    <territory>Gipuzkoa</territory>
+    <territorycode>20</territorycode>
+    <country>España</country>
+    <countrycode>108</countrycode>
+    <friendlyurl>http://opendata.euskadi.eus/katalogoa/-/eu/ostatuak/beizamako-aterpetxea/</friendlyurl>
+    <physicalurl>http://opendata.euskadi.eus/katalogoa/contenidos/a_alojamiento/0000081102_a1_rec_turismo/eu_81102/81102-ficha2.html</physicalurl>
+    <dataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000081102_a1_rec_turismo/eu_81102/data/81102_openData.xml</dataxml>
+    <metadataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000081102_a1_rec_turismo/r01Index/0000081102_a1_rec_turismo-idxContent.xml</metadataxml>
+    <zipfile>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000081102_a1_rec_turismo/opendata/0000081102_a1_rec_turismo.zip</zipfile>
+  </row>
+  <row num="6">
+    <documentname>BIDE ONA</documentname>
+    <turismdescription>Portugaleteko Bide Ona aterpea aukera ezin hobea da Donejakue Bidea kostaldetik egin nahi duten e...</turismdescription>
+    <turismdescription>Portugaleteko Bide Ona aterpea aukera ezin hobea da Donejakue Bidea kostaldetik egin nahi duten erromesentzat. Bizikleta gordetzeko lekua txirrindularientzat.  &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Oheko arropa, armairuak giltzarrapoarekin, hozkailua, mikrouhin labea eta garbitegia eskaintzen ditu. Atea zabalik 24 ordu, txartel elektronikoarekin. &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Egongela TB, wifi eta snack eta kafe makinarekin, zerbait hartu, lasai egon eta atseden hartzeko.  &amp;lt;br/&amp;gt;</turismdescription>
+    <templatetype>Ostatuak</templatetype>
+    <phone>946038630</phone>
+    <address>Julio Gutierrez Lumbreras  8</address>
+    <marks>Euskal Kostaldea,Bilbao</marks>
+    <physical>0</physical>
+    <visual>0</visual>
+    <auditive>0</auditive>
+    <intellectual>0</intellectual>
+    <organic>0</organic>
+    <qualityassurance>1</qualityassurance>
+    <tourismemail>info@alberguebideona.com</tourismemail>
+    <web>www.alberguebideona.com</web>
+    <lodgingtype>Aterpetxeak</lodgingtype>
+    <category>S</category>
+    <signatura>BBI00017</signatura>
+    <capacity>40</capacity>
+    <postalcode>48920</postalcode>
+    <latitudelongitude>43.31868843102198,-3.0234571951065163</latitudelongitude>
+    <latwgs84>43.31868843102198</latwgs84>
+    <lonwgs84>-3.0234571951065163</lonwgs84>
+    <municipality>Portugalete</municipality>
+    <municipalitycode>078</municipalitycode>
+    <territory>Bizkaia</territory>
+    <territorycode>48</territorycode>
+    <country>España</country>
+    <countrycode>108</countrycode>
+    <friendlyurl>http://opendata.euskadi.eus/katalogoa/-/eu/ostatuak/bide-ona-aterpea/</friendlyurl>
+    <physicalurl>http://opendata.euskadi.eus/katalogoa/contenidos/a_alojamiento/0000079901_a1_rec_turismo/eu_79901/79901-ficha2.html</physicalurl>
+    <dataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000079901_a1_rec_turismo/eu_79901/data/79901_openData.xml</dataxml>
+    <metadataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000079901_a1_rec_turismo/r01Index/0000079901_a1_rec_turismo-idxContent.xml</metadataxml>
+    <zipfile>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000079901_a1_rec_turismo/opendata/0000079901_a1_rec_turismo.zip</zipfile>
+  </row>
+  <row num="7">
+    <documentname>BILBAO AKELARRE YOUTH HOSTEL</documentname>
+    <turismdescription>Bilbao Akelarre Youth Hostel aterpetxea Bilboko Deustu auzoan dago  hiriko unibertsitate auzo gis...</turismdescription>
+    <turismdescription>Bilbao Akelarre Youth Hostel aterpetxea Bilboko Deustu auzoan dago  hiriko unibertsitate auzo gisa ezaguna da Deustu. &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Aterpetxeak logela mistoak ditu, 2, 4, 6 eta 12 lagunentzat  guztiek dituzte litera homologatuak, oheko arropa, berogailua eta segurtasuneko kutxatilak. Komunak logeletatik kanpo daude, eta partekatuak dira.   &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Abandoibarra Pasealekutik hurbil dagoenez, bidaiaria minutu gutxian irits daiteke oinez hiriko interesgune nagusietara: Guggenheim Museoa, Euskalduna Jauregia, Alde Zaharra?&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Prezioan sartuta dago: -Gosaria ? Oheko arropa ? Internet, wiki ? Kafea eta tea. &amp;lt;br/&amp;gt;</turismdescription>
+    <templatetype>Ostatuak</templatetype>
+    <phone>944057713</phone>
+    <address>Morgan  4</address>
+    <marks>Bilbao</marks>
+    <physical>0</physical>
+    <visual>0</visual>
+    <auditive>0</auditive>
+    <intellectual>0</intellectual>
+    <organic>0</organic>
+    <tourismemail>info@bilbaoakelarrehostel.com</tourismemail>
+    <web>http://www.bilbaoakelarrehostel.com</web>
+    <lodgingtype>Aterpetxeak</lodgingtype>
+    <category>S</category>
+    <room>1</room>
+    <signatura>BBI00005</signatura>
+    <capacity>34</capacity>
+    <gastronomical>1</gastronomical>
+    <postalcode>48014</postalcode>
+    <latitudelongitude>43.2687458,-2.954609800000071</latitudelongitude>
+    <latwgs84>43.2687458</latwgs84>
+    <lonwgs84>-2.954609800000071</lonwgs84>
+    <municipality>Bilbao</municipality>
+    <municipalitycode>020</municipalitycode>
+    <territory>Bizkaia</territory>
+    <territorycode>48</territorycode>
+    <country>España</country>
+    <countrycode>108</countrycode>
+    <friendlyurl>http://opendata.euskadi.eus/katalogoa/-/eu/ostatuak/bilbao-akelarre-youth-hostel/</friendlyurl>
+    <physicalurl>http://opendata.euskadi.eus/katalogoa/contenidos/a_alojamiento/0000066721_a1_rec_turismo/eu_66721/66721-ficha2.html</physicalurl>
+    <dataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000066721_a1_rec_turismo/eu_66721/data/66721_openData.xml</dataxml>
+    <metadataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000066721_a1_rec_turismo/r01Index/0000066721_a1_rec_turismo-idxContent.xml</metadataxml>
+    <zipfile>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000066721_a1_rec_turismo/opendata/0000066721_a1_rec_turismo.zip</zipfile>
+  </row>
+  <row num="8">
+    <documentname>BILBAO ATERPETXEA HOSTEL</documentname>
+    <turismdescription>Bilbao Aterpetxea Hostel Bilboko aterpetxe handiena da. Aterpetxeak 170 lagunentzako edukiera du,...</turismdescription>
+    <turismdescription>Bilbao Aterpetxea Hostel Bilboko aterpetxe handiena da. Aterpetxeak 170 lagunentzako edukiera du, eta ostatu aukera egokia da taldeentzat, baita gure hirira etortzen diren familia edo banakoentzat ere.&amp;lt;br/&amp;gt;Logela guztiek kanpora ematen dute, oso zabalak dira, eta 6 solairutan banatuta daude.&amp;lt;br/&amp;gt;Bilbao Aterpetxea Hostelek jarduera programak antolatzen ditu taldeentzat, kontuan hartuz haiek dituzten behar zehatzak, eta hirian eta inguruan egiten diren bisitei eta esperientziei buruzko informazioa emateaz gainera, kudeatu egiten dituzte.</turismdescription>
+    <templatetype>Ostatuak</templatetype>
+    <locality>Bilbao</locality>
+    <phone>944 270 054</phone>
+    <address>Carretera Basurtu-Kastresana 70</address>
+    <marks>Bilbao</marks>
+    <physical>0</physical>
+    <visual>0</visual>
+    <auditive>0</auditive>
+    <intellectual>0</intellectual>
+    <organic>0</organic>
+    <tourismemail>infor@alberguebilbao.net</tourismemail>
+    <web>http://www.alberguebilbao.net</web>
+    <lodgingtype>Aterpetxeak</lodgingtype>
+    <category>S</category>
+    <room>1</room>
+    <signatura>BBI00014</signatura>
+    <capacity>170</capacity>
+    <postalcode>48002</postalcode>
+    <latitudelongitude>43.26319910000001,-2.9612724925902967</latitudelongitude>
+    <latwgs84>43.26319910000001</latwgs84>
+    <lonwgs84>-2.9612724925902967</lonwgs84>
+    <municipality>Bilbao</municipality>
+    <municipalitycode>020</municipalitycode>
+    <territory>Bizkaia</territory>
+    <territorycode>48</territorycode>
+    <country>España</country>
+    <countrycode>108</countrycode>
+    <friendlyurl>http://opendata.euskadi.eus/katalogoa/-/eu/ostatuak/bilbao-aterpetxea-hostel/</friendlyurl>
+    <physicalurl>http://opendata.euskadi.eus/katalogoa/contenidos/a_alojamiento/0000075581_a1_rec_turismo/eu_75581/75581-ficha2.html</physicalurl>
+    <dataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000075581_a1_rec_turismo/eu_75581/data/75581_openData.xml</dataxml>
+    <metadataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000075581_a1_rec_turismo/r01Index/0000075581_a1_rec_turismo-idxContent.xml</metadataxml>
+    <zipfile>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000075581_a1_rec_turismo/opendata/0000075581_a1_rec_turismo.zip</zipfile>
+  </row>
+  <row num="9">
+    <documentname>BILBAO CENTRAL HOSTEL</documentname>
+    <turismdescription>2013an inauguratuta, Bilbao Central Hostel hiri erdialdean dago, kale lasai batean. Kokapen ezin ...</turismdescription>
+    <turismdescription>2013an inauguratuta, Bilbao Central Hostel hiri erdialdean dago, kale lasai batean. Kokapen ezin hobea du Bilboko hainbat leku interesgarri oinez ezagutzeko. Bi minutura, oinez, Azkuna Zentroa dago (Alondegia kultur etxea), merkataritza guneak, Guggenheim Museoa, Arte Ederren Museoa edo Zazpi Kaleak.&amp;lt;br/&amp;gt;Gainera, Bilboko aldiriak ezagutu daitezke, besteak beste, Zubi Esekia ?Unescok Gizadiaren Ondare izendatua-, Getxo? edo txangoak egin daitezke beste herri edo leku interesgarri batzuetara: Mundaka, Gaztelugatxeko Doniane? Aterpetxearen ondoan metro eta autobus geltokiak daude, hirikoak nahiz hiriartekoak.</turismdescription>
+    <templatetype>Ostatuak</templatetype>
+    <phone>946526057</phone>
+    <address>Fernandez del Campo 24</address>
+    <marks>Bilbao</marks>
+    <physical>0</physical>
+    <visual>0</visual>
+    <auditive>0</auditive>
+    <intellectual>0</intellectual>
+    <organic>0</organic>
+    <tourismemail>info@bilbaocentralhostel.com</tourismemail>
+    <web>www.bilbaocentralhostel.com</web>
+    <lodgingtype>Aterpetxeak</lodgingtype>
+    <category>S</category>
+    <signatura>BBI00008</signatura>
+    <capacity>54</capacity>
+    <postalcode>48010</postalcode>
+    <latitudelongitude>43.25880109999999,-2.9346569509261826</latitudelongitude>
+    <latwgs84>43.25880109999999</latwgs84>
+    <lonwgs84>-2.9346569509261826</lonwgs84>
+    <municipality>Bilbao</municipality>
+    <municipalitycode>020</municipalitycode>
+    <territory>Bizkaia</territory>
+    <territorycode>48</territorycode>
+    <country>España</country>
+    <countrycode>108</countrycode>
+    <friendlyurl>http://opendata.euskadi.eus/katalogoa/-/eu/ostatuak/bilbao-central-hostel/</friendlyurl>
+    <physicalurl>http://opendata.euskadi.eus/katalogoa/contenidos/a_alojamiento/0000075561_a1_rec_turismo/eu_75561/75561-ficha2.html</physicalurl>
+    <dataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000075561_a1_rec_turismo/eu_75561/data/75561_openData.xml</dataxml>
+    <metadataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000075561_a1_rec_turismo/r01Index/0000075561_a1_rec_turismo-idxContent.xml</metadataxml>
+    <zipfile>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000075561_a1_rec_turismo/opendata/0000075561_a1_rec_turismo.zip</zipfile>
+  </row>
+  <row num="10">
+    <documentname>BILBAO METROPOLITAN HOSTEL</documentname>
+    <turismdescription>Bilbao Metropolitan Hostel Bilbo erdigunean kokatutako aterpetxea da, Zabalburu inguruan hain zuz...</turismdescription>
+    <turismdescription>&amp;lt;strong&amp;gt;Bilbao Metropolitan Hostel&amp;lt;/strong&amp;gt; Bilbo erdigunean kokatutako aterpetxea da, Zabalburu inguruan hain zuzen ere, hiriko erakargarritasun turistiko nagusietara oinez joateko aukera emanez.  Beste alde batetik, tren eta tranbia estazioa 100 metrora izateak intereseko beste herri batzuekiko konexio ona izatera errazten du. &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Aterpe honek edukiera desberdineko logelak ditu, den denak ohatzeekin, komun pribatuarekin, aire girotuarekin, berogailuarekin, maindireekin eta segurtasun armairuekin.&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Aterpetxeak partekatutako sukaldea du eta dohaineko WIFI konexioa instalazio guztietan. &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;strong&amp;gt;Bilbao Metropolitan Hostel&amp;lt;/strong&amp;gt; Bilbo bisitatzeko abiapuntu bikaina da. &amp;lt;br/&amp;gt;</turismdescription>
+    <templatetype>Ostatuak</templatetype>
+    <address>Nicolas Alcorta Kalea, 2</address>
+    <marks>Bilbao</marks>
+    <physical>0</physical>
+    <visual>0</visual>
+    <auditive>0</auditive>
+    <intellectual>0</intellectual>
+    <organic>0</organic>
+    <web>www.bilbaometropolitanhostel.com</web>
+    <lodgingtype>Aterpetxeak</lodgingtype>
+    <category>S</category>
+    <signatura>BBI00041</signatura>
+    <capacity>92</capacity>
+    <postalcode>48003</postalcode>
+    <latitudelongitude>43.2565976,-2.9340224000000035</latitudelongitude>
+    <latwgs84>43.2565976</latwgs84>
+    <lonwgs84>-2.9340224000000035</lonwgs84>
+    <municipality>Bilbao</municipality>
+    <municipalitycode>020</municipalitycode>
+    <territory>Bizkaia</territory>
+    <territorycode>48</territorycode>
+    <country>España</country>
+    <countrycode>108</countrycode>
+    <friendlyurl>http://opendata.euskadi.eus/katalogoa/-/eu/ostatuak/bilbao-metropolitan-hostel/</friendlyurl>
+    <physicalurl>http://opendata.euskadi.eus/katalogoa/contenidos/a_alojamiento/0000094861_a1_rec_turismo/eu_94861/94861-ficha2.html</physicalurl>
+    <dataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000094861_a1_rec_turismo/eu_94861/data/94861_openData.xml</dataxml>
+    <metadataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000094861_a1_rec_turismo/r01Index/0000094861_a1_rec_turismo-idxContent.xml</metadataxml>
+    <zipfile>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000094861_a1_rec_turismo/opendata/0000094861_a1_rec_turismo.zip</zipfile>
+  </row>
+  <row num="11">
+    <documentname>CANTOBLANCO</documentname>
+    <turismdescription>Ostatu hau Barron dorrean dago, Erriberagoitian, Añanako landa eremu batean.Bi, hiru, lau, bo...</turismdescription>
+    <turismdescription>Ostatu hau Barron dorrean dago, Erriberagoitian, Añanako landa eremu batean.&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Bi, hiru, lau, bost edo sei pertsonarentzako logeletan banatuta dago  hortaz, ezin hobea da bikotekidearekin nahiz taldean edo familian bidaiatzeko. &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Honako hauek ditu: hornitutako sukaldea, eremu bat komun jangela zabal batekin, egongela telebistarekin eta komunarekin, berogailua, egurrezko tximinia, aparkalekua, terraza, lorategia eta barbakoa, eta bizikletak gordetzeko eremu bat. &amp;lt;br/&amp;gt;</turismdescription>
+    <templatetype>Ostatuak</templatetype>
+    <locality>Barrón</locality>
+    <phone>945362350</phone>
+    <address>Barrón  24</address>
+    <marks>Gure Mendiak eta Haranak</marks>
+    <physical>0</physical>
+    <visual>0</visual>
+    <auditive>0</auditive>
+    <intellectual>0</intellectual>
+    <organic>0</organic>
+    <tourismemail>alberguecantoblanco@gmail.com</tourismemail>
+    <web>http://https://alberguecantoblanco.wordpress.com/sobre-el-albergue/</web>
+    <lodgingtype>Aterpetxeak</lodgingtype>
+    <category>S</category>
+    <signatura>BVI00004</signatura>
+    <capacity>22</capacity>
+    <postalcode>01428</postalcode>
+    <latitudelongitude>42.8463679707076,-2.9922772865081697</latitudelongitude>
+    <latwgs84>42.8463679707076</latwgs84>
+    <lonwgs84>-2.9922772865081697</lonwgs84>
+    <municipality>Erriberagoitia/Ribera Alta</municipality>
+    <municipalitycode>046</municipalitycode>
+    <territory>Araba/Álava</territory>
+    <territorycode>01</territorycode>
+    <country>España</country>
+    <countrycode>108</countrycode>
+    <friendlyurl>http://opendata.euskadi.eus/katalogoa/-/eu/ostatuak/cantoblanco/</friendlyurl>
+    <physicalurl>http://opendata.euskadi.eus/katalogoa/contenidos/a_alojamiento/0000083381_a1_rec_turismo/eu_83381/83381-ficha2.html</physicalurl>
+    <dataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000083381_a1_rec_turismo/eu_83381/data/83381_openData.xml</dataxml>
+    <metadataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000083381_a1_rec_turismo/r01Index/0000083381_a1_rec_turismo-idxContent.xml</metadataxml>
+    <zipfile>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000083381_a1_rec_turismo/opendata/0000083381_a1_rec_turismo.zip</zipfile>
+  </row>
+  <row num="12">
+    <documentname>DOWNTOWN RIVER</documentname>
+    <turismdescription>Aterpea Zurriola hondartzatik 5 minutura, oinez, eta Kontxako hondartza ezagunetik eta Donostiako...</turismdescription>
+    <turismdescription>Aterpea Zurriola hondartzatik 5 minutura, oinez, eta Kontxako hondartza ezagunetik eta Donostiako Alde Zaharretik 10 minutura dago  ostatu merke, moderno eta erosoa eskaintzen die bezeroei.&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Ostatuak logela partekatuak ditu, kutxatilategiarekin eta oheko arroparekin. Gune bat eskaintzen du irakurtzeko eta egongela gisa, sukalde osoko zerbitzua (ontzi garbigailua eta baxera), baita doako WIFIa ere. Gainera, sukalde zerbitzua ere badu bezeroentzat, eta bizikleten alokairua eta aparkalekua.</turismdescription>
+    <templatetype>Ostatuak</templatetype>
+    <locality>Donostia / San Sebastián</locality>
+    <phone>943 56 34 66</phone>
+    <address>San Martín 2</address>
+    <marks>Donostia</marks>
+    <physical>0</physical>
+    <visual>0</visual>
+    <auditive>0</auditive>
+    <intellectual>0</intellectual>
+    <organic>0</organic>
+    <tourismemail>reservas@downtownriverhostel.es</tourismemail>
+    <web>http://www.downtownriverhostel.es</web>
+    <lodgingtype>Aterpetxeak</lodgingtype>
+    <category>S</category>
+    <signatura>BSS00010</signatura>
+    <capacity>23</capacity>
+    <postalcode>20005</postalcode>
+    <latitudelongitude>43.3184901,-1.9794379999999592</latitudelongitude>
+    <latwgs84>43.3184901</latwgs84>
+    <lonwgs84>-1.9794379999999592</lonwgs84>
+    <municipality>Donostia / San Sebastián</municipality>
+    <municipalitycode>069</municipalitycode>
+    <territory>Gipuzkoa</territory>
+    <territorycode>20</territorycode>
+    <country>España</country>
+    <countrycode>108</countrycode>
+    <friendlyurl>http://opendata.euskadi.eus/katalogoa/-/eu/ostatuak/dowontown-river-hostel/</friendlyurl>
+    <physicalurl>http://opendata.euskadi.eus/katalogoa/contenidos/a_alojamiento/0000072322_a1_rec_turismo/eu_72322/72322-ficha2.html</physicalurl>
+    <dataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000072322_a1_rec_turismo/eu_72322/data/72322_openData.xml</dataxml>
+    <metadataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000072322_a1_rec_turismo/r01Index/0000072322_a1_rec_turismo-idxContent.xml</metadataxml>
+    <zipfile>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000072322_a1_rec_turismo/opendata/0000072322_a1_rec_turismo.zip</zipfile>
+  </row>
+  <row num="13">
+    <documentname>GALERNA ZARAUTZ HOSTEL</documentname>
+    <turismdescription>Kostaldeko kokaleku turistiko ederrenetako batean, Galerna Zarautz Hostelek bezeroei eskaintzen d...</turismdescription>
+    <turismdescription>Kostaldeko kokaleku turistiko ederrenetako batean, Galerna Zarautz Hostelek bezeroei eskaintzen die, 2014ko ekainetik, ostatu merke eta erosoa hondartzatik 500 metrora, eta hirigune historikotik oso hurbil (5&amp;apos;), baita Donostiatik oso hurbil ere (23&amp;apos; herri garraioan).&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Ostatuak logela partekatuak eskaintzen ditu, kutxatilategiarekin eta oheko arroparekin. Gune bat eskaintzen du irakurtzeko eta egongela gisa, sukalde osoko zerbitzua (ontzi garbigailua eta baxera), baita doako WIFIa ere. Gainera, plater prestatuen eta edarien zerbitzua ere badu, txangoak furgonetan eta bizikleten alokairua.</turismdescription>
+    <templatetype>Ostatuak</templatetype>
+    <locality>Zarautz</locality>
+    <phone>943 01 03 71</phone>
+    <address>Mitxelena  35</address>
+    <marks>Euskal Kostaldea</marks>
+    <physical>0</physical>
+    <visual>0</visual>
+    <auditive>0</auditive>
+    <intellectual>0</intellectual>
+    <organic>0</organic>
+    <tourismemail>reservas@galernazarautzhostel.com</tourismemail>
+    <web>http://www.galernazarautzhostel.com/</web>
+    <lodgingtype>Aterpetxeak</lodgingtype>
+    <category>S</category>
+    <signatura>BSS00002</signatura>
+    <capacity>18</capacity>
+    <postalcode>20800</postalcode>
+    <latitudelongitude>43.2834108,-2.1650723999999855</latitudelongitude>
+    <latwgs84>43.2834108</latwgs84>
+    <lonwgs84>-2.1650723999999855</lonwgs84>
+    <municipality>Zarautz</municipality>
+    <municipalitycode>079</municipalitycode>
+    <territory>Gipuzkoa</territory>
+    <territorycode>20</territorycode>
+    <country>España</country>
+    <countrycode>108</countrycode>
+    <friendlyurl>http://opendata.euskadi.eus/katalogoa/-/eu/ostatuak/galerna-zarautz-hostel/</friendlyurl>
+    <physicalurl>http://opendata.euskadi.eus/katalogoa/contenidos/a_alojamiento/0000072321_a1_rec_turismo/eu_72321/72321-ficha2.html</physicalurl>
+    <dataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000072321_a1_rec_turismo/eu_72321/data/72321_openData.xml</dataxml>
+    <metadataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000072321_a1_rec_turismo/r01Index/0000072321_a1_rec_turismo-idxContent.xml</metadataxml>
+    <zipfile>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000072321_a1_rec_turismo/opendata/0000072321_a1_rec_turismo.zip</zipfile>
+  </row>
+  <row num="14">
+    <documentname>GANBARA HOSTEL</documentname>
+    <turismdescription>Ganbara Hostel aterpea Bilboko Zazpikaleetan dago. Ostatu moderno eta atsegina da  4, 6 edo 8 per...</turismdescription>
+    <turismdescription>Ganbara Hostel aterpea Bilboko Zazpikaleetan dago. Ostatu moderno eta atsegina da  4, 6 edo 8 pertsonarentzako logelak dituena. Logela mistoak dira, eta segurtasun armairuak dituzte.  &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Aterpe honek Wifi librea, kable bidezko TB eta mediateka eskaintzen ditu, nork bere kasa erabiltzeko, guztien erabilerakoa den egongela batean.&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;50 metro eskasera metro geltokia daukan arren, Bilbao Ganbara Hostel Bilboren erdigunean dago, eta ondorioz, asko mugitu gabe gozatu daiteke hiriak eskaintzen dituen ezin konta ahala erakarguneez  esaterako, oinez joan daiteke Guggenheim Bilbao Museora, Alondegia kulturgunera, Arte Eder Museora edo Zazpikaleetara, Bilboko alderdi zaharrera alegia.&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Prezioei buruzko informazioa nahi izanez gero, sartu aterpearen web orrian.&amp;lt;br/&amp;gt;</turismdescription>
+    <templatetype>Ostatuak</templatetype>
+    <locality>Bilbao</locality>
+    <phone>944 053 930</phone>
+    <address>Prim 13</address>
+    <marks>Bilbao</marks>
+    <physical>0</physical>
+    <visual>0</visual>
+    <auditive>0</auditive>
+    <intellectual>0</intellectual>
+    <organic>0</organic>
+    <tourismemail>info@ganbarahostel.com</tourismemail>
+    <web>http://www.ganbarahostel.com</web>
+    <lodgingtype>Aterpetxeak</lodgingtype>
+    <category>S</category>
+    <visit>1</visit>
+    <signatura>BBI00004</signatura>
+    <capacity>62</capacity>
+    <postalcode>48006</postalcode>
+    <latitudelongitude>43.2583377,-2.9186009000000013</latitudelongitude>
+    <latwgs84>43.2583377</latwgs84>
+    <lonwgs84>-2.9186009000000013</lonwgs84>
+    <municipality>Bilbao</municipality>
+    <municipalitycode>020</municipalitycode>
+    <territory>Bizkaia</territory>
+    <territorycode>48</territorycode>
+    <country>España</country>
+    <countrycode>108</countrycode>
+    <friendlyurl>http://opendata.euskadi.eus/katalogoa/-/eu/ostatuak/ganbara-hostel-bilbao/</friendlyurl>
+    <physicalurl>http://opendata.euskadi.eus/katalogoa/contenidos/a_alojamiento/0000066681_a1_rec_turismo/eu_66681/66681-ficha2.html</physicalurl>
+    <dataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000066681_a1_rec_turismo/eu_66681/data/66681_openData.xml</dataxml>
+    <metadataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000066681_a1_rec_turismo/r01Index/0000066681_a1_rec_turismo-idxContent.xml</metadataxml>
+    <zipfile>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000066681_a1_rec_turismo/opendata/0000066681_a1_rec_turismo.zip</zipfile>
+  </row>
+  <row num="15">
+    <documentname>GREEN NEST HOSTEL / UBA ATERPETXEA</documentname>
+    <turismdescription>Donostia Surfaren hiria da. Hiriko gure hondartzak direla eta, olatu eta zalapartaren, itsaso eta...</turismdescription>
+    <turismdescription>Donostia Surfaren hiria da. Hiriko gure hondartzak direla eta, olatu eta zalapartaren, itsaso eta giroaren konbinazio berezia dugu. &amp;lt;br/&amp;gt;Inguru erakargarri horretan dago Green Nest Hostel / Uba Aterpetxea, 2012an inauguratutakoa. &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Surflarientzat edo kirol horretan hasi nahi dutenentzat pentsatuta dago. Surf Campen gure eskaintzak hauek guztiak konbinatzen ditu: aterpetxeko ostatua, surf-eskola onenetan emandako surf-ikastaroak, ikastarorako beharrezko materiala, hiriko txoko eta jarduerak ezagutzeko aholkularitza ostatuan eta museoetako beherapenak. &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Aprobetxatu aukera eta etorri astean zehar (4/5 gau) edo asteburuan (2 gau) gu bisitatzera.&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Prezioei buruzko informazioa nahi izanez gero, sartu aterpetxearen web orrian.</turismdescription>
+    <templatetype>Ostatuak</templatetype>
+    <locality>Donostia / San Sebastián</locality>
+    <accesibility>1</accesibility>
+    <accesibilityicondescription>Ezinduentzat egokitua</accesibilityicondescription>
+    <phone>943 457 117</phone>
+    <address>Uba Bidea 43</address>
+    <marks>Euskal Kostaldea,Donostia</marks>
+    <physical>0</physical>
+    <visual>0</visual>
+    <auditive>0</auditive>
+    <intellectual>0</intellectual>
+    <organic>0</organic>
+    <tourismemail>direccion@greenestdonostia.com</tourismemail>
+    <web>http://www.nesthostelsansebastian.com</web>
+    <lodgingtype>Aterpetxeak</lodgingtype>
+    <category>S</category>
+    <signatura>BSS00005</signatura>
+    <capacity>196</capacity>
+    <surfing>1</surfing>
+    <postalcode>20014</postalcode>
+    <latitudelongitude>43.30776399999999,-1.955093161376908</latitudelongitude>
+    <latwgs84>43.30776399999999</latwgs84>
+    <lonwgs84>-1.955093161376908</lonwgs84>
+    <municipality>Donostia / San Sebastián</municipality>
+    <municipalitycode>069</municipalitycode>
+    <territory>Gipuzkoa</territory>
+    <territorycode>20</territorycode>
+    <country>España</country>
+    <countrycode>108</countrycode>
+    <friendlyurl>http://opendata.euskadi.eus/katalogoa/-/eu/ostatuak/uba-aterpetxea/</friendlyurl>
+    <physicalurl>http://opendata.euskadi.eus/katalogoa/contenidos/a_alojamiento/0000067081_a1_rec_turismo/eu_67081/67081-ficha2.html</physicalurl>
+    <dataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000067081_a1_rec_turismo/eu_67081/data/67081_openData.xml</dataxml>
+    <metadataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000067081_a1_rec_turismo/r01Index/0000067081_a1_rec_turismo-idxContent.xml</metadataxml>
+    <zipfile>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000067081_a1_rec_turismo/opendata/0000067081_a1_rec_turismo.zip</zipfile>
+  </row>
+  <row num="16">
+    <documentname>HARIZTI ERDI</documentname>
+    <turismdescription>Ostatua Zeraingo eskola zaharrean dago, Goierri eskualdean.Hainbat tamainatako logelak ditu, ...</turismdescription>
+    <turismdescription>Ostatua Zeraingo eskola zaharrean dago, Goierri eskualdean.&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Hainbat tamainatako logelak ditu, baita jangela eta egongela ere. Ostatua talde handietarako diseinatuta dago bereziki, baita Done Jakue bidea egiten ari diren eta Zeraina iristen diren erromesentzat ere. &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Aizkorriren magalean dagoela dela, ostatu ezin hobea da natura maite dutenentzat. &amp;lt;br/&amp;gt;</turismdescription>
+    <templatetype>Ostatuak</templatetype>
+    <phone>943801505</phone>
+    <address>Zerain 8</address>
+    <marks>Gure Mendiak eta Haranak</marks>
+    <physical>0</physical>
+    <visual>0</visual>
+    <auditive>0</auditive>
+    <intellectual>0</intellectual>
+    <organic>0</organic>
+    <tourismemail>turismobulegoa@zerain.eus</tourismemail>
+    <web>http://www.goierriturismo.com/albergue-harizti-erdi</web>
+    <lodgingtype>Aterpetxeak</lodgingtype>
+    <category>S</category>
+    <signatura>BSS00014</signatura>
+    <capacity>44</capacity>
+    <postalcode>20214</postalcode>
+    <latitudelongitude>43.01196991298784,-2.273663512441999</latitudelongitude>
+    <latwgs84>43.01196991298784</latwgs84>
+    <lonwgs84>-2.273663512441999</lonwgs84>
+    <municipality>Zerain</municipality>
+    <municipalitycode>026</municipalitycode>
+    <territory>Gipuzkoa</territory>
+    <territorycode>20</territorycode>
+    <country>España</country>
+    <countrycode>108</countrycode>
+    <friendlyurl>http://opendata.euskadi.eus/katalogoa/-/eu/ostatuak/harizti-erdi/</friendlyurl>
+    <physicalurl>http://opendata.euskadi.eus/katalogoa/contenidos/a_alojamiento/0000083661_a1_rec_turismo/eu_83661/83661-ficha2.html</physicalurl>
+    <dataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000083661_a1_rec_turismo/eu_83661/data/83661_openData.xml</dataxml>
+    <metadataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000083661_a1_rec_turismo/r01Index/0000083661_a1_rec_turismo-idxContent.xml</metadataxml>
+    <zipfile>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000083661_a1_rec_turismo/opendata/0000083661_a1_rec_turismo.zip</zipfile>
+  </row>
+  <row num="17">
+    <documentname>KOBA HOSTEL</documentname>
+    <turismdescription>Koba Hostel aterpetxea Donostian modan dagoen Gros auzoan dago, Zurriolako hondartzatik 200 metro...</turismdescription>
+    <turismdescription>Koba Hostel aterpetxea Donostian modan dagoen Gros auzoan dago, Zurriolako hondartzatik 200 metrora, sonatua bere olatuengatik, surf eta gazte giroarengatik. Hostel berria eta modernoa dugu, antzinako kotxe tailer batetik sortua. &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Koba hostel aterpetxeak logela pribatuak eta partekatuak ditu, den-denak aire girotuarekin  bainugela eta plasmazko telebista. Dohaineko WIFIa instalazio guztietan. &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Bestalde:  sukaldea, jantokia, chill-out edo terraza, surf oholentzako eta bizikletentzako biltegia, eta ostatuak bizikleta alokairuko zerbitzua eskaintzen du.</turismdescription>
+    <templatetype>Ostatuak</templatetype>
+    <phone>943165817</phone>
+    <address>Carquizano 5, &amp;lt;br/&amp;gt;20001 San Sebastián</address>
+    <physical>0</physical>
+    <visual>0</visual>
+    <auditive>0</auditive>
+    <intellectual>0</intellectual>
+    <organic>0</organic>
+    <tourismemail>aldatztames@gmail.com</tourismemail>
+    <web>http://www.kobahostel.com</web>
+    <lodgingtype>Aterpetxeak</lodgingtype>
+    <category>S</category>
+    <signatura>BSS00027</signatura>
+    <capacity>68</capacity>
+    <postalcode>20001</postalcode>
+    <latitudelongitude>43.32284119914607,-1.973007309192667</latitudelongitude>
+    <latwgs84>43.32284119914607</latwgs84>
+    <lonwgs84>-1.973007309192667</lonwgs84>
+    <municipality>Donostia / San Sebastián</municipality>
+    <municipalitycode>069</municipalitycode>
+    <territory>Gipuzkoa</territory>
+    <territorycode>20</territorycode>
+    <country>España</country>
+    <countrycode>108</countrycode>
+    <friendlyurl>http://opendata.euskadi.eus/katalogoa/-/eu/ostatuak/koba-hostel/</friendlyurl>
+    <physicalurl>http://opendata.euskadi.eus/katalogoa/contenidos/a_alojamiento/0000094441_a1_rec_turismo/eu_94441/94441-ficha2.html</physicalurl>
+    <dataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000094441_a1_rec_turismo/eu_94441/data/94441_openData.xml</dataxml>
+    <metadataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000094441_a1_rec_turismo/r01Index/0000094441_a1_rec_turismo-idxContent.xml</metadataxml>
+    <zipfile>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000094441_a1_rec_turismo/opendata/0000094441_a1_rec_turismo.zip</zipfile>
+  </row>
+  <row num="18">
+    <documentname>IZARBIDE</documentname>
+    <turismdescription>Aterpetxe hau birgaitutako behitegi zahar batean dago, Arno mendiaren magalean, eta Donejakue Bid...</turismdescription>
+    <turismdescription>Aterpetxe hau birgaitutako behitegi zahar batean dago, Arno mendiaren magalean, eta Donejakue Bidean bertan  hortaz, ostatu ezin hobea da erromesentzat. &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Tximiniadun egongela du, eta telebista, taberna eta denda ere baditu. &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Maindireak eta burkoak alokatzeko zerbitzua du, baita garbigailu, lehorgailu eta motxilen lekualdatze zerbitzuak ere. Horrez gainera, bisita gidatuak antolatzen ditu. &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Bizikletak aparkatzeko zerbitzua ere badu. &amp;lt;br/&amp;gt;</turismdescription>
+    <templatetype>Ostatuak</templatetype>
+    <address>Ibiri Auzoa 3A</address>
+    <marks>Gure Mendiak eta Haranak</marks>
+    <physical>0</physical>
+    <visual>0</visual>
+    <auditive>0</auditive>
+    <intellectual>0</intellectual>
+    <organic>0</organic>
+    <tourismemail>izarbideaterpetxea@gmail.com</tourismemail>
+    <web>www.izarbideaterpetxea.wix.com/izarbide</web>
+    <lodgingtype>Aterpetxeak</lodgingtype>
+    <category>S</category>
+    <visit>1</visit>
+    <signatura>BSS00013</signatura>
+    <store>1</store>
+    <capacity>30</capacity>
+    <latitudelongitude>43.29350311082741,-2.3861899055572167</latitudelongitude>
+    <latwgs84>43.29350311082741</latwgs84>
+    <lonwgs84>-2.3861899055572167</lonwgs84>
+    <municipality>Mutriku</municipality>
+    <municipalitycode>056</municipalitycode>
+    <territory>Gipuzkoa</territory>
+    <territorycode>20</territorycode>
+    <country>España</country>
+    <countrycode>108</countrycode>
+    <friendlyurl>http://opendata.euskadi.eus/katalogoa/-/eu/ostatuak/izarbide/</friendlyurl>
+    <physicalurl>http://opendata.euskadi.eus/katalogoa/contenidos/a_alojamiento/0000081101_a1_rec_turismo/eu_81101/81101-ficha2.html</physicalurl>
+    <dataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000081101_a1_rec_turismo/eu_81101/data/81101_openData.xml</dataxml>
+    <metadataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000081101_a1_rec_turismo/r01Index/0000081101_a1_rec_turismo-idxContent.xml</metadataxml>
+    <zipfile>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000081101_a1_rec_turismo/opendata/0000081101_a1_rec_turismo.zip</zipfile>
+  </row>
+  <row num="19">
+    <documentname>KOISI HOSTEL</documentname>
+    <turismdescription>Donostiako Antigua auzoan dago, Ondarreta hondartzatik 8 minutura, oinez. Gainera, erdigunetik et...</turismdescription>
+    <turismdescription>Donostiako Antigua auzoan dago, Ondarreta hondartzatik 8 minutura, oinez. Gainera, erdigunetik eta hiriko erakarpen turistiko ugarietatik oso hurbil dago Koisi Hostel.&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Lau gela motaren artean hautatzeko aukera dago: pribatuak edo partekatuak. Guztiak ere estilo moderno eta erosokoak dira, eta gehienek dute bainugela pribatua.&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Ostatu honetan guztion erabilerakoa den egongela bat dago, eta terraza beiraduna teilatu lauan. Hortxe daude, hain zuzen, taberna eta jatetxea ere, pintxo tradizionalak edo etxean egindako jaki ugari dastatzeko tokia. &amp;lt;br/&amp;gt;Badu Wi-Fi zerbitzua, eta gosaria doan ematen zaie bezeroei.</turismdescription>
+    <templatetype>Ostatuak</templatetype>
+    <phone>843980769</phone>
+    <address>Heriz  Ibilbidea/Paseo, Nº 38</address>
+    <marks>Donostia</marks>
+    <physical>0</physical>
+    <visual>0</visual>
+    <auditive>0</auditive>
+    <intellectual>0</intellectual>
+    <organic>0</organic>
+    <web>WWW.KOISIHOSTEL.COM</web>
+    <lodgingtype>Aterpetxeak</lodgingtype>
+    <category>S</category>
+    <signatura>BSS00024</signatura>
+    <capacity>124</capacity>
+    <postalcode>20008</postalcode>
+    <latitudelongitude>43.3110398,-2.0009499000000233</latitudelongitude>
+    <latwgs84>43.3110398</latwgs84>
+    <lonwgs84>-2.0009499000000233</lonwgs84>
+    <municipality>Donostia / San Sebastián</municipality>
+    <municipalitycode>069</municipalitycode>
+    <territory>Gipuzkoa</territory>
+    <territorycode>20</territorycode>
+    <country>España</country>
+    <countrycode>108</countrycode>
+    <friendlyurl>http://opendata.euskadi.eus/katalogoa/-/eu/ostatuak/koisi-hostel/</friendlyurl>
+    <physicalurl>http://opendata.euskadi.eus/katalogoa/contenidos/a_alojamiento/0000092124_a1_rec_turismo/eu_92124/92124-ficha2.html</physicalurl>
+    <dataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000092124_a1_rec_turismo/eu_92124/data/92124_openData.xml</dataxml>
+    <metadataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000092124_a1_rec_turismo/r01Index/0000092124_a1_rec_turismo-idxContent.xml</metadataxml>
+    <zipfile>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000092124_a1_rec_turismo/opendata/0000092124_a1_rec_turismo.zip</zipfile>
+  </row>
+  <row num="20">
+    <documentname>KOIKILI</documentname>
+    <turismdescription>Ostatua Otxandion kokatzen da, naturaren bihotzean, Anboto eta Gorbea mendien artean eta Legutiok...</turismdescription>
+    <turismdescription>Ostatua Otxandion kokatzen da, naturaren bihotzean, Anboto eta Gorbea mendien artean eta Legutioko urtegiaren ondoan. Leku paregabea da, mendia eta uretako kirolak maite dituztenentzat. &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Partekatzeko logelak (gelako 6 pertsonentzako ohatzeekin), lau pertsonentzako ohatzedun logela pribatuak eta bikoteentzako logela pribatuak. Hortaz, oso egokia da bai taldeentzat bai bikote edo familientzat. &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Horrez gain, Koikili aterpetxeak erabilera anitzeko areto bat eta kontraste dutxadun eta turkiar bainudun erlaxazio gunea eskaintzen ditu.</turismdescription>
+    <templatetype>Ostatuak</templatetype>
+    <phone>945450301</phone>
+    <address>Artekale 17</address>
+    <marks>Gure Mendiak eta Haranak</marks>
+    <physical>0</physical>
+    <visual>0</visual>
+    <auditive>0</auditive>
+    <intellectual>0</intellectual>
+    <organic>0</organic>
+    <tourismemail>info@koikiliaterpetxea.eus</tourismemail>
+    <web>www.koikiliaterpetxea.eus</web>
+    <lodgingtype>Aterpetxeak</lodgingtype>
+    <category>S</category>
+    <room>1</room>
+    <signatura>BBI00006</signatura>
+    <capacity>26</capacity>
+    <postalcode>48210</postalcode>
+    <latitudelongitude>43.04089954264017,-2.6548505128974966</latitudelongitude>
+    <latwgs84>43.04089954264017</latwgs84>
+    <lonwgs84>-2.6548505128974966</lonwgs84>
+    <municipality>Otxandio</municipality>
+    <municipalitycode>072</municipalitycode>
+    <territory>Bizkaia</territory>
+    <territorycode>48</territorycode>
+    <country>España</country>
+    <countrycode>108</countrycode>
+    <friendlyurl>http://opendata.euskadi.eus/katalogoa/-/eu/ostatuak/koikili-aterpetxea/</friendlyurl>
+    <physicalurl>http://opendata.euskadi.eus/katalogoa/contenidos/a_alojamiento/0000076281_a1_rec_turismo/eu_76281/76281-ficha2.html</physicalurl>
+    <dataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000076281_a1_rec_turismo/eu_76281/data/76281_openData.xml</dataxml>
+    <metadataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000076281_a1_rec_turismo/r01Index/0000076281_a1_rec_turismo-idxContent.xml</metadataxml>
+    <zipfile>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000076281_a1_rec_turismo/opendata/0000076281_a1_rec_turismo.zip</zipfile>
+  </row>
+  <row num="21">
+    <documentname>LA PARRA HOSTEL</documentname>
+    <turismdescription>Bakioko erdigunean dago, eta 80 metrora hondartza dauka, surflariek oso gogokoa duten hondartza, ...</turismdescription>
+    <turismdescription>Bakioko erdigunean dago, eta 80 metrora hondartza dauka, surflariek oso gogokoa duten hondartza, hain zuzen ere.&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Aterpetxeak logela modernoak ditu, ohe jantziak prezioaren barnean daude eta doako wifia eskaintzen da.&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Jatetxe bat ere badu, eta asteburuetan bazkariak, afariak eta pintxoak eskaintzen dira. Aste barruan, berriz, taberna zerbitzua eskaintzen da. &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Kokapena dela eta, ezin hobea da inguruko gastronomiaz disfrutatzeko edo Gaztelugatxeko San Juanez gozatzeko  hain zuzen, horixe da euskal kostaldeko ezinbesteko guneetako bat. &amp;lt;br/&amp;gt;</turismdescription>
+    <templatetype>Ostatuak</templatetype>
+    <phone>659862471</phone>
+    <address>Kalea/Calle Areagako Bidea, Nº 2</address>
+    <marks>Euskal Kostaldea</marks>
+    <physical>0</physical>
+    <visual>0</visual>
+    <auditive>0</auditive>
+    <intellectual>0</intellectual>
+    <organic>0</organic>
+    <tourismemail>bakioaussie@hotmail.com</tourismemail>
+    <lodgingtype>Aterpetxeak</lodgingtype>
+    <category>S</category>
+    <signatura>BBI00016</signatura>
+    <capacity>22</capacity>
+    <postalcode>48130</postalcode>
+    <latitudelongitude>43.42868980000001,-2.8072339000000284</latitudelongitude>
+    <latwgs84>43.42868980000001</latwgs84>
+    <lonwgs84>-2.8072339000000284</lonwgs84>
+    <municipality>Bakio</municipality>
+    <municipalitycode>012</municipalitycode>
+    <territory>Bizkaia</territory>
+    <territorycode>48</territorycode>
+    <country>España</country>
+    <countrycode>108</countrycode>
+    <friendlyurl>http://opendata.euskadi.eus/katalogoa/-/eu/ostatuak/la-parra-hostel/</friendlyurl>
+    <physicalurl>http://opendata.euskadi.eus/katalogoa/contenidos/a_alojamiento/0000085861_a1_rec_turismo/eu_85861/85861-ficha2.html</physicalurl>
+    <dataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000085861_a1_rec_turismo/eu_85861/data/85861_openData.xml</dataxml>
+    <metadataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000085861_a1_rec_turismo/r01Index/0000085861_a1_rec_turismo-idxContent.xml</metadataxml>
+    <zipfile>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000085861_a1_rec_turismo/opendata/0000085861_a1_rec_turismo.zip</zipfile>
+  </row>
+  <row num="22">
+    <documentname>LA BODEGA DE SALINILLAS</documentname>
+    <turismdescription>Familia upategi hau ostatu bihurtu dute, erabat birgaitutako eraikin batean. Arabako Errioxan dag...</turismdescription>
+    <turismdescription>Familia upategi hau ostatu bihurtu dute, erabat birgaitutako eraikin batean. Arabako Errioxan dago, Donejakue Bidearen ondoan. Bi logela handi eskaintzen ditu ohatzeekin. Gainera, lau bainugela, hornitutako sukaldea eta egongela komuna ere baditu. &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Familia upategia bisitatu egin daiteke, eta hitzartuz gero, afariak eskaintzen dira taldeentzat. &amp;lt;br/&amp;gt;</turismdescription>
+    <templatetype>Ostatuak</templatetype>
+    <address>Baja 3</address>
+    <marks>Arabako Errioxa</marks>
+    <physical>0</physical>
+    <visual>0</visual>
+    <auditive>0</auditive>
+    <intellectual>0</intellectual>
+    <organic>0</organic>
+    <tourismemail>aretaetxea@hotmail.com</tourismemail>
+    <lodgingtype>Aterpetxeak</lodgingtype>
+    <category>S</category>
+    <signatura>BVI00002</signatura>
+    <capacity>16</capacity>
+    <postalcode>01212</postalcode>
+    <latitudelongitude>42.6335608,-2.832725699999969</latitudelongitude>
+    <latwgs84>42.6335608</latwgs84>
+    <lonwgs84>-2.832725699999969</lonwgs84>
+    <municipality>Labastida/Bastida</municipality>
+    <municipalitycode>028</municipalitycode>
+    <territory>Araba/Álava</territory>
+    <territorycode>01</territorycode>
+    <country>España</country>
+    <countrycode>108</countrycode>
+    <friendlyurl>http://opendata.euskadi.eus/katalogoa/-/eu/ostatuak/la-bodega-gatzaga/</friendlyurl>
+    <physicalurl>http://opendata.euskadi.eus/katalogoa/contenidos/a_alojamiento/0000081021_a1_rec_turismo/eu_81021/81021-ficha2.html</physicalurl>
+    <dataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000081021_a1_rec_turismo/eu_81021/data/81021_openData.xml</dataxml>
+    <metadataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000081021_a1_rec_turismo/r01Index/0000081021_a1_rec_turismo-idxContent.xml</metadataxml>
+    <zipfile>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000081021_a1_rec_turismo/opendata/0000081021_a1_rec_turismo.zip</zipfile>
+  </row>
+  <row num="23">
+    <documentname>LEKEITIO ATERPETXEA  HOSTEL</documentname>
+    <turismdescription>Aterpetxea Lekeition dago, Kantauri itsasoari begira bizi diren euskal herrien estiloa eta tradiz...</turismdescription>
+    <turismdescription>Aterpetxea Lekeition dago, Kantauri itsasoari begira bizi diren euskal herrien estiloa eta tradizioa gordetzen duten Bizkaiko itsas hiribilduetako batean. 2015ean inauguratu zuten, eta 20 bat lagunentzako edukiera duen ostatua da. Aterpetxearen kokapenari esker, oinez joan daiteke Isuntzako eta Karraspioko hondartzetara, edo Lekeitio inguratzen duten Otoio eta Lumentza mendietara igo.</turismdescription>
+    <templatetype>Ostatuak</templatetype>
+    <phone>685797869</phone>
+    <address>Arropain Auzoa 10</address>
+    <marks>Euskal Kostaldea</marks>
+    <physical>0</physical>
+    <visual>0</visual>
+    <auditive>0</auditive>
+    <intellectual>0</intellectual>
+    <organic>0</organic>
+    <tourismemail>josuiriondo21@gmail.com</tourismemail>
+    <web>http://lekeitioaterpetxea.com/</web>
+    <lodgingtype>Aterpetxeak</lodgingtype>
+    <category>S</category>
+    <signatura>BBI00009</signatura>
+    <capacity>22</capacity>
+    <postalcode>48288</postalcode>
+    <latitudelongitude>43.3563005,-2.506768299999976</latitudelongitude>
+    <latwgs84>43.3563005</latwgs84>
+    <lonwgs84>-2.506768299999976</lonwgs84>
+    <municipality>Ispaster</municipality>
+    <municipalitycode>049</municipalitycode>
+    <territory>Bizkaia</territory>
+    <territorycode>48</territorycode>
+    <country>España</country>
+    <countrycode>108</countrycode>
+    <friendlyurl>http://opendata.euskadi.eus/katalogoa/-/eu/ostatuak/lekeitio-aterpetxea-hostel/</friendlyurl>
+    <physicalurl>http://opendata.euskadi.eus/katalogoa/contenidos/a_alojamiento/0000076121_a1_rec_turismo/eu_76121/76121-ficha2.html</physicalurl>
+    <dataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000076121_a1_rec_turismo/eu_76121/data/76121_openData.xml</dataxml>
+    <metadataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000076121_a1_rec_turismo/r01Index/0000076121_a1_rec_turismo-idxContent.xml</metadataxml>
+    <zipfile>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000076121_a1_rec_turismo/opendata/0000076121_a1_rec_turismo.zip</zipfile>
+  </row>
+  <row num="24">
+    <documentname>LASTURKO ATERPETXEA</documentname>
+    <turismdescription>Lasturko haranean kokatutako aterpetxea, Euskal Kostaldeko Geoparkearen bihotzean, oso hurbil Deb...</turismdescription>
+    <turismdescription>Lasturko haranean kokatutako aterpetxea, Euskal Kostaldeko Geoparkearen bihotzean, oso hurbil Deba eta Zumaiako hondartzetatik. Donejakue Bidearen ondoan kokatua, ostatu ezin hobea da Kostako bidetik Debara iristen diren erromesentzat.  &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Gelak taldeentzat (12 lagun gehien jota), eta familientzako edo talde txikientzako bereziki prestatutako gelak ere baditu. Bezero guztientzako egongela, erabilera anitzeko aretoa eta sukalde librea. &amp;lt;br/&amp;gt;</turismdescription>
+    <templatetype>Ostatuak</templatetype>
+    <phone>943199090</phone>
+    <address>San Nikolas Plaza/Plaza, Nº 2.</address>
+    <marks>Euskal Kostaldea</marks>
+    <physical>0</physical>
+    <visual>0</visual>
+    <auditive>0</auditive>
+    <intellectual>0</intellectual>
+    <organic>0</organic>
+    <tourismemail>naparranekua@gmail.com</tourismemail>
+    <web>http://www.albergueturisticolastur.eus</web>
+    <lodgingtype>Aterpetxeak</lodgingtype>
+    <category>S</category>
+    <signatura>BSS00011</signatura>
+    <capacity>60</capacity>
+    <postalcode>20829</postalcode>
+    <latitudelongitude>43.250732472406284,-2.3333774753937178</latitudelongitude>
+    <latwgs84>43.250732472406284</latwgs84>
+    <lonwgs84>-2.3333774753937178</lonwgs84>
+    <municipality>Deba</municipality>
+    <municipalitycode>029</municipalitycode>
+    <territory>Gipuzkoa</territory>
+    <territorycode>20</territorycode>
+    <country>España</country>
+    <countrycode>108</countrycode>
+    <friendlyurl>http://opendata.euskadi.eus/katalogoa/-/eu/ostatuak/lasturko-aterpetxea/</friendlyurl>
+    <physicalurl>http://opendata.euskadi.eus/katalogoa/contenidos/a_alojamiento/0000082041_a1_rec_turismo/eu_82041/82041-ficha2.html</physicalurl>
+    <dataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000082041_a1_rec_turismo/eu_82041/data/82041_openData.xml</dataxml>
+    <metadataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000082041_a1_rec_turismo/r01Index/0000082041_a1_rec_turismo-idxContent.xml</metadataxml>
+    <zipfile>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000082041_a1_rec_turismo/opendata/0000082041_a1_rec_turismo.zip</zipfile>
+  </row>
+  <row num="25">
+    <documentname>MANDOIA</documentname>
+    <turismdescription>Ostatu hau landa eremuan dago, Gorbeiako Parke Naturalaren parean. Euskal mendizaleentzat errefer...</turismdescription>
+    <turismdescription>Ostatu hau landa eremuan dago, Gorbeiako Parke Naturalaren parean. Euskal mendizaleentzat erreferentziazko puntua da, eta askotariko paisaia liluragarriz inguratuta dago. &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Logeletan, elkarren gaineko oheak daude, eta bainugela partekatu egin behar da. Logeletako batzuek terraza edo balkoia daukate, ikuspegi zoragarridunekoak. &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Aterpean solariuma dago, eta baita taberna, jatetxea eta doako aparkaleku pribatu bat ere. Harrera lekua 24 orduz egoten da irekita. &amp;lt;br/&amp;gt;Gaua igarotzeko ez ezik, mantenu erdian ala osoan ostatu hartzeko aukera ere badago. &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Haur parke polit bat dauka, eta gaikako ikastaroak eta zaldian egiteko ibilbideak antolatzen dituzte. &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Zaldiketa eta bidezidor kirola gogoko dutenentzat, beraz, ostatu ezin hobea da. &amp;lt;br/&amp;gt;</turismdescription>
+    <templatetype>Ostatuak</templatetype>
+    <locality>Argiñao | Diseminado</locality>
+    <phone>654580064</phone>
+    <address>Barrio Apala, Nº 2</address>
+    <marks>Gure Mendiak eta Haranak</marks>
+    <physical>0</physical>
+    <visual>0</visual>
+    <auditive>0</auditive>
+    <intellectual>0</intellectual>
+    <organic>0</organic>
+    <tourismemail>alberguemandoia@gmail.com</tourismemail>
+    <web>http://www.mandoia.com</web>
+    <lodgingtype>Aterpetxeak</lodgingtype>
+    <category>S</category>
+    <signatura>BBI00021</signatura>
+    <capacity>16</capacity>
+    <postalcode>48499</postalcode>
+    <municipality>Zeberio</municipality>
+    <municipalitycode>025</municipalitycode>
+    <territory>Bizkaia</territory>
+    <territorycode>48</territorycode>
+    <country>España</country>
+    <countrycode>108</countrycode>
+    <friendlyurl>http://opendata.euskadi.eus/katalogoa/-/eu/ostatuak/mandoia/</friendlyurl>
+    <physicalurl>http://opendata.euskadi.eus/katalogoa/contenidos/a_alojamiento/0000087643_a1_rec_turismo/eu_87643/87643-ficha2.html</physicalurl>
+    <dataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000087643_a1_rec_turismo/eu_87643/data/87643_openData.xml</dataxml>
+    <metadataxml></metadataxml>
+    <zipfile></zipfile>
+  </row>
+  <row num="26">
+    <documentname>LIZARRUSTI PARKETXEA</documentname>
+    <turismdescription>Aterpe hau natura, artea, kultura eta pertsonak batzen dituen ingurune batean dago, eta 40 pertso...</turismdescription>
+    <turismdescription>Aterpe hau natura, artea, kultura eta pertsonak batzen dituen ingurune batean dago, eta 40 pertsonarentzako lekua du. &amp;lt;br/&amp;gt;Gela txikienak 4 pertsonakoak dira, eta handienak, 14koak.&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Lizarrusti Parketxea, gainera, Aralarko Parke Naturalaren Harrera eta Interpretazio zentroa dago. Zentroan, hainbat areto daude ingurua hobeto ezagutzeko  ibilbideak eskaintzen dira, gidari baten laguntzaz  tailerrak antolatzen dira?&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Horrez gain, Lizarrusti Parketxeak taberna, jatetxea, erakusketa aretoa eta terraza ditu.&amp;lt;br/&amp;gt;</turismdescription>
+    <templatetype>Ostatuak</templatetype>
+    <locality>Aia | Diseminado</locality>
+    <phone>943582069</phone>
+    <address>Aia Auzoa z.g.</address>
+    <marks>Gure Mendiak eta Haranak</marks>
+    <physical>0</physical>
+    <visual>0</visual>
+    <auditive>0</auditive>
+    <intellectual>0</intellectual>
+    <organic>0</organic>
+    <tourismemail>lurraz@hotmail.com</tourismemail>
+    <web>www.lizarrusti.com</web>
+    <lodgingtype>Aterpetxeak</lodgingtype>
+    <category>S</category>
+    <restaurant>1</restaurant>
+    <signatura>BSS00015</signatura>
+    <capacity>40</capacity>
+    <postalcode>20211</postalcode>
+    <latitudelongitude>42.960128,-2.098839</latitudelongitude>
+    <latwgs84>42.960128</latwgs84>
+    <lonwgs84>-2.098839</lonwgs84>
+    <municipality>Ataun</municipality>
+    <municipalitycode>015</municipalitycode>
+    <territory>Gipuzkoa</territory>
+    <territorycode>20</territorycode>
+    <country>España</country>
+    <countrycode>108</countrycode>
+    <friendlyurl>http://opendata.euskadi.eus/katalogoa/-/eu/ostatuak/lizarrusti-parketxea/</friendlyurl>
+    <physicalurl>http://opendata.euskadi.eus/katalogoa/contenidos/a_alojamiento/0000080161_a1_rec_turismo/eu_80161/80161-ficha2.html</physicalurl>
+    <dataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000080161_a1_rec_turismo/eu_80161/data/80161_openData.xml</dataxml>
+    <metadataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000080161_a1_rec_turismo/r01Index/0000080161_a1_rec_turismo-idxContent.xml</metadataxml>
+    <zipfile>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000080161_a1_rec_turismo/opendata/0000080161_a1_rec_turismo.zip</zipfile>
+  </row>
+  <row num="27">
+    <documentname>MOON HOSTEL BIO</documentname>
+    <turismdescription>Moon Hostel Bio ostatu modernoa eta erosoa da, eta Bilboko hirigunetik gertu dagoen Deustu auzoan...</turismdescription>
+    <turismdescription>Moon Hostel Bio ostatu modernoa eta erosoa da, eta Bilboko hirigunetik gertu dagoen Deustu auzoan dago. Ostatuaren kokapenak aukera ematen du oinez ibilaldi bat eginez hiriko interesgune nagusiak bisitatzeko: Guggenheim museoa, Euskalduna Kongresuen Jauregia edo San Mames futbol zelai berria. Ostatuaren ondoan dago Deustuko metro geltokia. &amp;lt;br/&amp;gt; &amp;lt;br/&amp;gt;Logelek bainugela dute eta doako banakako armairuak. Hiru eremu komun ditu, guztiak doako wifi konexioarekin. Azpimarratzekoa da, gainera, Bio Garden hiri baratze txikia  ostatuaren erdian dago eta bezeroek eurek zaintzen dute. Halaber, doako zerbitzua duen jan-egongela bat dago. &amp;lt;br/&amp;gt; &amp;lt;br/&amp;gt;Harreran, aparkamendua, bizikleten alokairua eta bagaje kontsigna eskaintzen dituzte.&amp;lt;br/&amp;gt;</turismdescription>
+    <templatetype>Ostatuak</templatetype>
+    <locality>Bilbao</locality>
+    <phone>944 750 848</phone>
+    <address>Luzarra  7</address>
+    <marks>Bilbao</marks>
+    <physical>0</physical>
+    <visual>0</visual>
+    <auditive>0</auditive>
+    <intellectual>0</intellectual>
+    <organic>0</organic>
+    <tourismemail>info@moonhostelbio.com</tourismemail>
+    <web>http://www.moonhostelbio.com/</web>
+    <lodgingtype>Aterpetxeak</lodgingtype>
+    <category>S</category>
+    <signatura>BBI00011</signatura>
+    <capacity>84</capacity>
+    <postalcode>48014</postalcode>
+    <latitudelongitude>43.2722971,-2.946753899999976</latitudelongitude>
+    <latwgs84>43.2722971</latwgs84>
+    <lonwgs84>-2.946753899999976</lonwgs84>
+    <municipality>Bilbao</municipality>
+    <municipalitycode>020</municipalitycode>
+    <territory>Bizkaia</territory>
+    <territorycode>48</territorycode>
+    <country>España</country>
+    <countrycode>108</countrycode>
+    <friendlyurl>http://opendata.euskadi.eus/katalogoa/-/eu/ostatuak/moon-hostel-bio/</friendlyurl>
+    <physicalurl>http://opendata.euskadi.eus/katalogoa/contenidos/a_alojamiento/0000069801_a1_rec_turismo/eu_69801/69801-ficha2.html</physicalurl>
+    <dataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000069801_a1_rec_turismo/eu_69801/data/69801_openData.xml</dataxml>
+    <metadataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000069801_a1_rec_turismo/r01Index/0000069801_a1_rec_turismo-idxContent.xml</metadataxml>
+    <zipfile>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000069801_a1_rec_turismo/opendata/0000069801_a1_rec_turismo.zip</zipfile>
+  </row>
+  <row num="28">
+    <documentname>MOANA SURF HOSTEL</documentname>
+    <turismdescription>Moana Surf Hostel Urdulizen dago, ingurune berde eta oihantsuan kokatutako herrixka batean, Sopel...</turismdescription>
+    <turismdescription>Moana Surf Hostel Urdulizen dago, ingurune berde eta oihantsuan kokatutako herrixka batean, Sopelako eta Barrikako hondartzetatik minutu gutxira.&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Bezeroentzako logelez eta guztien erabilerarako guneez gainera, kirolerako eta astialdirako bete-beteko instalazioak ditu aterpeak  batik bat, surfa, skatea eta abentura kirolak maite dituztenentzat.&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Moanak arrapala txiki bat dauka skatea egiteko, street zirkuitu bat, arku tirorako gunea, igerileku klimatizatua, rokodromo edo eskalada murrua, barbakoak egiteko gunea, taberna, askaldegia, aire libreko zinema, etab.&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Itsasoaz eta mendiaz gozatzeko tokia da, ondo komunikatua, ingurunea ezagutu ahal izateko: Bilbo, 30 minutura dago, metroz joanda.&amp;lt;br/&amp;gt;</turismdescription>
+    <templatetype>Ostatuak</templatetype>
+    <locality>Elortza</locality>
+    <phone>946 764 859</phone>
+    <address>Elortza Auzoa 5</address>
+    <marks>Euskal Kostaldea</marks>
+    <physical>0</physical>
+    <visual>0</visual>
+    <auditive>0</auditive>
+    <intellectual>0</intellectual>
+    <organic>0</organic>
+    <tourismemail>info@moanasurfhostel.com</tourismemail>
+    <web>http://www.moanasurfhostel.com</web>
+    <lodgingtype>Aterpetxeak</lodgingtype>
+    <category>S</category>
+    <room>1</room>
+    <signatura>BBI00001</signatura>
+    <capacity>75</capacity>
+    <surfing>1</surfing>
+    <postalcode>48610</postalcode>
+    <latitudelongitude>43.3737401,-2.9482986000000437</latitudelongitude>
+    <latwgs84>43.3737401</latwgs84>
+    <lonwgs84>-2.9482986000000437</lonwgs84>
+    <municipality>Urduliz</municipality>
+    <municipalitycode>089</municipalitycode>
+    <territory>Bizkaia</territory>
+    <territorycode>48</territorycode>
+    <country>España</country>
+    <countrycode>108</countrycode>
+    <friendlyurl>http://opendata.euskadi.eus/katalogoa/-/eu/ostatuak/moana-surf-hostel-urduliz/</friendlyurl>
+    <physicalurl>http://opendata.euskadi.eus/katalogoa/contenidos/a_alojamiento/0000066661_a1_rec_turismo/eu_66661/66661-ficha2.html</physicalurl>
+    <dataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000066661_a1_rec_turismo/eu_66661/data/66661_openData.xml</dataxml>
+    <metadataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000066661_a1_rec_turismo/r01Index/0000066661_a1_rec_turismo-idxContent.xml</metadataxml>
+    <zipfile>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000066661_a1_rec_turismo/opendata/0000066661_a1_rec_turismo.zip</zipfile>
+  </row>
+  <row num="29">
+    <documentname>OTARDI LANDA ATERPETXEA</documentname>
+    <turismdescription>Erabat berritutako ehunka urteko baserria da eta ingurune natural batean dago kokatuta, Ernio pea...</turismdescription>
+    <turismdescription>Erabat berritutako ehunka urteko baserria da eta ingurune natural batean dago kokatuta, Ernio pean, Pagoetako Parke Naturaletik eta kostatik oso gertu, eta Donostiatik 22 km-ra.&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Guztira 30 pertsonari ostatua emateko prestatuta dago  hortaz, bereziki egokia da taldeentzat. Logela pribatuak ditu, komunarekin, baita taldeentzako logelak ere, ohatzeekin eta partekaturiko komunarekin. Horrez gain, jangela handia, sukaldea, terraza, lorategia eta baratzea ere baditu. &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Ostatua ez ezik, gosariak, bazkariak eta afariak ere eskaintzen ditu, hori bai, aldez aurretik enkargatuta. &amp;lt;br/&amp;gt;</turismdescription>
+    <templatetype>Ostatuak</templatetype>
+    <phone>649062674</phone>
+    <address>Upazan auzoa 20159</address>
+    <marks>Gure Mendiak eta Haranak</marks>
+    <physical>0</physical>
+    <visual>0</visual>
+    <auditive>0</auditive>
+    <intellectual>0</intellectual>
+    <organic>0</organic>
+    <tourismemail>otardibaserria@gmail.com</tourismemail>
+    <web>http://www.otabardi.eus</web>
+    <lodgingtype>Aterpetxeak</lodgingtype>
+    <category>S</category>
+    <signatura>BSS00022</signatura>
+    <capacity>30</capacity>
+    <postalcode>20159</postalcode>
+    <latitudelongitude>43.20588009999999,-2.0992142999999714</latitudelongitude>
+    <latwgs84>43.20588009999999</latwgs84>
+    <lonwgs84>-2.0992142999999714</lonwgs84>
+    <municipality>Asteasu</municipality>
+    <municipalitycode>014</municipalitycode>
+    <territory>Gipuzkoa</territory>
+    <territorycode>20</territorycode>
+    <country>España</country>
+    <countrycode>108</countrycode>
+    <friendlyurl>http://opendata.euskadi.eus/katalogoa/-/eu/ostatuak/otardi/</friendlyurl>
+    <physicalurl>http://opendata.euskadi.eus/katalogoa/contenidos/a_alojamiento/0000084341_a1_rec_turismo/eu_84341/84341-ficha2.html</physicalurl>
+    <dataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000084341_a1_rec_turismo/eu_84341/data/84341_openData.xml</dataxml>
+    <metadataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000084341_a1_rec_turismo/r01Index/0000084341_a1_rec_turismo-idxContent.xml</metadataxml>
+    <zipfile>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000084341_a1_rec_turismo/opendata/0000084341_a1_rec_turismo.zip</zipfile>
+  </row>
+  <row num="30">
+    <documentname>MUNDAKA HOSTEL &amp;amp; SPORTS CAFE</documentname>
+    <turismdescription>Mundaka Hostel &amp;amp; Sports Café, Urdaibai Biosferaren Erreserban kokaturiko establezimendua da. Eusk...</turismdescription>
+    <turismdescription>Mundaka Hostel &amp;amp; Sports Café, Urdaibai Biosferaren Erreserban kokaturiko establezimendua da. Euskal Kostaldeko herri ederrenetariko batean kokatuta: Mundaka, Bilboko hirigunetik km gutxitara baina oraindik eta garrantzitsuagoa dena, Mundakako olatu ospetsutik oinez minutu batera. Gure instalazioak erabat berritua izan den Aterpetxe batekoak dira, 38 pertsonentzako lekua eskaintzen du, euskal gastronomiaz eta kirolaz goza daitekeen Sports Kafea, hala nola erabat hornitua dagoen kiroldegia. &amp;lt;br/&amp;gt; &amp;lt;br/&amp;gt;Hotelak, ohe-jantziak eskaintzen ditu (izarak, edredoia,?), Wifi askatua gela guztietan, segurtasun txakila, maleta kontsigna, informazio turistikoa, irisgarritasuna, bezeroari arreta eta sauna.&amp;lt;br/&amp;gt;</turismdescription>
+    <templatetype>Ostatuak</templatetype>
+    <phone>946028847</phone>
+    <address>Plaza/Plaza Santa Kataliña, Nº 1</address>
+    <marks>Euskal Kostaldea</marks>
+    <physical>0</physical>
+    <visual>0</visual>
+    <auditive>0</auditive>
+    <intellectual>0</intellectual>
+    <organic>0</organic>
+    <tourismemail>info@mundakahostel.com</tourismemail>
+    <web>www.mundakahostel.com</web>
+    <lodgingtype>Aterpetxeak</lodgingtype>
+    <category>S</category>
+    <signatura>BBI00013</signatura>
+    <capacity>36</capacity>
+    <postalcode>48360</postalcode>
+    <latitudelongitude>43.409665581506154,-2.6984212304802213</latitudelongitude>
+    <latwgs84>43.409665581506154</latwgs84>
+    <lonwgs84>-2.6984212304802213</lonwgs84>
+    <municipality>Mundaka</municipality>
+    <municipalitycode>068</municipalitycode>
+    <territory>Bizkaia</territory>
+    <territorycode>48</territorycode>
+    <country>España</country>
+    <countrycode>108</countrycode>
+    <friendlyurl>http://opendata.euskadi.eus/katalogoa/-/eu/ostatuak/mundaka-hostel-sports-cafe/</friendlyurl>
+    <physicalurl>http://opendata.euskadi.eus/katalogoa/contenidos/a_alojamiento/0000083001_a1_rec_turismo/eu_83001/83001-ficha2.html</physicalurl>
+    <dataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000083001_a1_rec_turismo/eu_83001/data/83001_openData.xml</dataxml>
+    <metadataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000083001_a1_rec_turismo/r01Index/0000083001_a1_rec_turismo-idxContent.xml</metadataxml>
+    <zipfile>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000083001_a1_rec_turismo/opendata/0000083001_a1_rec_turismo.zip</zipfile>
+  </row>
+  <row num="31">
+    <documentname>QUARTIER  BILBAO</documentname>
+    <turismdescription>Quartier Bibao ostatu moderno eta abegikor bat da, Bilboko Alde zaharraren erdi-erdian kokatzen d...</turismdescription>
+    <turismdescription>Quartier Bibao ostatu moderno eta abegikor bat da, Bilboko &amp;lt;strong&amp;gt;Alde zaharra&amp;lt;/strong&amp;gt;ren erdi-erdian kokatzen dena, ibaiadarraren eta &amp;lt;strong&amp;gt;Santiago Katedralaren &amp;lt;/strong&amp;gt;artean. Oinezkoentzako gune nahiko lasai batean dago, dendaz inguratuta eta giro handieneko eremuetatik gertu, non tabernak eta jatetxeak dauden, hiriko gastronomiaz gozatzeko. &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Primerako konexioa du garraio publikoaren bidez: tranbia geltoki bat dago 50 m-ra, eta metro geltokia, 3 minutura. &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Sei solairuko eraikin horretan, Bilboko oihal denda garrantzitsuenetako bat egon zen garai batean, eta orain erabat eraberrituta dago. Gelak eta egongelak ditu, hainbat solairutan banatuta. &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Hainbat edukierako gelak ditu, bi pertsonentzako geletatik hasita, 10 pertsonako taldeentzako geletara. Zona komun guztiek doaneko Wi-Fi konexioa dute. &amp;lt;br/&amp;gt;</turismdescription>
+    <templatetype>Ostatuak</templatetype>
+    <phone>944978800</phone>
+    <address>Artekale Kalea/Calle, Nº 15</address>
+    <marks>Bilbao</marks>
+    <physical>0</physical>
+    <visual>0</visual>
+    <auditive>0</auditive>
+    <intellectual>0</intellectual>
+    <organic>0</organic>
+    <tourismemail>recepcion@quartierbilbao.com</tourismemail>
+    <web>www.quartierbilbao.com</web>
+    <lodgingtype>Aterpetxeak</lodgingtype>
+    <category>S</category>
+    <signatura>BBI00019</signatura>
+    <capacity>78</capacity>
+    <postalcode>48005</postalcode>
+    <municipality>Bilbao</municipality>
+    <municipalitycode>020</municipalitycode>
+    <territory>Bizkaia</territory>
+    <territorycode>48</territorycode>
+    <country>España</country>
+    <countrycode>108</countrycode>
+    <friendlyurl>http://opendata.euskadi.eus/katalogoa/-/eu/ostatuak/quartier-bibao/</friendlyurl>
+    <physicalurl>http://opendata.euskadi.eus/katalogoa/contenidos/a_alojamiento/0000089641_a1_rec_turismo/eu_89641/89641-ficha2.html</physicalurl>
+    <dataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000089641_a1_rec_turismo/eu_89641/data/89641_openData.xml</dataxml>
+    <metadataxml></metadataxml>
+    <zipfile></zipfile>
+  </row>
+  <row num="32">
+    <documentname>PIL PIL HOSTEL</documentname>
+    <turismdescription>Pil Pil Hostel Bilboren erdigunean dago, San Mames futbol zelaitik oso hurbil, eta hiriak dituen ...</turismdescription>
+    <turismdescription>Pil Pil Hostel Bilboren erdigunean dago, San Mames futbol zelaitik oso hurbil, eta hiriak dituen erakargune nagusietako batzuetatik minutu gutxira, oinez joateko moduan  esate baterako, Euskalduna Jauregia edo Guggenheim Bilbao Museoa.&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;2, 3 eta 4 pertsonarentzako logela pribatuak ditu, eta baita 6 edo 12 lagunek partekatzeko moduko logelak ere.  Gela guztiek Wifi konexioa eta banakako armairuak dituzte. Guztien erabilerarako guneetan kafea eta tea eskaintzen dituzte, doan, egun osoan zehar. Daukan etxarte handia toki ezin hobea da erlaxatzeko. &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Aterpean bertan bizikletak alokatu daitezke, eta aparkalekua dauka, nola motorrentzat, hala bizikletentzat.&amp;lt;br/&amp;gt;</turismdescription>
+    <templatetype>Ostatuak</templatetype>
+    <locality>Bilbao</locality>
+    <phone>944 345 544</phone>
+    <address>Sabino Arana Etorbidea 14</address>
+    <marks>Bilbao</marks>
+    <physical>0</physical>
+    <visual>0</visual>
+    <auditive>0</auditive>
+    <intellectual>0</intellectual>
+    <organic>0</organic>
+    <tourismemail>info@pilpilhostel.com</tourismemail>
+    <web>http://www.pilpilhostel.com</web>
+    <lodgingtype>Aterpetxeak</lodgingtype>
+    <category>S</category>
+    <visit>1</visit>
+    <signatura>BBI00003</signatura>
+    <capacity>63</capacity>
+    <postalcode>48013</postalcode>
+    <latitudelongitude>43.2627978,-2.946540099999993</latitudelongitude>
+    <latwgs84>43.2627978</latwgs84>
+    <lonwgs84>-2.946540099999993</lonwgs84>
+    <municipality>Bilbao</municipality>
+    <municipalitycode>020</municipalitycode>
+    <territory>Bizkaia</territory>
+    <territorycode>48</territorycode>
+    <country>España</country>
+    <countrycode>108</countrycode>
+    <friendlyurl>http://opendata.euskadi.eus/katalogoa/-/eu/ostatuak/pil-pil-hostel-bilbao/</friendlyurl>
+    <physicalurl>http://opendata.euskadi.eus/katalogoa/contenidos/a_alojamiento/0000066701_a1_rec_turismo/eu_66701/66701-ficha2.html</physicalurl>
+    <dataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000066701_a1_rec_turismo/eu_66701/data/66701_openData.xml</dataxml>
+    <metadataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000066701_a1_rec_turismo/r01Index/0000066701_a1_rec_turismo-idxContent.xml</metadataxml>
+    <zipfile>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000066701_a1_rec_turismo/opendata/0000066701_a1_rec_turismo.zip</zipfile>
+  </row>
+  <row num="33">
+    <documentname>SANTA BARBARA</documentname>
+    <turismdescription>Aterpetxea Urretxun dago, Urola Garaia eskualdean, izen bereko ibaiaren bazterrean eta Irimo mend...</turismdescription>
+    <turismdescription>Aterpetxea Urretxun dago, Urola Garaia eskualdean, izen bereko ibaiaren bazterrean eta Irimo mendiaren magalean. Talde handiei ostatu ematera bideratuta dago, eta 8-24 pertsonako edukiera duten logela handiak ditu, ohatzeetan banatuta. &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Taldeko jarduerak eta tailerrak egiten dira, eta, gainera, mendiko liburutegi bat ere badago mapekin, gidekin...&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Ostatuaz gain, jatetxe zerbitzua ere eskaintzen da. &amp;lt;br/&amp;gt;</turismdescription>
+    <templatetype>Ostatuak</templatetype>
+    <phone>943723387</phone>
+    <address>Santa Barbara auzoa, 40</address>
+    <marks>Gure Mendiak eta Haranak</marks>
+    <physical>0</physical>
+    <visual>0</visual>
+    <auditive>0</auditive>
+    <intellectual>0</intellectual>
+    <organic>0</organic>
+    <qualityassurance>1</qualityassurance>
+    <tourismemail>aterpetxea@urretxu.net</tourismemail>
+    <web>http://www.santabarbaraaterpetxea.com</web>
+    <lodgingtype>Aterpetxeak</lodgingtype>
+    <category>S</category>
+    <signatura>BSS00017</signatura>
+    <capacity>40</capacity>
+    <postalcode>20700</postalcode>
+    <latitudelongitude>43.09228115101246,-2.3343880435302253</latitudelongitude>
+    <latwgs84>43.09228115101246</latwgs84>
+    <lonwgs84>-2.3343880435302253</lonwgs84>
+    <municipality>Urretxu</municipality>
+    <municipalitycode>077</municipalitycode>
+    <territory>Gipuzkoa</territory>
+    <territorycode>20</territorycode>
+    <country>España</country>
+    <countrycode>108</countrycode>
+    <friendlyurl>http://opendata.euskadi.eus/katalogoa/-/eu/ostatuak/santa-barbara/</friendlyurl>
+    <physicalurl>http://opendata.euskadi.eus/katalogoa/contenidos/a_alojamiento/0000081541_a1_rec_turismo/eu_81541/81541-ficha2.html</physicalurl>
+    <dataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000081541_a1_rec_turismo/eu_81541/data/81541_openData.xml</dataxml>
+    <metadataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000081541_a1_rec_turismo/r01Index/0000081541_a1_rec_turismo-idxContent.xml</metadataxml>
+    <zipfile>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000081541_a1_rec_turismo/opendata/0000081541_a1_rec_turismo.zip</zipfile>
+  </row>
+  <row num="34">
+    <documentname>SURFING ETXEA</documentname>
+    <turismdescription>Espiritu surflaria baduzu eta lagunekin Donostian egun batzuk pasa nahi badituzu, Surfing Etxeak ...</turismdescription>
+    <turismdescription>Espiritu surflaria baduzu eta lagunekin Donostian egun batzuk pasa nahi badituzu, Surfing Etxeak espazio zabalak eskaintzen dizkizu elkarrekin bizitzeko eta logela erosoak, atseden hartzeko.&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Gainera, hainbat jarduera eskaintzen dira surfera hurbiltzeko. Hiriaren erdigunean dagoenez, leku egokia da ostatu hartzeko.</turismdescription>
+    <templatetype>Ostatuak</templatetype>
+    <phone>943011384</phone>
+    <address>Zabaleta 32</address>
+    <marks>Euskal Kostaldea,Donostia</marks>
+    <physical>0</physical>
+    <visual>0</visual>
+    <auditive>0</auditive>
+    <intellectual>0</intellectual>
+    <organic>0</organic>
+    <tourismemail>surfingetxea@gmail.com</tourismemail>
+    <web>www.surfingetxea.com</web>
+    <lodgingtype>Aterpetxeak</lodgingtype>
+    <category>S</category>
+    <signatura>BSS00009</signatura>
+    <capacity>18</capacity>
+    <postalcode>20002</postalcode>
+    <latitudelongitude>43.32483209999999,-1.9735878000000184</latitudelongitude>
+    <latwgs84>43.32483209999999</latwgs84>
+    <lonwgs84>-1.9735878000000184</lonwgs84>
+    <municipality>Donostia / San Sebastián</municipality>
+    <municipalitycode>069</municipalitycode>
+    <territory>Gipuzkoa</territory>
+    <territorycode>20</territorycode>
+    <country>España</country>
+    <countrycode>108</countrycode>
+    <friendlyurl>http://opendata.euskadi.eus/katalogoa/-/eu/ostatuak/surfing-etxea/</friendlyurl>
+    <physicalurl>http://opendata.euskadi.eus/katalogoa/contenidos/a_alojamiento/0000072681_a1_rec_turismo/eu_72681/72681-ficha2.html</physicalurl>
+    <dataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000072681_a1_rec_turismo/eu_72681/data/72681_openData.xml</dataxml>
+    <metadataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000072681_a1_rec_turismo/r01Index/0000072681_a1_rec_turismo-idxContent.xml</metadataxml>
+    <zipfile>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000072681_a1_rec_turismo/opendata/0000072681_a1_rec_turismo.zip</zipfile>
+  </row>
+  <row num="35">
+    <documentname>SAN FERMIN 1</documentname>
+    <turismdescription>Ostatu hau Donostiako alde zaharrean dago, erakargarritasun gastronomiko nahiz turistiko nagusiez...</turismdescription>
+    <turismdescription>Ostatu hau Donostiako alde zaharrean dago, erakargarritasun gastronomiko nahiz turistiko nagusiez inguratuta: Kontxako hondartza, Boulevard, Zurriolako hondartza, Kursaal Kongresu Jauregia, Victoria Eugenia Antzokia...&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Logela guztiek aire girotua dute eta establezimenduak eremu komun bat dauka doako wifiarekin.</turismdescription>
+    <templatetype>Ostatuak</templatetype>
+    <locality>Donostia / San Sebastián</locality>
+    <phone>943425461</phone>
+    <address>Fermin Calbeton 23</address>
+    <marks>Donostia</marks>
+    <physical>0</physical>
+    <visual>0</visual>
+    <auditive>0</auditive>
+    <intellectual>0</intellectual>
+    <organic>0</organic>
+    <tourismemail>maitaneuzkudun@gmail.com</tourismemail>
+    <web>http://www.hostelsanfermin.com</web>
+    <lodgingtype>Aterpetxeak</lodgingtype>
+    <category>S</category>
+    <signatura>BSS00006</signatura>
+    <capacity>44</capacity>
+    <postalcode>20003</postalcode>
+    <latitudelongitude>43.323169,-1.9848454000000402</latitudelongitude>
+    <latwgs84>43.323169</latwgs84>
+    <lonwgs84>-1.9848454000000402</lonwgs84>
+    <municipality>Donostia / San Sebastián</municipality>
+    <municipalitycode>069</municipalitycode>
+    <territory>Gipuzkoa</territory>
+    <territorycode>20</territorycode>
+    <country>España</country>
+    <countrycode>108</countrycode>
+    <friendlyurl>http://opendata.euskadi.eus/katalogoa/-/eu/ostatuak/hostel-san-fermin/</friendlyurl>
+    <physicalurl>http://opendata.euskadi.eus/katalogoa/contenidos/a_alojamiento/0000069821_a1_rec_turismo/eu_69821/69821-ficha2.html</physicalurl>
+    <dataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000069821_a1_rec_turismo/eu_69821/data/69821_openData.xml</dataxml>
+    <metadataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000069821_a1_rec_turismo/r01Index/0000069821_a1_rec_turismo-idxContent.xml</metadataxml>
+    <zipfile>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000069821_a1_rec_turismo/opendata/0000069821_a1_rec_turismo.zip</zipfile>
+  </row>
+  <row num="36">
+    <documentname>SAN FERMIN 2</documentname>
+    <turismdescription>Ostatu hau Donostiako alde zaharrean dago, erakargarritasun gastronomiko nahiz turistiko nagusiez...</turismdescription>
+    <turismdescription>Ostatu hau Donostiako alde zaharrean dago, erakargarritasun gastronomiko nahiz turistiko nagusiez inguratuta: Kontxako hondartza, Boulevard, Zurriolako hondartza, Kursaal Kongresu Jauregia, Victoria Eugenia Antzokia...&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Logela guztiek aire girotua dute eta establezimenduak eremu komun bat dauka doako wifiarekin.</turismdescription>
+    <templatetype>Ostatuak</templatetype>
+    <locality>Donostia / San Sebastián</locality>
+    <phone>943425491</phone>
+    <address>Fermin Calbeton 23</address>
+    <physical>0</physical>
+    <visual>0</visual>
+    <auditive>0</auditive>
+    <intellectual>0</intellectual>
+    <organic>0</organic>
+    <tourismemail>maitaneuzkudun@gmail.com</tourismemail>
+    <web>http://www.hostelsanfermin.com</web>
+    <lodgingtype>Aterpetxeak</lodgingtype>
+    <category>S</category>
+    <signatura>BSS00007</signatura>
+    <capacity>18</capacity>
+    <postalcode>20003</postalcode>
+    <latitudelongitude>43.32320022070623,-1.984974146032755</latitudelongitude>
+    <latwgs84>43.32320022070623</latwgs84>
+    <lonwgs84>-1.984974146032755</lonwgs84>
+    <municipality>Donostia / San Sebastián</municipality>
+    <municipalitycode>069</municipalitycode>
+    <territory>Gipuzkoa</territory>
+    <territorycode>20</territorycode>
+    <country>España</country>
+    <countrycode>108</countrycode>
+    <friendlyurl>http://opendata.euskadi.eus/katalogoa/-/eu/ostatuak/hostel-san-fermin2/</friendlyurl>
+    <physicalurl>http://opendata.euskadi.eus/katalogoa/contenidos/a_alojamiento/0000069841_a1_rec_turismo/eu_69841/69841-ficha2.html</physicalurl>
+    <dataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000069841_a1_rec_turismo/eu_69841/data/69841_openData.xml</dataxml>
+    <metadataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000069841_a1_rec_turismo/r01Index/0000069841_a1_rec_turismo-idxContent.xml</metadataxml>
+    <zipfile>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000069841_a1_rec_turismo/opendata/0000069841_a1_rec_turismo.zip</zipfile>
+  </row>
+  <row num="37">
+    <documentname>UZTARTZA</documentname>
+    <turismdescription>Ostatua Adunan dago, Donostiatik 18 km-ra soilik dagoen udalerri txiki batean  hain zuzen, herrik...</turismdescription>
+    <turismdescription>Ostatua Adunan dago, Donostiatik 18 km-ra soilik dagoen udalerri txiki batean  hain zuzen, herriko elizaren eta pilotalekuaren ondoan dago. Inguru lasaia da, eta paisaia ikusgarrian jarduerak egiteko ezin hobea da, naturarekin harremanetan. &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Instalazioa moldakorra denez, oso egokia da familia edo taldeentzat. Aterpetxe osoa, logelaka edo banakako oheka alokatu daiteke.&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Gosari zerbitzua eskaintzen du, bai eta garbigailu, lehorgailu, maindire eta toalla alokairu zerbitzua ere.&amp;lt;br/&amp;gt;</turismdescription>
+    <templatetype>Ostatuak</templatetype>
+    <phone>943693481</phone>
+    <address>Herriko Plaza 7</address>
+    <marks>Gure Mendiak eta Haranak</marks>
+    <physical>0</physical>
+    <visual>0</visual>
+    <auditive>0</auditive>
+    <intellectual>0</intellectual>
+    <organic>0</organic>
+    <tourismemail>info@albergueuztartza.com</tourismemail>
+    <web>http://www.albergueuztartza.com</web>
+    <lodgingtype>Aterpetxeak</lodgingtype>
+    <category>S</category>
+    <signatura>BSS00012</signatura>
+    <capacity>47</capacity>
+    <postalcode>20150</postalcode>
+    <latitudelongitude>43.2032763869082,-2.0495143981476076</latitudelongitude>
+    <latwgs84>43.2032763869082</latwgs84>
+    <lonwgs84>-2.0495143981476076</lonwgs84>
+    <municipality>Aduna</municipality>
+    <municipalitycode>002</municipalitycode>
+    <territory>Gipuzkoa</territory>
+    <territorycode>20</territorycode>
+    <country>España</country>
+    <countrycode>108</countrycode>
+    <friendlyurl>http://opendata.euskadi.eus/katalogoa/-/eu/ostatuak/uztartza/</friendlyurl>
+    <physicalurl>http://opendata.euskadi.eus/katalogoa/contenidos/a_alojamiento/0000081801_a1_rec_turismo/eu_81801/81801-ficha2.html</physicalurl>
+    <dataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000081801_a1_rec_turismo/eu_81801/data/81801_openData.xml</dataxml>
+    <metadataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000081801_a1_rec_turismo/r01Index/0000081801_a1_rec_turismo-idxContent.xml</metadataxml>
+    <zipfile>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000081801_a1_rec_turismo/opendata/0000081801_a1_rec_turismo.zip</zipfile>
+  </row>
+  <row num="38">
+    <documentname>ZARAUTZ HOSTEL</documentname>
+    <turismdescription>2014an inauguratu den ostatu hau 5 minutu eskasera dago hondartzatik. Zarauzko hondartza, itsasor...</turismdescription>
+    <turismdescription>2014an inauguratu den ostatu hau 5 minutu eskasera dago hondartzatik. Zarauzko hondartza, itsasora irekia eta alde bietatik itsas labarrek inguratua, 2.500 metro luze da, eta surflarien hondartza gogokoenetako bat da bere olatu ikusgarriengatik. &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Ostatuak terraza zabal bat du, gune komunak eta goitik behera hornitutako 2 sukalde, zure otorduak presta ditzazun. Interneterako konexioa, wifia doan eta gosari zerbitzua. &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Hondartzaz gainera, Zarauzko hirigune historikoa eta ingurune natural paregabe bat ezagutuko dituzu. &amp;lt;br/&amp;gt;</turismdescription>
+    <templatetype>Ostatuak</templatetype>
+    <locality>Zarautz</locality>
+    <phone>943833893</phone>
+    <address>Gipuzkoa 59</address>
+    <marks>Euskal Kostaldea</marks>
+    <physical>0</physical>
+    <visual>0</visual>
+    <auditive>0</auditive>
+    <intellectual>0</intellectual>
+    <organic>0</organic>
+    <tourismemail>info@zarautzhostel.com</tourismemail>
+    <web>http://www.zarautzhostel.com</web>
+    <lodgingtype>Aterpetxeak</lodgingtype>
+    <category>S</category>
+    <signatura>BSS00008</signatura>
+    <capacity>24</capacity>
+    <postalcode>20800</postalcode>
+    <latitudelongitude>43.2846099,-2.158893600000056</latitudelongitude>
+    <latwgs84>43.2846099</latwgs84>
+    <lonwgs84>-2.158893600000056</lonwgs84>
+    <municipality>Zarautz</municipality>
+    <municipalitycode>079</municipalitycode>
+    <territory>Gipuzkoa</territory>
+    <territorycode>20</territorycode>
+    <country>España</country>
+    <countrycode>108</countrycode>
+    <friendlyurl>http://opendata.euskadi.eus/katalogoa/-/eu/ostatuak/zarutz-aterpetxea/</friendlyurl>
+    <physicalurl>http://opendata.euskadi.eus/katalogoa/contenidos/a_alojamiento/0000068181_a1_rec_turismo/eu_68181/68181-ficha2.html</physicalurl>
+    <dataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000068181_a1_rec_turismo/eu_68181/data/68181_openData.xml</dataxml>
+    <metadataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000068181_a1_rec_turismo/r01Index/0000068181_a1_rec_turismo-idxContent.xml</metadataxml>
+    <zipfile>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000068181_a1_rec_turismo/opendata/0000068181_a1_rec_turismo.zip</zipfile>
+  </row>
+  <row num="39">
+    <documentname>TRINKETE ETXEA ATERPETXEA</documentname>
+    <turismdescription>Aterpetxea erabat birgaituta dago eta 2, 4, 5 eta 6 pertsonarentzako logelak eta bainugela komune...</turismdescription>
+    <turismdescription>Aterpetxea erabat birgaituta dago eta 2, 4, 5 eta 6 pertsonarentzako logelak eta bainugela komunen 7 plaza ditu. Aukera ezin hobea da taldeentzako nahiz familiako oporraldietarako. &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Lekeitio itsas udalerrian dago, oinez minutu gutxira ditu hondartzak eta naturaz inguratuta dago. &amp;lt;br/&amp;gt;</turismdescription>
+    <templatetype>Ostatuak</templatetype>
+    <address>Eusebio Maria de Azkue 5.</address>
+    <marks>Euskal Kostaldea</marks>
+    <physical>0</physical>
+    <visual>0</visual>
+    <auditive>0</auditive>
+    <intellectual>0</intellectual>
+    <organic>0</organic>
+    <web>http://www.ateri.net</web>
+    <lodgingtype>Aterpetxeak</lodgingtype>
+    <category>S</category>
+    <signatura>BBI00018</signatura>
+    <capacity>54</capacity>
+    <postalcode>48280</postalcode>
+    <latitudelongitude>43.36709073139007,-2.5047850472213895</latitudelongitude>
+    <latwgs84>43.36709073139007</latwgs84>
+    <lonwgs84>-2.5047850472213895</lonwgs84>
+    <municipality>Lekeitio</municipality>
+    <municipalitycode>057</municipalitycode>
+    <territory>Bizkaia</territory>
+    <territorycode>48</territorycode>
+    <country>España</country>
+    <countrycode>108</countrycode>
+    <friendlyurl>http://opendata.euskadi.eus/katalogoa/-/eu/ostatuak/trinkete/</friendlyurl>
+    <physicalurl>http://opendata.euskadi.eus/katalogoa/contenidos/a_alojamiento/0000083041_a1_rec_turismo/eu_83041/83041-ficha2.html</physicalurl>
+    <dataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000083041_a1_rec_turismo/eu_83041/data/83041_openData.xml</dataxml>
+    <metadataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000083041_a1_rec_turismo/r01Index/0000083041_a1_rec_turismo-idxContent.xml</metadataxml>
+    <zipfile>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000083041_a1_rec_turismo/opendata/0000083041_a1_rec_turismo.zip</zipfile>
+  </row>
+  <row num="40">
+    <documentname>URBAN HOUSE</documentname>
+    <turismdescription>Urban house aterpetxea Gipuzkoa Plazan dago, Donostiako Alde Zaharraren ondoan, Kontxako eta Zurr...</turismdescription>
+    <turismdescription>Urban house aterpetxea Gipuzkoa Plazan dago, Donostiako Alde Zaharraren ondoan, Kontxako eta Zurriolako hondartzetatik oso hurbil. &amp;lt;br/&amp;gt;Surf oholak eta bizikletak alokatu eta jarduerak antolatzen dituzte egunero. &amp;lt;br/&amp;gt;Aterpetxeak 7 gela ditu, 30 lagunentzat. Harrera zabalik dago 10:00etatik 22:00etara.</turismdescription>
+    <templatetype>Ostatuak</templatetype>
+    <locality>Donostia / San Sebastián</locality>
+    <phone>943 428 154</phone>
+    <address>Gipuzkoa Plaza 2</address>
+    <marks>Donostia</marks>
+    <physical>0</physical>
+    <visual>0</visual>
+    <auditive>0</auditive>
+    <intellectual>0</intellectual>
+    <organic>0</organic>
+    <tourismemail>urbanhousehostel@gmail.com</tourismemail>
+    <web>http://urbanhousesansebastian.com/</web>
+    <lodgingtype>Aterpetxeak</lodgingtype>
+    <category>S</category>
+    <signatura>BSS00004</signatura>
+    <capacity>30</capacity>
+    <postalcode>20004</postalcode>
+    <latitudelongitude>43.32156459999999,-1.9827103999999736</latitudelongitude>
+    <latwgs84>43.32156459999999</latwgs84>
+    <lonwgs84>-1.9827103999999736</lonwgs84>
+    <municipality>Donostia / San Sebastián</municipality>
+    <municipalitycode>069</municipalitycode>
+    <territory>Gipuzkoa</territory>
+    <territorycode>20</territorycode>
+    <country>España</country>
+    <countrycode>108</countrycode>
+    <friendlyurl>http://opendata.euskadi.eus/katalogoa/-/eu/ostatuak/urbanhouse-landetxea/</friendlyurl>
+    <physicalurl>http://opendata.euskadi.eus/katalogoa/contenidos/a_alojamiento/0000067061_a1_rec_turismo/eu_67061/67061-ficha2.html</physicalurl>
+    <dataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000067061_a1_rec_turismo/eu_67061/data/67061_openData.xml</dataxml>
+    <metadataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000067061_a1_rec_turismo/r01Index/0000067061_a1_rec_turismo-idxContent.xml</metadataxml>
+    <zipfile>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000067061_a1_rec_turismo/opendata/0000067061_a1_rec_turismo.zip</zipfile>
+  </row>
+  <row num="41">
+    <documentname>ZIORTZA BEITIA</documentname>
+    <turismdescription>Ziortza-Bolibarren, Ziortzako Monasterioaren ondoan, ingurune pribilegiatu batean kokatutako ater...</turismdescription>
+    <turismdescription>Ziortza-Bolibarren, Ziortzako Monasterioaren ondoan, ingurune pribilegiatu batean kokatutako aterpetxea, mendiz inguratuta eta hondartzetatik oso hurbil.  &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Aterpetxe bikaina Donejakue Bidea oinez edo bizikletaz egiten ari diren erromesentzat.  &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Gela pribatuak eta partekatuak, hainbat edukieratakoak  horietako batzuk bainugelarekin. &amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;Jatetxe zerbitzua ere badu, etxeko sukaldaritzarekin  gosariak, bazkariak eta afariak bertoko produktuekin.  &amp;lt;br/&amp;gt;</turismdescription>
+    <templatetype>Ostatuak</templatetype>
+    <phone>946165722</phone>
+    <address>Auzoa/Barrio Goierria Ziortza, Nº 13.</address>
+    <marks>Gure Mendiak eta Haranak</marks>
+    <physical>0</physical>
+    <visual>0</visual>
+    <auditive>0</auditive>
+    <intellectual>0</intellectual>
+    <organic>0</organic>
+    <tourismemail>info@ziortzabeitia.com</tourismemail>
+    <web>http://www.ziortzabeitia.com</web>
+    <lodgingtype>Aterpetxeak</lodgingtype>
+    <category>S</category>
+    <restaurant>1</restaurant>
+    <signatura>BBI00010</signatura>
+    <capacity>46</capacity>
+    <postalcode>48278</postalcode>
+    <latitudelongitude>43.247532247026115,-2.558726650262429</latitudelongitude>
+    <latwgs84>43.247532247026115</latwgs84>
+    <lonwgs84>-2.558726650262429</lonwgs84>
+    <municipality>Ziortza-Bolibar</municipality>
+    <municipalitycode>915</municipalitycode>
+    <territory>Bizkaia</territory>
+    <territorycode>48</territorycode>
+    <country>España</country>
+    <countrycode>108</countrycode>
+    <friendlyurl>http://opendata.euskadi.eus/katalogoa/-/eu/ostatuak/ziortza-beitia/</friendlyurl>
+    <physicalurl>http://opendata.euskadi.eus/katalogoa/contenidos/a_alojamiento/0000082202_a1_rec_turismo/eu_82202/82202-ficha2.html</physicalurl>
+    <dataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000082202_a1_rec_turismo/eu_82202/data/82202_openData.xml</dataxml>
+    <metadataxml>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000082202_a1_rec_turismo/r01Index/0000082202_a1_rec_turismo-idxContent.xml</metadataxml>
+    <zipfile>http://opendata.euskadi.eus/contenidos/a_alojamiento/0000082202_a1_rec_turismo/opendata/0000082202_a1_rec_turismo.zip</zipfile>
+  </row>
+</rows>

@@ -34,13 +34,13 @@ public class Prueba {
 			ArrayList<Modelo.TipoAlbergueEuskera>tiposAlberguesEuskera=new ArrayList<Modelo.TipoAlbergueEuskera>();
 			ArrayList<String> ficherosXML = new ArrayList<String>();
 			ArrayList<String> ficherosXMLEuskera=new ArrayList<String>();
-			ficherosXML.add("alojamientos_albergues.xml");
-			ficherosXML.add("alojamientos_camping.xml");
-			ficherosXML.add("alojamientos_rural.xml");
+			ficherosXML.add(Prueba.class.getResource("/Resources/alojamientos_albergues.xml").getPath());
+			ficherosXML.add(Prueba.class.getResource("/Resources/alojamientos_camping.xml").getPath());
+			ficherosXML.add(Package.class.getResource("/Resources/alojamientos_rural.xml").getPath());
 			
-			ficherosXMLEuskera.add("alojamientos_albergues_eus.xml");
-			ficherosXMLEuskera.add("alojamientos_camping_eus.xml");
-			ficherosXMLEuskera.add("alojamientos_rural_eus.xml");
+			ficherosXMLEuskera.add(Prueba.class.getResource("/Resources/alojamientos_albergues_eus.xml").getPath());
+			ficherosXMLEuskera.add(Prueba.class.getResource("Resources/alojamientos_camping_eus.xml").getPath());
+			ficherosXMLEuskera.add(Prueba.class.getResource("/Resources/alojamientos_rural_eus.xml").getPath());
 
 			cambiarCaracteresEspeciales(ficherosXML);
 			cambiarCaracteresEspeciales(ficherosXMLEuskera);
@@ -51,10 +51,10 @@ public class Prueba {
 				if(alojamiento.getFirma()==null)
 					alojamientos.remove(alojamiento);
 			}
-		//	creacionBBDD_Tablas("reto_gp2", "kasserver.synology.me", 3307, "gp2", "NuG7FqwibR1ZAuKy");
-		//	poblarTablas("reto_gp2", " kasserver.synology.me", 3307, "gp2", "NuG7FqwibR1ZAuKy", alojamientos, categorias, codigosPostales, municipios, provincias, tiposAlbergues, tiposAlberguesEuskera);
-			creacionBBDD_Tablas("labetxe", "localhost", 0, "root", "");
-	 	    poblarTablas("labetxe", "localhost", 0, "root", "", alojamientos, categorias, codigosPostales, municipios, provincias, tiposAlbergues, tiposAlberguesEuskera);
+			creacionBBDD_Tablas("reto_gp2", "kasserver.synology.me", 3307, "gp2", "NuG7FqwibR1ZAuKy");
+			poblarTablas("reto_gp2", " kasserver.synology.me", 3307, "gp2", "NuG7FqwibR1ZAuKy", alojamientos, categorias, codigosPostales, municipios, provincias, tiposAlbergues, tiposAlberguesEuskera);
+		//	creacionBBDD_Tablas("labetxe", "localhost", 0, "root", "");
+	 	//  poblarTablas("labetxe", "localhost", 0, "root", "", alojamientos, categorias, codigosPostales, municipios, provincias, tiposAlbergues, tiposAlberguesEuskera);
 	// 	Conexion.cerrar1();
 
 		} catch (SAXException e) {

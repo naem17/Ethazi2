@@ -192,7 +192,7 @@ public class AlojamientoSAX extends DefaultHandler {
 				municipios.add(new Municipio(municipio.getCod(), municipio.getMunicipio(),
 						municipios.isEmpty() ? 0 : municipios.get(municipios.size() - 1).getIndice() + 1));
 			alojamientos.get(alojamientos.size() - 1)
-					.setMunicipio(new Municipio(municipio.getCod(), municipio.getMunicipio()));
+					.setMunicipio(new Municipio(municipios.get(i).getCod(), municipios.get(i).getMunicipio(), municipios.get(i).getIndice()));
 		}
 
 		// Guarda Provincia

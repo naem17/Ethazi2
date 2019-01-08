@@ -72,9 +72,7 @@ public class AlojamientoSAX_INFO_EUSKERA extends DefaultHandler{
 			alojamiento.setDescripcionEuskera(null);
 			alojamiento.setDescripcionNOAbreviadaEuskera(null);
 			alojamiento.setTipoEuskera(null);
-		}
-		
-			
+		}	
 	}
 	@Override
 	public void characters(char[] ch, int start, int length) throws SAXException {
