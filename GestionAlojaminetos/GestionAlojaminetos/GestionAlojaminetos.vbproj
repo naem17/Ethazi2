@@ -93,16 +93,24 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BarraSuperior.aspx" />
     <Content Include="Imagenes\fondo.jpg" />
     <Content Include="Loggin.aspx" />
     <Content Include="Estilos.css" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="WebForm1.aspx" />
+    <Content Include="Bienvenida.aspx" />
     <Content Include="XML\alojamientos.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BarraSuperior.aspx.designer.vb">
+      <DependentUpon>BarraSuperior.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BarraSuperior.aspx.vb">
+      <DependentUpon>BarraSuperior.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Conexion.vb" />
     <Compile Include="Loggin.aspx.designer.vb">
       <DependentUpon>Loggin.aspx</DependentUpon>
@@ -137,11 +145,11 @@
       <DependentUpon>Site1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm1.aspx.designer.vb">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="Bienvenida.aspx.designer.vb">
+      <DependentUpon>Bienvenida.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm1.aspx.vb">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="Bienvenida.aspx.vb">
+      <DependentUpon>Bienvenida.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>

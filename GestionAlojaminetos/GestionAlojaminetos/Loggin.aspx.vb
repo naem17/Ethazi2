@@ -27,7 +27,10 @@ Public Class Indice
             Dim das1 As MySqlDataReader
             das1 = cmd1.ExecuteReader()
             If das1.HasRows() Then
-                Response.Redirect("WebForm1.aspx")
+                Response.Redirect("Bienvenida.aspx")
+                Dim x As LoginName
+                x = Master.FindControl("NombreDeUsuario")
+                x. = "IBON"
             Else
                 MsgBox("Datos incorrectos")
             End If
