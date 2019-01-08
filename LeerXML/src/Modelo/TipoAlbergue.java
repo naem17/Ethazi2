@@ -32,9 +32,6 @@ public class TipoAlbergue {
 
 	@Override
 	public String toString() {
-		return "TipoAlbergue [id=" + id + ", tipo=" + tipo + "]";
+		return "TipoAlbergue [id=" + id + ", tipo=" + tipo +"]";
 	}
-	
-	
-
 }

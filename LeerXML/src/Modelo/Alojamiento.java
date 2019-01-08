@@ -1,17 +1,12 @@
 package Modelo;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
-
-@Entity
-@Table(name= "ALOJAMIENTOS")
 public class Alojamiento {
-	@Column(name="NOMBRE")
+	private String firma; //FIRMA VARCHAR(8)
 	private String nombre; //NOMBRE VARCHAR(50)
-	@Column(name="DESCRIPCION")
-	private String descripcionAbreviada; //DESCRIPCION_ABREVIADA VARCHAR(100)
+	private String descripcionAbreviada; //DESCRIPCION_ABREVIADA VARCHAR(100) 
+	private String descripcionEuskera; //DESCRIPCION_ABREVIADA_EUSKERA VARCHAR(100)
 	private String descripcionNOAbreviada; //DESCRIPCION_NO_ABREVIADA VARCHAR(1500)
+	private String descripcionNOAbreviadaEuskera; //DESCRIPCION_NO_ABREVIADA_EUSKERA VARCHAR(1500)
 	private String telefono; //TELEFONO VARCHAR(15)
 	private String direccion; //DIRECCION VARCHAR(100)
 	private boolean calidadAsegurada; //CALIDAD_ASEGURADA BOOLEAN
@@ -28,6 +23,7 @@ public class Alojamiento {
 	
 	//Claves foráneas
 	private TipoAlbergue tipo;
+	private TipoAlbergueEuskera tipoEuskera;
 	private Categorias categoria;
 	private Municipio municipio;
 	private Provincia provincia;
@@ -176,14 +172,48 @@ public class Alojamiento {
 	}
 	
 
+	
+	public String getDescripcionEuskera() {
+		return descripcionEuskera;
+	}
+	public void setDescripcionEuskera(String descripcionEuskera) {
+		this.descripcionEuskera = descripcionEuskera;
+	}
+	public String getDescripcionNOAbreviadaEuskera() {
+		return descripcionNOAbreviadaEuskera;
+	}
+	public void setDescripcionNOAbreviadaEuskera(String descripcionNOAbreviadaEuskera) {
+		this.descripcionNOAbreviadaEuskera = descripcionNOAbreviadaEuskera;
+	}
+	
+	public String getFirma() {
+		return firma;
+	}
+	public void setFirma(String firma) {
+		this.firma = firma;
+	}
+	public TipoAlbergueEuskera getTipoEuskera() {
+		return tipoEuskera;
+	}
+	public void setTipoEuskera(TipoAlbergueEuskera tipoEuskera) {
+		this.tipoEuskera = tipoEuskera;
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		return this.firma.compareToIgnoreCase(((Alojamiento)obj).getFirma())==0;
+	}
 	@Override
 	public String toString() {
-		return "Alojamiento [nombre=" + nombre + ", descripcionAbreviada=" + descripcionAbreviada + ", descripcionNOAbreviada="
-				+ descripcionNOAbreviada + ", telefono=" + telefono + ", direccion=" + direccion + ", calidadAsegurada="
-				+ calidadAsegurada + ", email=" + email + ", webURL=" + webURL + ", club=" + club
-				+ ", restaurant=" + restaurant + ", autocaravana=" + autocaravana + ", tienda=" + tienda
-				+ ", capacidad=" + capacidad + ", gastronomico=" + gastronomico + ", surfing=" + surfing
-				+ ", coordenadas=" + coordenadas + ", tipo=" + tipo + ", categoria=" + categoria + ", municipio="
-				+ municipio + ", provincia=" + provincia + ", cp=" + cp + "]";
+		return "Alojamiento [firma=" + firma + ", nombre=" + nombre + ", descripcionAbreviada=" + descripcionAbreviada
+				+ ", descripcionEuskera=" + descripcionEuskera + ", descripcionNOAbreviada=" + descripcionNOAbreviada
+				+ ", descripcionNOAbreviadaEuskera=" + descripcionNOAbreviadaEuskera + ", telefono=" + telefono
+				+ ", direccion=" + direccion + ", calidadAsegurada=" + calidadAsegurada + ", email=" + email
+				+ ", webURL=" + webURL + ", club=" + club + ", restaurant=" + restaurant + ", autocaravana="
+				+ autocaravana + ", tienda=" + tienda + ", capacidad=" + capacidad + ", gastronomico=" + gastronomico
+				+ ", surfing=" + surfing + ", coordenadas=" + coordenadas + ", tipo=" + tipo + ", tipoEuskera="
+				+ tipoEuskera + ", categoria=" + categoria + ", municipio=" + municipio + ", provincia=" + provincia
+				+ ", cp=" + cp + "]";
 	}
+	
 }
