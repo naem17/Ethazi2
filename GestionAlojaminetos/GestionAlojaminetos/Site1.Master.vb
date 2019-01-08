@@ -1,8 +1,8 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class Site1
     Inherits System.Web.UI.MasterPage
-    Dim cnstring As String = "Data Source=localhost;Database=labetxe;Uid=root;Pwd=;"
-    Dim cnn1 As New MySqlConnection(cnstring)
+    Public Shared cnstring As String = "Data Source=localhost;Database=labetxe;Uid=root;Pwd=;"
+    Public Shared cnn1 As New MySqlConnection(cnstring)
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         Try
             If cnn1.State = ConnectionState.Closed Then
