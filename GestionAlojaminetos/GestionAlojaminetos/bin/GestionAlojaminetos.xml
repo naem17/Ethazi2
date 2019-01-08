@@ -73,18 +73,27 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:GestionAlojaminetos.Site1._etiqueta1">
+<member name="F:GestionAlojaminetos.Site1._BarraSuperior">
 <summary>
-Control etiqueta1.
+Control BarraSuperior.
 </summary>
 <remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:GestionAlojaminetos.Site1._ContentPlaceHolder1">
+<member name="F:GestionAlojaminetos.Site1._LoginName1">
 <summary>
-Control ContentPlaceHolder1.
+Control LoginName1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:GestionAlojaminetos.Site1._Cuerpo">
+<summary>
+Control Cuerpo.
 </summary>
 <remarks>
 Campo generado automáticamente.

@@ -32,20 +32,29 @@ Partial Public Class Site1
     Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
     
     '''<summary>
-    '''Control etiqueta1.
+    '''Control BarraSuperior.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents etiqueta1 As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents BarraSuperior As Global.System.Web.UI.WebControls.ContentPlaceHolder
     
     '''<summary>
-    '''Control ContentPlaceHolder1.
+    '''Control LoginName1.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents ContentPlaceHolder1 As Global.System.Web.UI.WebControls.ContentPlaceHolder
+    Protected WithEvents LoginName1 As Global.System.Web.UI.WebControls.LoginName
+    
+    '''<summary>
+    '''Control Cuerpo.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Cuerpo As Global.System.Web.UI.WebControls.ContentPlaceHolder
 End Class

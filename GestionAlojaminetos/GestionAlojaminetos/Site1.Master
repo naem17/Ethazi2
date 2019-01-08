@@ -16,12 +16,14 @@
         <table class="tabla_madre">
             <tr>
                 <td>
-                    <asp:Label ID="etiqueta1" runat="server" Text="aaa"></asp:Label>
+                    <asp:ContentPlaceHolder ID="BarraSuperior" runat="server">
+                        <asp:LoginName ID="LoginName1" runat="server" />
+                    </asp:ContentPlaceHolder>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    <asp:ContentPlaceHolder ID="Cuerpo" runat="server">
                     </asp:ContentPlaceHolder>
                 </td>
             </tr>
