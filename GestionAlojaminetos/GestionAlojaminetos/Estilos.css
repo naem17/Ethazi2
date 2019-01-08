@@ -1,0 +1,28 @@
+﻿.box {
+    
+    position: fixed;
+    margin-left: 9%;
+    margin-top: 9%;
+    top: 25%;
+    left: 35%;
+    text-align: center;
+}
+
+.fondo {
+    background-image: url("./Imagenes/fondo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+}
+
+.tabla_madre {
+    width: 100%;
+}
+
+.footer {
+    background-color: #279fe5;
+    font-style: inherit;
+    color: azure;
+}
