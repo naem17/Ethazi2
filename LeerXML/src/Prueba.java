@@ -19,6 +19,7 @@ import org.xml.sax.helpers.XMLReaderFactory;
 import Modelo.Alojamiento;
 import Modelo.TipoAlbergueEuskera;
 
+//DEFINITIVO
 
 public class Prueba {
 
