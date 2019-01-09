@@ -24,6 +24,7 @@ Public Class BarraSuperior
             'adapter.Fill(dt)
             tablas.Load(reader)
 
+            Me.GridView1.DataSource = tablas
         Catch ex As MySqlException
             MsgBox("Error1: " & ex.Message)
         Finally
@@ -35,4 +36,5 @@ Public Class BarraSuperior
     'FROM INFORMATION_SCHEMA.COLUMNS
     'WHERE TABLE_SCHEMA ='labetxe';
 
+    'SELECT COUNT(*) AS ColumnCount FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'alojamientos'
 End Class
