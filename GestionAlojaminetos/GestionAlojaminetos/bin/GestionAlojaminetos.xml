@@ -53,9 +53,36 @@ GestionAlojaminetos
   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
 </summary>
 </member>
-<member name="F:GestionAlojaminetos.BarraSuperior._GridView1">
+<member name="F:GestionAlojaminetos.BarraSuperior._Image1">
 <summary>
-Control GridView1.
+Control Image1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:GestionAlojaminetos.BarraSuperior._Update_Rbtn">
+<summary>
+Control Update_Rbtn.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:GestionAlojaminetos.BarraSuperior._Delete_Rbtn">
+<summary>
+Control Delete_Rbtn.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:GestionAlojaminetos.BarraSuperior._Select_Rbtn">
+<summary>
+Control Select_Rbtn.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -101,15 +128,6 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:GestionAlojaminetos.Site1._BarraSuperior">
 <summary>
 Control BarraSuperior.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:GestionAlojaminetos.Site1._NombreDeUsuario">
-<summary>
-Control NombreDeUsuario.
 </summary>
 <remarks>
 Campo generado automáticamente.

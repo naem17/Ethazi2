@@ -41,15 +41,6 @@ Partial Public Class Site1
     Protected WithEvents BarraSuperior As Global.System.Web.UI.WebControls.ContentPlaceHolder
     
     '''<summary>
-    '''Control NombreDeUsuario.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents NombreDeUsuario As Global.System.Web.UI.WebControls.LoginName
-    
-    '''<summary>
     '''Control Cuerpo.
     '''</summary>
     '''<remarks>

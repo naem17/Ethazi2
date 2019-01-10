@@ -17,7 +17,6 @@
             <tr>
                 <td>
                     <asp:ContentPlaceHolder ID="BarraSuperior" runat="server">
-                        <asp:LoginName ID="NombreDeUsuario" runat="server" />
                     </asp:ContentPlaceHolder>
                 </td>
             </tr>
