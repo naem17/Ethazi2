@@ -7,7 +7,6 @@ Public Class BarraSuperior
 
             Dim cmd1 = New MySqlCommand
             Dim tablas = New DataTable
-            Dim adp = New MySqlDataAdapter
 
             If (cnn1.State = ConnectionState.Closed) Then
                 cnn1.Open()
@@ -17,19 +16,18 @@ Public Class BarraSuperior
             cmd1.CommandText = "SELECT DISTINCT TABLE_NAME " +
                 "FROM INFORMATION_SCHEMA.COLUMNS " +
                 "WHERE TABLE_SCHEMA ='labetxe'"
+            Dim das1 As MySqlDataReader
+            das1 = cmd1.ExecuteReader()
 
-            adp.SelectCommand = cmd1
-            Dim reader = cmd1.ExecuteReader
-
-            'adapter.Fill(dt)
-            tablas.Load(reader)
-
-            Me.GridView1.DataSource = tablas
         Catch ex As MySqlException
             MsgBox("Error1: " & ex.Message)
         Finally
             cnn1.Close()
         End Try
+    End Sub
+
+    Protected Sub Update_btn_CheckedChanged(sender As Object, e As EventArgs) Handles Update_Rbtn.CheckedChanged
+
     End Sub
 
     'SELECT DISTINCT TABLE_NAME 
