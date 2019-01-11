@@ -2,7 +2,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Cuerpo" runat="server">
-    
-    <asp:Image ID="Image1" runat="server" ImageUrl="~/Imagenes/welcome.png" />
-    
+    <div class="ImagenBienvenida">
+        &nbsp;<img src="Imagenes/welcome.png" dir="auto" draggable="false" /></div>
 </asp:Content>
