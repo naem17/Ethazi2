@@ -93,6 +93,7 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Alojamientos.aspx" />
     <Content Include="Imagenes\fondo.jpg" />
     <Content Include="Loggin.aspx" />
     <Content Include="Estilos.css" />
@@ -103,7 +104,13 @@
     <Content Include="XML\alojamientos.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BarraSuperior.vb" />
+    <Compile Include="Alojamientos.aspx.designer.vb">
+      <DependentUpon>Alojamientos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Alojamientos.aspx.vb">
+      <DependentUpon>Alojamientos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Conexion.vb" />
     <Compile Include="Loggin.aspx.designer.vb">
       <DependentUpon>Loggin.aspx</DependentUpon>

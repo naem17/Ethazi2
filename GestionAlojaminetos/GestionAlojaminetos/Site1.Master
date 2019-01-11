@@ -19,16 +19,34 @@
                     <asp:ContentPlaceHolder ID="Barra" runat="server">
                         <asp:Image ID="Image1" runat="server" Height="73px" ImageUrl="~/Imagenes/Logotipo.png" ToolTip="Etxebal" Width="308px" />
                         &nbsp;<br />
-                        <br />
-                        Opciones:<br />
-                        <asp:RadioButton ID="Update_Rbtn" runat="server" GroupName="Opciones" Text="Añadir" />
-                        <asp:RadioButton ID="Delete_Rbtn" runat="server" GroupName="Opciones" Text="Eliminar" />
-                        <asp:RadioButton ID="Select_Rbtn" runat="server" GroupName="Opciones" Text="Visualizar" />
-                        &nbsp;<br />
                             <br />
                             Tablas:<br />
-                        <asp:PlaceHolder ID="Tablas" runat="server"></asp:PlaceHolder>
-                        <br />
+                        <div id="Tablas">
+                            <div>
+                                &nbsp;
+                                <a href="Alojamientos.aspx">Alojamientos</a>
+                                &nbsp;
+                                &nbsp;
+                                <a href="Categorias.aspx">Categorias</a>
+                                &nbsp;
+                                &nbsp;
+                                <a href="CodPostales.aspx">Codigos Postales</a>
+                                &nbsp;
+                                &nbsp;
+                                <a href="Municipios.aspx">Municipios</a>
+                                &nbsp;
+                                &nbsp;
+                                <a href="Provincias.aspx">Provincias</a>
+                                &nbsp;
+                                &nbsp;
+                                <a href="Tipos.aspx">Tipos</a>
+                                &nbsp;
+                                &nbsp;
+                                <a href="T_Euskera.aspx">Tipos Euskera</a>
+                                &nbsp;
+                                &nbsp;
+                            </div>
+                        </div>
                     </asp:ContentPlaceHolder>
                 </td>
             </tr>

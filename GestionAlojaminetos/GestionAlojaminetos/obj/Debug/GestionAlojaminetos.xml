@@ -107,36 +107,63 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:GestionAlojaminetos.Site1._Update_Rbtn">
+<member name="F:GestionAlojaminetos.Site1._Rbtn_Alojamientos">
 <summary>
-Control Update_Rbtn.
+Control Rbtn_Alojamientos.
 </summary>
 <remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:GestionAlojaminetos.Site1._Delete_Rbtn">
+<member name="F:GestionAlojaminetos.Site1._Rbtn_Categorias">
 <summary>
-Control Delete_Rbtn.
+Control Rbtn_Categorias.
 </summary>
 <remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:GestionAlojaminetos.Site1._Select_Rbtn">
+<member name="F:GestionAlojaminetos.Site1._Rbtn_CodPostal">
 <summary>
-Control Select_Rbtn.
+Control Rbtn_CodPostal.
 </summary>
 <remarks>
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:GestionAlojaminetos.Site1._Tablas">
+<member name="F:GestionAlojaminetos.Site1._Rbtn_Municipios">
 <summary>
-Control Tablas.
+Control Rbtn_Municipios.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:GestionAlojaminetos.Site1._Rbtn_Provincias">
+<summary>
+Control Rbtn_Provincias.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:GestionAlojaminetos.Site1._Rbtn_Tipos">
+<summary>
+Control Rbtn_Tipos.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:GestionAlojaminetos.Site1._Rbtn_Tipos_Euskera">
+<summary>
+Control Rbtn_Tipos_Euskera.
 </summary>
 <remarks>
 Campo generado automáticamente.
