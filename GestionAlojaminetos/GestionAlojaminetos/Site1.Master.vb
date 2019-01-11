@@ -8,6 +8,8 @@ Public Class Site1
             If cnn1.State = ConnectionState.Closed Then
                 cnn1.Open()
             End If
+            Dim barra As New BarraSuperior
+            barra.CargarBarra()
         Catch ex As Exception
             MsgBox("Error al conectar con la BBDD")
             If cnn1.State = ConnectionState.Open Then

@@ -53,42 +53,6 @@ GestionAlojaminetos
   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
 </summary>
 </member>
-<member name="F:GestionAlojaminetos.BarraSuperior._Image1">
-<summary>
-Control Image1.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:GestionAlojaminetos.BarraSuperior._Update_Rbtn">
-<summary>
-Control Update_Rbtn.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:GestionAlojaminetos.BarraSuperior._Delete_Rbtn">
-<summary>
-Control Delete_Rbtn.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:GestionAlojaminetos.BarraSuperior._Select_Rbtn">
-<summary>
-Control Select_Rbtn.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
 <member name="F:GestionAlojaminetos.Indice._form_Loggin">
 <summary>
 Control form_Loggin.
@@ -125,9 +89,54 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:GestionAlojaminetos.Site1._BarraSuperior">
+<member name="F:GestionAlojaminetos.Site1._Barra">
 <summary>
-Control BarraSuperior.
+Control Barra.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:GestionAlojaminetos.Site1._Image1">
+<summary>
+Control Image1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:GestionAlojaminetos.Site1._Update_Rbtn">
+<summary>
+Control Update_Rbtn.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:GestionAlojaminetos.Site1._Delete_Rbtn">
+<summary>
+Control Delete_Rbtn.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:GestionAlojaminetos.Site1._Select_Rbtn">
+<summary>
+Control Select_Rbtn.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:GestionAlojaminetos.Site1._Tablas">
+<summary>
+Control Tablas.
 </summary>
 <remarks>
 Campo generado automáticamente.
