@@ -53,6 +53,24 @@ GestionAlojaminetos
   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
 </summary>
 </member>
+<member name="F:GestionAlojaminetos.Alojamientos._GridView1">
+<summary>
+Control GridView1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:GestionAlojaminetos.Alojamientos._SqlDataSource1">
+<summary>
+Control SqlDataSource1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:GestionAlojaminetos.Indice._form_Loggin">
 <summary>
 Control form_Loggin.
@@ -101,69 +119,6 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:GestionAlojaminetos.Site1._Image1">
 <summary>
 Control Image1.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:GestionAlojaminetos.Site1._Rbtn_Alojamientos">
-<summary>
-Control Rbtn_Alojamientos.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:GestionAlojaminetos.Site1._Rbtn_Categorias">
-<summary>
-Control Rbtn_Categorias.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:GestionAlojaminetos.Site1._Rbtn_CodPostal">
-<summary>
-Control Rbtn_CodPostal.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:GestionAlojaminetos.Site1._Rbtn_Municipios">
-<summary>
-Control Rbtn_Municipios.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:GestionAlojaminetos.Site1._Rbtn_Provincias">
-<summary>
-Control Rbtn_Provincias.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:GestionAlojaminetos.Site1._Rbtn_Tipos">
-<summary>
-Control Rbtn_Tipos.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
-<member name="F:GestionAlojaminetos.Site1._Rbtn_Tipos_Euskera">
-<summary>
-Control Rbtn_Tipos_Euskera.
 </summary>
 <remarks>
 Campo generado automáticamente.
