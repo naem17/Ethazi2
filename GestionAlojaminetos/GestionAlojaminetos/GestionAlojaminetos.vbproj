@@ -103,6 +103,7 @@
     <Content Include="Provincias.aspx" />
     <Content Include="Tipos.aspx" />
     <Content Include="T_Euskera.aspx" />
+    <Content Include="VerSeleccion.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -198,6 +199,13 @@
     </Compile>
     <Compile Include="T_Euskera.aspx.vb">
       <DependentUpon>T_Euskera.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="VerSeleccion.aspx.designer.vb">
+      <DependentUpon>VerSeleccion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VerSeleccion.aspx.vb">
+      <DependentUpon>VerSeleccion.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>

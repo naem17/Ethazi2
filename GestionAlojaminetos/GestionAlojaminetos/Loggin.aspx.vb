@@ -12,7 +12,7 @@ Public Class Indice
                 cnn1.Open()
             End If
         Catch ex As Exception
-            MsgBox("Error al conectar con la BBDD")
+            MsgBox("Error al conectar con la BBDD" & "     " & ex.Message)
             If cnn1.State = ConnectionState.Open Then
                 cnn1.Close()
             End If

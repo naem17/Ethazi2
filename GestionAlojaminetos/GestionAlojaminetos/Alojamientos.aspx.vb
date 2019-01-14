@@ -6,7 +6,6 @@
     End Sub
 
     Protected Sub GridView1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles GridView1.SelectedIndexChanged
-        Dim grid = Me.GridView1.SelectedRow
-        MsgBox(grid)
+        Response.Redirect("VerSeleccion.aspx?" & Me.GridView1.SelectedRow.Cells(1).Text)
     End Sub
 End Class
