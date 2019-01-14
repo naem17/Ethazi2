@@ -94,9 +94,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Alojamientos.aspx" />
+    <Content Include="Categorias.aspx" />
+    <Content Include="CodPostales.aspx" />
     <Content Include="Imagenes\fondo.jpg" />
     <Content Include="Loggin.aspx" />
     <Content Include="Estilos.css" />
+    <Content Include="Municipios.aspx" />
+    <Content Include="Provincias.aspx" />
+    <Content Include="Tipos.aspx" />
+    <Content Include="T_Euskera.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -111,6 +117,20 @@
       <DependentUpon>Alojamientos.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="Categorias.aspx.designer.vb">
+      <DependentUpon>Categorias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Categorias.aspx.vb">
+      <DependentUpon>Categorias.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="CodPostales.aspx.designer.vb">
+      <DependentUpon>CodPostales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CodPostales.aspx.vb">
+      <DependentUpon>CodPostales.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Conexion.vb" />
     <Compile Include="Loggin.aspx.designer.vb">
       <DependentUpon>Loggin.aspx</DependentUpon>
@@ -118,6 +138,13 @@
     <Compile Include="Loggin.aspx.vb">
       <DependentUpon>Loggin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Municipios.aspx.designer.vb">
+      <DependentUpon>Municipios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Municipios.aspx.vb">
+      <DependentUpon>Municipios.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -138,6 +165,13 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Provincias.aspx.designer.vb">
+      <DependentUpon>Provincias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Provincias.aspx.vb">
+      <DependentUpon>Provincias.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Site1.Master.designer.vb">
       <DependentUpon>Site1.Master</DependentUpon>
     </Compile>
@@ -150,6 +184,20 @@
     </Compile>
     <Compile Include="Bienvenida.aspx.vb">
       <DependentUpon>Bienvenida.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Tipos.aspx.designer.vb">
+      <DependentUpon>Tipos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tipos.aspx.vb">
+      <DependentUpon>Tipos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="T_Euskera.aspx.designer.vb">
+      <DependentUpon>T_Euskera.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="T_Euskera.aspx.vb">
+      <DependentUpon>T_Euskera.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
