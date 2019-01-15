@@ -12,36 +12,24 @@ Public Class VerSeleccion
         datos(1) = datos(1).ToLower
         Select Case datos(1)
             Case "alojamientos"
-                cmd1.CommandText = "SELECT * FROM `@tabla` WHERE FIRMA = `@firma`"
-                cmd1.Parameters.AddWithValue("@firma", datos(0))
-                cmd1.Parameters.AddWithValue("@tabla", datos(1))
+                cmd1.CommandText = "SELECT * FROM @tabla WHERE FIRMA = @param"
             Case "categorias"
-                cmd1.CommandText = "SELECT * FROM `@tabla` WHERE CODIGO = `@cod`"
-                cmd1.Parameters.AddWithValue("@cod", datos(0))
-                cmd1.Parameters.AddWithValue("@tabla", datos(1))
+                cmd1.CommandText = "SELECT * FROM @tabla WHERE CODIGO = @param"
             Case "codigos_postales"
-                cmd1.CommandText = "SELECT * FROM `@tabla` WHERE ID = `@cod`"
-                cmd1.Parameters.AddWithValue("@cod", datos(0))
-                cmd1.Parameters.AddWithValue("@tabla", datos(1))
+                cmd1.CommandText = "SELECT * FROM @tabla WHERE ID = @param"
             Case "municipios"
-                cmd1.CommandText = "SELECT * FROM @tabla WHERE INDICE = @cod"
-                cmd1.Parameters.AddWithValue("@cod", datos(0))
-                cmd1.Parameters.AddWithValue("@tabla", datos(1))
+                cmd1.CommandText = "SELECT * FROM @tabla WHERE INDICE = @param"
             Case "categorias"
-                cmd1.CommandText = "SELECT * FROM @tabla WHERE CODIGO = @cod"
-                cmd1.Parameters.AddWithValue("@cod", datos(0))
-                cmd1.Parameters.AddWithValue("@tabla", datos(1))
+                cmd1.CommandText = "SELECT * FROM @tabla WHERE CODIGO = @param"
             Case "tipos"
-                cmd1.CommandText = "SELECT * FROM @tabla WHERE CODIGO = @cod"
-                cmd1.Parameters.AddWithValue("@cod", datos(0))
-                cmd1.Parameters.AddWithValue("@tabla", datos(1))
+                cmd1.CommandText = "SELECT * FROM @tabla WHERE CODIGO = @param"
             Case "tipos_euskera"
-                cmd1.CommandText = "SELECT * FROM @tabla WHERE CODIGO = @cod"
-                cmd1.Parameters.AddWithValue("@cod", datos(0))
-                cmd1.Parameters.AddWithValue("@tabla", datos(1))
+                cmd1.CommandText = "SELECT * FROM @tabla WHERE CODIGO = @param"
             Case Else
                 MsgBox("No se a creado select")
         End Select
+        cmd1.Parameters.AddWithValue("@tabla", datos(1))
+        cmd1.Parameters.AddWithValue("@param", datos(0))
 
         Dim da1 As New MySqlDataAdapter
         da1.SelectCommand = cmd1
