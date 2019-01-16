@@ -219,14 +219,14 @@ Public Class Vista
             Me.ckb_Tienda.Enabled = False
             Me.ckb_Surfing.Enabled = False
             guardar = False
-            ' actualizar()
+            'actualizar()
         End If
 
     End Sub
     Public Sub actualizar()
         sql = "UPDATE alojamientos SET nombre=@nombre,descripcion_Abre=@desc_abre,descripcion_Abre_eus=@desc_abre_eus,descripcion=@desc,descripcion_eus=@desc_eus,telefono=@phone,direccion=@address,"
         sql &= "calidad=@calidad,email=@mail,web=@web,club=@club,restaurante=@restaurante,autocaravana=@caravana,tienda=@shop,capacidad=@capacidad,gatronomico=@gatronomico,surfing=@surf,coordenadas=@coordenadas,"
-        sql &= "cod_muni=@cMunicipio,cod_provi=@cProvincia,cod_tipos=@cTipos,cod_tipos=@cTiposEus,cod_categorias=@cCategorias,cod_postal=@cPostal "
+        sql &= "cod_tipos=@cTipos,cod_tipos=@cTiposEus,cod_categorias=@cCategorias,id_relaciones=@idRelaciones "
         sql &= "where firma=@firma"
         Dim cmd1 = New MySqlCommand(sql, conexion)
         cmd1.Parameters.AddWithValue("@firma", Me.txt_Firma.Text)
@@ -289,7 +289,7 @@ Public Class Vista
         cmd1.Parameters.AddWithValue("@cTipos", Me.cmb_Tipo.SelectedValue.ToString)
         cmd1.Parameters.AddWithValue("@cTiposEus", "yo")
         cmd1.Parameters.AddWithValue("@cCategoria", Me.cmb_Categoria.SelectedValue.ToString)
-        cmd1.Parameters.AddWithValue("@cPostal", Me.cmb_CodPostal.SelectedValue.ToString)
+        cmd1.Parameters.AddWithValue("@id_relaciones", cargarId)
 
         Dim result As Integer
         Try

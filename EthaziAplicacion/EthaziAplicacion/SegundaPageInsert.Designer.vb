@@ -69,6 +69,7 @@ Partial Class SegundaPageInsert
         '
         'cmb_Provincia
         '
+        Me.cmb_Provincia.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest
         Me.cmb_Provincia.FormattingEnabled = True
         Me.cmb_Provincia.Items.AddRange(New Object() {""})
         Me.cmb_Provincia.Location = New System.Drawing.Point(196, 252)

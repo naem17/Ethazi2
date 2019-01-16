@@ -29,10 +29,11 @@ Partial Class Buscar
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txt_Nombre = New System.Windows.Forms.TextBox()
         Me.txt_capacidad = New System.Windows.Forms.TextBox()
-        Me.txt_tipo = New System.Windows.Forms.TextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.cmb_provincia = New System.Windows.Forms.ComboBox()
         Me.ckb_provincias = New System.Windows.Forms.CheckBox()
+        Me.cmb_tipo = New System.Windows.Forms.ComboBox()
+        Me.ckb_tipos = New System.Windows.Forms.CheckBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -86,13 +87,6 @@ Partial Class Buscar
         Me.txt_capacidad.Size = New System.Drawing.Size(65, 33)
         Me.txt_capacidad.TabIndex = 6
         '
-        'txt_tipo
-        '
-        Me.txt_tipo.Location = New System.Drawing.Point(341, 161)
-        Me.txt_tipo.Name = "txt_tipo"
-        Me.txt_tipo.Size = New System.Drawing.Size(188, 33)
-        Me.txt_tipo.TabIndex = 7
-        '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
@@ -114,12 +108,30 @@ Partial Class Buscar
         'ckb_provincias
         '
         Me.ckb_provincias.AutoSize = True
-        Me.ckb_provincias.Location = New System.Drawing.Point(308, 116)
+        Me.ckb_provincias.Location = New System.Drawing.Point(302, 114)
         Me.ckb_provincias.Name = "ckb_provincias"
         Me.ckb_provincias.Size = New System.Drawing.Size(227, 29)
         Me.ckb_provincias.TabIndex = 11
         Me.ckb_provincias.Text = "Ver todas las provincias"
         Me.ckb_provincias.UseVisualStyleBackColor = True
+        '
+        'cmb_tipo
+        '
+        Me.cmb_tipo.FormattingEnabled = True
+        Me.cmb_tipo.Location = New System.Drawing.Point(350, 161)
+        Me.cmb_tipo.Name = "cmb_tipo"
+        Me.cmb_tipo.Size = New System.Drawing.Size(179, 33)
+        Me.cmb_tipo.TabIndex = 12
+        '
+        'ckb_tipos
+        '
+        Me.ckb_tipos.AutoSize = True
+        Me.ckb_tipos.Location = New System.Drawing.Point(350, 200)
+        Me.ckb_tipos.Name = "ckb_tipos"
+        Me.ckb_tipos.Size = New System.Drawing.Size(186, 29)
+        Me.ckb_tipos.TabIndex = 13
+        Me.ckb_tipos.Text = "Ver todos los tipos"
+        Me.ckb_tipos.UseVisualStyleBackColor = True
         '
         'Buscar
         '
@@ -127,10 +139,11 @@ Partial Class Buscar
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(563, 274)
+        Me.Controls.Add(Me.ckb_tipos)
+        Me.Controls.Add(Me.cmb_tipo)
         Me.Controls.Add(Me.ckb_provincias)
         Me.Controls.Add(Me.cmb_provincia)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.txt_tipo)
         Me.Controls.Add(Me.txt_capacidad)
         Me.Controls.Add(Me.txt_Nombre)
         Me.Controls.Add(Me.Label3)
@@ -152,8 +165,9 @@ Partial Class Buscar
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents txt_Nombre As System.Windows.Forms.TextBox
     Friend WithEvents txt_capacidad As System.Windows.Forms.TextBox
-    Friend WithEvents txt_tipo As System.Windows.Forms.TextBox
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents cmb_provincia As System.Windows.Forms.ComboBox
     Friend WithEvents ckb_provincias As System.Windows.Forms.CheckBox
+    Friend WithEvents cmb_tipo As System.Windows.Forms.ComboBox
+    Friend WithEvents ckb_tipos As System.Windows.Forms.CheckBox
 End Class
