@@ -2,6 +2,8 @@
 Public Class VerSeleccion
     Inherits System.Web.UI.Page
     Dim cnn1 As MySqlConnection = Site1.cnn1
+    Dim tabla As String
+    Dim param As String
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         Dim datos() As String = Split(Request.QueryString().ToString(), "+")
 
@@ -9,10 +11,11 @@ Public Class VerSeleccion
             cnn1.Open()
         End If
         Dim cmd1 = cnn1.CreateCommand()
-        datos(1) = datos(1).ToLower
+        param = datos(0)
+        tabla = datos(1).ToLower()
         Dim sql As String
-        sql = "SELECT * FROM " & datos(1).ToString
-        Select Case datos(1)
+        sql = "SELECT * FROM " & tabla.ToString
+        Select Case tabla
             Case "alojamientos"
                 cmd1.CommandText = sql & " WHERE FIRMA = @param"
             Case "categorias"
@@ -30,12 +33,16 @@ Public Class VerSeleccion
             Case Else
                 MsgBox("No se a creado select")
         End Select
-        cmd1.Parameters.AddWithValue("@param", datos(0))
+        cmd1.Parameters.AddWithValue("@param", param)
         Dim da1 As New MySqlDataAdapter
         da1.SelectCommand = cmd1
         Dim dt As New DataTable
         da1.Fill(dt)
-        Me.GridView1.DataSource = dt
-        Me.GridView1.DataBind()
+        Me.DetailsView1.DataSource = dt
+        Me.DetailsView1.DataBind()
+    End Sub
+
+    Private Sub DetailsView1_ModeChanging(sender As Object, e As DetailsViewModeEventArgs) Handles DetailsView1.ModeChanging
+        Response.Redirect("EditarPagina" & tabla & ".aspx?" & param)
     End Sub
 End Class

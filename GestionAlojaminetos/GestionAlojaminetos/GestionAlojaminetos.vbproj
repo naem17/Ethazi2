@@ -96,6 +96,7 @@
     <Content Include="Alojamientos.aspx" />
     <Content Include="Categorias.aspx" />
     <Content Include="CodPostales.aspx" />
+    <Content Include="EditaPaginaalojamientos.aspx" />
     <Content Include="Imagenes\fondo.jpg" />
     <Content Include="Loggin.aspx" />
     <Content Include="Estilos.css" />
@@ -133,6 +134,13 @@
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Conexion.vb" />
+    <Compile Include="EditaPaginaalojamientos.aspx.designer.vb">
+      <DependentUpon>EditaPaginaalojamientos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditaPaginaalojamientos.aspx.vb">
+      <DependentUpon>EditaPaginaalojamientos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Loggin.aspx.designer.vb">
       <DependentUpon>Loggin.aspx</DependentUpon>
     </Compile>

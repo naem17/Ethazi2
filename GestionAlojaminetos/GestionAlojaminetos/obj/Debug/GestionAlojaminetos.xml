@@ -242,9 +242,9 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:GestionAlojaminetos.VerSeleccion._GridView1">
+<member name="F:GestionAlojaminetos.VerSeleccion._DetailsView1">
 <summary>
-Control GridView1.
+Control DetailsView1.
 </summary>
 <remarks>
 Campo generado automáticamente.
