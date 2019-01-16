@@ -230,6 +230,8 @@ public class AlojamientoSAX extends DefaultHandler {
 					relacionEntreCod.setId(relacionEntreCods.get(relacionEntreCods.size()-1).getId()+1);
 					relacionEntreCods.add(relacionEntreCod);
 				}
+				else
+					relacionEntreCod.setId(relacionEntreCods.indexOf(relacionEntreCod));
 			alojamientos.get(alojamientos.size()-1).setRelacionEntreCod(relacionEntreCod);
 			relacionEntreCod=new RelacionEntreCod();
 		}

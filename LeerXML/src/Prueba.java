@@ -59,12 +59,12 @@ public class Prueba {
 				if (alojamiento.getFirma() == null)
 					alojamientos.remove(alojamiento);
 			}
-			creacionBBDD_Tablas("reto_gp2", "kasserver.synology.me", 3307, "gp2", "NuG7FqwibR1ZAuKy");
-			poblarTablas("reto_gp2", " kasserver.synology.me", 3307, "gp2", "NuG7FqwibR1ZAuKy", alojamientos, categorias, codigosPostales, municipios, provincias, tiposAlbergues, tiposAlberguesEuskera, relacionEntreCods);
-			//creacionBBDD_Tablas("labetxe", "localhost", 0, "root", "");
-			//poblarTablas("labetxe", "localhost", 0, "root", "", alojamientos, categorias,codigosPostales, municipios, provincias, tiposAlbergues,tiposAlberguesEuskera,relacionEntreCods);
+			//creacionBBDD_Tablas("reto_gp2", "kasserver.synology.me", 3307, "gp2", "NuG7FqwibR1ZAuKy");
+			//poblarTablas("reto_gp2", " kasserver.synology.me", 3307, "gp2", "NuG7FqwibR1ZAuKy", alojamientos, categorias, codigosPostales, municipios, provincias, tiposAlbergues, tiposAlberguesEuskera, relacionEntreCods);
+			creacionBBDD_Tablas("labetxe", "localhost", 0, "root", "");
+			poblarTablas("labetxe", "localhost", 0, "root", "", alojamientos, categorias,codigosPostales, municipios, provincias, tiposAlbergues,tiposAlberguesEuskera,relacionEntreCods);
 			Conexion.cerrar1();
-//
+
 		} catch (SAXException e) {
 			e.printStackTrace();
 		} catch (FileNotFoundException e) {
