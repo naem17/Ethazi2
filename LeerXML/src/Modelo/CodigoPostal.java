@@ -1,23 +1,14 @@
 package Modelo;
 
 public class CodigoPostal {
-	private int id; //ID AUTONUMERICO
 	private int codigoPostal; //CODIGO_POSTAL NUMERIC(5)
 	public CodigoPostal() {
 		super();
 	}
 	
-	public CodigoPostal(int id, int codigoPostal) {
+	public CodigoPostal(int codigoPostal) {
 		super();
-		this.id = id;
 		this.codigoPostal = codigoPostal;
-	}
-
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
 	}
 	public int getCodigoPostal() {
 		return codigoPostal;
@@ -25,11 +16,10 @@ public class CodigoPostal {
 	public void setCodigoPostal(int codigoPostal) {
 		this.codigoPostal = codigoPostal;
 	}
+
 	@Override
-	public String toString() {
-		return "CodigoPostal [id=" + id + ", codigoPostal=" + codigoPostal + "]";
+	public boolean equals(Object obj) {
+		return obj instanceof CodigoPostal &&( (CodigoPostal)obj).getCodigoPostal()==this.codigoPostal;
 	}
 	
-	
-
 }
