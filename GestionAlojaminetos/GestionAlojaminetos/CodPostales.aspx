@@ -5,6 +5,7 @@
     <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="ID" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None">
         <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
         <Columns>
+            <asp:CommandField ShowSelectButton="True" />
             <asp:BoundField DataField="ID" HeaderText="ID" ReadOnly="True" SortExpression="ID" />
             <asp:BoundField DataField="CODIGO_POSTAL" HeaderText="CODIGO_POSTAL" SortExpression="CODIGO_POSTAL" />
         </Columns>
