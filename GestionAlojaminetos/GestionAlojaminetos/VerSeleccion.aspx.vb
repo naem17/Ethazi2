@@ -4,7 +4,7 @@ Public Class VerSeleccion
     Dim cnn1 As MySqlConnection = Site1.cnn1
     Dim param As String
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        param = Request.QueryString().ToString().ToLower()
+        param = Request.QueryString().ToString()
 
         If cnn1.State = ConnectionState.Closed Then
             cnn1.Open()
