@@ -34,16 +34,30 @@ public class Sentencias_BBDD_Alojamientos extends Sentencias {
 			e.printStackTrace();
 		}	
 	}
-	public static void insertarCodigos_Postales(int id, int codigoPostal)
+	public static void insertarCodigos_Postales(int codigoPostal)
 	{
 		try {
 			statement=Conexion.conexion.prepareStatement("INSERT INTO CODIGOS_POSTALES VALUES("
-					+ "?,?"
+					+ "?"
 					+ ");");
-			statement.setInt(1, id);
-			statement.setInt(2, codigoPostal);
+			statement.setInt(1, codigoPostal);
 			statement.execute();
 		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	public static void insertarRelacion(int id, int cP, int codProvincia, int codigoMunicipio)
+	{
+		try {
+			statement=Conexion.conexion.prepareStatement("INSERT INTO RELACION_CP_MUNICIPIOS_PROVINCIAS VALUES("
+					+"?,?,?,?);");
+			statement.setInt(1, id);
+			statement.setInt(2, cP);
+			statement.setInt(3, codProvincia);
+			statement.setInt(4, codigoMunicipio);
+			statement.execute();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -52,11 +66,10 @@ public class Sentencias_BBDD_Alojamientos extends Sentencias {
 			boolean calidad_Asegurada, String email, String web, 
 			boolean club, boolean restaurante, boolean autocaravana,
 			boolean tienda, int capacidad, boolean gastronomico, 
-			boolean surfing,String coordenadas, int codMunicipio,
-			int codProvincia, int codTipos, int codTiposEuskera, int codCategorias, int idCP) {
+			boolean surfing,String coordenadas,int codTipos, int codTiposEuskera, int codCategorias, int idRelacion) {
 		try {
 			statement=Conexion.conexion.prepareStatement("INSERT INTO ALOJAMIENTOS VALUES("
-					+ "?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?, ?"
+					+ "?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?"
 					+ ",?,?,?"
 					+ ");");
 			statement.setString(1, firma);
@@ -78,12 +91,10 @@ public class Sentencias_BBDD_Alojamientos extends Sentencias {
 			statement.setBoolean(17, gastronomico);
 			statement.setBoolean(18, surfing);
 			statement.setString(19, coordenadas);
-			statement.setInt(20, codMunicipio);
-			statement.setInt(21, codProvincia);
-			statement.setInt(22, codTipos);
-			statement.setInt(23, codTiposEuskera);
-			statement.setInt(24, codCategorias);
-			statement.setInt(25, idCP);
+			statement.setInt(20, codTipos);
+			statement.setInt(21, codTiposEuskera);
+			statement.setInt(22, codCategorias);
+			statement.setInt(23, idRelacion);
 			statement.execute();
 		} catch (SQLException e) {
 			e.printStackTrace();

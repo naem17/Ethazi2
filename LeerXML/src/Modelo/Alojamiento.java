@@ -25,9 +25,7 @@ public class Alojamiento {
 	private TipoAlbergue tipo;
 	private TipoAlbergueEuskera tipoEuskera;
 	private Categorias categoria;
-	private Municipio municipio;
-	private Provincia provincia;
-	private CodigoPostal cp;
+	private RelacionEntreCod relacionEntreCod;
 	
 	public Alojamiento()
 	{
@@ -152,27 +150,12 @@ public class Alojamiento {
 	public void setCategoria(Categorias categoria) {
 		this.categoria = categoria;
 	}
-	public Municipio getMunicipio() {
-		return municipio;
+	public RelacionEntreCod getRelacionEntreCod() {
+		return relacionEntreCod;
 	}
-	public void setMunicipio(Municipio municipio) {
-		this.municipio = municipio;
+	public void setRelacionEntreCod(RelacionEntreCod relacionEntreCod) {
+		this.relacionEntreCod = relacionEntreCod;
 	}
-	public Provincia getProvincia() {
-		return provincia;
-	}
-	public void setProvincia(Provincia provincia) {
-		this.provincia = provincia;
-	}
-	public CodigoPostal getCp() {
-		return cp;
-	}
-	public void setCp(CodigoPostal cp) {
-		this.cp = cp;
-	}
-	
-
-	
 	public String getDescripcionEuskera() {
 		return descripcionEuskera;
 	}
@@ -203,17 +186,4 @@ public class Alojamiento {
 	public boolean equals(Object obj) {
 		return this.firma.compareToIgnoreCase(((Alojamiento)obj).getFirma())==0;
 	}
-	@Override
-	public String toString() {
-		return "Alojamiento [firma=" + firma + ", nombre=" + nombre + ", descripcionAbreviada=" + descripcionAbreviada
-				+ ", descripcionEuskera=" + descripcionEuskera + ", descripcionNOAbreviada=" + descripcionNOAbreviada
-				+ ", descripcionNOAbreviadaEuskera=" + descripcionNOAbreviadaEuskera + ", telefono=" + telefono
-				+ ", direccion=" + direccion + ", calidadAsegurada=" + calidadAsegurada + ", email=" + email
-				+ ", webURL=" + webURL + ", club=" + club + ", restaurant=" + restaurant + ", autocaravana="
-				+ autocaravana + ", tienda=" + tienda + ", capacidad=" + capacidad + ", gastronomico=" + gastronomico
-				+ ", surfing=" + surfing + ", coordenadas=" + coordenadas + ", tipo=" + tipo + ", tipoEuskera="
-				+ tipoEuskera + ", categoria=" + categoria + ", municipio=" + municipio + ", provincia=" + provincia
-				+ ", cp=" + cp + "]";
-	}
-	
 }

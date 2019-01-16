@@ -1,0 +1,424 @@
+CodProvincia;CodMunicipio;CodigoPostal;Municipio
+01;001;01240;Alegría-Dulantzi
+01;001;01193;Alegría-Dulantzi
+01;002;01450;Amurrio
+01;002;01468;Amurrio
+01;002;01470;Amurrio
+01;003;01160;Aramaio
+01;003;01165;Aramaio
+01;003;01169;Aramaio
+01;004;01474;Artziniega
+01;004;01478;Artziniega
+01;006;01211;Armiñón
+01;006;01220;Armiñón
+01;008;01510;Arratzua-Ubarrundia
+01;008;01520;Arratzua-Ubarrundia
+01;009;01250;Asparrena
+01;009;01260;Asparrena
+01;009;01208;Asparrena
+01;010;01408;Ayala/Aiara
+01;010;01470;Ayala/Aiara
+01;010;01476;Ayala/Aiara
+01;010;01477;Ayala/Aiara
+01;010;01478;Ayala/Aiara
+01;010;01479;Ayala/Aiara
+01;011;01307;Baños de Ebro/Mañueta
+01;013;01206;Barrundia
+01;013;01208;Barrundia
+01;014;01211;Berantevilla
+01;014;01220;Berantevilla
+01;014;01212;Berantevilla
+01;016;01118;Bernedo
+01;016;01128;Bernedo
+01;016;01194;Bernedo
+01;016;01216;Bernedo
+01;017;01110;Campezo/Kanpezu
+01;017;01117;Campezo/Kanpezu
+01;017;01128;Campezo/Kanpezu
+01;018;01138;Zigoitia
+01;018;01196;Zigoitia
+01;019;01308;Kripan
+01;020;01439;Kuartango
+01;020;01430;Kuartango
+01;021;01192;Elburgo/Burgelu
+01;021;01193;Elburgo/Burgelu
+01;022;01340;Elciego
+01;023;01309;Elvillar/Bilar
+01;027;01193;Iruraiz-Gauna
+01;027;01206;Iruraiz-Gauna
+01;027;01207;Iruraiz-Gauna
+01;028;01012;Labastida/Bastida
+01;028;01212;Labastida/Bastida
+01;028;01330;Labastida/Bastida
+01;030;01118;Lagrán
+01;030;01211;Lagrán
+01;031;01309;Laguardia
+01;031;01308;Laguardia
+01;031;01300;Laguardia
+01;031;01321;Laguardia
+01;032;01308;Lanciego/Lantziego
+01;033;01306;Lapuebla de Labarca
+01;034;01309;Leza
+01;036;01400;Laudio/Llodio
+01;037;01120;Arraia-Maeztu
+01;037;01128;Arraia-Maeztu
+01;037;01129;Arraia-Maeztu
+01;039;01322;Moreda de Álava/Moreda Araba
+01;041;01309;Navaridas
+01;042;01409;Okondo
+01;043;01320;Oyón-Oion
+01;043;01322;Oyón-Oion
+01;044;01212;Peñacerrada-Urizaharra
+01;044;01216;Peñacerrada-Urizaharra
+01;044;01211;Peñacerrada-Urizaharra
+01;046;01213;Erriberagoitia/Ribera Alta
+01;046;01220;Erriberagoitia/Ribera Alta
+01;046;01420;Erriberagoitia/Ribera Alta
+01;046;01423;Erriberagoitia/Ribera Alta
+01;046;01426;Erriberagoitia/Ribera Alta
+01;046;01428;Erriberagoitia/Ribera Alta
+01;047;01213;Ribera Baja/Erribera Beitia
+01;047;01220;Ribera Baja/Erribera Beitia
+01;049;01426;Añana
+01;049;01423;Añana
+01;051;01200;Salvatierra/Agurain
+01;051;01207;Salvatierra/Agurain
+01;052;01307;Samaniego
+01;053;01207;San Millán/Donemiliaga
+01;053;01208;San Millán/Donemiliaga
+01;054;01440;Urkabustaiz
+01;054;01449;Urkabustaiz
+01;054;01450;Urkabustaiz
+01;055;01423;Valdegovía/Gaubea
+01;055;01426;Valdegovía/Gaubea
+01;055;01427;Valdegovía/Gaubea
+01;055;01428;Valdegovía/Gaubea
+01;056;01117;Harana/Valle de Arana
+01;057;01307;Villabuena de Álava/Eskuernaga
+01;058;01510;Legutio
+01;058;01170;Legutio
+01;058;01171;Legutio
+01;059;01003;Vitoria-Gasteiz
+01;059;01520;Vitoria-Gasteiz
+01;059;01510;Vitoria-Gasteiz
+01;059;01196;Vitoria-Gasteiz
+01;059;01195;Vitoria-Gasteiz
+01;059;01013;Vitoria-Gasteiz
+01;059;01194;Vitoria-Gasteiz
+01;059;01193;Vitoria-Gasteiz
+01;059;01192;Vitoria-Gasteiz
+01;059;01191;Vitoria-Gasteiz
+01;059;01015;Vitoria-Gasteiz
+01;059;01010;Vitoria-Gasteiz
+01;059;01009;Vitoria-Gasteiz
+01;059;01008;Vitoria-Gasteiz
+01;059;01007;Vitoria-Gasteiz
+01;059;01006;Vitoria-Gasteiz
+01;059;01004;Vitoria-Gasteiz
+01;059;01012;Vitoria-Gasteiz
+01;059;01002;Vitoria-Gasteiz
+01;059;01001;Vitoria-Gasteiz
+01;059;01005;Vitoria-Gasteiz
+01;060;01322;Yécora/Iekora
+01;061;01208;Zalduondo
+01;062;01212;Zambrana
+01;063;01139;Zuia
+01;063;01450;Zuia
+01;063;01130;Zuia
+01;901;01195;Iruña Oka/Iruña de Oca
+01;901;01230;Iruña Oka/Iruña de Oca
+01;901;01428;Iruña Oka/Iruña de Oca
+01;901;01191;Iruña Oka/Iruña de Oca
+01;902;01213;Lantarón
+01;902;01423;Lantarón
+20;001;20269;Abaltzisketa
+20;002;20150;Aduna
+20;003;20749;Aizarnazabal
+20;004;20495;Albiztur
+20;005;20260;Alegia
+20;006;20494;Alkiza
+20;007;20268;Altzo
+20;008;20268;Amezketa
+20;009;20140;Andoain
+20;010;20270;Anoeta
+20;011;20577;Antzuola
+20;012;20248;Arama
+20;013;20550;Aretxabaleta
+20;014;20159;Asteasu
+20;015;20211;Ataun
+20;016;20809;Aia
+20;016;20810;Aia
+20;017;20720;Azkoitia
+20;018;20730;Azpeitia
+20;019;20200;Beasain
+20;020;20739;Beizama
+20;021;20491;Belauntza
+20;022;20492;Berastegi
+20;022;20493;Berastegi
+20;023;20493;Berrobi
+20;024;20496;Bidegoian
+20;025;20215;Zegama
+20;026;20214;Zerain
+20;027;20740;Zestoa
+20;027;20749;Zestoa
+20;028;20159;Zizurkil
+20;029;20820;Deba
+20;029;20829;Deba
+20;030;20600;Eibar
+20;031;20493;Elduain
+20;032;20860;Elgoibar
+20;032;20870;Elgoibar
+20;033;20690;Elgeta
+20;034;20530;Eskoriatza
+20;034;20540;Eskoriatza
+20;035;20218;Ezkio-Itsaso
+20;035;20709;Ezkio-Itsaso
+20;036;20280;Hondarribia
+20;037;20248;Gaintza
+20;038;20217;Gabiria
+20;039;20808;Getaria
+20;040;20120;Hernani
+20;040;20128;Hernani
+20;041;20494;Hernialde
+20;042;20400;Ibarra
+20;043;20213;Idiazabal
+20;044;20267;Ikaztegieta
+20;045;20301;Irun
+20;045;20302;Irun
+20;045;20303;Irun
+20;045;20304;Irun
+20;045;20305;Irun
+20;046;20271;Irura
+20;047;20249;Itsasondo
+20;048;20159;Larraul
+20;049;20210;Lazkao
+20;050;20491;Leaburu
+20;051;20220;Legazpi
+20;051;20230;Legazpi
+20;052;20250;Legorreta
+20;053;02100;Lezo
+20;053;20100;Lezo
+20;054;20490;Lizartza
+20;055;20500;Arrasate/Mondragón
+20;055;20509;Arrasate/Mondragón
+20;056;20830;Mutriku
+20;057;20214;Mutiloa
+20;058;20212;Olaberria
+20;059;20569;Oñati
+20;059;20568;Oñati
+20;059;20567;Oñati
+20;059;20560;Oñati
+20;060;20490;Orexa
+20;061;20810;Orio
+20;062;20216;Ormaiztegi
+20;063;20180;Oiartzun
+20;064;20110;Pasaia
+20;065;20590;Soraluze/Placencia de las Armas
+20;066;20737;Errezil
+20;067;20100;Errenteria
+20;068;20530;Leintz-Gatzaga
+20;069;20011;Donostia/San Sebastián
+20;069;20100;Donostia/San Sebastián
+20;069;20018;Donostia/San Sebastián
+20;069;20017;Donostia/San Sebastián
+20;069;20014;Donostia/San Sebastián
+20;069;20015;Donostia/San Sebastián
+20;069;20013;Donostia/San Sebastián
+20;069;20012;Donostia/San Sebastián
+20;069;20160;Donostia/San Sebastián
+20;069;20009;Donostia/San Sebastián
+20;069;20008;Donostia/San Sebastián
+20;069;20007;Donostia/San Sebastián
+20;069;20016;Donostia/San Sebastián
+20;069;20006;Donostia/San Sebastián
+20;069;20005;Donostia/San Sebastián
+20;069;20004;Donostia/San Sebastián
+20;069;20003;Donostia/San Sebastián
+20;069;20002;Donostia/San Sebastián
+20;069;20001;Donostia/San Sebastián
+20;069;20010;Donostia/San Sebastián
+20;070;20214;Segura
+20;071;20400;Tolosa
+20;071;20494;Tolosa
+20;071;20267;Tolosa
+20;071;20268;Tolosa
+20;072;20130;Urnieta
+20;073;20130;Usurbil
+20;073;20170;Usurbil
+20;074;20578;Bergara
+20;074;20580;Bergara
+20;074;20570;Bergara
+20;074;20569;Bergara
+20;075;20150;Villabona
+20;076;20240;Ordizia
+20;077;20700;Urretxu
+20;078;20247;Zaldibia
+20;079;20800;Zarautz
+20;080;20700;Zumarraga
+20;081;20750;Zumaia
+20;901;20850;Mendaro
+20;902;20160;Lasarte-Oria
+20;903;20115;Astigarraga
+20;904;20259;Baliarrain
+20;905;20269;Orendain
+20;906;20248;Altzaga
+20;907;20491;Gaztelu
+48;001;48220;Abadiño
+48;002;48500;Abanto y Ciérvana-Abanto Zierbena
+48;002;48540;Abanto y Ciérvana-Abanto Zierbena
+48;003;48340;Amorebieta-Etxano
+48;003;48348;Amorebieta-Etxano
+48;004;48289;Amoroto
+48;005;48498;Arakaldo
+48;006;48140;Arantzazu
+48;007;48381;Munitibar-Arbatzegi Gerrikaitz
+48;008;48879;Artzentales
+48;009;48498;Arrankudiaga
+48;010;48114;Arrieta
+48;011;48003;Arrigorriaga
+48;011;48480;Arrigorriaga
+48;012;48130;Bakio
+48;013;48901;Barakaldo
+48;013;48902;Barakaldo
+48;013;48903;Barakaldo
+48;014;48650;Barrika
+48;015;48970;Basauri
+48;016;48640;Berango
+48;017;48370;Bermeo
+48;018;48710;Berriatua
+48;019;48240;Berriz
+48;019;48249;Berriz
+48;020;48009;Bilbao
+48;020;48014;Bilbao
+48;020;48013;Bilbao
+48;020;48012;Bilbao
+48;020;48011;Bilbao
+48;020;48005;Bilbao
+48;020;48010;Bilbao
+48;020;48015;Bilbao
+48;020;48006;Bilbao
+48;020;48004;Bilbao
+48;020;48003;Bilbao
+48;020;48002;Bilbao
+48;020;48001;Bilbao
+48;020;48007;Bilbao
+48;020;48008;Bilbao
+48;021;48350;Busturia
+48;022;48890;Karrantza Harana/Valle de Carranza
+48;022;48891;Karrantza Harana/Valle de Carranza
+48;023;48142;Artea
+48;024;48144;Zeanuri
+48;025;48499;Zeberio
+48;026;48141;Dima
+48;027;48200;Durango
+48;028;48287;Ea
+48;028;48311;Ea
+48;029;48450;Etxebarri
+48;030;48277;Etxebarria
+48;031;48310;Elantxobe
+48;032;48230;Elorrio
+48;033;48313;Ereño
+48;034;48260;Ermua
+48;035;48116;Fruiz
+48;036;48960;Galdakao
+48;037;48191;Galdames
+48;038;48113;Gamiz-Fika
+48;039;48200;Garai
+48;040;48110;Gatika
+48;041;48314;Gautegiz Arteaga
+48;042;48192;Gordexola
+48;042;48194;Gordexola
+48;043;48630;Gorliz
+48;043;48620;Gorliz
+48;044;48993;Getxo
+48;044;48992;Getxo
+48;044;48991;Getxo
+48;044;48930;Getxo
+48;044;48990;Getxo
+48;045;48820;Güeñes
+48;045;48830;Güeñes
+48;045;48840;Güeñes
+48;046;48300;Gernika-Lumo
+48;047;48289;Gizaburuaga
+48;048;48311;Ibarrangelu
+48;049;48288;Ispaster
+48;050;48213;Izurtza
+48;051;48895;Lanestosa
+48;052;48195;Larrabetzu
+48;053;48111;Laukiz
+48;054;48940;Leioa
+48;055;48330;Lemoa
+48;056;48620;Lemoiz
+48;057;48280;Lekeitio
+48;058;48269;Mallabia
+48;059;48212;Mañaria
+48;060;48276;Markina-Xemein
+48;060;48278;Markina-Xemein
+48;060;48270;Markina-Xemein
+48;061;48112;Maruri-Jatabe
+48;062;48382;Mendata
+48;063;48289;Mendexa
+48;064;48120;Meñaka
+48;065;48490;Ugao-Miraballes
+48;066;48115;Morga
+48;067;48391;Muxika
+48;067;48392;Muxika
+48;068;48360;Mundaka
+48;069;48100;Mungia
+48;069;48120;Mungia
+48;070;48380;Aulesti
+48;071;48550;Muskiz
+48;072;48210;Otxandio
+48;073;48700;Ondarroa
+48;074;48460;Urduña/Orduña
+48;074;48498;Urduña/Orduña
+48;075;48410;Orozko
+48;075;48419;Orozko
+48;076;48395;Sukarrieta
+48;077;48620;Plentzia
+48;078;48920;Portugalete
+48;079;48309;Errigoiti
+48;080;48510;Valle de Trápaga-Trapagaran
+48;080;48520;Valle de Trápaga-Trapagaran
+48;081;48196;Lezama
+48;082;48980;Santurtzi
+48;083;48530;Ortuella
+48;084;48910;Sestao
+48;085;48600;Sopelana
+48;086;48190;Sopuerta
+48;086;48191;Sopuerta
+48;086;48869;Sopuerta
+48;086;48870;Sopuerta
+48;087;48880;Trucios-Turtzioz
+48;088;48145;Ubide
+48;089;48160;Urduliz
+48;089;48610;Urduliz
+48;090;48800;Balmaseda
+48;091;48291;Atxondo
+48;091;48292;Atxondo
+48;092;48390;Bedia
+48;093;48143;Areatza
+48;094;48140;Igorre
+48;095;48250;Zaldibar
+48;096;48850;Zalla
+48;096;48860;Zalla
+48;096;48869;Zalla
+48;097;48480;Zaratamo
+48;901;48160;Derio
+48;901;48170;Derio
+48;902;48950;Erandio
+48;903;48180;Loiu
+48;904;48150;Sondika
+48;905;48170;Zamudio
+48;906;48393;Forua
+48;907;48315;Kortezubi
+48;908;48394;Murueta
+48;909;48312;Nabarniz
+48;910;48215;Iurreta
+48;911;48320;Ajangiz
+48;912;48810;Alonsotegi
+48;913;48508;Zierbena
+48;914;48383;Arratzu
+48;914;48390;Arratzu
+48;914;48391;Arratzu
+48;915;48278;Ziortza-Bolibar

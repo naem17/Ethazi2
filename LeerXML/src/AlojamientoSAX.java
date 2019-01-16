@@ -8,6 +8,7 @@ import Modelo.Categorias;
 import Modelo.CodigoPostal;
 import Modelo.Municipio;
 import Modelo.Provincia;
+import Modelo.RelacionEntreCod;
 import Modelo.TipoAlbergue;
 
 public class AlojamientoSAX extends DefaultHandler {
@@ -18,13 +19,16 @@ public class AlojamientoSAX extends DefaultHandler {
 	private ArrayList<Modelo.Municipio> municipios;
 	private ArrayList<Modelo.Provincia> provincias;
 	private ArrayList<Modelo.TipoAlbergue> tiposAlbergues;
+	private ArrayList<Modelo.RelacionEntreCod>relacionEntreCods;
+	private RelacionEntreCod relacionEntreCod;
 	private String valorAux;
 	private Municipio municipio = new Municipio();
 	private Provincia provincia = new Provincia();
 
 	public AlojamientoSAX(ArrayList<Modelo.Alojamiento> alojamientos, ArrayList<Modelo.Categorias> categorias,
 			ArrayList<Modelo.CodigoPostal> codigosPostales, ArrayList<Modelo.Municipio> municipios,
-			ArrayList<Modelo.Provincia> provincias, ArrayList<Modelo.TipoAlbergue> tiposAlbergues) {
+			ArrayList<Modelo.Provincia> provincias, ArrayList<Modelo.TipoAlbergue> tiposAlbergues,
+			ArrayList<Modelo.RelacionEntreCod> relacionEntreCods) {
 
 		this.alojamientos = alojamientos;
 		this.categorias = categorias;
@@ -32,7 +36,8 @@ public class AlojamientoSAX extends DefaultHandler {
 		this.municipios = municipios;
 		this.provincias = provincias;
 		this.tiposAlbergues = tiposAlbergues;
-
+		this.relacionEntreCods=relacionEntreCods;
+		relacionEntreCod=new RelacionEntreCod();
 		valorAux = null;
 	}
 
@@ -153,23 +158,15 @@ public class AlojamientoSAX extends DefaultHandler {
 		
 		// Guarda Código Postal
 		if (localName.compareToIgnoreCase("postalcode") == 0) {
-			boolean existe = false;
-			int i = 0;
-			while (!existe && i < codigosPostales.size()) {
-				existe = (valorAux.compareToIgnoreCase(String.valueOf(codigosPostales.get(i).getCodigoPostal())) == 0);
-				i++;
-			}
-			if (existe)
-				alojamientos.get(alojamientos.size() - 1).setCp(codigosPostales.get(i - 1));
-			else {
+			CodigoPostal cp=new CodigoPostal(Integer.valueOf(valorAux));
+			if (!codigosPostales.contains(cp)){
 				if (codigosPostales.isEmpty()) {
-					codigosPostales.add(new CodigoPostal(-1, -1));
-					codigosPostales.add(new CodigoPostal(0, Integer.valueOf(valorAux)));
+					codigosPostales.add(new CodigoPostal(-1));
+					codigosPostales.add(new CodigoPostal(Integer.valueOf(valorAux)));
 				} else
-					codigosPostales.add(new CodigoPostal(codigosPostales.get(codigosPostales.size() - 1).getId() + 1,
-							Integer.valueOf(valorAux)));
-				alojamientos.get(alojamientos.size() - 1).setCp(codigosPostales.get(codigosPostales.size() - 1));
+					codigosPostales.add(cp);
 			}
+			relacionEntreCod.setiDCodigoPostal(Integer.valueOf(valorAux));
 		}
 		
 		// Guarda Latitud Y Longitud
@@ -189,10 +186,13 @@ public class AlojamientoSAX extends DefaultHandler {
 				i++;
 
 			if (municipios.isEmpty() || i >= municipios.size())
+			{
 				municipios.add(new Municipio(municipio.getCod(), municipio.getMunicipio(),
 						municipios.isEmpty() ? 0 : municipios.get(municipios.size() - 1).getIndice() + 1));
-			alojamientos.get(alojamientos.size() - 1)
-					.setMunicipio(new Municipio(municipios.get(i).getCod(), municipios.get(i).getMunicipio(), municipios.get(i).getIndice()));
+				relacionEntreCod.setCodigoMunicipio(municipios.get(municipios.size() - 1).getIndice());
+			} else
+				relacionEntreCod.setCodigoMunicipio(municipios.get(i).getIndice());
+			
 		}
 
 		// Guarda Provincia
@@ -208,15 +208,33 @@ public class AlojamientoSAX extends DefaultHandler {
 				i++;
 			if (provincias.isEmpty() || i >= provincias.size())
 				provincias.add(new Provincia(provincia.getCod(), provincia.getProvincia()));
-			alojamientos.get(alojamientos.size() - 1)
-					.setProvincia(new Provincia(provincia.getCod(), provincia.getProvincia()));
+			relacionEntreCod.setCodigoProvincia(provincia.getCod());
 		}
 	}
 
 	@Override
 	public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
 		valorAux = null;
+		if(relacionEntreCod.getCodigoMunicipio()!=0 &&
+				relacionEntreCod.getCodigoProvincia()!=0)
+		{
+			if(relacionEntreCod.getiDCodigoPostal()==0)
+				relacionEntreCod.setiDCodigoPostal(-1);
+			if(relacionEntreCods.isEmpty())
+			{
+				relacionEntreCod.setId(1);
+				relacionEntreCods.add(relacionEntreCod);
+			}else
+				if(!relacionEntreCods.contains(relacionEntreCod))
+				{
+					relacionEntreCod.setId(relacionEntreCods.get(relacionEntreCods.size()-1).getId()+1);
+					relacionEntreCods.add(relacionEntreCod);
+				}
+			alojamientos.get(alojamientos.size()-1).setRelacionEntreCod(relacionEntreCod);
+			relacionEntreCod=new RelacionEntreCod();
+		}
 		if (localName.compareToIgnoreCase("documentname") == 0)
 			alojamientos.add(new Modelo.Alojamiento());
+		
 	}
 }
