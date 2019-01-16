@@ -64,7 +64,7 @@ public class Prueba {
 			//creacionBBDD_Tablas("labetxe", "localhost", 0, "root", "");
 			//poblarTablas("labetxe", "localhost", 0, "root", "", alojamientos, categorias,codigosPostales, municipios, provincias, tiposAlbergues,tiposAlberguesEuskera,relacionEntreCods);
 			Conexion.cerrar1();
-
+//
 		} catch (SAXException e) {
 			e.printStackTrace();
 		} catch (FileNotFoundException e) {
