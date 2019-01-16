@@ -1,0 +1,62 @@
+c:\users\admin1\documents\visual studio 2013\Projects\EthaziAplicacion\EthaziAplicacion\bin\Debug\EthaziAplicacion.exe.config
+c:\users\admin1\documents\visual studio 2013\Projects\EthaziAplicacion\EthaziAplicacion\bin\Debug\EthaziAplicacion.exe
+c:\users\admin1\documents\visual studio 2013\Projects\EthaziAplicacion\EthaziAplicacion\bin\Debug\EthaziAplicacion.pdb
+c:\users\admin1\documents\visual studio 2013\Projects\EthaziAplicacion\EthaziAplicacion\bin\Debug\EthaziAplicacion.xml
+c:\users\admin1\documents\visual studio 2013\Projects\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.Resources.resources
+c:\users\admin1\documents\visual studio 2013\Projects\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.vbproj.GenerateResource.Cache
+c:\users\admin1\documents\visual studio 2013\Projects\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.exe
+c:\users\admin1\documents\visual studio 2013\Projects\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.xml
+c:\users\admin1\documents\visual studio 2013\Projects\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.pdb
+C:\Users\Admin1\Documents\Visual Studio 2013\Projects\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.Admin.resources
+C:\Users\Admin1\Documents\Visual Studio 2013\Projects\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.Inicio.resources
+C:\Users\Admin1\Documents\Visual Studio 2013\Projects\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.Registro.resources
+C:\Users\Admin1\Documents\Visual Studio 2013\Projects\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.Administrador.resources
+C:\Users\Admin1\Documents\Visual Studio 2013\Projects\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.Usuarios.resources
+C:\Users\Admin1\Documents\Visual Studio 2013\Projects\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.CamposInsersion.resources
+G:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\bin\Debug\EthaziAplicacion.exe.config
+G:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.exe
+G:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.xml
+G:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.pdb
+G:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\bin\Debug\EthaziAplicacion.exe
+G:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\bin\Debug\EthaziAplicacion.pdb
+G:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\bin\Debug\EthaziAplicacion.xml
+G:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.Administrador.resources
+G:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.Inicio.resources
+G:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.Resources.resources
+G:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.Registro.resources
+G:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.vbproj.GenerateResource.Cache
+E:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\bin\Debug\EthaziAplicacion.exe.config
+E:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.exe
+E:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.xml
+E:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.pdb
+E:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.Administrador.resources
+E:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.Inicio.resources
+E:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.Resources.resources
+E:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.Registro.resources
+E:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.vbproj.GenerateResource.Cache
+E:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\bin\Debug\EthaziAplicacion.exe
+E:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\bin\Debug\EthaziAplicacion.pdb
+E:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\bin\Debug\EthaziAplicacion.xml
+H:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\bin\Debug\EthaziAplicacion.exe.config
+H:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.exe
+H:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.xml
+H:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.pdb
+G:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.CuartaPageInsert.resources
+G:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.PrimeraPageInsert.resources
+G:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.SegundaPageInsert.resources
+G:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.TerceraPageInsert.resources
+E:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.vbprojResolveAssemblyReference.cache
+E:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.Vista.resources
+E:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.CuartaPageInsert.resources
+E:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.PrimeraPageInsert.resources
+E:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.SegundaPageInsert.resources
+E:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.TerceraPageInsert.resources
+E:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\bin\Debug\MySql.Data.dll
+E:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\bin\Debug\Google.Protobuf.dll
+E:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\bin\Debug\MySql.Data.xml
+G:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.Vista.resources
+G:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\bin\Debug\MySql.Data.dll
+G:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\bin\Debug\Google.Protobuf.dll
+G:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\bin\Debug\MySql.Data.xml
+G:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.vbprojResolveAssemblyReference.cache
+G:\_ETHAZI\DI\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.Buscar.resources
