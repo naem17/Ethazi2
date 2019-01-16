@@ -2,37 +2,15 @@
 Public Class VerSeleccion
     Inherits System.Web.UI.Page
     Dim cnn1 As MySqlConnection = Site1.cnn1
-    Dim tabla As String
     Dim param As String
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        Dim datos() As String = Split(Request.QueryString().ToString(), "+")
+        param = Request.QueryString().ToString().ToLower()
 
         If cnn1.State = ConnectionState.Closed Then
             cnn1.Open()
         End If
         Dim cmd1 = cnn1.CreateCommand()
-        param = datos(0)
-        tabla = datos(1).ToLower()
-        Dim sql As String
-        sql = "SELECT * FROM " & tabla.ToString
-        Select Case tabla
-            Case "alojamientos"
-                cmd1.CommandText = sql & " WHERE FIRMA = @param"
-            Case "categorias"
-                cmd1.CommandText = sql & " WHERE CODIGO = @param"
-            Case "codigos_postales"
-                cmd1.CommandText = sql & " WHERE ID = @param"
-            Case "municipios"
-                cmd1.CommandText = sql & " WHERE INDICE = @param"
-            Case "provincias"
-                cmd1.CommandText = sql & " WHERE CODIGO = @param"
-            Case "tipos"
-                cmd1.CommandText = sql & " WHERE CODIGO = @param"
-            Case "tipos_euskera"
-                cmd1.CommandText = sql & " WHERE CODIGO = @param"
-            Case Else
-                MsgBox("No se a creado select")
-        End Select
+        cmd1.CommandText = "SELECT `FIRMA`, `NOMBRE`, `DESCRIPCION_ABREVIADA` AS `DESCRIPCION ABREVIADA`, `DESCRIPCION_ABREVIADA_EUSKERA` AS `DESCRIPCION ABREVIADA EUSKERA`, `DESCRIPCION`, `DESCRIPCION_EUSKERA` AS `DESCRIPCION EUSKERA`, `TELEFONO`, `DIRECCION`, `CALIDAD_ASEGURADA` AS `CALIDAD ASEGURADA`, `EMAIL`, `WEB`, `CLUB`, `RESTAURANTE`, `AUTOCARAVANA`, `TIENDA`, `CAPACIDAD`, `GASTRONOMICO`, `SURFING`, `COORDENADAS`, `CODIGO_TIPOS` AS `CODIGOS TIPOS`, `CODIGO_TIPOS_EUSKERA` AS `CODIGOS TIPOS EUSKERA`, `CODIGO_CATEGORIAS` AS `CODIGO CATEGORIAS`, `ID_RELACIONES` AS `ID RELACIONES` FROM `alojamientos` WHERE `FIRMA` = @param"
         cmd1.Parameters.AddWithValue("@param", param)
         Dim da1 As New MySqlDataAdapter
         da1.SelectCommand = cmd1
@@ -43,6 +21,6 @@ Public Class VerSeleccion
     End Sub
 
     Private Sub DetailsView1_ModeChanging(sender As Object, e As DetailsViewModeEventArgs) Handles DetailsView1.ModeChanging
-        Response.Redirect("EditarPagina" & tabla & ".aspx?" & param)
+        Response.Redirect("EditarPagina.aspx?" & param)
     End Sub
 End Class
