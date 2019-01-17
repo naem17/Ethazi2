@@ -107,6 +107,78 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:GestionAlojaminetos.EditaPaginaalojamientos._lbl_Firma">
+<summary>
+Control lbl_Firma.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:GestionAlojaminetos.EditaPaginaalojamientos._txt_Firma">
+<summary>
+Control txt_Firma.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:GestionAlojaminetos.EditaPaginaalojamientos._lbl_Nombre">
+<summary>
+Control lbl_Nombre.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:GestionAlojaminetos.EditaPaginaalojamientos._txt_Nombre">
+<summary>
+Control txt_Nombre.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:GestionAlojaminetos.EditaPaginaalojamientos._lbl_Descripcion_abre">
+<summary>
+Control lbl_Descripcion_abre.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:GestionAlojaminetos.EditaPaginaalojamientos._txt_Descripcion_abre">
+<summary>
+Control txt_Descripcion_abre.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:GestionAlojaminetos.EditaPaginaalojamientos._lbl_Descripcion_abre_eus">
+<summary>
+Control lbl_Descripcion_abre_eus.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:GestionAlojaminetos.EditaPaginaalojamientos._txt_Descripcion_abre_eus">
+<summary>
+Control txt_Descripcion_abre_eus.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:GestionAlojaminetos.Indice._form_Loggin">
 <summary>
 Control form_Loggin.

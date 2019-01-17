@@ -18,7 +18,12 @@
 }
 
 .tabla_madre {
-    width: 100%;
+    border-spacing: 10px;
+    border-collapse: separate;
+}
+
+.td_table {
+    padding: 10px;
 }
 
 .footer {
