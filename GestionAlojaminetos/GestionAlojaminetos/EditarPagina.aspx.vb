@@ -16,11 +16,6 @@ Public Class EditaPaginaalojamientos
         da1.SelectCommand = cmd1
         Dim dt As New DataTable
         da1.Fill(dt)
-        Me.Form.Action = "MostrarDatos()"
-    End Sub
-    Sub MostrarDatos()
-        Dim dato As String = txt_Firma.Text
-        MsgBox(dato)
     End Sub
 
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click

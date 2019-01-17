@@ -22,7 +22,18 @@
     border-collapse: separate;
 }
 
+.tabla_edit {
+    margin-left: 10%;
+    border-spacing: 10px;
+    border-collapse: separate;
+}
+
 .td_table {
+    padding: 10px;
+}
+
+.td_table_con {
+    float: right;
     padding: 10px;
 }
 
