@@ -8,27 +8,27 @@ Public Class Buscar
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         Dim nombre As String = Me.txt_Nombre.Text
         Dim capacidad As String = Me.txt_capacidad.Text
-        If nombre <> "" Then
-            sql2 = "Select * from alojamientos where capacidad = " & capacidad & " and id_relaciones=" & cogerIdAlojamientos() & " and codigo_tipos=" & cogerTipo()
-        Else
-            sql2 = "Select * from alojamientos where nombre like '" & nombre & "%' and capacidad = " & capacidad & " and codigo_tipos=" & cogerTipo()
-        End If
+        sql2 = "Select * from alojamientos "
+
+
         If capacidad <> "" Then
-            sql2 = "Select * from alojamientos where nombre like '" & nombre & "%' and codigo_tipos=" & cogerTipo() & " and id_relaciones=" & cogerIdAlojamientos()
+            sql2 &= "nombre like '" & nombre & "%' and codigo_tipos=" & cogerTipo() & " and id_relaciones=" & cogerIdAlojamientos()
         Else
-            sql2 = "Select * from alojamientos where nombre like '" & nombre & "%' and capacidad = " & capacidad & " and codigo_tipos=" & cogerTipo() & " and id_relaciones=" & cogerIdAlojamientos()
+            sql2 &= "nombre like '" & nombre & "%' and capacidad = " & capacidad & " and codigo_tipos=" & cogerTipo() & " and id_relaciones=" & cogerIdAlojamientos()
         End If
         If ckb_tipos.Checked Then
-            sql2 = "Select * from alojamientos where nombre like '" & nombre & "%' and capacidad = " & capacidad & " and id_relaciones=" & cogerIdAlojamientos()
+            sql2 &= ""
         Else
-            sql2 = "Select * from alojamientos where codigo_tipos=" & cogerTipo()
+            sql2 &= "where codigo_tipos=" & cogerTipo()
         End If
         If ckb_provincias.Checked Then
-            sql2 = "Select * from alojamientos where nombre like '" & nombre & "%' and capacidad = " & capacidad & " and codigo_tipos=" & cogerTipo()
+            sql2 &= ""
         Else
-            sql2 = "Select * from alojamientos where id_relaciones=" & cogerIdAlojamientos()
+            sql2 &= "where id_relaciones=" & cogerIdAlojamientos()
         End If
-
+        MsgBox(sql2)
+        '----------------------------------------------------------------------------------------------------------------------ç
+        'sql2 = "Select * from alojamientos where"
         cargar(sql2)
     End Sub
 

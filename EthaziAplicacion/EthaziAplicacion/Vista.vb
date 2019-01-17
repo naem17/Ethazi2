@@ -94,10 +94,10 @@ Public Class Vista
             Else
                 Me.txt_Coordenadas.Text = datos(18)
             End If
-            If IsDBNull(datos(21)) Then
+            If IsDBNull(datos(19)) Then
                 Me.cmb_Tipo.Text = ""
             Else
-                Select Case datos(21)
+                Select Case datos(19)
                     Case 0
                         Me.cmb_Tipo.Text = "Albergue"
                     Case 1
@@ -109,23 +109,24 @@ Public Class Vista
 
                 End Select
             End If
-            If IsDBNull(datos(23)) Then
+            If IsDBNull(datos(21)) Then
                 Me.cmb_Tipo.Text = ""
             Else
-                Select Case datos(23)
+                Select Case datos(21)
                     Case 0
                         Me.cmb_Categoria.Text = "S"
                     Case 1
-                        Me.cmb_Categoria.Text = "P"
-                    Case 2
                         Me.cmb_Categoria.Text = "T"
-                  
+                    Case 2
+                        Me.cmb_Categoria.Text = "P"
+
 
                 End Select
             End If
 
         End While
         datos.Close()
+
         '-----------------------------CARGAR Tipos CMB--------------------------------------
         Dim sql2 As String
         sql2 = "select distinct codigo_tipos from alojamientos"
@@ -162,6 +163,18 @@ Public Class Vista
             End If
         End While
         dr1.Close()
+        '----------------------------------------------------------------------------------------
+        ''--------------------------------cargar CMB PROVINCIAS-----------------------------------
+        Dim sql4 As String
+        sql4 = "select provincua from provincias "
+        Dim cmd4 As New MySqlCommand(sql4, conexion)
+        Dim dr4 As MySqlDataReader
+        dr4 = cmd4.ExecuteReader
+        While dr4.Read
+            Me.cmb_Provincia.Items.Add(dr4.Item(0))
+          
+        End While
+        dr4.Close()
         '----------------------------------------------------------------------------------------
         desconectar()
     End Sub
@@ -226,7 +239,7 @@ Public Class Vista
     Public Sub actualizar()
         sql = "UPDATE alojamientos SET nombre=@nombre,descripcion_Abre=@desc_abre,descripcion_Abre_eus=@desc_abre_eus,descripcion=@desc,descripcion_eus=@desc_eus,telefono=@phone,direccion=@address,"
         sql &= "calidad=@calidad,email=@mail,web=@web,club=@club,restaurante=@restaurante,autocaravana=@caravana,tienda=@shop,capacidad=@capacidad,gatronomico=@gatronomico,surfing=@surf,coordenadas=@coordenadas,"
-        sql &= "cod_tipos=@cTipos,cod_tipos=@cTiposEus,cod_categorias=@cCategorias,id_relaciones=@idRelaciones "
+        sql &= "codigo_tipos=@cTipos,codigo_tipos_euskera=@cTiposEus,codigo_categorias=@cCategorias,id_relaciones=@idRelaciones "
         sql &= "where firma=@firma"
         Dim cmd1 = New MySqlCommand(sql, conexion)
         cmd1.Parameters.AddWithValue("@firma", Me.txt_Firma.Text)
@@ -282,14 +295,11 @@ Public Class Vista
             cmd1.Parameters.AddWithValue("@surfing", 0)
 
         End If
-
         cmd1.Parameters.AddWithValue("@coordenadas", Me.txt_Coordenadas.Text)
-        cmd1.Parameters.AddWithValue("@cMunicipio", Me.cmb_Municipio.SelectedItem)
-        cmd1.Parameters.AddWithValue("@cProvincia", Convert.ToInt32(Me.cmb_Provincia.SelectedValue.ToString))
-        cmd1.Parameters.AddWithValue("@cTipos", Me.cmb_Tipo.SelectedValue.ToString)
-        cmd1.Parameters.AddWithValue("@cTiposEus", "yo")
-        cmd1.Parameters.AddWithValue("@cCategoria", Me.cmb_Categoria.SelectedValue.ToString)
-        cmd1.Parameters.AddWithValue("@id_relaciones", cargarId)
+        cmd1.Parameters.AddWithValue("@cod_tipos", Me.cmb_Tipo.SelectedItem)
+        cmd1.Parameters.AddWithValue("@cod_tipos_eus", 1)
+        cmd1.Parameters.AddWithValue("@cod_categoria", Me.cmb_Categoria.SelectedItem)
+        cmd1.Parameters.AddWithValue("@id_relaciones", Val(cargarId()))
 
         Dim result As Integer
         Try
