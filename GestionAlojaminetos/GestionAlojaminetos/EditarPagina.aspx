@@ -115,7 +115,7 @@
                     <asp:CheckBox ID="chk_Gastronomico" runat="server" />
                 </td>
                 <td class="td_table">
-                    <asp:Label ID="lbl_Surfing" runat="server" Text="Internet:"></asp:Label>
+                    <asp:Label ID="lbl_Surfing" runat="server" Text="Surfing:"></asp:Label>
                     </td>
                 <td class="td_table_con">
                     <asp:CheckBox ID="chk_Surfing" runat="server" />
