@@ -214,6 +214,9 @@
     <Content Include="IMAGENES\exclamation-mark.png" />
     <Content Include="IMAGENES\buscar.png" />
     <Content Include="IMAGENES\NOMBRE.PNG" />
+    <Content Include="IMAGENES\reply %281%29.png" />
+    <Content Include="IMAGENES\reply.png" />
+    <None Include="Resources\reply %281%29.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">

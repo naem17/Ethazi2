@@ -1,4 +1,6 @@
-﻿Public Class CuartaPageInsert
+﻿Imports System.Drawing
+
+Public Class CuartaPageInsert
 
     Private Sub btn_Finalizar_Click(sender As Object, e As EventArgs) Handles btn_Finalizar.Click
         insertar()
@@ -6,6 +8,7 @@
 
     Private Sub CuartaPageInsert_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         conectar()
+        
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click

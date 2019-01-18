@@ -154,7 +154,7 @@ Partial Class TerceraPageInsert
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(23, 25)
         Me.Label8.TabIndex = 40
-        Me.Label8.Text = "1"
+        Me.Label8.Text = "3"
         '
         'Label10
         '

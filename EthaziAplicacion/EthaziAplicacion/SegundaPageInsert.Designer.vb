@@ -147,7 +147,7 @@ Partial Class SegundaPageInsert
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(23, 25)
         Me.Label8.TabIndex = 35
-        Me.Label8.Text = "1"
+        Me.Label8.Text = "2"
         '
         'Label10
         '
@@ -190,6 +190,7 @@ Partial Class SegundaPageInsert
         '
         'PictureBox1
         '
+        Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(5, 5)
         Me.PictureBox1.Name = "PictureBox1"

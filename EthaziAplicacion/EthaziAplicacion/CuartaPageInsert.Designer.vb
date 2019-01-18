@@ -22,7 +22,6 @@ Partial Class CuartaPageInsert
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CuartaPageInsert))
         Me.btn_Finalizar = New System.Windows.Forms.Button()
         Me.ckb_Tienda = New System.Windows.Forms.CheckBox()
         Me.ckb_Restaurante = New System.Windows.Forms.CheckBox()
@@ -137,7 +136,7 @@ Partial Class CuartaPageInsert
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(23, 25)
         Me.Label8.TabIndex = 37
-        Me.Label8.Text = "1"
+        Me.Label8.Text = "4"
         '
         'Label10
         '
@@ -172,10 +171,11 @@ Partial Class CuartaPageInsert
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.PictureBox1.Image = Global.EthaziAplicacion.My.Resources.Resources.reply__1_
         Me.PictureBox1.Location = New System.Drawing.Point(12, 7)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(30, 30)
+        Me.PictureBox1.Size = New System.Drawing.Size(32, 32)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox1.TabIndex = 48
         Me.PictureBox1.TabStop = False
