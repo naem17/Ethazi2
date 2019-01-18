@@ -11,16 +11,16 @@ Public Class Buscar
         sql2 = "Select * from alojamientos "
 
 
-        If capacidad <> "" Then
-            sql2 &= "nombre like '" & nombre & "%' and codigo_tipos=" & cogerTipo() & " and id_relaciones=" & cogerIdAlojamientos()
-        Else
-            sql2 &= "nombre like '" & nombre & "%' and capacidad = " & capacidad & " and codigo_tipos=" & cogerTipo() & " and id_relaciones=" & cogerIdAlojamientos()
-        End If
-        If ckb_tipos.Checked Then
-            sql2 &= ""
-        Else
-            sql2 &= "where codigo_tipos=" & cogerTipo()
-        End If
+        'If capacidad <> "" Then
+        '    sql2 &= "nombre like '" & nombre & "%' and codigo_tipos=" & cogerTipo() & " and id_relaciones=" & cogerIdAlojamientos()
+        'Else
+        '    sql2 &= "nombre like '" & nombre & "%' and capacidad = " & capacidad & " and codigo_tipos=" & cogerTipo() & " and id_relaciones=" & cogerIdAlojamientos()
+        'End If
+        'If ckb_tipos.Checked Then
+        '    sql2 &= ""
+        'Else
+        '    sql2 &= "where codigo_tipos=" & cogerTipo()
+        'End If
         If ckb_provincias.Checked Then
             sql2 &= ""
         Else
@@ -28,7 +28,6 @@ Public Class Buscar
         End If
         MsgBox(sql2)
         '----------------------------------------------------------------------------------------------------------------------ç
-        'sql2 = "Select * from alojamientos where"
         cargar(sql2)
     End Sub
 
@@ -43,7 +42,7 @@ Public Class Buscar
 
     Private Sub cmb_provincia_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmb_provincia.SelectedIndexChanged
         If cont > 1 Then
-            MsgBox(cmb_provincia.SelectedValue.ToString)
+            '  MsgBox(cmb_provincia.SelectedItem)
 
         End If
         cont += 1

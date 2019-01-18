@@ -101,9 +101,9 @@ Module Sentencias
     End Sub
     Public Function cargarId()
         Dim tabla As New DataTable
-        sql = "Select id from relacion_cp_municipios_provincias where codigo_postal=" & SegundaPageInsert.cmb_CodPostal.SelectedItem
-        Dim cmd1 As New MySqlCommand
-        cmd1 = New MySqlCommand(sql, conexion)
+        Dim cmd1 As New MySqlCommand("", conexion)
+        cmd1.CommandText = "Select `id` from `relacion_cp_municipios_provincias` where `codigo_postal`= @param"
+        cmd1.Parameters.AddWithValue("@param", SegundaPageInsert.cmb_CodPostal.SelectedValue.ToString())
         Dim dr As MySqlDataReader
         dr = cmd1.ExecuteReader
 
