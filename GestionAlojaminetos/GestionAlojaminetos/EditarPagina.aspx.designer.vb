@@ -50,96 +50,6 @@ Partial Public Class EditaPaginaalojamientos
     Protected WithEvents txt_Nombre As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''Control lbl_Descripcion_abre.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents lbl_Descripcion_abre As Global.System.Web.UI.WebControls.Label
-    
-    '''<summary>
-    '''Control txt_Descripcion_abre.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents txt_Descripcion_abre As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''Control lbl_Descripcion_abre_eus.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents lbl_Descripcion_abre_eus As Global.System.Web.UI.WebControls.Label
-    
-    '''<summary>
-    '''Control txt_Descripcion_abre_eus.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents txt_Descripcion_abre_eus As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''Control lbl_Descripcion.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents lbl_Descripcion As Global.System.Web.UI.WebControls.Label
-    
-    '''<summary>
-    '''Control txt_Descripcion.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents txt_Descripcion As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''Control lbl_Descripcion_Eus.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents lbl_Descripcion_Eus As Global.System.Web.UI.WebControls.Label
-    
-    '''<summary>
-    '''Control txt_Descripcion_Eus.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents txt_Descripcion_Eus As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''Control lbl_Telefono.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents lbl_Telefono As Global.System.Web.UI.WebControls.Label
-    
-    '''<summary>
-    '''Control txt_Telefono.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents txt_Telefono As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
     '''Control lbl_Direccion.
     '''</summary>
     '''<remarks>
@@ -158,22 +68,22 @@ Partial Public Class EditaPaginaalojamientos
     Protected WithEvents txt_Direccion As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''Control lbl_Calidad.
+    '''Control lbl_Telefono.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents lbl_Calidad As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_Telefono As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Control chk_Calidad.
+    '''Control txt_Telefono.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents chk_Calidad As Global.System.Web.UI.WebControls.CheckBox
+    Protected WithEvents txt_Telefono As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
     '''Control lbl_Email.
@@ -212,76 +122,94 @@ Partial Public Class EditaPaginaalojamientos
     Protected WithEvents txt_Web As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''Control lbl_Club.
+    '''Control lbl_Provincia.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents lbl_Club As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_Provincia As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Control chk_Club.
+    '''Control txt_Provincia.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents chk_Club As Global.System.Web.UI.WebControls.CheckBox
+    Protected WithEvents txt_Provincia As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''Control lbl_Restaurante.
+    '''Control lbl_Municipio.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents lbl_Restaurante As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_Municipio As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Control chk_Restaurante.
+    '''Control txt_Municipio.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents chk_Restaurante As Global.System.Web.UI.WebControls.CheckBox
+    Protected WithEvents txt_Municipio As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''Control lbl_Autocaravana.
+    '''Control lbl_CodPostal.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents lbl_Autocaravana As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_CodPostal As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Control chk_Autocarvana.
+    '''Control txt_CodPostal.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents chk_Autocarvana As Global.System.Web.UI.WebControls.CheckBox
+    Protected WithEvents txt_CodPostal As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''Control lbl_Tienda.
+    '''Control lbl_Descripcion.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents lbl_Tienda As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_Descripcion As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Control chk_Tienda.
+    '''Control txt_Descripcion.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents chk_Tienda As Global.System.Web.UI.WebControls.CheckBox
+    Protected WithEvents txt_Descripcion As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''Control lbl_Descripcion_Eus.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lbl_Descripcion_Eus As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''Control txt_Descripcion_Eus.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents txt_Descripcion_Eus As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
     '''Control lbl_Capacidad.
@@ -300,60 +228,6 @@ Partial Public Class EditaPaginaalojamientos
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txt_Capacidad As Global.System.Web.UI.WebControls.TextBox
-    
-    '''<summary>
-    '''Control lbl_Gastronomico.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents lbl_Gastronomico As Global.System.Web.UI.WebControls.Label
-    
-    '''<summary>
-    '''Control chk_Gastronomico.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents chk_Gastronomico As Global.System.Web.UI.WebControls.CheckBox
-    
-    '''<summary>
-    '''Control lbl_Surfing.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents lbl_Surfing As Global.System.Web.UI.WebControls.Label
-    
-    '''<summary>
-    '''Control chk_Surfing.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents chk_Surfing As Global.System.Web.UI.WebControls.CheckBox
-    
-    '''<summary>
-    '''Control lbl_Coordenadas.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents lbl_Coordenadas As Global.System.Web.UI.WebControls.Label
-    
-    '''<summary>
-    '''Control txt_Coordenadas.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents txt_Coordenadas As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
     '''Control lbl_Tipos.
@@ -410,58 +284,157 @@ Partial Public Class EditaPaginaalojamientos
     Protected WithEvents txt_Categorias As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''Control lbl_Provincia.
+    '''Control lbl_Coordenadas.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents lbl_Provincia As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_Coordenadas As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Control txt_Provincia.
+    '''Control txt_Coordenadas.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents txt_Provincia As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txt_Coordenadas As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
-    '''Control lbl_Municipio.
+    '''Control lbl_Calidad.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents lbl_Municipio As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_Calidad As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Control txt_Municipio.
+    '''Control chk_Calidad.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents txt_Municipio As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents chk_Calidad As Global.System.Web.UI.WebControls.CheckBox
     
     '''<summary>
-    '''Control lbl_CodPostal.
+    '''Control lbl_Tienda.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents lbl_CodPostal As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents lbl_Tienda As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Control txt_CodPostal.
+    '''Control chk_Tienda.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents txt_CodPostal As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents chk_Tienda As Global.System.Web.UI.WebControls.CheckBox
+    
+    '''<summary>
+    '''Control lbl_Gastronomico.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lbl_Gastronomico As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''Control chk_Gastronomico.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents chk_Gastronomico As Global.System.Web.UI.WebControls.CheckBox
+    
+    '''<summary>
+    '''Control lbl_Club.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lbl_Club As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''Control chk_Club.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents chk_Club As Global.System.Web.UI.WebControls.CheckBox
+    
+    '''<summary>
+    '''Control lbl_Restaurante.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lbl_Restaurante As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''Control chk_Restaurante.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents chk_Restaurante As Global.System.Web.UI.WebControls.CheckBox
+    
+    '''<summary>
+    '''Control lbl_Autocaravana.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lbl_Autocaravana As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''Control chk_Autocarvana.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents chk_Autocarvana As Global.System.Web.UI.WebControls.CheckBox
+    
+    '''<summary>
+    '''Control lbl_Surfing.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lbl_Surfing As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
+    '''Control chk_Surfing.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents chk_Surfing As Global.System.Web.UI.WebControls.CheckBox
+    
+    '''<summary>
+    '''Control DetailsView1.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents DetailsView1 As Global.System.Web.UI.WebControls.DetailsView
     
     '''<summary>
     '''Control Button1.
