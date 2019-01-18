@@ -8,30 +8,27 @@
             <asp:CommandField ShowSelectButton="True" />
             <asp:BoundField DataField="FIRMA" HeaderText="FIRMA" SortExpression="FIRMA" />
             <asp:BoundField DataField="NOMBRE" HeaderText="NOMBRE" SortExpression="NOMBRE" />
-            <asp:BoundField DataField="DESCRIPCION ABREVIADA" HeaderText="DESCRIPCION ABREVIADA" ReadOnly="True" SortExpression="DESCRIPCION ABREVIADA" />
-            <asp:BoundField DataField="TIENDA" HeaderText="TIENDA" SortExpression="TIENDA" />
-            <asp:BoundField DataField="CAPACIDAD" HeaderText="CAPACIDAD" SortExpression="CAPACIDAD" />
-            <asp:BoundField DataField="GASTRONOMICO" HeaderText="GASTRONOMICO" SortExpression="GASTRONOMICO" />
-            <asp:BoundField DataField="SURFING" HeaderText="SURFING" SortExpression="SURFING" />
-            <asp:BoundField DataField="COORDENADAS" HeaderText="COORDENADAS" SortExpression="COORDENADAS" />
-            <asp:BoundField DataField="CODIGO TIPOS" HeaderText="CODIGO TIPOS" SortExpression="CODIGO TIPOS" />
-            <asp:BoundField DataField="CODIGOS TIPOS EUSKERA" HeaderText="CODIGOS TIPOS EUSKERA" SortExpression="CODIGOS TIPOS EUSKERA" />
-            <asp:BoundField DataField="CATEGORIA" HeaderText="CATEGORIA" SortExpression="CATEGORIA" />
-            <asp:BoundField DataField="TIPO" HeaderText="TIPO" SortExpression="TIPO" />
-            <asp:BoundField DataField="TIPO EUSKERA" HeaderText="TIPO EUSKERA" SortExpression="TIPO EUSKERA" />
-            <asp:BoundField DataField="DESCRIPCION ABREVIADA EUSKERA" HeaderText="DESCRIPCION ABREVIADA EUSKERA" ReadOnly="True" SortExpression="DESCRIPCION ABREVIADA EUSKERA" />
+            <asp:BoundField DataField="DIRECCION" HeaderText="DIRECCION" SortExpression="DIRECCION" />
+            <asp:BoundField DataField="TELEFONO" HeaderText="TELEFONO" SortExpression="TELEFONO" />
+            <asp:BoundField DataField="EMAIL" HeaderText="EMAIL" SortExpression="EMAIL" />
+            <asp:BoundField DataField="PAGINA WEB" HeaderText="PAGINA WEB" SortExpression="PAGINA WEB" />
+            <asp:BoundField DataField="PROVINCIA" HeaderText="PROVINCIA" SortExpression="PROVINCIA" />
+            <asp:BoundField DataField="MUNICIPIO" HeaderText="MUNICIPIO" SortExpression="MUNICIPIO" />
+            <asp:BoundField DataField="CODIGO_POSTAL" HeaderText="CODIGO_POSTAL" SortExpression="CODIGO_POSTAL" />
             <asp:BoundField DataField="DESCRIPCION" HeaderText="DESCRIPCION" ReadOnly="True" SortExpression="DESCRIPCION" />
             <asp:BoundField DataField="DESCRIPCION EUSKERA" HeaderText="DESCRIPCION EUSKERA" ReadOnly="True" SortExpression="DESCRIPCION EUSKERA" />
-            <asp:BoundField DataField="TELEFONO" HeaderText="TELEFONO" SortExpression="TELEFONO" />
-            <asp:BoundField DataField="DIRECCION" HeaderText="DIRECCION" SortExpression="DIRECCION" />
+            <asp:BoundField DataField="CAPACIDAD" HeaderText="CAPACIDAD" SortExpression="CAPACIDAD" />
+            <asp:BoundField DataField="TIPO" HeaderText="TIPO" SortExpression="TIPO" />
+            <asp:BoundField DataField="TIPO EUSKERA" HeaderText="TIPO EUSKERA" SortExpression="TIPO EUSKERA" />
+            <asp:BoundField DataField="CATEGORIA" HeaderText="CATEGORIA" SortExpression="CATEGORIA" />
+            <asp:BoundField DataField="COORDENADAS" HeaderText="COORDENADAS" SortExpression="COORDENADAS" />
             <asp:BoundField DataField="CALIDAD ASEGURADA" HeaderText="CALIDAD ASEGURADA" SortExpression="CALIDAD ASEGURADA" />
-            <asp:BoundField DataField="EMAIL" HeaderText="EMAIL" SortExpression="EMAIL" />
+            <asp:BoundField DataField="TIENDA" HeaderText="TIENDA" SortExpression="TIENDA" />
+            <asp:BoundField DataField="GASTRONOMICO" HeaderText="GASTRONOMICO" SortExpression="GASTRONOMICO" />
             <asp:BoundField DataField="CLUB" HeaderText="CLUB" SortExpression="CLUB" />
             <asp:BoundField DataField="RESTAURANTE" HeaderText="RESTAURANTE" SortExpression="RESTAURANTE" />
             <asp:BoundField DataField="AUTOCARAVANA" HeaderText="AUTOCARAVANA" SortExpression="AUTOCARAVANA" />
-            <asp:BoundField DataField="MUNICIPIO" HeaderText="MUNICIPIO" SortExpression="MUNICIPIO" />
-            <asp:BoundField DataField="PROVINCIA" HeaderText="PROVINCIA" SortExpression="PROVINCIA" />
-            <asp:BoundField DataField="CODIGO_POSTAL" HeaderText="CODIGO_POSTAL" SortExpression="CODIGO_POSTAL" />
+            <asp:BoundField DataField="SURFING" HeaderText="SURFING" SortExpression="SURFING" />
         </Columns>
         <EditRowStyle BackColor="#999999" />
         <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
@@ -44,7 +41,7 @@
         <SortedDescendingCellStyle BackColor="#FFFDF8" />
         <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
     </asp:GridView>
-<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:labetxeConnectionString %>" ProviderName="<%$ ConnectionStrings:labetxeConnectionString.ProviderName %>" SelectCommand="SELECT A.`FIRMA`, A.`NOMBRE`, CONCAT(SUBSTRING(A.`DESCRIPCION_ABREVIADA`, 1, 50),'...') AS `DESCRIPCION ABREVIADA`, A.`TIENDA`, A.`CAPACIDAD`, A.`GASTRONOMICO`, A.`SURFING`, A.`COORDENADAS`, A.`CODIGO_TIPOS` AS `CODIGO TIPOS`, A.`CODIGO_TIPOS_EUSKERA` AS `CODIGOS TIPOS EUSKERA`, K.`CATEGORIA`, T.`TIPO`, Y.`TIPO_EUSKERA` AS `TIPO EUSKERA`, CONCAT(SUBSTRING(A.`DESCRIPCION_ABREVIADA_EUSKERA`, 1, 50),'...') AS `DESCRIPCION ABREVIADA EUSKERA`, CONCAT(SUBSTRING(A.`DESCRIPCION`, 1, 50),'...') AS `DESCRIPCION`, CONCAT(SUBSTRING(A.`DESCRIPCION_EUSKERA`, 1, 50),'...') AS `DESCRIPCION EUSKERA`, A.`TELEFONO`, A.`DIRECCION`, A.`CALIDAD_ASEGURADA` AS `CALIDAD ASEGURADA`, A.`EMAIL`, A.`CLUB`, A.`RESTAURANTE`, A.`AUTOCARAVANA`, M.`MUNICIPIO`, P.`PROVINCUA` AS `PROVINCIA`, R.`CODIGO_POSTAL` FROM `ALOJAMIENTOS` A, `RELACION_CP_MUNICIPIOS_PROVINCIAS` R, `MUNICIPIOS` M, `PROVINCIAS` P, `CATEGORIAS` K, `TIPOS` T, `TIPOS_EUSKERA` Y  WHERE A.`CODIGO_TIPOS` = T.`CODIGO` AND A.`CODIGO_TIPOS_EUSKERA` = Y.`CODIGO` AND A.`CODIGO_CATEGORIAS` = K.`CODIGO` AND A.`ID_RELACIONES` = R.`ID` AND R.`CODIGO_PROVINCIA` = P.`CODIGO` AND R.`INDICE_MUNICIPIO` = M.`INDICE` ORDER BY A.`NOMBRE`" DeleteCommand="DELETE FROM `alojamientos` WHERE `FIRMA` = ?" InsertCommand="INSERT INTO `alojamientos` (`FIRMA`, `NOMBRE`, `DESCRIPCION_ABREVIADA`, `TIENDA`, `ID_RELACIONES`, `CAPACIDAD`, `GASTRONOMICO`, `SURFING`, `COORDENADAS`, `CODIGO_TIPOS`, `CODIGO_TIPOS_EUSKERA`, `CODIGO_CATEGORIAS`, `DESCRIPCION_ABREVIADA_EUSKERA`, `DESCRIPCION`, `DESCRIPCION_EUSKERA`, `TELEFONO`, `DIRECCION`, `CALIDAD_ASEGURADA`, `WEB`, `EMAIL`, `CLUB`, `RESTAURANTE`, `AUTOCARAVANA`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)" UpdateCommand="UPDATE `alojamientos` SET `NOMBRE` = ?, `DESCRIPCION_ABREVIADA` = ?, `TIENDA` = ?, `ID_RELACIONES` = ?, `CAPACIDAD` = ?, `GASTRONOMICO` = ?, `SURFING` = ?, `COORDENADAS` = ?, `CODIGO_TIPOS` = ?, `CODIGO_TIPOS_EUSKERA` = ?, `CODIGO_CATEGORIAS` = ?, `DESCRIPCION_ABREVIADA_EUSKERA` = ?, `DESCRIPCION` = ?, `DESCRIPCION_EUSKERA` = ?, `TELEFONO` = ?, `DIRECCION` = ?, `CALIDAD_ASEGURADA` = ?, `WEB` = ?, `EMAIL` = ?, `CLUB` = ?, `RESTAURANTE` = ?, `AUTOCARAVANA` = ? WHERE `FIRMA` = ?">
+<asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:labetxeConnectionString %>" ProviderName="<%$ ConnectionStrings:labetxeConnectionString.ProviderName %>" SelectCommand="SELECT A.`FIRMA`, A.`NOMBRE`, A.`DIRECCION`, A.`TELEFONO`, A.`EMAIL`, A.`WEB` AS `PAGINA WEB`, P.`PROVINCUA` AS `PROVINCIA`, M.`MUNICIPIO`, R.`CODIGO_POSTAL`, CONCAT(SUBSTRING(A.`DESCRIPCION`, 1, 50),'...') AS `DESCRIPCION`, CONCAT(SUBSTRING(A.`DESCRIPCION_EUSKERA`, 1, 50),'...') AS `DESCRIPCION EUSKERA`, A.`CAPACIDAD`, T.`TIPO`, Y.`TIPO_EUSKERA` AS `TIPO EUSKERA`, K.`CATEGORIA`, A.`COORDENADAS`, A.`CALIDAD_ASEGURADA` AS `CALIDAD ASEGURADA`, A.`TIENDA`, A.`GASTRONOMICO`, A.`CLUB`, A.`RESTAURANTE`, A.`AUTOCARAVANA`, A.`SURFING` FROM `ALOJAMIENTOS` A, `RELACION_CP_MUNICIPIOS_PROVINCIAS` R, `MUNICIPIOS` M, `PROVINCIAS` P, `CATEGORIAS` K, `TIPOS` T, `TIPOS_EUSKERA` Y  WHERE A.`CODIGO_TIPOS` = T.`CODIGO` AND A.`CODIGO_TIPOS_EUSKERA` = Y.`CODIGO` AND A.`CODIGO_CATEGORIAS` = K.`CODIGO` AND A.`ID_RELACIONES` = R.`ID` AND R.`CODIGO_PROVINCIA` = P.`CODIGO` AND R.`INDICE_MUNICIPIO` = M.`INDICE` ORDER BY A.`NOMBRE`" DeleteCommand="DELETE FROM `alojamientos` WHERE `FIRMA` = ?" InsertCommand="INSERT INTO `alojamientos` (`FIRMA`, `NOMBRE`, `DESCRIPCION_ABREVIADA`, `TIENDA`, `ID_RELACIONES`, `CAPACIDAD`, `GASTRONOMICO`, `SURFING`, `COORDENADAS`, `CODIGO_TIPOS`, `CODIGO_TIPOS_EUSKERA`, `CODIGO_CATEGORIAS`, `DESCRIPCION_ABREVIADA_EUSKERA`, `DESCRIPCION`, `DESCRIPCION_EUSKERA`, `TELEFONO`, `DIRECCION`, `CALIDAD_ASEGURADA`, `WEB`, `EMAIL`, `CLUB`, `RESTAURANTE`, `AUTOCARAVANA`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)" UpdateCommand="UPDATE `alojamientos` SET `NOMBRE` = ?, `DESCRIPCION_ABREVIADA` = ?, `TIENDA` = ?, `ID_RELACIONES` = ?, `CAPACIDAD` = ?, `GASTRONOMICO` = ?, `SURFING` = ?, `COORDENADAS` = ?, `CODIGO_TIPOS` = ?, `CODIGO_TIPOS_EUSKERA` = ?, `CODIGO_CATEGORIAS` = ?, `DESCRIPCION_ABREVIADA_EUSKERA` = ?, `DESCRIPCION` = ?, `DESCRIPCION_EUSKERA` = ?, `TELEFONO` = ?, `DIRECCION` = ?, `CALIDAD_ASEGURADA` = ?, `WEB` = ?, `EMAIL` = ?, `CLUB` = ?, `RESTAURANTE` = ?, `AUTOCARAVANA` = ? WHERE `FIRMA` = ?">
     <DeleteParameters>
         <asp:Parameter Name="FIRMA" Type="String" />
     </DeleteParameters>
