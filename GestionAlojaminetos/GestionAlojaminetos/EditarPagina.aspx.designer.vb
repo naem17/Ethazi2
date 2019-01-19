@@ -131,13 +131,13 @@ Partial Public Class EditaPaginaalojamientos
     Protected WithEvents lbl_Provincia As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Control txt_Provincia.
+    '''Control ddl_Provincia.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents txt_Provincia As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents ddl_Provincia As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
     '''Control lbl_Municipio.
@@ -149,13 +149,13 @@ Partial Public Class EditaPaginaalojamientos
     Protected WithEvents lbl_Municipio As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Control txt_Municipio.
+    '''Control ddl_Municipio.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents txt_Municipio As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents ddl_Municipio As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
     '''Control lbl_CodPostal.
@@ -167,13 +167,13 @@ Partial Public Class EditaPaginaalojamientos
     Protected WithEvents lbl_CodPostal As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Control txt_CodPostal.
+    '''Control ddl_CodPostal.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents txt_CodPostal As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents ddl_CodPostal As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
     '''Control lbl_Descripcion.
@@ -239,13 +239,13 @@ Partial Public Class EditaPaginaalojamientos
     Protected WithEvents lbl_Tipos As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Control txt_CodTipos.
+    '''Control ddl_Tipos.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents txt_CodTipos As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents ddl_Tipos As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
     '''Control lbl_Tipos_eus.
@@ -257,13 +257,13 @@ Partial Public Class EditaPaginaalojamientos
     Protected WithEvents lbl_Tipos_eus As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Control txt_CodTiposEus.
+    '''Control ddl_Tipos_eus.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents txt_CodTiposEus As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents ddl_Tipos_eus As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
     '''Control lbl_Categorias.
@@ -275,13 +275,13 @@ Partial Public Class EditaPaginaalojamientos
     Protected WithEvents lbl_Categorias As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Control txt_Categorias.
+    '''Control ddl_Categorias.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents txt_Categorias As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents ddl_Categorias As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
     '''Control lbl_Coordenadas.

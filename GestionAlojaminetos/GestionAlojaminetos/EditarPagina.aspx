@@ -46,13 +46,15 @@
                     <asp:Label ID="lbl_Provincia" runat="server" Text="Provincia:"></asp:Label>
                     </td>
                 <td class="td_table_con">
-                    <asp:TextBox ID="txt_Provincia" runat="server"></asp:TextBox>
+                    <asp:DropDownList ID="ddl_Provincia" runat="server">
+                    </asp:DropDownList>
                 </td>
                 <td class="td_table">
                     <asp:Label ID="lbl_Municipio" runat="server" Text="Municipio:"></asp:Label>
                 </td>
                 <td class="td_table_con">
-                    <asp:TextBox ID="txt_Municipio" runat="server"></asp:TextBox>
+                    <asp:DropDownList ID="ddl_Municipio" runat="server">
+                    </asp:DropDownList>
                 </td>
             </tr>
             <tr>
@@ -60,7 +62,8 @@
                     <asp:Label ID="lbl_CodPostal" runat="server" Text="Codigo Postal:"></asp:Label>
                     </td>
                 <td class="td_table_con">
-                    <asp:TextBox ID="txt_CodPostal" runat="server"></asp:TextBox>
+                    <asp:DropDownList ID="ddl_CodPostal" runat="server">
+                    </asp:DropDownList>
                 </td>
                 <td class="td_table">
                     <asp:Label ID="lbl_Descripcion" runat="server" Text="Descripcion:"></asp:Label>
@@ -86,19 +89,22 @@
                     <asp:Label ID="lbl_Tipos" runat="server" Text="Tipos:"></asp:Label>
                     </td>
                 <td class="td_table_con">
-                    <asp:TextBox ID="txt_CodTipos" runat="server"></asp:TextBox>
+                    <asp:DropDownList ID="ddl_Tipos" runat="server">
+                    </asp:DropDownList>
                 </td>
                 <td class="td_table">
                     <asp:Label ID="lbl_Tipos_eus" runat="server" Text="Tipos Euskera:"></asp:Label>
                     </td>
                 <td class="td_table_con">
-                    <asp:TextBox ID="txt_CodTiposEus" runat="server"></asp:TextBox>
+                    <asp:DropDownList ID="ddl_Tipos_eus" runat="server">
+                    </asp:DropDownList>
                 </td>
                 <td class="td_table">
                     <asp:Label ID="lbl_Categorias" runat="server" Text="Categorias:"></asp:Label>
                     </td>
                 <td class="td_table_con">
-                    <asp:TextBox ID="txt_Categorias" runat="server"></asp:TextBox>
+                    <asp:DropDownList ID="ddl_Categorias" runat="server">
+                    </asp:DropDownList>
                 </td>
                 <td class="td_table">
                     <asp:Label ID="lbl_Coordenadas" runat="server" Text="Coordenadas:"></asp:Label>

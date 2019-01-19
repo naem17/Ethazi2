@@ -224,9 +224,9 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:GestionAlojaminetos.EditaPaginaalojamientos._txt_Provincia">
+<member name="F:GestionAlojaminetos.EditaPaginaalojamientos._ddl_Provincia">
 <summary>
-Control txt_Provincia.
+Control ddl_Provincia.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -242,9 +242,9 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:GestionAlojaminetos.EditaPaginaalojamientos._txt_Municipio">
+<member name="F:GestionAlojaminetos.EditaPaginaalojamientos._ddl_Municipio">
 <summary>
-Control txt_Municipio.
+Control ddl_Municipio.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -260,9 +260,9 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:GestionAlojaminetos.EditaPaginaalojamientos._txt_CodPostal">
+<member name="F:GestionAlojaminetos.EditaPaginaalojamientos._ddl_CodPostal">
 <summary>
-Control txt_CodPostal.
+Control ddl_CodPostal.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -332,9 +332,9 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:GestionAlojaminetos.EditaPaginaalojamientos._txt_CodTipos">
+<member name="F:GestionAlojaminetos.EditaPaginaalojamientos._ddl_Tipos">
 <summary>
-Control txt_CodTipos.
+Control ddl_Tipos.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -350,9 +350,9 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:GestionAlojaminetos.EditaPaginaalojamientos._txt_CodTiposEus">
+<member name="F:GestionAlojaminetos.EditaPaginaalojamientos._ddl_Tipos_eus">
 <summary>
-Control txt_CodTiposEus.
+Control ddl_Tipos_eus.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -368,9 +368,9 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:GestionAlojaminetos.EditaPaginaalojamientos._txt_Categorias">
+<member name="F:GestionAlojaminetos.EditaPaginaalojamientos._ddl_Categorias">
 <summary>
-Control txt_Categorias.
+Control ddl_Categorias.
 </summary>
 <remarks>
 Campo generado automáticamente.
