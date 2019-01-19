@@ -22,7 +22,7 @@ Public Class EditaPaginaalojamientos
 
         txt_Firma.Text = Me.DetailsView1.Rows(0).Cells(1).Text
         txt_Nombre.Text = Me.DetailsView1.Rows(1).Cells(1).Text
-        txt_Descripcion.Text = Me.DetailsView1.Rows(1).Cells(1).Text
+        txt_Direccion.Text = Me.DetailsView1.Rows(2).Cells(1).Text
 
     End Sub
 
