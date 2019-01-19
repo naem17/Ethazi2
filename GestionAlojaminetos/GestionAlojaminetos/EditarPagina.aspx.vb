@@ -29,11 +29,9 @@ Public Class EditaPaginaalojamientos
         da1.SelectCommand = cmd2
         dt.Clear()
         da1.Fill(dt)
-        If dt.Rows.Count > 0 Then
-            For i As Integer = 0 To dt.Rows.Count - 1
-                ddl_Tipos.Items.Add(dt.Rows(i)(0).ToString())
-            Next
-        End If
+        ddl_Tipos.DataSource = dt.Rows()
+        ddl_Tipos.DataBind()
+
         txt_Firma.Text = Me.DetailsView1.Rows(0).Cells(1).Text
         txt_Nombre.Text = Me.DetailsView1.Rows(1).Cells(1).Text
         txt_Direccion.Text = Me.DetailsView1.Rows(2).Cells(1).Text
