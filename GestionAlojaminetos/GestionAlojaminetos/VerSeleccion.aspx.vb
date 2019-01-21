@@ -31,8 +31,8 @@ Public Class VerSeleccion
         Dim cmd1 = cnn1.CreateCommand()
         cmd1.CommandText = "DELETE FROM `ALOJAMIENTOS` WHERE FIRMA = '@param'"
         cmd1.Parameters.AddWithValue("@param", param)
-        Dim dar1 As MySqlDataReader
-        dar1 = cmd1.ExecuteReader
-        dar1.Close()
+        If MsgBox("Erregistro hau ezabatu nahi?") = MsgBoxResult.Yes Then
+            cmd1.ExecuteNonQuery()
+        End If
     End Sub
 End Class
