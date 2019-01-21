@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site1.Master" CodeBehind="EditarPagina.aspx.vb" ValidateRequest="False" Inherits="GestionAlojaminetos.EditaPaginaalojamientos" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server" >
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="Cuerpo" runat="server">
+<asp:Content ID="Content3" ContentPlaceHolderID="Cuerpo" runat="server"  >
         <table id="tabla_editar" class="tabla_edit">
             <tr>
                 <td class="td_table">
@@ -46,7 +46,7 @@
                     <asp:Label ID="lbl_Provincia" runat="server" Text="Provincia:"></asp:Label>
                     </td>
                 <td class="td_table_con">
-                    <asp:DropDownList ID="ddl_Provincia" runat="server">
+                    <asp:DropDownList ID="ddl_Provincia" runat="server" AutoPostBack="True">
                     </asp:DropDownList>
                 </td>
                 <td class="td_table">

@@ -20,7 +20,7 @@ Public Class VerSeleccion
         Me.DetailsView1.DataBind()
     End Sub
 
-    Private Sub DetailsView1_ModeChanging(sender As Object, e As DetailsViewModeEventArgs) Handles DetailsView1.ModeChanging
-        Response.Redirect("EditarPagina.aspx?" & param)
+    Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Response.Redirect("EditarPagina.aspx?" & Me.DetailsView1.Rows(0).Cells(1).Text)
     End Sub
 End Class

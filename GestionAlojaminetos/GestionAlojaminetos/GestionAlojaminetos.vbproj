@@ -100,6 +100,7 @@
     <Content Include="Imagenes\fondo.jpg" />
     <Content Include="Loggin.aspx" />
     <Content Include="Estilos.css" />
+    <Content Include="Mapa.aspx" />
     <Content Include="Municipios.aspx" />
     <Content Include="Provincias.aspx" />
     <Content Include="Tipos.aspx" />
@@ -147,6 +148,13 @@
     <Compile Include="Loggin.aspx.vb">
       <DependentUpon>Loggin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mapa.aspx.designer.vb">
+      <DependentUpon>Mapa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mapa.aspx.vb">
+      <DependentUpon>Mapa.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Municipios.aspx.designer.vb">
       <DependentUpon>Municipios.aspx</DependentUpon>

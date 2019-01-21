@@ -3,7 +3,11 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Cuerpo" runat="server">
     <br />
-    <asp:DetailsView ID="DetailsView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Height="50px" Width="15%" HorizontalAlign="Left" AutoGenerateEditButton="True" CssClass="Grid">
+    <asp:Button ID="Button1" runat="server" Text="Editar" />
+    &nbsp;
+    &nbsp;
+    <asp:Button ID="Button2" runat="server" Text="Eliminar" />
+    <asp:DetailsView ID="DetailsView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" Height="50px" Width="15%" HorizontalAlign="Left" AutoGenerateEditButton="False" CssClass="Grid">
         <AlternatingRowStyle Width="40%" BackColor="White" ForeColor="#284775" />
         <CommandRowStyle BackColor="#E2DED6" Font-Bold="True" Width="40%" />
         <EditRowStyle Width="40%" BackColor="#999999" HorizontalAlign="Left" />
