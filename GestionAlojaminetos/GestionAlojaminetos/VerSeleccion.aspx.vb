@@ -23,4 +23,16 @@ Public Class VerSeleccion
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Response.Redirect("EditarPagina.aspx?" & Me.DetailsView1.Rows(0).Cells(1).Text)
     End Sub
+
+    Protected Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        If cnn1.State = ConnectionState.Closed Then
+            cnn1.Open()
+        End If
+        Dim cmd1 = cnn1.CreateCommand()
+        cmd1.CommandText = "DELETE FROM `ALOJAMIENTOS` WHERE FIRMA = '@param'"
+        cmd1.Parameters.AddWithValue("@param", param)
+        Dim dar1 As MySqlDataReader
+        dar1 = cmd1.ExecuteReader
+        dar1.Close()
+    End Sub
 End Class
