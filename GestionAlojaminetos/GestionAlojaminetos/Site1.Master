@@ -11,44 +11,33 @@
     <link rel="stylesheet" type="text/css" href="Estilos.css"/>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" style="width: 100%">
        
-        <table class="tabla_madre">
+        <table class="tabla_madre" style="width: 100%">
             <tr>
                 <td>
                     <asp:ContentPlaceHolder ID="Barra" runat="server">
-                        <asp:Image ID="Image1" runat="server" Height="73px" ImageUrl="~/Imagenes/Logotipo.png" ToolTip="Etxebal" Width="308px" />
+                        <div style="float: right;">
+                            <asp:Button ID="btn_Logout" runat="server" Text="Cerrar Sesion" BackColor="#006D9C" BorderColor="#006D9C" BorderStyle="Solid" Font-Bold="True" ForeColor="White"/>
+                        </div>
+                        <asp:Image ID="Image1" runat="server" Height="73px" ImageUrl="~/Imagenes/Logotipo.png" ToolTip="Etxebal" Width="308px" DescriptionUrl="~/Bienvenida.aspx" />
                         &nbsp;<br />
-                            <br />
-                            Tablas:<br />
+                        <br />
+                        <div class="titulo">
+                            Tablas:</div>
+                        <br />
                         <div id="Tablas">
                             <div>
-                                &nbsp;
-                                <a href="Alojamientos.aspx">Alojamientos</a>
-                                &nbsp;
-                                &nbsp;
-                                <a href="Categorias.aspx">Categorias</a>
-                                &nbsp;
-                                &nbsp;
-                                <a href="CodPostales.aspx">Codigos Postales</a>
-                                &nbsp;
-                                &nbsp;
-                                <a href="Municipios.aspx">Municipios</a>
-                                &nbsp;
-                                &nbsp;
-                                <a href="Provincias.aspx">Provincias</a>
-                                &nbsp;
-                                &nbsp;
-                                <a href="Tipos.aspx">Tipos</a>
-                                &nbsp;
-                                &nbsp;
-                                <a href="T_Euskera.aspx">Tipos Euskera</a>
-                                &nbsp;
-                                &nbsp;
-                                <%--<a href="Mapa.aspx">Mapa</a>
+                                &nbsp; <a class="supbtn" href="Alojamientos.aspx">Alojamientos</a> &nbsp;
+                                &nbsp; <a href="Categorias.aspx" class="supbtn">Categorias</a> &nbsp;
+                                &nbsp; <a href="CodPostales.aspx" class="supbtn">Codigos Postales</a> &nbsp;
+                                &nbsp; <a href="Municipios.aspx" class="supbtn">Municipios</a> &nbsp;
+                                &nbsp; <a href="Provincias.aspx" class="supbtn">Provincias</a> &nbsp;
+                                &nbsp; <a href="Tipos.aspx" class="supbtn">Tipos</a> &nbsp;
+                                &nbsp; <a href="T_Euskera.aspx" class="supbtn">Tipos Euskera</a> &nbsp;
+                                &nbsp; <%--<a href="Mapa.aspx">Mapa</a>
                                 &nbsp;
                                 &nbsp;--%>
-
                             </div>
                         </div>
                     </asp:ContentPlaceHolder>

@@ -24,7 +24,7 @@
     <body class="fondo">
         <form id="form_Loggin" runat="server">
             <div>
-                <asp:Login ID="Login1" runat="server" CssClass="auto-style-1, box" BackColor="#F7F6F3" BorderColor="#E6E2D8" BorderPadding="4" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="Medium" ForeColor="#333333" Height="142px" Width="354px">
+                <asp:Login ID="Login1" runat="server" CssClass="auto-style-1, box" BackColor="#F7F6F3" BorderColor="#E6E2D8" BorderPadding="4" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="Medium" ForeColor="#333333" Height="142px" Width="354px" DestinationPageUrl="~/Site1.Master">
                     <InstructionTextStyle Font-Italic="True" ForeColor="Black" />
                     <LoginButtonStyle BackColor="#FFFBFF" BorderColor="#CCCCCC" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#284775" />
                     <TextBoxStyle Font-Size="0.8em" />

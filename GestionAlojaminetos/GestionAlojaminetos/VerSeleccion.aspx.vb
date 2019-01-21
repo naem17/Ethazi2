@@ -28,11 +28,16 @@ Public Class VerSeleccion
         If cnn1.State = ConnectionState.Closed Then
             cnn1.Open()
         End If
-        Dim cmd1 = cnn1.CreateCommand()
-        cmd1.CommandText = "DELETE FROM `ALOJAMIENTOS` WHERE FIRMA = '@param'"
-        cmd1.Parameters.AddWithValue("@param", param)
-        If MsgBox("Erregistro hau ezabatu nahi?") = MsgBoxResult.Yes Then
-            cmd1.ExecuteNonQuery()
+        Dim sql As String = "DELETE FROM `ALOJAMIENTOS` WHERE FIRMA = '@param'"
+        sql.Replace("@param", param)
+        Dim cmd1 As New MySqlCommand(sql, cnn1)
+        Dim dr As MySqlDataReader
+        If MsgBox("Quieres eliminar este alojamiento?", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
+            dr = cmd1.ExecuteReader()
+            While dr.Read()
+                MsgBox("Alojamiento: " & Me.DetailsView1.Rows(1).Cells(1).Text & " borrado con exito.")
+                Response.Redirect("Alojamientos.aspx")
+            End While
         End If
     End Sub
 End Class

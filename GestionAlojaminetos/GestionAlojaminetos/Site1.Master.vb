@@ -15,4 +15,8 @@ Public Class Site1
             End If
         End Try
     End Sub
+
+    Protected Sub btn_Logout_Click(sender As Object, e As EventArgs) Handles btn_Logout.Click
+        Response.Redirect("Loggin.aspx")
+    End Sub
 End Class

@@ -1,11 +1,17 @@
 ﻿.box {
-    
     position: fixed;
     margin-left: 9%;
     margin-top: 9%;
     top: 25%;
     left: 35%;
     text-align: center;
+}
+
+.titulo {
+    background-color: #006d9c;
+    font-style: inherit;
+    font-weight: bold;
+    color: azure;
 }
 
 .fondo {
@@ -38,8 +44,9 @@
 }
 
 .footer {
-    background-color: #279fe5;
+    background-color: #006d9c;
     font-style: inherit;
+    font-weight: bold;
     color: azure;
 }
 
@@ -54,4 +61,21 @@
 .Grid {
     margin-top: 2%;
     margin-bottom: 2%;
+}
+
+.supbtn {
+    font-weight: bold;
+}
+
+supbtn:link, supbtn:visited {
+    background-color: #006d9c;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+supbtn:hover, supbtn:active {
+    background-color: #006d9c;
 }
