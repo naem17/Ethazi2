@@ -167,8 +167,7 @@
             </tr>
             <tr>
                 <td class="td_table">
-                    <asp:DetailsView ID="DetailsView1" runat="server" Height="50px" Width="125px" Visible="False"></asp:DetailsView>
-                </td>
+                    &nbsp;</td>
                 <td class="td_table">
 
                 </td>
@@ -188,7 +187,7 @@
 
                 </td>
                 <td style="padding: 10px; float: right;">
-                    <asp:Button ID="Button1" runat="server" Text="Actualizar Datos" Visible="False" />
+                    <asp:Button ID="Button1" runat="server" Text="Actualizar Datos" />
                 </td>
             </tr>
         </table>

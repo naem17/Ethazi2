@@ -521,15 +521,6 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:GestionAlojaminetos.EditaPaginaalojamientos._DetailsView1">
-<summary>
-Control DetailsView1.
-</summary>
-<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member>
 <member name="F:GestionAlojaminetos.EditaPaginaalojamientos._Button1">
 <summary>
 Control Button1.
