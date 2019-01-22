@@ -53,7 +53,7 @@
                     <asp:Label ID="lbl_Municipio" runat="server" Text="Municipio:"></asp:Label>
                 </td>
                 <td class="td_table_con">
-                    <asp:DropDownList ID="ddl_Municipio" runat="server">
+                    <asp:DropDownList ID="ddl_Municipio" runat="server" AppendDataBoundItems="false" AutoPostBack="True">
                     </asp:DropDownList>
                 </td>
             </tr>

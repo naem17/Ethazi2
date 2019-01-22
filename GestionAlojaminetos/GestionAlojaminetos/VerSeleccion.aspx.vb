@@ -18,6 +18,7 @@ Public Class VerSeleccion
         da1.Fill(dt)
         Me.DetailsView1.DataSource = dt
         Me.DetailsView1.DataBind()
+
     End Sub
 
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -25,19 +26,23 @@ Public Class VerSeleccion
     End Sub
 
     Protected Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        If cnn1.State = ConnectionState.Closed Then
-            cnn1.Open()
-        End If
-        Dim sql As String = "DELETE FROM `ALOJAMIENTOS` WHERE FIRMA = '@param'"
-        sql.Replace("@param", param)
-        Dim cmd1 As New MySqlCommand(sql, cnn1)
-        Dim dr As MySqlDataReader
-        If MsgBox("Quieres eliminar este alojamiento?", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
-            dr = cmd1.ExecuteReader()
-            While dr.Read()
-                MsgBox("Alojamiento: " & Me.DetailsView1.Rows(1).Cells(1).Text & " borrado con exito.")
-                Response.Redirect("Alojamientos.aspx")
-            End While
-        End If
+        Try
+            If cnn1.State = ConnectionState.Closed Then
+                cnn1.Open()
+            End If
+            Dim sql As String = "DELETE FROM `alojamientos` WHERE `alojamientos`.`FIRMA` = '" & param & "'"
+            Dim cmd1 As New MySqlCommand
+            cmd1.CommandText = "DELETE FROM `alojamientos` WHERE `alojamientos`.`FIRMA` = '@param'"
+            cmd1.Parameters.AddWithValue("@param", param)
+            If MsgBox("Quieres eliminar este alojamiento?", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
+                Dim res As Integer = cmd1.ExecuteNonQuery()
+                If res <> 0 Then
+                    MsgBox("Alojamiento: " & Me.DetailsView1.Rows(1).Cells(1).Text & " borrado con exito.")
+                    Response.Redirect("Alojamientos.aspx", False)
+                End If
+            End If
+        Catch ex As Exception
+            MsgBox("Error al borrar" & ": " & ex.Message.ToString)
+        End Try
     End Sub
 End Class
