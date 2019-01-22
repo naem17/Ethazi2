@@ -44,20 +44,24 @@ Partial Class Administrador
         Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(12, 77)
+        Me.DataGridView1.GridColor = System.Drawing.SystemColors.ButtonFace
+        Me.DataGridView1.Location = New System.Drawing.Point(10, 71)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.Size = New System.Drawing.Size(1133, 540)
+        Me.DataGridView1.Size = New System.Drawing.Size(1181, 604)
         Me.DataGridView1.TabIndex = 0
         '
         'MenuStrip1
         '
+        Me.MenuStrip1.BackColor = System.Drawing.SystemColors.Control
         Me.MenuStrip1.Font = New System.Drawing.Font("Goudy Old Style", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EDITARToolStripMenuItem, Me.InsertarToolStripMenuItem, Me.DeleteToolStripMenuItem, Me.ActulizarBBDDToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(150, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(1157, 31)
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(300, 2, 0, 2)
+        Me.MenuStrip1.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.MenuStrip1.Size = New System.Drawing.Size(1212, 31)
         Me.MenuStrip1.TabIndex = 6
         Me.MenuStrip1.Text = "MenuStrip1"
         Me.MenuStrip1.UseWaitCursor = True
@@ -72,13 +76,13 @@ Partial Class Administrador
         'ImportarToolStripMenuItem
         '
         Me.ImportarToolStripMenuItem.Name = "ImportarToolStripMenuItem"
-        Me.ImportarToolStripMenuItem.Size = New System.Drawing.Size(152, 28)
+        Me.ImportarToolStripMenuItem.Size = New System.Drawing.Size(147, 28)
         Me.ImportarToolStripMenuItem.Text = "Exportar"
         '
         'ExportarToolStripMenuItem
         '
         Me.ExportarToolStripMenuItem.Name = "ExportarToolStripMenuItem"
-        Me.ExportarToolStripMenuItem.Size = New System.Drawing.Size(149, 6)
+        Me.ExportarToolStripMenuItem.Size = New System.Drawing.Size(144, 6)
         '
         'EDITARToolStripMenuItem
         '
@@ -108,35 +112,37 @@ Partial Class Administrador
         '
         Me.lbl_Alojamientos.AutoSize = True
         Me.lbl_Alojamientos.ForeColor = System.Drawing.Color.DarkRed
-        Me.lbl_Alojamientos.Location = New System.Drawing.Point(12, 40)
+        Me.lbl_Alojamientos.Location = New System.Drawing.Point(11, 44)
+        Me.lbl_Alojamientos.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbl_Alojamientos.Name = "lbl_Alojamientos"
-        Me.lbl_Alojamientos.Size = New System.Drawing.Size(236, 25)
+        Me.lbl_Alojamientos.Size = New System.Drawing.Size(185, 21)
         Me.lbl_Alojamientos.TabIndex = 7
         Me.lbl_Alojamientos.Text = "TABLA ALOJAMIENTOS"
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(1090, 34)
+        Me.PictureBox1.Location = New System.Drawing.Point(1150, 34)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(39, 37)
+        Me.PictureBox1.Size = New System.Drawing.Size(32, 31)
         Me.PictureBox1.TabIndex = 8
         Me.PictureBox1.TabStop = False
         '
         'Administrador
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 25.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 21.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1157, 629)
+        Me.ClientSize = New System.Drawing.Size(1212, 687)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.lbl_Alojamientos)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.MenuStrip1)
-        Me.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Font = New System.Drawing.Font("Goudy Old Style", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.Color.Black
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Margin = New System.Windows.Forms.Padding(6, 5, 6, 5)
+        Me.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.Name = "Administrador"
         Me.Text = "ADMINISTRAR"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()

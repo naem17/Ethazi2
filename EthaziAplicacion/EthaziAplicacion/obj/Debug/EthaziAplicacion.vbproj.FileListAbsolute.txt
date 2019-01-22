@@ -82,3 +82,7 @@ G:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicac
 G:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.SegundaPageInsert.resources
 G:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.TerceraPageInsert.resources
 G:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.vbproj.GenerateResource.Cache
+F:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\bin\Debug\EthaziAplicacion.exe.config
+F:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.exe
+F:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.xml
+F:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.pdb

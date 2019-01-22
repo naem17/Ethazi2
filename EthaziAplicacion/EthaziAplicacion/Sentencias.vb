@@ -9,7 +9,6 @@ Module Sentencias
     Public Function cogerIdAlojamientos()
         Dim coger As Integer
         conectar()
-        ' & Buscar.cmb_provincia.SelectedValue.ToString &
 
         sql = "Select * from alojamientos where id_relaciones IN (select id from relacion_cp_municipios_provincias where codigo_provincia IN (Select codigo from provincias where provincua='" & Buscar.cmb_provincia.SelectedValue.ToString & "'))"
         Dim cmd1 As New MySqlCommand

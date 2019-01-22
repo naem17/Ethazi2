@@ -123,7 +123,15 @@ Public Class Vista
 
                 End Select
             End If
+            'Me saca el id del alojamiento'
+            If IsDBNull(datos(22)) Then
+                Me.cmb_Provincia.Text = ""
+                Me.cmb_Municipio.Text = ""
+                Me.cmb_CodPostal.Text = ""
+            Else
 
+
+            End If
         End While
         datos.Close()
 
