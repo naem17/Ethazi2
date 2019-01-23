@@ -217,6 +217,39 @@ Public Class EditaPaginaalojamientos
 
     Private Sub prepararUpdate(ByVal ParamArray datos() As String)
 
+        'Consigo el id de relacion pasandole los datos que ha seleccionado el usuario
+        Dim dar1 As MySqlDataReader
+        Dim cmd1 = cnn1.CreateCommand()
+        Dim id_rela As String = Nothing
+        cmd1.CommandText = "SELECT R.`ID` FROM `RELACION_CP_MUNICIPIOS_PROVINCIAS` R WHERE R.`CODIGO_PROVINCIA` = (SELECT P.`CODIGO` FROM `PROVINCIAS` P WHERE P.`PROVINCUA` = @prov) AND R.`INDICE_MUNICIPIO` = (SELECT M.`INDICE` FROM `MUNICIPIOS` M WHERE M.`MUNICIPIO` = @muni) AND R.`CODIGO_POSTAL` = @codPos"
+        cmd1.Parameters.AddWithValue("@prov", datos(6))
+        cmd1.Parameters.AddWithValue("@muni", datos(7))
+        cmd1.Parameters.AddWithValue("@codPos", datos(8))
+        dar1 = cmd1.ExecuteReader
+        While dar1.Read
+            id_rela = dar1.Item(0).ToString
+        End While
+        dar1.Close()
+
+        'Creo los campos de descripciones abreviadas
+        Dim desc_abre, desc_abre_eus As String
+        If datos(9).Length > 110 Then
+            desc_abre = datos(9).Substring(0, 107) & "..."
+        ElseIf datos(9).Length < 107 Then
+            desc_abre = datos(9) & "..."
+        Else
+            desc_abre = datos(9)
+        End If
+
+        If datos(10).Length > 110 Then
+            desc_abre_eus = datos(10).Substring(0, 107) & "..."
+        ElseIf datos(9).Length < 107 Then
+            desc_abre_eus = datos(10) & "..."
+        Else
+            desc_abre_eus = datos(10)
+        End If
+
+        MsgBox(desc_abre & " ;; " & desc_abre_eus)
     End Sub
 
     Protected Sub ddl_Tipos_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddl_Tipos.SelectedIndexChanged
