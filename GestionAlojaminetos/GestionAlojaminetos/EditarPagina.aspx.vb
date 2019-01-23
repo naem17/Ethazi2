@@ -170,7 +170,6 @@ Public Class EditaPaginaalojamientos
 
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles btn_Update.Click
         Dim datos(22) As String
-        Dim todo As String = ""
         datos(0) = txt_Firma.Text
         datos(1) = txt_Nombre.Text
         datos(2) = txt_Direccion.Text
@@ -194,10 +193,16 @@ Public Class EditaPaginaalojamientos
         datos(20) = If(chk_Restaurante.Checked, "1", "0")
         datos(21) = If(chk_Autocarvana.Checked, "1", "0")
         datos(22) = If(chk_Surfing.Checked, "1", "0")
-        For x As Integer = 0 To datos.Length - 1
-            todo &= datos(x) & "; "
-        Next
-        MsgBox(todo)
+        If datos(0).Length = 0 Or datos(1).Length = 0 Or datos(2).Length = 0 Then
+            MsgBox("Por favor rellene los campos obligatorios, Firma, Nombre, Direccion.")
+        Else
+            MsgBox("PAsa")
+            prepararUpdate(datos)
+        End If
+    End Sub
+
+    Private Sub prepararUpdate(ByVal ParamArray datos() As String)
+
     End Sub
 
     Protected Sub ddl_Tipos_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddl_Tipos.SelectedIndexChanged
@@ -212,7 +217,8 @@ Public Class EditaPaginaalojamientos
         While dar1.Read
             cod = dar1.Item(0).ToString
         End While
-        ddl_Tipos_eus.SelectedValue = cod
+        dar1.Close()
+        ddl_Tipos_eus.SelectedIndex = (cod + 1)
     End Sub
 
     Protected Sub ddl_Tipos_eus_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddl_Tipos_eus.SelectedIndexChanged
@@ -221,13 +227,14 @@ Public Class EditaPaginaalojamientos
         Dim value As String
         Dim cod As String
         value = ddl_Tipos_eus.SelectedValue
-        cmd1.CommandText = "SELECT `CODIGO` FROM `TIPOS_EUSKERA` WHERE `TIPO` = @param"
+        cmd1.CommandText = "SELECT `CODIGO` FROM `TIPOS_EUSKERA` WHERE `TIPO_EUSKERA` = @param"
         cmd1.Parameters.AddWithValue("@param", value)
         dar1 = cmd1.ExecuteReader
         While dar1.Read
             cod = dar1.Item(0).ToString
         End While
-        ddl_Tipos.SelectedValue = cod
+        dar1.Close()
+        ddl_Tipos.SelectedIndex = (cod + 1)
     End Sub
 
     Protected Sub ddl_Municipio_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddl_Municipio.SelectedIndexChanged

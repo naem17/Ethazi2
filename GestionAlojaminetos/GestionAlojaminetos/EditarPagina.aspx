@@ -187,7 +187,7 @@
 
                 </td>
                 <td style="padding: 10px; float: right;">
-                    <asp:Button ID="btn_Update" runat="server" Text="Actualizar Datos" />
+                    <asp:Button ID="btn_Update" runat="server" Text="Actualizar Datos" BackColor="#006D9C" BorderColor="#006D9C" BorderStyle="Solid" Font-Bold="True" ForeColor="White" />
                 </td>
             </tr>
         </table>
