@@ -249,7 +249,70 @@ Public Class EditaPaginaalojamientos
             desc_abre_eus = datos(10)
         End If
 
-        MsgBox(desc_abre & " ;; " & desc_abre_eus)
+        Dim cmd3 = cnn1.CreateCommand()
+        Dim cod_Tipo As String = Nothing
+        cmd3.CommandText = "SELECT `CODIGO` FROM `TIPOS` WHERE `TIPO` = @param"
+        cmd3.Parameters.AddWithValue("@param", datos(12))
+        dar1 = cmd3.ExecuteReader
+        While dar1.Read
+            cod_Tipo = dar1.Item(0).ToString
+        End While
+        dar1.Close()
+
+        Dim cmd4 = cnn1.CreateCommand()
+        Dim cod_Tipo_eus As String = Nothing
+        cmd4.CommandText = "SELECT `CODIGO` FROM `TIPOS_EUSKERA` WHERE `TIPO_EUSKERA` = @param"
+        cmd4.Parameters.AddWithValue("@param", datos(13))
+        dar1 = cmd4.ExecuteReader
+        While dar1.Read
+            cod_Tipo_eus = dar1.Item(0).ToString
+        End While
+        dar1.Close()
+
+        Dim cmd5 = cnn1.CreateCommand()
+        Dim cod_Cat As String = Nothing
+        cmd5.CommandText = "SELECT `CODIGO` FROM `CATEGORIAS` WHERE `CATEGORIA` = @param"
+        cmd5.Parameters.AddWithValue("@param", datos(14))
+        dar1 = cmd5.ExecuteReader
+        While dar1.Read
+            cod_Cat = dar1.Item(0).ToString
+        End While
+        dar1.Close()
+
+        Dim params(23) As String
+        params(0) = datos(0)
+        params(1) = datos(1)
+        params(2) = desc_abre
+        params(3) = desc_abre_eus
+        params(4) = datos(9)
+        params(5) = datos(10)
+        params(6) = datos(3)
+        params(7) = datos(2)
+        params(8) = datos(16)
+        params(9) = datos(4)
+        params(10) = datos(5)
+        params(11) = datos(19)
+        params(12) = datos(20)
+        params(13) = datos(21)
+        params(14) = datos(17)
+        params(15) = datos(11)
+        params(16) = datos(18)
+        params(17) = datos(22)
+        params(18) = datos(15)
+        params(19) = cod_Tipo
+        params(20) = cod_Tipo_eus
+        params(21) = cod_Cat
+        params(22) = id_rela
+        params(23) = param
+
+        Dim cmd2 = cnn1.CreateCommand()
+        cmd2.CommandText = "UPDATE `ALOJAMIENTOS` SET `FIRMA` = @param0, `NOMBRE` = @param1, `DESCRIPCION_ABREVIADA` = @param2, `DESCRIPCION_ABREVIADA_EUSKERA` = @param3, `DESCRIPCION` = @param4, `DESCRIPCION_EUSKERA` = @param5, `TELEFONO` = @param6, `DIRECCION` = @param7, `CALIDAD_ASEGURADA` = @param8, `EMAIL` = @param9, `WEB` = @param10, `CLUB` = @param11, `RESTAURANTE` = @param12, `AUTOCARAVANA` = @param13, `TIENDA` = @param14, `CAPACIDAD` = @param15, `GASTRONOMICO` = @param16, `SURFING` = @param17, `COORDENADAS` = @param18, `CODIGO_TIPOS` = @param19, `CODIGO_TIPOS_EUSKERA` = @param20, `CODIGO_CATEGORIAS` = @param21, `ID_RELACIONES` = @param22 WHERE `ALOJAMIENTOS`.`FIRMA` = @param23"
+        For x As Integer = 0 To params.Length - 1
+            cmd2.Parameters.AddWithValue("@param" & x, params(x))
+        Next
+        dar1 = cmd2.ExecuteReader
+
+
     End Sub
 
     Protected Sub ddl_Tipos_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddl_Tipos.SelectedIndexChanged
