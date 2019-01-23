@@ -32,6 +32,7 @@ Public Class EditaPaginaalojamientos
             txt_Email.Text = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(4).ToString)
             txt_Web.Text = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(5).ToString)
             cargarProv()
+            ddl_CodPostal.SelectedValue = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(8).ToString)
             txt_Descripcion.Text = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(9).ToString)
             txt_Descripcion_Eus.Text = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(10).ToString)
             txt_Capacidad.Text = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(11).ToString)
@@ -110,6 +111,7 @@ Public Class EditaPaginaalojamientos
 
     Private Sub ddl_Provincia_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddl_Provincia.SelectedIndexChanged
         ddl_CodPostal.Enabled = False
+        ddl_Municipio.Enabled = False
         cargarMuni(ddl_Provincia.SelectedValue)
     End Sub
 
@@ -153,11 +155,79 @@ Public Class EditaPaginaalojamientos
             dar1.Close()
             cargarCod(indMuni)
         Else
+            ddl_Municipio.Items.Clear()
+            ddl_Municipio.Enabled = True
+            ddl_Municipio.Items.Add("--Seleccione--")
+            ddl_Municipio.SelectedIndex = 0
+            ddl_Municipio.Enabled = False
             ddl_CodPostal.Items.Clear()
-            ddl_CodPostal.Items.Add(PcodPos)
-            ddl_CodPostal.SelectedValue = PcodPos
+            ddl_CodPostal.Enabled = True
+            ddl_CodPostal.Items.Add("--Seleccione--")
+            ddl_CodPostal.SelectedIndex = 0
             ddl_CodPostal.Enabled = False
         End If
+    End Sub
+
+    Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles btn_Update.Click
+        Dim datos(22) As String
+        Dim todo As String = ""
+        datos(0) = txt_Firma.Text
+        datos(1) = txt_Nombre.Text
+        datos(2) = txt_Direccion.Text
+        datos(3) = txt_Telefono.Text
+        datos(4) = txt_Email.Text
+        datos(5) = txt_Web.Text
+        datos(6) = ddl_Provincia.Text
+        datos(7) = ddl_Municipio.Text
+        datos(8) = ddl_CodPostal.Text
+        datos(9) = txt_Descripcion.Text
+        datos(10) = txt_Descripcion_Eus.Text
+        datos(11) = txt_Capacidad.Text
+        datos(12) = ddl_Tipos.Text
+        datos(13) = ddl_Tipos_eus.Text
+        datos(14) = ddl_Categorias.Text
+        datos(15) = txt_Coordenadas.Text
+        datos(16) = If(chk_Calidad.Checked, "1", "0")
+        datos(17) = If(chk_Tienda.Checked, "1", "0")
+        datos(18) = If(chk_Gastronomico.Checked, "1", "0")
+        datos(19) = If(chk_Club.Checked, "1", "0")
+        datos(20) = If(chk_Restaurante.Checked, "1", "0")
+        datos(21) = If(chk_Autocarvana.Checked, "1", "0")
+        datos(22) = If(chk_Surfing.Checked, "1", "0")
+        For x As Integer = 0 To datos.Length - 1
+            todo &= datos(x) & "; "
+        Next
+        MsgBox(todo)
+    End Sub
+
+    Protected Sub ddl_Tipos_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddl_Tipos.SelectedIndexChanged
+        Dim dar1 As MySqlDataReader
+        Dim cmd1 = cnn1.CreateCommand()
+        Dim value As String
+        Dim cod As String
+        value = ddl_Tipos.SelectedValue
+        cmd1.CommandText = "SELECT `CODIGO` FROM `TIPOS` WHERE `TIPO` = @param"
+        cmd1.Parameters.AddWithValue("@param", value)
+        dar1 = cmd1.ExecuteReader
+        While dar1.Read
+            cod = dar1.Item(0).ToString
+        End While
+        ddl_Tipos_eus.SelectedValue = cod
+    End Sub
+
+    Protected Sub ddl_Tipos_eus_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddl_Tipos_eus.SelectedIndexChanged
+        Dim dar1 As MySqlDataReader
+        Dim cmd1 = cnn1.CreateCommand()
+        Dim value As String
+        Dim cod As String
+        value = ddl_Tipos_eus.SelectedValue
+        cmd1.CommandText = "SELECT `CODIGO` FROM `TIPOS_EUSKERA` WHERE `TIPO` = @param"
+        cmd1.Parameters.AddWithValue("@param", value)
+        dar1 = cmd1.ExecuteReader
+        While dar1.Read
+            cod = dar1.Item(0).ToString
+        End While
+        ddl_Tipos.SelectedValue = cod
     End Sub
 
     Protected Sub ddl_Municipio_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddl_Municipio.SelectedIndexChanged
@@ -176,28 +246,33 @@ Public Class EditaPaginaalojamientos
             cargarCod(indMuni)
         Else
             ddl_CodPostal.Items.Clear()
+            ddl_CodPostal.Enabled = True
             ddl_CodPostal.Items.Add("--Seleccione--")
+            ddl_CodPostal.SelectedIndex = 0
             ddl_CodPostal.Enabled = False
         End If
     End Sub
 
     Sub cargarCod(indMuni As String)
-        Dim cmd1 = cnn1.CreateCommand()
-        Dim dar1 As MySqlDataReader
-        cmd1.CommandText = "SELECT * FROM `CODIGOS_POSTALES` WHERE `CODIGO_POSTAL` IN (SELECT R.`CODIGO_POSTAL` FROM `RELACION_CP_MUNICIPIOS_PROVINCIAS` R WHERE `INDICE_MUNICIPIO` IN (@param)) ORDER BY `CODIGO_POSTAL` ASC"
-        cmd1.Parameters.AddWithValue("@param", indMuni)
-        dar1 = cmd1.ExecuteReader
-        ddl_CodPostal.Enabled = True
-        If IsPostBack Then
-            While dar1.Read
-                ddl_CodPostal.Items.Add(dar1.Item(0).ToString())
-            End While
-        Else
+        If Not ddl_Municipio.SelectedValue = "--Seleccione--" Then
+            Dim cmd1 = cnn1.CreateCommand()
+            Dim dar1 As MySqlDataReader
+            cmd1.CommandText = "SELECT * FROM `CODIGOS_POSTALES` WHERE `CODIGO_POSTAL` IN (SELECT R.`CODIGO_POSTAL` FROM `RELACION_CP_MUNICIPIOS_PROVINCIAS` R WHERE `INDICE_MUNICIPIO` IN (@param)) ORDER BY `CODIGO_POSTAL` ASC"
+            cmd1.Parameters.AddWithValue("@param", indMuni)
+            dar1 = cmd1.ExecuteReader
+            ddl_CodPostal.Enabled = True
+
             ddl_CodPostal.Items.Clear()
             While dar1.Read
                 ddl_CodPostal.Items.Add(dar1.Item(0).ToString())
             End While
+            dar1.Close()
+        Else
+            ddl_CodPostal.Items.Clear()
+            ddl_CodPostal.Enabled = True
+            ddl_CodPostal.Items.Add("--Seleccione--")
+            ddl_CodPostal.SelectedIndex = 0
+            ddl_CodPostal.Enabled = False
         End If
-        dar1.Close()
     End Sub
 End Class

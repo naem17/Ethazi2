@@ -89,14 +89,14 @@
                     <asp:Label ID="lbl_Tipos" runat="server" Text="Tipos:"></asp:Label>
                     </td>
                 <td class="td_table_con">
-                    <asp:DropDownList ID="ddl_Tipos" runat="server">
+                    <asp:DropDownList ID="ddl_Tipos" runat="server" AutoPostBack="True">
                     </asp:DropDownList>
                 </td>
                 <td class="td_table">
                     <asp:Label ID="lbl_Tipos_eus" runat="server" Text="Tipos Euskera:"></asp:Label>
                     </td>
                 <td class="td_table_con">
-                    <asp:DropDownList ID="ddl_Tipos_eus" runat="server">
+                    <asp:DropDownList ID="ddl_Tipos_eus" runat="server" AutoPostBack="True">
                     </asp:DropDownList>
                 </td>
                 <td class="td_table">
@@ -187,7 +187,7 @@
 
                 </td>
                 <td style="padding: 10px; float: right;">
-                    <asp:Button ID="Button1" runat="server" Text="Actualizar Datos" />
+                    <asp:Button ID="btn_Update" runat="server" Text="Actualizar Datos" />
                 </td>
             </tr>
         </table>

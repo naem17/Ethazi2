@@ -428,11 +428,11 @@ Partial Public Class EditaPaginaalojamientos
     Protected WithEvents chk_Surfing As Global.System.Web.UI.WebControls.CheckBox
     
     '''<summary>
-    '''Control Button1.
+    '''Control btn_Update.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents Button1 As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents btn_Update As Global.System.Web.UI.WebControls.Button
 End Class
