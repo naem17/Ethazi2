@@ -107,6 +107,15 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:GestionAlojaminetos.EditaPaginaalojamientos._lbl_aste">
+<summary>
+Control lbl_aste.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:GestionAlojaminetos.EditaPaginaalojamientos._lbl_Firma">
 <summary>
 Control lbl_Firma.
@@ -125,6 +134,15 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:GestionAlojaminetos.EditaPaginaalojamientos._Label1">
+<summary>
+Control Label1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:GestionAlojaminetos.EditaPaginaalojamientos._lbl_Nombre">
 <summary>
 Control lbl_Nombre.
@@ -137,6 +155,15 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:GestionAlojaminetos.EditaPaginaalojamientos._txt_Nombre">
 <summary>
 Control txt_Nombre.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:GestionAlojaminetos.EditaPaginaalojamientos._Label2">
+<summary>
+Control Label2.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -215,6 +242,15 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:GestionAlojaminetos.EditaPaginaalojamientos._Label3">
+<summary>
+Control Label3.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:GestionAlojaminetos.EditaPaginaalojamientos._lbl_Provincia">
 <summary>
 Control lbl_Provincia.
@@ -233,6 +269,15 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:GestionAlojaminetos.EditaPaginaalojamientos._Label4">
+<summary>
+Control Label4.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:GestionAlojaminetos.EditaPaginaalojamientos._lbl_Municipio">
 <summary>
 Control lbl_Municipio.
@@ -245,6 +290,15 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 <member name="F:GestionAlojaminetos.EditaPaginaalojamientos._ddl_Municipio">
 <summary>
 Control ddl_Municipio.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:GestionAlojaminetos.EditaPaginaalojamientos._Label5">
+<summary>
+Control Label5.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -314,9 +368,9 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:GestionAlojaminetos.EditaPaginaalojamientos._txt_Capacidad">
+<member name="F:GestionAlojaminetos.EditaPaginaalojamientos._ddl_Cap">
 <summary>
-Control txt_Capacidad.
+Control ddl_Cap.
 </summary>
 <remarks>
 Campo generado automáticamente.

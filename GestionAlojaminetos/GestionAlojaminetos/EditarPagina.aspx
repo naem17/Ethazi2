@@ -5,28 +5,28 @@
         <table id="tabla_editar" class="tabla_edit">
             <tr>
                 <td class="td_table">
-                    <asp:Label ID="lbl_Firma" runat="server" Text="Firma:"></asp:Label>
+                    <asp:Label ID="lbl_aste" runat="server" Text="*" ForeColor="Red"></asp:Label><asp:Label ID="lbl_Firma" runat="server" Text="Firma:"></asp:Label>
                     </td>
                 <td class="td_table_con">
-                    <asp:TextBox ID="txt_Firma" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txt_Firma" runat="server" MaxLength="8" AutoCompleteType="Disabled"></asp:TextBox>
                 </td>
                 <td class="td_table">
-                    <asp:Label ID="lbl_Nombre" runat="server" Text="Nombre:"></asp:Label>
+                    <asp:Label ID="Label1" runat="server" Text="*" ForeColor="Red"></asp:Label><asp:Label ID="lbl_Nombre" runat="server" Text="Nombre:"></asp:Label>
                     </td>
                 <td class="td_table_con">
-                    <asp:TextBox ID="txt_Nombre" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txt_Nombre" runat="server" MaxLength="50"></asp:TextBox>
                 </td>
                 <td class="td_table">
-                    <asp:Label ID="lbl_Direccion" runat="server" Text="Direccion:"></asp:Label>
+                    <asp:Label ID="Label2" runat="server" Text="*" ForeColor="Red"></asp:Label><asp:Label ID="lbl_Direccion" runat="server" Text="Direccion:"></asp:Label>
                     </td>
                 <td class="td_table_con">
-                    <asp:TextBox ID="txt_Direccion" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txt_Direccion" runat="server" MaxLength="250"></asp:TextBox>
                 </td>
                 <td class="td_table">
                     <asp:Label ID="lbl_Telefono" runat="server" Text="Telefono:"></asp:Label>
                     </td>
                 <td class="td_table_con">
-                    <asp:TextBox ID="txt_Telefono" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txt_Telefono" runat="server" MaxLength="15"></asp:TextBox>
                 </td>
             </tr>
             <tr>
@@ -34,23 +34,23 @@
                     <asp:Label ID="lbl_Email" runat="server" Text="Email:"></asp:Label>
                     </td>
                 <td class="td_table_con">
-                    <asp:TextBox ID="txt_Email" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txt_Email" runat="server" MaxLength="50"></asp:TextBox>
                 </td>
                 <td class="td_table">
                     <asp:Label ID="lbl_Web" runat="server" Text="Pagina Web:"></asp:Label>
                     </td>
                 <td class="td_table_con">
-                    <asp:TextBox ID="txt_Web" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txt_Web" runat="server" MaxLength="100"></asp:TextBox>
                 </td>
                 <td class="td_table">
-                    <asp:Label ID="lbl_Provincia" runat="server" Text="Provincia:"></asp:Label>
+                    <asp:Label ID="Label3" runat="server" Text="*" ForeColor="Red"></asp:Label><asp:Label ID="lbl_Provincia" runat="server" Text="Provincia:"></asp:Label>
                     </td>
                 <td class="td_table_con">
                     <asp:DropDownList ID="ddl_Provincia" runat="server" AutoPostBack="True">
                     </asp:DropDownList>
                 </td>
                 <td class="td_table">
-                    <asp:Label ID="lbl_Municipio" runat="server" Text="Municipio:"></asp:Label>
+                    <asp:Label ID="Label4" runat="server" Text="*" ForeColor="Red"></asp:Label><asp:Label ID="lbl_Municipio" runat="server" Text="Municipio:"></asp:Label>
                 </td>
                 <td class="td_table_con">
                     <asp:DropDownList ID="ddl_Municipio" runat="server" AppendDataBoundItems="false" AutoPostBack="True">
@@ -59,7 +59,7 @@
             </tr>
             <tr>
                 <td class="td_table">
-                    <asp:Label ID="lbl_CodPostal" runat="server" Text="Codigo Postal:"></asp:Label>
+                    <asp:Label ID="Label5" runat="server" Text="*" ForeColor="Red"></asp:Label><asp:Label ID="lbl_CodPostal" runat="server" Text="Codigo Postal:"></asp:Label>
                     </td>
                 <td class="td_table_con">
                     <asp:DropDownList ID="ddl_CodPostal" runat="server">
@@ -69,19 +69,20 @@
                     <asp:Label ID="lbl_Descripcion" runat="server" Text="Descripcion:"></asp:Label>
                     </td>
                 <td class="td_table_con">
-                    <asp:TextBox ID="txt_Descripcion" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txt_Descripcion" runat="server" MaxLength="1500" TextMode="MultiLine"></asp:TextBox>
                 </td>
                 <td class="td_table">
                     <asp:Label ID="lbl_Descripcion_Eus" runat="server" Text="Descripcion Euskera:"></asp:Label>
                     </td>
                 <td class="td_table_con">
-                    <asp:TextBox ID="txt_Descripcion_Eus" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txt_Descripcion_Eus" runat="server" MaxLength="1500" TextMode="MultiLine"></asp:TextBox>
                 </td>
                 <td class="td_table">
                     <asp:Label ID="lbl_Capacidad" runat="server" Text="Capacidad:"></asp:Label>
                     </td>
                 <td class="td_table_con">
-                    <asp:TextBox ID="txt_Capacidad" runat="server"></asp:TextBox>
+                    <asp:DropDownList ID="ddl_Cap" runat="server" AutoPostBack="True">
+                    </asp:DropDownList>
                 </td>
             </tr>
             <tr>
@@ -110,7 +111,7 @@
                     <asp:Label ID="lbl_Coordenadas" runat="server" Text="Coordenadas:"></asp:Label>
                     </td>
                 <td class="td_table_con">
-                    <asp:TextBox ID="txt_Coordenadas" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txt_Coordenadas" runat="server" MaxLength="200"></asp:TextBox>
                 </td>
             </tr>
             <tr>
@@ -166,14 +167,8 @@
                 </td>
             </tr>
             <tr>
-                <td class="td_table">
-                    &nbsp;</td>
-                <td class="td_table">
-
-                </td>
-                <td class="td_table">
-
-                </td>
+                <td class="td_table" colspan="3" style="color: #FF0000">
+                    * Los campos son obligatorios</td>
                 <td class="td_table">
 
                 </td>

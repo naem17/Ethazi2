@@ -35,7 +35,7 @@ Public Class EditaPaginaalojamientos
             ddl_CodPostal.SelectedValue = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(8).ToString)
             txt_Descripcion.Text = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(9).ToString)
             txt_Descripcion_Eus.Text = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(10).ToString)
-            txt_Capacidad.Text = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(11).ToString)
+            ddl_Cap.SelectedValue = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(11).ToString)
             ddl_Tipos.SelectedValue = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(12).ToString)
             ddl_Tipos_eus.SelectedValue = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(13).ToString)
             ddl_Categorias.SelectedValue = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(14).ToString)
@@ -84,6 +84,10 @@ Public Class EditaPaginaalojamientos
             ddl_Categorias.Items.Add(dar1.Item(0))
         End While
         dar1.Close()
+
+        For x As Integer = 1 To 999
+            ddl_Cap.Items.Add(x)
+        Next
     End Sub
 
     Sub cargarProv()
@@ -181,7 +185,7 @@ Public Class EditaPaginaalojamientos
         datos(8) = ddl_CodPostal.Text
         datos(9) = txt_Descripcion.Text
         datos(10) = txt_Descripcion_Eus.Text
-        datos(11) = txt_Capacidad.Text
+        datos(11) = ddl_Cap.Text
         datos(12) = ddl_Tipos.Text
         datos(13) = ddl_Tipos_eus.Text
         datos(14) = ddl_Categorias.Text
@@ -193,8 +197,18 @@ Public Class EditaPaginaalojamientos
         datos(20) = If(chk_Restaurante.Checked, "1", "0")
         datos(21) = If(chk_Autocarvana.Checked, "1", "0")
         datos(22) = If(chk_Surfing.Checked, "1", "0")
-        If datos(0).Length = 0 Or datos(1).Length = 0 Or datos(2).Length = 0 Then
-            MsgBox("Por favor rellene los campos obligatorios, Firma, Nombre, Direccion.")
+        If datos(0).Length = 0 Then
+            MsgBox("Por favor rellene el campo Firma.")
+        ElseIf datos(1).Length = 0 Then
+            MsgBox("Por favor rellene el campo Nombre.")
+        ElseIf datos(2).Length = 0 Then
+            MsgBox("Por favor rellene el campo Direccion.")
+        ElseIf datos(6).Equals("--Seleccione--") Then
+            MsgBox("Por favor seleccione una Provincia.")
+        ElseIf datos(7).Equals("--Seleccione--") Then
+            MsgBox("Por favor seleccione un Municipio.")
+        ElseIf datos(8).Equals("--Seleccione--") Then
+            MsgBox("Por favor seleccione un Codigo Postal.")
         Else
             MsgBox("PAsa")
             prepararUpdate(datos)

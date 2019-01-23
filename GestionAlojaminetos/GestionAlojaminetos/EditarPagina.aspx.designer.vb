@@ -14,6 +14,15 @@ Option Explicit On
 Partial Public Class EditaPaginaalojamientos
     
     '''<summary>
+    '''Control lbl_aste.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lbl_aste As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
     '''Control lbl_Firma.
     '''</summary>
     '''<remarks>
@@ -32,6 +41,15 @@ Partial Public Class EditaPaginaalojamientos
     Protected WithEvents txt_Firma As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
+    '''Control Label1.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
     '''Control lbl_Nombre.
     '''</summary>
     '''<remarks>
@@ -48,6 +66,15 @@ Partial Public Class EditaPaginaalojamientos
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents txt_Nombre As Global.System.Web.UI.WebControls.TextBox
+    
+    '''<summary>
+    '''Control Label2.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Label2 As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
     '''Control lbl_Direccion.
@@ -122,6 +149,15 @@ Partial Public Class EditaPaginaalojamientos
     Protected WithEvents txt_Web As Global.System.Web.UI.WebControls.TextBox
     
     '''<summary>
+    '''Control Label3.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Label3 As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
     '''Control lbl_Provincia.
     '''</summary>
     '''<remarks>
@@ -140,6 +176,15 @@ Partial Public Class EditaPaginaalojamientos
     Protected WithEvents ddl_Provincia As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
+    '''Control Label4.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Label4 As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
     '''Control lbl_Municipio.
     '''</summary>
     '''<remarks>
@@ -156,6 +201,15 @@ Partial Public Class EditaPaginaalojamientos
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents ddl_Municipio As Global.System.Web.UI.WebControls.DropDownList
+    
+    '''<summary>
+    '''Control Label5.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents Label5 As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
     '''Control lbl_CodPostal.
@@ -221,13 +275,13 @@ Partial Public Class EditaPaginaalojamientos
     Protected WithEvents lbl_Capacidad As Global.System.Web.UI.WebControls.Label
     
     '''<summary>
-    '''Control txt_Capacidad.
+    '''Control ddl_Cap.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents txt_Capacidad As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents ddl_Cap As Global.System.Web.UI.WebControls.DropDownList
     
     '''<summary>
     '''Control lbl_Tipos.
