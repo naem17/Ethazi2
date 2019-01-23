@@ -6,6 +6,8 @@ Module Sentencias
     Dim das1 As New DataSet 'copia de los datos 
     Dim adap1
     Dim id_rcmp As Integer
+    Public idRelaciones As Integer
+
     Public Function cogerIdAlojamientos()
         Dim coger As Integer
         conectar()
@@ -255,7 +257,6 @@ Module Sentencias
     End Sub
     Public Sub eliminar()
         conectar()
-
         sql = "DELETE from Alojamientos where firma=@iden"
         'Crear un comando
         Dim cmd1 As New MySqlCommand(sql, conexion)
@@ -276,5 +277,101 @@ Module Sentencias
     End Sub
     Public Sub exEnXML()
         das1.WriteXml(InputBox("Nombre de Archivo"))
+    End Sub
+    '___________________________CARGAR DATOS PARA LA VISTA________________________________________
+    Public Sub cargarCmbProvinciaVISTA()
+        conectar()
+        Dim tabla As New DataTable
+        sql = "Select codigo,provincua from provincias"
+        Dim cmd1 As New MySqlCommand(sql, conexion)
+
+        adap1 = New MySqlDataAdapter(cmd1)
+        das1.Clear()
+
+        adap1.Fill(tabla)
+        Vista.cmb_Provincia.DataSource = tabla
+        Vista.cmb_Provincia.DisplayMember = "provincua"
+        Vista.cmb_Provincia.ValueMember = "codigo"
+
+
+    End Sub
+    Public Sub cargarCmbMunicipioVISTA()
+        Vista.cmb_Municipio.Items.Clear()
+        Dim tabla As New DataTable
+        sql = "Select municipio from municipios where indice in (Select indice_municipio from relacion_cp_municipios_provincias where codigo_provincia = " & Vista.cmb_Provincia.SelectedValue.ToString & ")"
+
+        Dim cmd1 As New MySqlCommand
+        cmd1 = New MySqlCommand(sql, conexion)
+        Dim dr As MySqlDataReader
+        dr = cmd1.ExecuteReader
+
+        While dr.Read
+            Vista.cmb_Municipio.Items.Add(dr.Item(0))
+        End While
+        dr.Close()
+    End Sub
+    Public Sub cargarCmbCodpostalVISTA()
+        Dim tabla As New DataTable
+        Dim codigo_muni As Integer
+        sql = "Select indice from municipios where municipio = '" & Vista.cmb_Municipio.SelectedItem & "'"
+        Dim dr As MySqlDataReader
+        Dim cmd2 As New MySqlCommand(sql, conexion)
+        dr = cmd2.ExecuteReader
+        While dr.Read
+            codigo_muni = dr.Item(0)
+        End While
+        dr.Close()
+        sql = "Select CODIGO_POSTAL, INDICE_MUNICIPIO from relacion_cp_municipios_provincias  where INDICE_MUNICIPIO=" & codigo_muni
+        Dim cmd1 As New MySqlCommand(sql, conexion)
+        adap1 = New MySqlDataAdapter(cmd1)
+        das1.Clear()
+        adap1.Fill(tabla)
+        Vista.cmb_CodPostal.DataSource = tabla
+        Vista.cmb_CodPostal.DisplayMember = "CODIGO_POSTAL"
+    End Sub
+    Public Sub cargarProvinciaIdVISTA()
+        conectar()
+
+        Dim provincia As String = ""
+        sql = "Select p.provincua from provincias p, RELACION_CP_MUNICIPIOS_PROVINCIAS r where codigo=codigo_provincia and r.id=" & idRelaciones
+        Dim cmd1 As New MySqlCommand
+        cmd1 = New MySqlCommand(sql, conexion)
+        Dim dr As MySqlDataReader
+        dr = cmd1.ExecuteReader
+        While dr.Read
+            provincia = dr.Item(0)
+        End While
+        Vista.cmb_Provincia.Text = provincia
+
+        desconectar()
+        dr.Close()
+    End Sub
+    Public Sub cargarMunicipioIDVISTA()
+        conectar()
+        Dim municipios As String = ""
+        sql = "Select m.municipio from municipios m, RELACION_CP_MUNICIPIOS_PROVINCIAS r where indice=r.indice_municipio and r.id=" & idRelaciones
+        Dim cmd1 As New MySqlCommand
+        cmd1 = New MySqlCommand(sql, conexion)
+        Dim dr As MySqlDataReader
+        dr = cmd1.ExecuteReader
+        While dr.Read
+            municipios = dr.Item(0)
+        End While
+        Vista.cmb_Municipio.Text = municipios
+        dr.Close()
+    End Sub
+    Public Sub cargarCodPostalIDVISTA()
+        conectar()
+        Dim codigo As Integer
+        sql = "Select CODIGO_POSTAL FROM RELACION_CP_MUNICIPIOS_PROVINCIAS where id=" & idRelaciones
+        Dim cmd1 As New MySqlCommand
+        cmd1 = New MySqlCommand(sql, conexion)
+        Dim dr As MySqlDataReader
+        dr = cmd1.ExecuteReader
+        While dr.Read
+            codigo = dr.Item(0)
+        End While
+        Vista.cmb_CodPostal.Text = codigo
+        dr.Close()
     End Sub
 End Module
