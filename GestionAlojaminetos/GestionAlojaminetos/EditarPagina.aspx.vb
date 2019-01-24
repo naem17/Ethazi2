@@ -311,6 +311,9 @@ Public Class EditaPaginaalojamientos
             cmd2.Parameters.AddWithValue("@param" & x, params(x))
         Next
         dar1 = cmd2.ExecuteReader
+        While dar1.Read
+            MsgBox("El alojamiento ha sido actualizado.")
+        End While
 
 
     End Sub
@@ -319,7 +322,7 @@ Public Class EditaPaginaalojamientos
         Dim dar1 As MySqlDataReader
         Dim cmd1 = cnn1.CreateCommand()
         Dim value As String
-        Dim cod As String
+        Dim cod As String = Nothing
         value = ddl_Tipos.SelectedValue
         cmd1.CommandText = "SELECT `CODIGO` FROM `TIPOS` WHERE `TIPO` = @param"
         cmd1.Parameters.AddWithValue("@param", value)
@@ -335,7 +338,7 @@ Public Class EditaPaginaalojamientos
         Dim dar1 As MySqlDataReader
         Dim cmd1 = cnn1.CreateCommand()
         Dim value As String
-        Dim cod As String
+        Dim cod As String = Nothing
         value = ddl_Tipos_eus.SelectedValue
         cmd1.CommandText = "SELECT `CODIGO` FROM `TIPOS_EUSKERA` WHERE `TIPO_EUSKERA` = @param"
         cmd1.Parameters.AddWithValue("@param", value)
