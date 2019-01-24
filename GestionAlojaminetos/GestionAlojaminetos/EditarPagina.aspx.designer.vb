@@ -482,6 +482,15 @@ Partial Public Class EditaPaginaalojamientos
     Protected WithEvents chk_Surfing As Global.System.Web.UI.WebControls.CheckBox
     
     '''<summary>
+    '''Control lbl_FIRM.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lbl_FIRM As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
     '''Control btn_Update.
     '''</summary>
     '''<remarks>

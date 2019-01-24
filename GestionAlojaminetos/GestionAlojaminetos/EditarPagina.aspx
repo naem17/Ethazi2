@@ -8,7 +8,7 @@
                     <asp:Label ID="lbl_aste" runat="server" Text="*" ForeColor="Red"></asp:Label><asp:Label ID="lbl_Firma" runat="server" Text="Firma:"></asp:Label>
                     </td>
                 <td class="td_table_con">
-                    <asp:TextBox ID="txt_Firma" runat="server" MaxLength="8" AutoCompleteType="Disabled"></asp:TextBox>
+                    <asp:TextBox ID="txt_Firma" runat="server" MaxLength="8" AutoCompleteType="Disabled" Enabled="False"></asp:TextBox>
                 </td>
                 <td class="td_table">
                     <asp:Label ID="Label1" runat="server" Text="*" ForeColor="Red"></asp:Label><asp:Label ID="lbl_Nombre" runat="server" Text="Nombre:"></asp:Label>
@@ -160,6 +160,8 @@
                     <asp:CheckBox ID="chk_Surfing" runat="server" />
                 </td>
                 <td class="td_table">
+
+                    <asp:Label ID="lbl_FIRM" runat="server" Visible="False"></asp:Label>
 
                 </td>
                 <td class="td_table">

@@ -210,112 +210,113 @@ Public Class EditaPaginaalojamientos
         ElseIf datos(8).Equals("--Seleccione--") Then
             MsgBox("Por favor seleccione un Codigo Postal.")
         Else
-            MsgBox("PAsa")
             prepararUpdate(datos)
         End If
     End Sub
 
     Private Sub prepararUpdate(ByVal ParamArray datos() As String)
+        Try
+            'Consigo el id de relacion pasandole los datos que ha seleccionado el usuario
+            Dim dar1 As MySqlDataReader
+            Dim cmd1 = cnn1.CreateCommand()
+            Dim id_rela As String = Nothing
+            cmd1.CommandText = "SELECT R.`ID` FROM `RELACION_CP_MUNICIPIOS_PROVINCIAS` R WHERE R.`CODIGO_PROVINCIA` = (SELECT P.`CODIGO` FROM `PROVINCIAS` P WHERE P.`PROVINCUA` = @prov) AND R.`INDICE_MUNICIPIO` = (SELECT M.`INDICE` FROM `MUNICIPIOS` M WHERE M.`MUNICIPIO` = @muni) AND R.`CODIGO_POSTAL` = @codPos"
+            cmd1.Parameters.AddWithValue("@prov", datos(6))
+            cmd1.Parameters.AddWithValue("@muni", datos(7))
+            cmd1.Parameters.AddWithValue("@codPos", datos(8))
+            dar1 = cmd1.ExecuteReader
+            While dar1.Read
+                id_rela = dar1.Item(0).ToString
+            End While
+            dar1.Close()
 
-        'Consigo el id de relacion pasandole los datos que ha seleccionado el usuario
-        Dim dar1 As MySqlDataReader
-        Dim cmd1 = cnn1.CreateCommand()
-        Dim id_rela As String = Nothing
-        cmd1.CommandText = "SELECT R.`ID` FROM `RELACION_CP_MUNICIPIOS_PROVINCIAS` R WHERE R.`CODIGO_PROVINCIA` = (SELECT P.`CODIGO` FROM `PROVINCIAS` P WHERE P.`PROVINCUA` = @prov) AND R.`INDICE_MUNICIPIO` = (SELECT M.`INDICE` FROM `MUNICIPIOS` M WHERE M.`MUNICIPIO` = @muni) AND R.`CODIGO_POSTAL` = @codPos"
-        cmd1.Parameters.AddWithValue("@prov", datos(6))
-        cmd1.Parameters.AddWithValue("@muni", datos(7))
-        cmd1.Parameters.AddWithValue("@codPos", datos(8))
-        dar1 = cmd1.ExecuteReader
-        While dar1.Read
-            id_rela = dar1.Item(0).ToString
-        End While
-        dar1.Close()
+            'Creo los campos de descripciones abreviadas
+            Dim desc_abre, desc_abre_eus As String
+            If datos(9).Length > 110 Then
+                desc_abre = datos(9).Substring(0, 107) & "..."
+            ElseIf datos(9).Length < 107 Then
+                desc_abre = datos(9) & "..."
+            Else
+                desc_abre = datos(9)
+            End If
 
-        'Creo los campos de descripciones abreviadas
-        Dim desc_abre, desc_abre_eus As String
-        If datos(9).Length > 110 Then
-            desc_abre = datos(9).Substring(0, 107) & "..."
-        ElseIf datos(9).Length < 107 Then
-            desc_abre = datos(9) & "..."
-        Else
-            desc_abre = datos(9)
-        End If
+            If datos(10).Length > 110 Then
+                desc_abre_eus = datos(10).Substring(0, 107) & "..."
+            ElseIf datos(9).Length < 107 Then
+                desc_abre_eus = datos(10) & "..."
+            Else
+                desc_abre_eus = datos(10)
+            End If
 
-        If datos(10).Length > 110 Then
-            desc_abre_eus = datos(10).Substring(0, 107) & "..."
-        ElseIf datos(9).Length < 107 Then
-            desc_abre_eus = datos(10) & "..."
-        Else
-            desc_abre_eus = datos(10)
-        End If
+            Dim cmd3 = cnn1.CreateCommand()
+            Dim cod_Tipo As String = Nothing
+            cmd3.CommandText = "SELECT `CODIGO` FROM `TIPOS` WHERE `TIPO` = @param"
+            cmd3.Parameters.AddWithValue("@param", datos(12))
+            dar1 = cmd3.ExecuteReader
+            While dar1.Read
+                cod_Tipo = dar1.Item(0).ToString
+            End While
+            dar1.Close()
 
-        Dim cmd3 = cnn1.CreateCommand()
-        Dim cod_Tipo As String = Nothing
-        cmd3.CommandText = "SELECT `CODIGO` FROM `TIPOS` WHERE `TIPO` = @param"
-        cmd3.Parameters.AddWithValue("@param", datos(12))
-        dar1 = cmd3.ExecuteReader
-        While dar1.Read
-            cod_Tipo = dar1.Item(0).ToString
-        End While
-        dar1.Close()
+            Dim cmd4 = cnn1.CreateCommand()
+            Dim cod_Tipo_eus As String = Nothing
+            cmd4.CommandText = "SELECT `CODIGO` FROM `TIPOS_EUSKERA` WHERE `TIPO_EUSKERA` = @param"
+            cmd4.Parameters.AddWithValue("@param", datos(13))
+            dar1 = cmd4.ExecuteReader
+            While dar1.Read
+                cod_Tipo_eus = dar1.Item(0).ToString
+            End While
+            dar1.Close()
 
-        Dim cmd4 = cnn1.CreateCommand()
-        Dim cod_Tipo_eus As String = Nothing
-        cmd4.CommandText = "SELECT `CODIGO` FROM `TIPOS_EUSKERA` WHERE `TIPO_EUSKERA` = @param"
-        cmd4.Parameters.AddWithValue("@param", datos(13))
-        dar1 = cmd4.ExecuteReader
-        While dar1.Read
-            cod_Tipo_eus = dar1.Item(0).ToString
-        End While
-        dar1.Close()
+            Dim cmd5 = cnn1.CreateCommand()
+            Dim cod_Cat As String = Nothing
+            cmd5.CommandText = "SELECT `CODIGO` FROM `CATEGORIAS` WHERE `CATEGORIA` = @param"
+            cmd5.Parameters.AddWithValue("@param", datos(14))
+            dar1 = cmd5.ExecuteReader
+            While dar1.Read
+                cod_Cat = dar1.Item(0).ToString
+            End While
+            dar1.Close()
 
-        Dim cmd5 = cnn1.CreateCommand()
-        Dim cod_Cat As String = Nothing
-        cmd5.CommandText = "SELECT `CODIGO` FROM `CATEGORIAS` WHERE `CATEGORIA` = @param"
-        cmd5.Parameters.AddWithValue("@param", datos(14))
-        dar1 = cmd5.ExecuteReader
-        While dar1.Read
-            cod_Cat = dar1.Item(0).ToString
-        End While
-        dar1.Close()
+            Dim params(23) As String
+            params(0) = datos(0)
+            params(1) = datos(1)
+            params(2) = desc_abre
+            params(3) = desc_abre_eus
+            params(4) = datos(9)
+            params(5) = datos(10)
+            params(6) = datos(3)
+            params(7) = datos(2)
+            params(8) = datos(16)
+            params(9) = datos(4)
+            params(10) = datos(5)
+            params(11) = datos(19)
+            params(12) = datos(20)
+            params(13) = datos(21)
+            params(14) = datos(17)
+            params(15) = datos(11)
+            params(16) = datos(18)
+            params(17) = datos(22)
+            params(18) = datos(15)
+            params(19) = cod_Tipo
+            params(20) = cod_Tipo_eus
+            params(21) = cod_Cat
+            params(22) = id_rela
+            params(23) = datos(0)
 
-        Dim params(23) As String
-        params(0) = datos(0)
-        params(1) = datos(1)
-        params(2) = desc_abre
-        params(3) = desc_abre_eus
-        params(4) = datos(9)
-        params(5) = datos(10)
-        params(6) = datos(3)
-        params(7) = datos(2)
-        params(8) = datos(16)
-        params(9) = datos(4)
-        params(10) = datos(5)
-        params(11) = datos(19)
-        params(12) = datos(20)
-        params(13) = datos(21)
-        params(14) = datos(17)
-        params(15) = datos(11)
-        params(16) = datos(18)
-        params(17) = datos(22)
-        params(18) = datos(15)
-        params(19) = cod_Tipo
-        params(20) = cod_Tipo_eus
-        params(21) = cod_Cat
-        params(22) = id_rela
-        params(23) = param
-
-        Dim cmd2 = cnn1.CreateCommand()
-        cmd2.CommandText = "UPDATE `ALOJAMIENTOS` SET `FIRMA` = @param0, `NOMBRE` = @param1, `DESCRIPCION_ABREVIADA` = @param2, `DESCRIPCION_ABREVIADA_EUSKERA` = @param3, `DESCRIPCION` = @param4, `DESCRIPCION_EUSKERA` = @param5, `TELEFONO` = @param6, `DIRECCION` = @param7, `CALIDAD_ASEGURADA` = @param8, `EMAIL` = @param9, `WEB` = @param10, `CLUB` = @param11, `RESTAURANTE` = @param12, `AUTOCARAVANA` = @param13, `TIENDA` = @param14, `CAPACIDAD` = @param15, `GASTRONOMICO` = @param16, `SURFING` = @param17, `COORDENADAS` = @param18, `CODIGO_TIPOS` = @param19, `CODIGO_TIPOS_EUSKERA` = @param20, `CODIGO_CATEGORIAS` = @param21, `ID_RELACIONES` = @param22 WHERE `ALOJAMIENTOS`.`FIRMA` = @param23"
-        For x As Integer = 0 To params.Length - 1
-            cmd2.Parameters.AddWithValue("@param" & x, params(x))
-        Next
-        dar1 = cmd2.ExecuteReader
-        While dar1.Read
-            MsgBox("El alojamiento ha sido actualizado.")
-        End While
-
-
+            Dim cmd2 = cnn1.CreateCommand()
+            cmd2.CommandText = "UPDATE `ALOJAMIENTOS` SET `FIRMA` = @param0, `NOMBRE` = @param1, `DESCRIPCION_ABREVIADA` = @param2, `DESCRIPCION_ABREVIADA_EUSKERA` = @param3, `DESCRIPCION` = @param4, `DESCRIPCION_EUSKERA` = @param5, `TELEFONO` = @param6, `DIRECCION` = @param7, `CALIDAD_ASEGURADA` = @param8, `EMAIL` = @param9, `WEB` = @param10, `CLUB` = @param11, `RESTAURANTE` = @param12, `AUTOCARAVANA` = @param13, `TIENDA` = @param14, `CAPACIDAD` = @param15, `GASTRONOMICO` = @param16, `SURFING` = @param17, `COORDENADAS` = @param18, `CODIGO_TIPOS` = @param19, `CODIGO_TIPOS_EUSKERA` = @param20, `CODIGO_CATEGORIAS` = @param21, `ID_RELACIONES` = @param22 WHERE `ALOJAMIENTOS`.`FIRMA` = @param23"
+            For x As Integer = 0 To params.Length - 1
+                cmd2.Parameters.AddWithValue("@param" & x, params(x))
+            Next
+            Dim res As Integer = cmd2.ExecuteNonQuery()
+            If res > 0 Then
+                MsgBox("El alojamiento ha sido actualizado.")
+                Response.Redirect("VerSeleccion.aspx?" & params(23), False)
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message.ToString)
+        End Try
     End Sub
 
     Protected Sub ddl_Tipos_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ddl_Tipos.SelectedIndexChanged

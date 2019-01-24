@@ -575,6 +575,15 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:GestionAlojaminetos.EditaPaginaalojamientos._lbl_FIRM">
+<summary>
+Control lbl_FIRM.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:GestionAlojaminetos.EditaPaginaalojamientos._btn_Update">
 <summary>
 Control btn_Update.
