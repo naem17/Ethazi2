@@ -86,3 +86,4 @@ F:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\bin\Debug\EthaziAplicac
 F:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.exe
 F:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.xml
 F:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.pdb
+G:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.CrystalReport.resources

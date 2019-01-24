@@ -7,6 +7,7 @@ Public Class Vista
     Dim id As Integer
     Dim euskera As Boolean
     Dim guardar As Boolean
+    Dim Pprov, Pmuni, PcodPos As String
     Public idRelaciones As Integer
     Public Sub datosACargar(firma)
         conectar()
@@ -126,12 +127,10 @@ Public Class Vista
             End If
             'Me saca el id del alojamiento'
             If IsDBNull(datos(22)) Then
-                Me.cmb_Provincia.Text = ""
-                Me.cmb_Municipio.Text = ""
-                Me.cmb_CodPostal.Text = ""
+                Sentencias.idRelaciones = datos(22)
             Else
                 Sentencias.idRelaciones = datos(22)
-                
+
             End If
         End While
         datos.Close()
@@ -188,89 +187,90 @@ Public Class Vista
         '----------------------------------------------------------------------------------------
         desconectar()
     End Sub
-    'Private Sub cargarConId()
-    '    conectar()
+    Private Sub cargarConId()
+        '    conectar()
 
-    '    'Dim sql5 As String
-    '    'sql5 = "Select distinct p.provincua,m.municipio,r.codigo_postal from relacion_cp_municipios_provincias r, provincias p, municipios m where r.id=" & idRelaciones
+        '    Dim sql5 As String
+        '    sql5 = "Select distinct p.provincua,m.municipio,r.codigo_postal from relacion_cp_municipios_provincias r, provincias p, municipios m where r.id=" & idRelaciones
 
-    '    'Dim cmd5 As New MySqlCommand(sql5, ConexionBBDD.conexion)
-    '    'Dim dr5 As MySqlDataReader
-    '    'dr5 = cmd5.ExecuteReader
-    '    'While dr5.Read
-    '    '    Me.cmb_Provincia.Items.Add(dr5.Item(0))
-    '    '    Me.cmb_Municipio.Items.Add(dr5.Item(1))
-    '    '    Me.cmb_CodPostal.Items.Add(dr5.Item(2))
+        '    Dim cmd5 As New MySqlCommand(sql5, ConexionBBDD.conexion)
+        '    Dim dr5 As MySqlDataReader
+        '    dr5 = cmd5.ExecuteReader
+        '    While dr5.Read
+        '        Me.cmb_Provincia.Items.Add(dr5.Item(0))
+        '        Me.cmb_Municipio.Items.Add(dr5.Item(1))
+        '        Me.cmb_CodPostal.Items.Add(dr5.Item(2))
 
-    '    'End While
-    '    'dr5.Close()
+        '    End While
+        '    dr5.Close()
 
-    '    'Dim indice_municipio As Integer
-    '    'sql5 = "Select distinct indice_municipio from relacion_cp_municipios_provincias where id =" & idRelaciones
-    '    'Dim cmd6 As New MySqlCommand(sql5, ConexionBBDD.conexion)
-    '    'Dim dr6 As MySqlDataReader
-    '    'dr6 = cmd6.ExecuteReader
-    '    'While dr6.Read
-    '    '    indice_municipio = dr6.Item(0)
-    '    'End While
-    '    'dr6.Close()
+        '    Dim indice_municipio As Integer
+        '    sql5 = "Select distinct indice_municipio from relacion_cp_municipios_provincias where id =" & idRelaciones
+        '    Dim cmd6 As New MySqlCommand(sql5, ConexionBBDD.conexion)
+        '    Dim dr6 As MySqlDataReader
+        '    dr6 = cmd6.ExecuteReader
+        '    While dr6.Read
+        '        indice_municipio = dr6.Item(0)
+        '    End While
+        '    dr6.Close()
 
-    '    'Dim municipio As String
-    '    'sql5 = "Select distinct  municipio from municipios where indice=" & indice_municipio
-    '    'Dim cmd7 As New MySqlCommand(sql5, ConexionBBDD.conexion)
-    '    'Dim dr7 As MySqlDataReader
-    '    'dr7 = cmd7.ExecuteReader
-    '    'While dr7.Read
-    '    '    municipio = dr7.Item(0)
-    '    'End While
-    '    'dr7.Close()
+        '    Dim municipio As String
+        '    sql5 = "Select distinct  municipio from municipios where indice=" & indice_municipio
+        '    Dim cmd7 As New MySqlCommand(sql5, ConexionBBDD.conexion)
+        '    Dim dr7 As MySqlDataReader
+        '    dr7 = cmd7.ExecuteReader
+        '    While dr7.Read
+        '        municipio = dr7.Item(0)
+        '    End While
+        '    dr7.Close()
 
-    '    'Me.cmb_Municipio.SelectedItem = municipio
-
-
+        '    Me.cmb_Municipio.SelectedItem = municipio
 
 
+        '    Dim indice_provincia As Integer
+        '    sql5 = "Select distinct codigo_provincia from relacion_cp_municipios_provincias where id =" & idRelaciones
+        '    Dim cmd8 As New MySqlCommand(sql5, ConexionBBDD.conexion)
+        '    Dim dr8 As MySqlDataReader
+        '    dr8 = cmd8.ExecuteReader
+        '    While dr8.Read
+        '        indice_provincia = dr8.Item(0)
+        '    End While
+        '    dr8.Close()
 
-    '    'Dim indice_provincia As Integer
-    '    'sql5 = "Select distinct codigo_provincia from relacion_cp_municipios_provincias where id =" & idRelaciones
-    '    'Dim cmd8 As New MySqlCommand(sql5, ConexionBBDD.conexion)
-    '    'Dim dr8 As MySqlDataReader
-    '    'dr8 = cmd8.ExecuteReader
-    '    'While dr8.Read
-    '    '    indice_provincia = dr8.Item(0)
-    '    'End While
-    '    'dr8.Close()
+        '    Dim provincia As String
+        '    sql5 = "Select distinct provincua from provincias where codigo=" & indice_provincia
+        '    Dim cmd9 As New MySqlCommand(sql5, ConexionBBDD.conexion)
+        '    Dim dr9 As MySqlDataReader
+        '    dr9 = cmd9.ExecuteReader
+        '    While dr9.Read
+        '        provincia = dr9.Item(0)
+        '    End While
+        '    dr9.Close()
 
-    '    'Dim provincia As String
-    '    'sql5 = "Select distinct provincua from provincias where codigo=" & indice_provincia
-    '    'Dim cmd9 As New MySqlCommand(sql5, ConexionBBDD.conexion)
-    '    'Dim dr9 As MySqlDataReader
-    '    'dr9 = cmd9.ExecuteReader
-    '    'While dr9.Read
-    '    '    provincia = dr9.Item(0)
-    '    'End While
-    '    'dr9.Close()
+        '    Me.cmb_Provincia.Text = provincia
 
-    '    'Me.cmb_Provincia.Text = provincia
+        '    Dim codigo_postal As Integer
+        '    sql5 = "Select distinct codigo_postal from relacion_cp_municipios_provincias where id =" & idRelaciones
+        '    Dim cmd10 As New MySqlCommand(sql5, ConexionBBDD.conexion)
+        '    Dim dr10 As MySqlDataReader
+        '    dr10 = cmd10.ExecuteReader
+        '    While dr10.Read
+        '        codigo_postal = dr10.Item(0)
+        '    End While
+        '    dr10.Close()
 
-    '    'Dim codigo_postal As Integer
-    '    'sql5 = "Select distinct codigo_postal from relacion_cp_municipios_provincias where id =" & idRelaciones
-    '    'Dim cmd10 As New MySqlCommand(sql5, ConexionBBDD.conexion)
-    '    'Dim dr10 As MySqlDataReader
-    '    'dr10 = cmd10.ExecuteReader
-    '    'While dr10.Read
-    '    '    codigo_postal = dr10.Item(0)
-    '    'End While
-    '    'dr10.Close()
-
-    '    'Me.cmb_CodPostal.Text = codigo_postal
+        '    Me.cmb_CodPostal.Text = codigo_postal
 
 
 
 
-    '    desconectar()
-    'End Sub
+        '    desconectar()
+    End Sub
     Private Sub btn_actualizarDato_Click(sender As Object, e As EventArgs) Handles btn_actualizarDato.Click
+        cargarProv()
+        cargarMuni(Pprov)
+        cargarCod(Pmuni)
+
         btn_actualizarDato.Text = "Actualizar datos"
         If Not guardar Then
             Me.txt_Nombre.Enabled = True
@@ -296,6 +296,7 @@ Public Class Vista
             Me.ckb_Gastro.Enabled = True
             Me.ckb_Tienda.Enabled = True
             Me.ckb_Surfing.Enabled = True
+            'cargarCmbProvinciaVISTA()
             guardar = True
         ElseIf guardar Then
             Me.btn_actualizarDato.Text = "Editar Datos"
@@ -323,7 +324,7 @@ Public Class Vista
             Me.ckb_Tienda.Enabled = False
             Me.ckb_Surfing.Enabled = False
             guardar = False
-            cargarCmbProvinciaVISTA()
+            'cargarCmbProvinciaVISTA()
             'actualizar()
         End If
 
@@ -408,6 +409,10 @@ Public Class Vista
         datosACargar(txt_Firma)
     End Sub
     Private Sub Vista_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' cargarProv()
+        ' cargarMuni(Pprov)
+        ' cargarCod(Pmuni)
+
         Me.btn_actualizarDato.Text = "Actualizar Dato"
         Me.txt_Nombre.Enabled = False
         Me.txt_Telefono.Enabled = False
@@ -442,19 +447,45 @@ Public Class Vista
     Private Sub btn_euskera_Click(sender As Object, e As EventArgs) Handles btn_euskera.Click
         If Not euskera Then
             btn_euskera.Text = "*Español"
-            Me.lbl_descripcionAbre.Visible = True
-            Me.lbl_DescripcionNOABRE.Visible = True
             Me.lbl_descripcionAbre.Text = "Deskribapen laburtuta"
             Me.lbl_DescripcionNOABRE.Text = "Deskribapen luzea"
+            Me.lbl_Firma.Text = "Sinadura:"
+            Me.lbl_Nombre.Text = "Izena:"
+            Me.lbl_Direccion.Text = "Helbidea:"
+            Me.lbl_Telefono.Text = "Telefonoa:"
+            Me.lbl_Municipio.Text = "Udalerri:"
+            Me.lbl_Provincia.Text = "Probintzia:"
+            Me.lbl_Codpostal.Text = "Posta Kodea:"
+            Me.lbl_Coordenadas.Text = "Kodeernatuak:"
+            Me.lbl_Tipo.Text = "Mota:"
+            Me.lbl_Capacidad.Text = "Edukiera:"
+            Me.lbl_Categoria.Text = "Kategoriak:"
+            Me.ckb_calidad.Text = "Kalitatea"
+            Me.ckb_Gastro.Text = "Gastronomiko"
+            Me.ckb_Autocaravana.Text = "Autokarabana"
+            Me.ckb_Tienda.Text = "Denda"
             Me.txt_descripcionAbreEus.Visible = True
             Me.txt_descripcionNoAbreEus.Visible = True
             euskera = True
         ElseIf euskera Then
             btn_euskera.Text = "*Euskera"
-            Me.lbl_DescripcionNOABRE.Visible = True
-            Me.lbl_descripcionAbre.Visible = True
             Me.lbl_descripcionAbre.Text = "Descripcion abreviada"
             Me.lbl_DescripcionNOABRE.Text = "Descripcion extensa"
+            Me.lbl_Firma.Text = "Firma:"
+            Me.lbl_Nombre.Text = "Nombre:"
+            Me.lbl_Direccion.Text = "Direccion:"
+            Me.lbl_Telefono.Text = "Telefono:"
+            Me.lbl_Municipio.Text = "Municipio:"
+            Me.lbl_Provincia.Text = "Provincia:"
+            Me.lbl_Codpostal.Text = "Cod.Postal:"
+            Me.lbl_Coordenadas.Text = "Coordenadas:"
+            Me.lbl_Capacidad.Text = "Capacidad:"
+            Me.lbl_Tipo.Text = "Tipo:"
+            Me.lbl_Categoria.Text = "Categoria:"
+            Me.ckb_calidad.Text = "Calidad"
+            Me.ckb_Gastro.Text = "Gastronomico"
+            Me.ckb_Autocaravana.Text = "Autocarabana"
+            Me.ckb_Tienda.Text = "Tienda"
             Me.txt_descripcionAbreEus.Visible = False
             Me.txt_descripcionNoAbreEus.Visible = False
             euskera = False
@@ -462,15 +493,106 @@ Public Class Vista
 
 
     End Sub
-    Private Sub cmb_CodPostal_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmb_CodPostal.SelectedIndexChanged
 
+    Sub cargarProv()
+        conectar()
+
+        If Not Me.cmb_Provincia.SelectedValue = "--Seleccione--" Then
+            Dim cmd1 = conexion.CreateCommand()
+            cmd1.CommandText = "SELECT `PROVINCUA` FROM `PROVINCIAS`"
+            Dim dar1 As MySqlDataReader
+            dar1 = cmd1.ExecuteReader
+            Me.cmb_Provincia.Items.Add("--Seleccione--")
+            While dar1.Read
+                Me.cmb_Provincia.Items.Add(dar1.Item(0))
+            End While
+            dar1.Close()
+            Me.cmb_Provincia.SelectedValue = Pprov
+            cargarMuni(Pprov)
+        Else
+            Me.cmb_Municipio.Items.Clear()
+            Me.cmb_Municipio.Items.Add("--Seleccione--")
+            Me.cmb_CodPostal.Items.Clear()
+            Me.cmb_CodPostal.Items.Add("--Seleccione--")
+            Me.cmb_CodPostal.Enabled = False
+            Me.cmb_CodPostal.Enabled = False
+        End If
+    End Sub
+    Sub cargarMuni(prov As String)
+        conectar()
+        If Not prov = "--Seleccione--" Then
+            Dim dar1 As MySqlDataReader
+            Dim codProv As String = Nothing
+            Dim cmd1 = conexion.CreateCommand()
+            Dim cmd2 = conexion.CreateCommand()
+            Dim cmd3 = conexion.CreateCommand()
+            Dim sql As String
+            sql = "SELECT `CODIGO` FROM `PROVINCIAS` WHERE"
+            cmd1.CommandText = sql & " `PROVINCUA` LIKE @param"
+            cmd1.Parameters.AddWithValue("@param", prov)
+            dar1 = cmd1.ExecuteReader
+            While dar1.Read
+                codProv = dar1.Item(0).ToString()
+            End While
+            dar1.Close()
+
+            sql = "SELECT `MUNICIPIO` FROM `MUNICIPIOS` WHERE `INDICE` IN (SELECT `INDICE_MUNICIPIO` FROM `RELACION_CP_MUNICIPIOS_PROVINCIAS` WHERE"
+            cmd2.CommandText = sql & " `CODIGO_PROVINCIA` = @param) ORDER BY `MUNICIPIO` ASC"
+            cmd2.Parameters.AddWithValue("@param", codProv)
+            dar1 = cmd2.ExecuteReader
+            Me.cmb_Municipio.Items.Clear()
+            Me.cmb_Municipio.Items.Add("--Seleccione--")
+            Me.cmb_Municipio.Enabled = True
+            While dar1.Read
+                Me.cmb_Municipio.Items.Add(dar1.Item(0))
+            End While
+            Me.cmb_Municipio.SelectedValue = Pmuni
+            dar1.Close()
+
+            Dim indMuni As Integer
+            cmd3.CommandText = "SELECT `INDICE` FROM `MUNICIPIOS` WHERE `MUNICIPIO` = @param"
+            cmd3.Parameters.AddWithValue("@param", Pmuni)
+            dar1 = cmd3.ExecuteReader
+            While dar1.Read
+                indMuni = dar1.Item(0).ToString()
+            End While
+            dar1.Close()
+            cargarCod(indMuni)
+        Else
+            Me.cmb_Municipio.Items.Clear()
+            Me.cmb_Municipio.Enabled = True
+            Me.cmb_Municipio.Items.Add("--Seleccione--")
+            Me.cmb_Municipio.SelectedIndex = 0
+            Me.cmb_Municipio.Enabled = False
+            Me.cmb_CodPostal.Items.Clear()
+            Me.cmb_CodPostal.Enabled = True
+            Me.cmb_CodPostal.Items.Add("--Seleccione--")
+            Me.cmb_CodPostal.SelectedIndex = 0
+            Me.cmb_CodPostal.Enabled = False
+        End If
+    End Sub
+    Sub cargarCod(indMuni As String)
+        conectar()
+        If Not Me.cmb_Municipio.SelectedValue = "--Seleccione--" Then
+            Dim cmd1 = conexion.CreateCommand()
+            Dim dar1 As MySqlDataReader
+            cmd1.CommandText = "SELECT * FROM `CODIGOS_POSTALES` WHERE `CODIGO_POSTAL` IN (SELECT R.`CODIGO_POSTAL` FROM `RELACION_CP_MUNICIPIOS_PROVINCIAS` R WHERE `INDICE_MUNICIPIO` IN (@param)) ORDER BY `CODIGO_POSTAL` ASC"
+            cmd1.Parameters.AddWithValue("@param", indMuni)
+            dar1 = cmd1.ExecuteReader
+            Me.cmb_CodPostal.Enabled = True
+
+            Me.cmb_CodPostal.Items.Clear()
+            While dar1.Read
+                Me.cmb_CodPostal.Items.Add(dar1.Item(0).ToString())
+            End While
+            dar1.Close()
+        Else
+            Me.cmb_CodPostal.Items.Clear()
+            Me.cmb_CodPostal.Enabled = True
+            Me.cmb_CodPostal.Items.Add("--Seleccione--")
+            Me.cmb_CodPostal.SelectedIndex = 0
+            Me.cmb_CodPostal.Enabled = False
+        End If
     End Sub
 
-    Private Sub cmb_Municipio_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmb_Municipio.SelectedIndexChanged
-        cargarCmbCodpostalVISTA()
-    End Sub
-
-    Private Sub cmb_Provincia_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmb_Provincia.SelectedIndexChanged
-        cargarCmbMunicipioVISTA()
-    End Sub
 End Class

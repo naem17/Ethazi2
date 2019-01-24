@@ -206,7 +206,7 @@ Partial Class Vista
         'lbl_Capacidad
         '
         Me.lbl_Capacidad.AutoSize = True
-        Me.lbl_Capacidad.Location = New System.Drawing.Point(346, 299)
+        Me.lbl_Capacidad.Location = New System.Drawing.Point(362, 299)
         Me.lbl_Capacidad.Name = "lbl_Capacidad"
         Me.lbl_Capacidad.Size = New System.Drawing.Size(106, 25)
         Me.lbl_Capacidad.TabIndex = 35
@@ -284,14 +284,14 @@ Partial Class Vista
         '
         'txt_Coordenadas
         '
-        Me.txt_Coordenadas.Location = New System.Drawing.Point(157, 296)
+        Me.txt_Coordenadas.Location = New System.Drawing.Point(172, 291)
         Me.txt_Coordenadas.Name = "txt_Coordenadas"
         Me.txt_Coordenadas.Size = New System.Drawing.Size(184, 33)
         Me.txt_Coordenadas.TabIndex = 47
         '
         'txt_Capacidad
         '
-        Me.txt_Capacidad.Location = New System.Drawing.Point(448, 291)
+        Me.txt_Capacidad.Location = New System.Drawing.Point(469, 291)
         Me.txt_Capacidad.Name = "txt_Capacidad"
         Me.txt_Capacidad.Size = New System.Drawing.Size(59, 33)
         Me.txt_Capacidad.TabIndex = 48
@@ -403,7 +403,7 @@ Partial Class Vista
         'lbl_Web
         '
         Me.lbl_Web.AutoSize = True
-        Me.lbl_Web.Location = New System.Drawing.Point(513, 299)
+        Me.lbl_Web.Location = New System.Drawing.Point(534, 299)
         Me.lbl_Web.Name = "lbl_Web"
         Me.lbl_Web.Size = New System.Drawing.Size(57, 25)
         Me.lbl_Web.TabIndex = 60
@@ -411,9 +411,9 @@ Partial Class Vista
         '
         'txt_Web
         '
-        Me.txt_Web.Location = New System.Drawing.Point(576, 291)
+        Me.txt_Web.Location = New System.Drawing.Point(620, 291)
         Me.txt_Web.Name = "txt_Web"
-        Me.txt_Web.Size = New System.Drawing.Size(384, 33)
+        Me.txt_Web.Size = New System.Drawing.Size(340, 33)
         Me.txt_Web.TabIndex = 61
         '
         'lbl_Aviso
@@ -438,7 +438,7 @@ Partial Class Vista
         'cmb_CodPostal
         '
         Me.cmb_CodPostal.FormattingEnabled = True
-        Me.cmb_CodPostal.Location = New System.Drawing.Point(758, 236)
+        Me.cmb_CodPostal.Location = New System.Drawing.Point(758, 233)
         Me.cmb_CodPostal.Name = "cmb_CodPostal"
         Me.cmb_CodPostal.Size = New System.Drawing.Size(147, 33)
         Me.cmb_CodPostal.TabIndex = 67

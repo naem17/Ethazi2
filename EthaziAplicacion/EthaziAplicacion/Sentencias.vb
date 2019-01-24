@@ -280,7 +280,6 @@ Module Sentencias
     End Sub
     '___________________________CARGAR DATOS PARA LA VISTA________________________________________
     Public Sub cargarCmbProvinciaVISTA()
-        conectar()
         Dim tabla As New DataTable
         sql = "Select codigo,provincua from provincias"
         Dim cmd1 As New MySqlCommand(sql, conexion)
@@ -292,10 +291,10 @@ Module Sentencias
         Vista.cmb_Provincia.DataSource = tabla
         Vista.cmb_Provincia.DisplayMember = "provincua"
         Vista.cmb_Provincia.ValueMember = "codigo"
-
-
+        'MsgBox(Vista.cmb_Provincia.SelectedValue.ToString)
     End Sub
     Public Sub cargarCmbMunicipioVISTA()
+        MsgBox(Vista.cmb_Provincia.SelectedItem.ToString)
         Vista.cmb_Municipio.Items.Clear()
         Dim tabla As New DataTable
         sql = "Select municipio from municipios where indice in (Select indice_municipio from relacion_cp_municipios_provincias where codigo_provincia = " & Vista.cmb_Provincia.SelectedValue.ToString & ")"
