@@ -5,7 +5,6 @@ Public Class VerSeleccion
     Dim param As String
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         param = Request.QueryString().ToString()
-
         If cnn1.State = ConnectionState.Closed Then
             cnn1.Open()
         End If
@@ -21,28 +20,24 @@ Public Class VerSeleccion
 
     End Sub
 
-    Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Response.Redirect("EditarPagina.aspx?" & Me.DetailsView1.Rows(0).Cells(1).Text)
+    Private Sub DetailsView1_ItemDeleting(sender As Object, e As DetailsViewDeleteEventArgs) Handles DetailsView1.ItemDeleting
+        Dim param As String = Me.DetailsView1.Rows(0).Cells(1).Text
+        Dim alojamiento As String = Me.DetailsView1.Rows(1).Cells(1).Text
+        If MsgBox("Quieres eliminar el alojamiento " & alojamiento & "?", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
+            Dim cmd1 As MySqlCommand = cnn1.CreateCommand
+            cmd1.CommandText = "DELETE FROM `ALOJAMIENTOS` WHERE `ALOJAMIENTOS`.`FIRMA` = @param"
+            cmd1.Parameters.AddWithValue("@param", param)
+            Dim dar1 As MySqlDataReader
+            dar1 = cmd1.ExecuteReader()
+            While dar1.Read
+                MsgBox("Alojamiento " & alojamiento & " eliminado.")
+            End While
+            dar1.Close()
+            Response.Redirect("Alojamientos.aspx")
+        End If
     End Sub
 
-    Protected Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Try
-            If cnn1.State = ConnectionState.Closed Then
-                cnn1.Open()
-            End If
-            Dim sql As String = "DELETE FROM `alojamientos` WHERE `alojamientos`.`FIRMA` = '" & param & "'"
-            Dim cmd1 As New MySqlCommand
-            cmd1.CommandText = "DELETE FROM `alojamientos` WHERE `alojamientos`.`FIRMA` = '@param'"
-            cmd1.Parameters.AddWithValue("@param", param)
-            If MsgBox("Quieres eliminar este alojamiento?", MsgBoxStyle.YesNo) = MsgBoxResult.Yes Then
-                Dim res As Integer = cmd1.ExecuteNonQuery()
-                If res <> 0 Then
-                    MsgBox("Alojamiento: " & Me.DetailsView1.Rows(1).Cells(1).Text & " borrado con exito.")
-                    Response.Redirect("Alojamientos.aspx", False)
-                End If
-            End If
-        Catch ex As Exception
-            MsgBox("Error al borrar" & ": " & ex.Message.ToString)
-        End Try
+    Private Sub DetailsView1_ModeChanging(sender As Object, e As DetailsViewModeEventArgs) Handles DetailsView1.ModeChanging
+        Response.Redirect("EditarPagina.aspx?" & Me.DetailsView1.Rows(0).Cells(1).Text)
     End Sub
 End Class
