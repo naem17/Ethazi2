@@ -34,6 +34,7 @@ Partial Class Administrador
         Me.ActulizarBBDDToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.lbl_Alojamientos = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.MAPAToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -56,7 +57,7 @@ Partial Class Administrador
         '
         Me.MenuStrip1.BackColor = System.Drawing.SystemColors.Control
         Me.MenuStrip1.Font = New System.Drawing.Font("Goudy Old Style", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EDITARToolStripMenuItem, Me.InsertarToolStripMenuItem, Me.DeleteToolStripMenuItem, Me.ActulizarBBDDToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EDITARToolStripMenuItem, Me.InsertarToolStripMenuItem, Me.DeleteToolStripMenuItem, Me.ActulizarBBDDToolStripMenuItem, Me.MAPAToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(300, 2, 0, 2)
@@ -129,6 +130,12 @@ Partial Class Administrador
         Me.PictureBox1.TabIndex = 8
         Me.PictureBox1.TabStop = False
         '
+        'MAPAToolStripMenuItem
+        '
+        Me.MAPAToolStripMenuItem.Name = "MAPAToolStripMenuItem"
+        Me.MAPAToolStripMenuItem.Size = New System.Drawing.Size(74, 27)
+        Me.MAPAToolStripMenuItem.Text = "MAPA"
+        '
         'Administrador
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 21.0!)
@@ -164,4 +171,5 @@ Partial Class Administrador
     Friend WithEvents lbl_Alojamientos As System.Windows.Forms.Label
     Friend WithEvents EDITARToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents MAPAToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

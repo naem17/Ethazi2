@@ -41,8 +41,10 @@ Partial Class PrimeraPageInsert
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label9
@@ -203,12 +205,24 @@ Partial Class PrimeraPageInsert
         Me.PictureBox2.TabIndex = 36
         Me.PictureBox2.TabStop = False
         '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.PictureBox3.Image = Global.EthaziAplicacion.My.Resources.Resources.reply__1_
+        Me.PictureBox3.Location = New System.Drawing.Point(5, 7)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(32, 32)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox3.TabIndex = 49
+        Me.PictureBox3.TabStop = False
+        '
         'PrimeraPageInsert
         '
         Me.AcceptButton = Me.btn_Siguiente
         Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(816, 613)
+        Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label9)
@@ -233,6 +247,7 @@ Partial Class PrimeraPageInsert
         Me.Text = "PrimeraPageInsert"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -255,4 +270,5 @@ Partial Class PrimeraPageInsert
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
 End Class

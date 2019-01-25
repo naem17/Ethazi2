@@ -58,17 +58,21 @@ Module Sentencias
         SegundaPageInsert.cmb_CodPostal.DisplayMember = "CODIGO_POSTAL"
     End Sub
     Public Sub cargarCmbProvincia2()
-        Dim tabla As New DataTable
-        sql = "Select codigo,provincua from provincias"
-        Dim cmd1 As New MySqlCommand(sql, conexion)
+        conectar()
 
-        adap1 = New MySqlDataAdapter(cmd1)
-        das1.Clear()
+        Buscar.cmb_provincia.Items.Clear()
 
-        adap1.Fill(tabla)
-        Buscar.cmb_provincia.DataSource = tabla
-        Buscar.cmb_provincia.DisplayMember = "provincua"
-        Buscar.cmb_provincia.ValueMember = "codigo"
+        sql = "Select provincua from provincias"
+        Dim cmd1 As New MySqlCommand
+        cmd1 = New MySqlCommand(sql, conexion)
+        Dim dr As MySqlDataReader
+        dr = cmd1.ExecuteReader
+        Buscar.cmb_provincia.Items.Add("-Todas-")
+        While dr.Read
+            Buscar.cmb_provincia.Items.Add(dr.Item(0))
+
+        End While
+        dr.Close()
 
 
     End Sub
@@ -131,12 +135,12 @@ Module Sentencias
         conectar()
 
         Dim tabla As New DataTable
-        sql = "Select tipo from tipos "
+        sql = "Select tipo from tipos"
         Dim cmd1 As New MySqlCommand
         cmd1 = New MySqlCommand(sql, conexion)
         Dim dr As MySqlDataReader
         dr = cmd1.ExecuteReader
-
+        Buscar.cmb_tipo.Items.Add("-Todas-")
         While dr.Read
             Buscar.cmb_tipo.Items.Add(dr.Item(0))
 
@@ -280,31 +284,34 @@ Module Sentencias
     End Sub
     '___________________________CARGAR DATOS PARA LA VISTA________________________________________
     Public Sub cargarCmbProvinciaVISTA()
-        Dim tabla As New DataTable
-        sql = "Select codigo,provincua from provincias"
-        Dim cmd1 As New MySqlCommand(sql, conexion)
+        ' Dim tabla As New DataTable
+        Vista.cmb_Provincia.Items.Clear()
 
-        adap1 = New MySqlDataAdapter(cmd1)
-        das1.Clear()
-
-        adap1.Fill(tabla)
-        Vista.cmb_Provincia.DataSource = tabla
-        Vista.cmb_Provincia.DisplayMember = "provincua"
-        Vista.cmb_Provincia.ValueMember = "codigo"
-        'MsgBox(Vista.cmb_Provincia.SelectedValue.ToString)
-    End Sub
-    Public Sub cargarCmbMunicipioVISTA()
-        MsgBox(Vista.cmb_Provincia.SelectedItem.ToString)
-        Vista.cmb_Municipio.Items.Clear()
-        Dim tabla As New DataTable
-        sql = "Select municipio from municipios where indice in (Select indice_municipio from relacion_cp_municipios_provincias where codigo_provincia = " & Vista.cmb_Provincia.SelectedValue.ToString & ")"
-
+        sql = "Select provincua from provincias"
         Dim cmd1 As New MySqlCommand
         cmd1 = New MySqlCommand(sql, conexion)
         Dim dr As MySqlDataReader
         dr = cmd1.ExecuteReader
 
         While dr.Read
+            Vista.cmb_Provincia.Items.Add(dr.Item(0))
+
+        End While
+        dr.Close()
+        'MsgBox(Vista.cmb_Provincia.SelectedValue.ToString)
+    End Sub
+    Public Sub cargarCmbMunicipioVISTA()
+
+        Vista.cmb_Municipio.Items.Clear()
+        Dim tabla As New DataTable
+        sql = "Select distinct municipio from municipios where indice in (Select indice_municipio from relacion_cp_municipios_provincias where codigo_provincia = (SELECT codigo FROM provincias WHERE provincua='" & Vista.cmb_Provincia.SelectedItem.ToString & "'))"
+
+        Dim cmd1 As New MySqlCommand
+        cmd1 = New MySqlCommand(sql, conexion)
+        Dim dr As MySqlDataReader
+        dr = cmd1.ExecuteReader
+        While dr.Read
+
             Vista.cmb_Municipio.Items.Add(dr.Item(0))
         End While
         dr.Close()
@@ -373,4 +380,20 @@ Module Sentencias
         Vista.cmb_CodPostal.Text = codigo
         dr.Close()
     End Sub
+    Public Function cargarIdvista()
+        Dim tabla As New DataTable
+        Dim cmd1 As New MySqlCommand("", conexion)
+        cmd1.CommandText = "Select id from relacion_cp_municipios_provincias where codigo_postal = @param"
+        cmd1.Parameters.AddWithValue("@param", Vista.cmb_CodPostal.Text)
+        Dim dr As MySqlDataReader
+        dr = cmd1.ExecuteReader
+
+        While dr.Read
+            id_rcmp = dr.Item(0)
+
+        End While
+        dr.Close()
+        MsgBox(id_rcmp)
+        Return id_rcmp
+    End Function
 End Module

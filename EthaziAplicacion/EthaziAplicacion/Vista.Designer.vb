@@ -66,6 +66,7 @@ Partial Class Vista
         Me.lbl_Aviso = New System.Windows.Forms.Label()
         Me.btn_euskera = New System.Windows.Forms.Button()
         Me.cmb_CodPostal = New System.Windows.Forms.ComboBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.pb_Restablecer, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -443,12 +444,22 @@ Partial Class Vista
         Me.cmb_CodPostal.Size = New System.Drawing.Size(147, 33)
         Me.cmb_CodPostal.TabIndex = 67
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(635, 677)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 29)
+        Me.Button1.TabIndex = 68
+        Me.Button1.Text = "Mapa"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Vista
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(990, 715)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.cmb_CodPostal)
         Me.Controls.Add(Me.btn_euskera)
         Me.Controls.Add(Me.lbl_Aviso)
@@ -544,4 +555,5 @@ Partial Class Vista
     Friend WithEvents lbl_Aviso As System.Windows.Forms.Label
     Friend WithEvents btn_euskera As System.Windows.Forms.Button
     Friend WithEvents cmb_CodPostal As System.Windows.Forms.ComboBox
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class

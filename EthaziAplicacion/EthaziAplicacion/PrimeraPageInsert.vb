@@ -19,4 +19,9 @@
         PictureBox1.Visible = False
         PictureBox2.Visible = False
     End Sub
+
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+        Me.Hide()
+        Administrador.Show()
+    End Sub
 End Class
