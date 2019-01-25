@@ -96,7 +96,9 @@
     <Content Include="Alojamientos.aspx" />
     <Content Include="Categorias.aspx" />
     <Content Include="CodPostales.aspx" />
+    <Content Include="consultaAlojamientos.aspx" />
     <Content Include="EditarPagina.aspx" />
+    <Content Include="Global.asax" />
     <Content Include="Imagenes\fondo.jpg" />
     <Content Include="Loggin.aspx" />
     <Content Include="Estilos.css" />
@@ -105,6 +107,7 @@
     <Content Include="Provincias.aspx" />
     <Content Include="Tipos.aspx" />
     <Content Include="T_Euskera.aspx" />
+    <Content Include="verAlojamientos.aspx" />
     <Content Include="VerSeleccion.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -135,12 +138,22 @@
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Conexion.vb" />
+    <Compile Include="consultaAlojamientos.aspx.designer.vb">
+      <DependentUpon>consultaAlojamientos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="consultaAlojamientos.aspx.vb">
+      <DependentUpon>consultaAlojamientos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="EditarPagina.aspx.designer.vb">
       <DependentUpon>EditarPagina.aspx</DependentUpon>
     </Compile>
     <Compile Include="EditarPagina.aspx.vb">
       <DependentUpon>EditarPagina.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Loggin.aspx.designer.vb">
       <DependentUpon>Loggin.aspx</DependentUpon>
@@ -215,6 +228,13 @@
     </Compile>
     <Compile Include="T_Euskera.aspx.vb">
       <DependentUpon>T_Euskera.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="verAlojamientos.aspx.designer.vb">
+      <DependentUpon>verAlojamientos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="verAlojamientos.aspx.vb">
+      <DependentUpon>verAlojamientos.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="VerSeleccion.aspx.designer.vb">

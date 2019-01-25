@@ -6,48 +6,51 @@ Public Class EditaPaginaalojamientos
     Dim Pprov, Pmuni, PcodPos As String
     Private Sub EditaPaginaalojamientos_PreLoad(sender As Object, e As EventArgs) Handles Me.PreLoad
         If Not Page.IsPostBack Then
-            param = Request.QueryString().ToString()
+            param = Session("firma")
+            If Not (param.Equals("") Or param = Nothing) Then
+                If cnn1.State = ConnectionState.Closed Then
+                    cnn1.Open()
+                End If
+                Dim cmd1 = cnn1.CreateCommand()
+                cmd1.CommandText = "SELECT A.`FIRMA`, A.`NOMBRE`, A.`DIRECCION`, A.`TELEFONO`, A.`EMAIL`, A.`WEB`, P.`PROVINCUA` AS `PROVINCIA`, M.`MUNICIPIO`, R.`CODIGO_POSTAL` AS `CODIGO POSTAL`, A.`DESCRIPCION` AS `DESCRIPCION`, A.`DESCRIPCION_EUSKERA` AS `DESCRIPCION EUSKERA`, A.`CAPACIDAD`, T.`TIPO`, Y.`TIPO_EUSKERA` AS `TIPO EUSKERA`, K.`CATEGORIA`, A.`COORDENADAS`, A.`CALIDAD_ASEGURADA` AS `CALIDAD ASEGURADA`, A.`TIENDA`, A.`GASTRONOMICO`, A.`CLUB`, A.`RESTAURANTE`, A.`AUTOCARAVANA`, A.`SURFING` FROM `ALOJAMIENTOS` A, `RELACION_CP_MUNICIPIOS_PROVINCIAS` R, `MUNICIPIOS` M, `PROVINCIAS` P, `CATEGORIAS` K, `TIPOS` T, `TIPOS_EUSKERA` Y  WHERE A.`FIRMA` = @param AND A.`CODIGO_TIPOS` = T.`CODIGO` AND A.`CODIGO_TIPOS_EUSKERA` = Y.`CODIGO` AND A.`CODIGO_CATEGORIAS` = K.`CODIGO` AND A.`ID_RELACIONES` = R.`ID` AND R.`CODIGO_PROVINCIA` = P.`CODIGO` AND R.`INDICE_MUNICIPIO` = M.`INDICE` ORDER BY A.`NOMBRE`"
+                cmd1.Parameters.AddWithValue("@param", param)
+                Dim da1 As New MySqlDataAdapter
+                da1.SelectCommand = cmd1
+                Dim ds As New DataSet
+                da1.Fill(ds)
 
-            If cnn1.State = ConnectionState.Closed Then
-                cnn1.Open()
+                Pprov = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(6).ToString)
+                Pmuni = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(7).ToString)
+                PcodPos = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(8).ToString)
+
+                cargarDDL()
+
+                txt_Firma.Text = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(0).ToString)
+                txt_Nombre.Text = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(1).ToString)
+                txt_Direccion.Text = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(2).ToString)
+                txt_Telefono.Text = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(3).ToString)
+                txt_Email.Text = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(4).ToString)
+                txt_Web.Text = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(5).ToString)
+                cargarProv()
+                ddl_CodPostal.SelectedValue = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(8).ToString)
+                txt_Descripcion.Text = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(9).ToString)
+                txt_Descripcion_Eus.Text = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(10).ToString)
+                ddl_Cap.SelectedValue = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(11).ToString)
+                ddl_Tipos.SelectedValue = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(12).ToString)
+                ddl_Tipos_eus.SelectedValue = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(13).ToString)
+                ddl_Categorias.SelectedValue = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(14).ToString)
+                txt_Coordenadas.Text = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(15).ToString)
+                chk_Calidad.Checked = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(16).ToString)
+                chk_Tienda.Checked = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(17).ToString)
+                chk_Gastronomico.Checked = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(18).ToString)
+                chk_Club.Checked = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(19).ToString)
+                chk_Restaurante.Checked = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(20).ToString)
+                chk_Autocarvana.Checked = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(21).ToString)
+                chk_Surfing.Checked = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(22).ToString)
+            Else
+                MsgBox("Se produjo algun error al intentar editar el alojamiento.")
+                Response.Redirect("verAlojamientos.aspx")
             End If
-            Dim cmd1 = cnn1.CreateCommand()
-            cmd1.CommandText = "SELECT A.`FIRMA`, A.`NOMBRE`, A.`DIRECCION`, A.`TELEFONO`, A.`EMAIL`, A.`WEB`, P.`PROVINCUA` AS `PROVINCIA`, M.`MUNICIPIO`, R.`CODIGO_POSTAL` AS `CODIGO POSTAL`, A.`DESCRIPCION` AS `DESCRIPCION`, A.`DESCRIPCION_EUSKERA` AS `DESCRIPCION EUSKERA`, A.`CAPACIDAD`, T.`TIPO`, Y.`TIPO_EUSKERA` AS `TIPO EUSKERA`, K.`CATEGORIA`, A.`COORDENADAS`, A.`CALIDAD_ASEGURADA` AS `CALIDAD ASEGURADA`, A.`TIENDA`, A.`GASTRONOMICO`, A.`CLUB`, A.`RESTAURANTE`, A.`AUTOCARAVANA`, A.`SURFING` FROM `ALOJAMIENTOS` A, `RELACION_CP_MUNICIPIOS_PROVINCIAS` R, `MUNICIPIOS` M, `PROVINCIAS` P, `CATEGORIAS` K, `TIPOS` T, `TIPOS_EUSKERA` Y  WHERE A.`FIRMA` = @param AND A.`CODIGO_TIPOS` = T.`CODIGO` AND A.`CODIGO_TIPOS_EUSKERA` = Y.`CODIGO` AND A.`CODIGO_CATEGORIAS` = K.`CODIGO` AND A.`ID_RELACIONES` = R.`ID` AND R.`CODIGO_PROVINCIA` = P.`CODIGO` AND R.`INDICE_MUNICIPIO` = M.`INDICE` ORDER BY A.`NOMBRE`"
-            cmd1.Parameters.AddWithValue("@param", param)
-            Dim da1 As New MySqlDataAdapter
-            da1.SelectCommand = cmd1
-            Dim ds As New DataSet
-            da1.Fill(ds)
-
-            Pprov = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(6).ToString)
-            Pmuni = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(7).ToString)
-            PcodPos = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(8).ToString)
-
-            cargarDDL()
-
-            txt_Firma.Text = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(0).ToString)
-            txt_Nombre.Text = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(1).ToString)
-            txt_Direccion.Text = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(2).ToString)
-            txt_Telefono.Text = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(3).ToString)
-            txt_Email.Text = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(4).ToString)
-            txt_Web.Text = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(5).ToString)
-            cargarProv()
-            ddl_CodPostal.SelectedValue = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(8).ToString)
-            txt_Descripcion.Text = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(9).ToString)
-            txt_Descripcion_Eus.Text = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(10).ToString)
-            ddl_Cap.SelectedValue = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(11).ToString)
-            ddl_Tipos.SelectedValue = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(12).ToString)
-            ddl_Tipos_eus.SelectedValue = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(13).ToString)
-            ddl_Categorias.SelectedValue = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(14).ToString)
-            txt_Coordenadas.Text = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(15).ToString)
-            chk_Calidad.Checked = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(16).ToString)
-            chk_Tienda.Checked = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(17).ToString)
-            chk_Gastronomico.Checked = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(18).ToString)
-            chk_Club.Checked = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(19).ToString)
-            chk_Restaurante.Checked = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(20).ToString)
-            chk_Autocarvana.Checked = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(21).ToString)
-            chk_Surfing.Checked = HttpUtility.HtmlDecode(ds.Tables(0).Rows(0).Item(22).ToString)
-
         End If
     End Sub
 

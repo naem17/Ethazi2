@@ -28,7 +28,7 @@
                         <br />
                         <div id="Tablas">
                             <div>
-                                &nbsp; <a class="supbtn" href="Alojamientos.aspx">Alojamientos</a> &nbsp;
+                                &nbsp; <a href="consultaAlojamientos.aspx" class="supbtn">Alojamientos</a> &nbsp;
                                 &nbsp; <a href="Categorias.aspx" class="supbtn">Categorias</a> &nbsp;
                                 &nbsp; <a href="CodPostales.aspx" class="supbtn">Codigos Postales</a> &nbsp;
                                 &nbsp; <a href="Municipios.aspx" class="supbtn">Municipios</a> &nbsp;
