@@ -47,4 +47,8 @@ Public Class verAlojamientos
     Private Sub GridView1_RowEditing(sender As Object, e As GridViewEditEventArgs) Handles GridView1.RowEditing
         Response.Redirect("EditarPagina.aspx?" & Me.GridView1.Rows(e.NewEditIndex).Cells(1).Text)
     End Sub
+
+    Protected Sub btn_New_Click(sender As Object, e As EventArgs) Handles btn_New.Click
+        Response.Redirect("insertarAlojamientos.aspx")
+    End Sub
 End Class

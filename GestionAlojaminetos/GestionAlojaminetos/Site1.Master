@@ -28,7 +28,7 @@
                         <br />
                         <div id="Tablas">
                             <div>
-                                &nbsp; <a href="consultaAlojamientos.aspx" class="supbtn">Alojamientos</a> &nbsp;
+                                &nbsp; <a href="verAlojamientos.aspx" class="supbtn">Alojamientos</a> &nbsp;
                                 &nbsp; <a href="Categorias.aspx" class="supbtn">Categorias</a> &nbsp;
                                 &nbsp; <a href="CodPostales.aspx" class="supbtn">Codigos Postales</a> &nbsp;
                                 &nbsp; <a href="Municipios.aspx" class="supbtn">Municipios</a> &nbsp;
@@ -50,7 +50,7 @@
                 </td>
             </tr>
             <tr>
-                <td class="footer"><marquee scrolldelay="20" behavior="alternate">Ibon Alonso, Nestor Echevarria, Litze Barroz</marquee></td>
+                <td class="footer"><marquee scrolldelay="20" behavior="alternate">Ibon Alonso, Litze Barroz, Nestor Echevarria</marquee></td>
             </tr>
         </table>
        

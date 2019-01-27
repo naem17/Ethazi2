@@ -44,7 +44,8 @@ Public Class Alojamientos
     End Sub
 
     Protected Sub GridView1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles GridView1.SelectedIndexChanged
-        Response.Redirect("VerSeleccion.aspx?" & Me.GridView1.SelectedRow.Cells(1).Text)
+        Session("firma") = Me.GridView1.SelectedRow.Cells(1).Text
+        Response.Redirect("VerSeleccion.aspx")
     End Sub
 
     Private Sub GridView1_RowDeleting(sender As Object, e As GridViewDeleteEventArgs) Handles GridView1.RowDeleting

@@ -14,6 +14,15 @@ Option Explicit On
 Partial Public Class verAlojamientos
     
     '''<summary>
+    '''Control btn_New.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents btn_New As Global.System.Web.UI.WebControls.Button
+    
+    '''<summary>
     '''Control GridView1.
     '''</summary>
     '''<remarks>

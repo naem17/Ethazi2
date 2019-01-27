@@ -100,6 +100,7 @@
     <Content Include="EditarPagina.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Imagenes\fondo.jpg" />
+    <Content Include="insertarAlojamientos.aspx" />
     <Content Include="Loggin.aspx" />
     <Content Include="Estilos.css" />
     <Content Include="Mapa.aspx" />
@@ -154,6 +155,13 @@
     </Compile>
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="insertarAlojamientos.aspx.designer.vb">
+      <DependentUpon>insertarAlojamientos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="insertarAlojamientos.aspx.vb">
+      <DependentUpon>insertarAlojamientos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Loggin.aspx.designer.vb">
       <DependentUpon>Loggin.aspx</DependentUpon>
