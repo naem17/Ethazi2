@@ -180,79 +180,90 @@ Public Class consultaAlojamientos
 
         If Not datos(0).Equals("NULL") Then
             sql &= "AND A.`NOMBRE` LIKE '%" & "Pnombre" & "%' "
-            sql.Replace("Pnombre", datos(0))
+            sql = Replace(sql, "Pnombre", datos(0))
             cmd1.CommandText &= "AND A.`NOMBRE` LIKE '%" & "@nombre" & "%' "
             cmd1.Parameters.AddWithValue("@nombre", datos(0))
         End If
 
         If Not datos(1).Equals("--Seleccione--") Then
-            sql &= "AND P.`PROVINCUA` = @prov "
-            sql.Replace("@prov", datos(1))
+            sql &= "AND P.`PROVINCUA` = '@prov' "
+            sql = Replace(sql, "@prov", datos(1))
             cmd1.CommandText &= "AND P.`PROVINCUA` = @prov "
             cmd1.Parameters.AddWithValue("@prov", datos(1))
         End If
 
         If Not datos(2).Equals("--Seleccione--") Then
-            sql &= "AND M.`MUNICIPIO` = @muni "
-            sql.Replace("@muni", datos(2))
+            sql &= "AND M.`MUNICIPIO` = '@muni' "
+            sql = Replace(sql, "@muni", datos(2))
             cmd1.CommandText &= "AND M.`MUNICIPIO` = @muni "
             cmd1.Parameters.AddWithValue("@muni", datos(2))
         End If
 
         If Not datos(3).Equals("--Seleccione--") Then
-            sql &= "AND R.`CODIGO_POSTAL` = @cod "
-            sql.Replace("@cod", datos(3))
+            sql &= "AND R.`CODIGO_POSTAL` = '@cod' "
+            sql = Replace(sql, "@cod", datos(3))
             cmd1.CommandText &= "AND R.`CODIGO_POSTAL` = @cod "
             cmd1.Parameters.AddWithValue("@cod", datos(3))
         End If
 
         If Not datos(4).Equals("--Seleccione--") Then
-            sql &= "AND T.`TIPO` = @tipo "
-            sql.Replace("@tipo", datos(4))
+            sql &= "AND T.`TIPO` = '@tipo' "
+            sql = Replace(sql, "@tipo", datos(4))
             cmd1.CommandText &= "AND T.`TIPO` = @tipo "
             cmd1.Parameters.AddWithValue("@tipo", datos(4))
         End If
 
         If Not datos(5).Equals("--Seleccione--") Then
-            sql &= "AND A.`CAPACIDAD` = @capa "
-            sql.Replace("@capa", datos(5))
+            sql &= "AND A.`CAPACIDAD` = '@capa' "
+            sql = Replace(sql, "@capa", datos(5))
             cmd1.CommandText &= "AND A.`CAPACIDAD` = @capa "
             cmd1.Parameters.AddWithValue("@capa", datos(5))
         End If
 
         If Not datos(6).Equals("") Then
+            sql &= "AND A.`GASTRONOMICO` = @gas "
+            sql = Replace(sql, "@gas", datos(6))
             cmd1.CommandText &= "AND A.`GASTRONOMICO` = @gas "
             cmd1.Parameters.AddWithValue("@gas", datos(6))
         End If
 
         If Not datos(7).Equals("") Then
+            sql &= "AND A.`RESTAURANTE` = @res "
+            sql = Replace(sql, "@res", datos(7))
             cmd1.CommandText &= "AND A.`RESTAURANTE` = @res "
             cmd1.Parameters.AddWithValue("@res", datos(7))
         End If
 
         If Not datos(8).Equals("") Then
+            sql &= "AND A.`SURFING` = @surf "
+            sql = Replace(sql, "@surf", datos(8))
             cmd1.CommandText &= "AND A.`SURFING` = @surf "
             cmd1.Parameters.AddWithValue("@surf", datos(8))
         End If
 
         If Not datos(9).Equals("") Then
+            sql &= "AND A.`TIENDA` = @tie "
+            sql = Replace(sql, "@tie", datos(9))
             cmd1.CommandText &= "AND A.`TIENDA` = @tie "
             cmd1.Parameters.AddWithValue("@tie", datos(9))
         End If
 
         If Not datos(10).Equals("") Then
+            sql &= "AND A.`CLUB` = @club "
+            sql = Replace(sql, "@club", datos(10))
             cmd1.CommandText &= "AND A.`CLUB` = @club "
             cmd1.Parameters.AddWithValue("@club", datos(10))
         End If
 
         If Not datos(11).Equals("") Then
+            sql &= "AND A.`AUTOCARAVANA` = @auto "
+            sql = Replace(sql, "@auto", datos(11))
             cmd1.CommandText &= "AND A.`AUTOCARAVANA` = @auto "
             cmd1.Parameters.AddWithValue("@auto", datos(11))
         End If
 
         cmd1.CommandText &= "ORDER BY A.`NOMBRE`"
         sql &= "ORDER BY A.`NOMBRE`"
-        MsgBox(sql)
 
         Session("select") = sql
 

@@ -23,6 +23,15 @@ Partial Public Class verAlojamientos
     Protected WithEvents btn_New As Global.System.Web.UI.WebControls.Button
     
     '''<summary>
+    '''Control lbl_Num.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lbl_Num As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
     '''Control GridView1.
     '''</summary>
     '''<remarks>

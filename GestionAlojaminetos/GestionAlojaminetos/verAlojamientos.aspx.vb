@@ -25,6 +25,7 @@ Public Class verAlojamientos
         Dim ds As New DataSet
         ds.Clear()
         da1.Fill(ds, "alojamientos")
+        lbl_Num.Text = ds.Tables("alojamientos").Rows.Count & " alojamientos encontrados"
         Me.GridView1.DataSource = ds.Tables("alojamientos")
         Me.GridView1.DataBind()
         Me.GridView1.AllowPaging = True

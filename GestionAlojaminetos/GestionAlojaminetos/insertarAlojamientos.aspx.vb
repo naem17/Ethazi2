@@ -46,9 +46,11 @@ Public Class insertarAlojamientos
         End While
         dar1.Close()
 
+        ddl_Cap.Items.Add("--Seleccione--")
         For x As Integer = 1 To 999
             ddl_Cap.Items.Add(x)
         Next
+        ddl_Cap.SelectedIndex = 0
     End Sub
 
     Sub cargarProv()
@@ -188,10 +190,10 @@ Public Class insertarAlojamientos
             datos(8) = ddl_CodPostal.Text
             datos(9) = txt_Descripcion.Text
             datos(10) = txt_Descripcion_Eus.Text
-            datos(11) = ddl_Cap.Text
-            datos(12) = ddl_Tipos.Text
-            datos(13) = ddl_Tipos_eus.Text
-            datos(14) = ddl_Categorias.Text
+            datos(11) = If(ddl_Cap.Text.Equals("--Seleccione--"), "0", ddl_Cap.Text)
+            datos(12) = If(ddl_Tipos.Text.Equals("--Seleccione--"), "Albergues", ddl_Tipos.Text)
+            datos(13) = If(ddl_Tipos_eus.Text.Equals("--Seleccione--"), "Aterpetxeak", ddl_Tipos_eus.Text)
+            datos(14) = If(ddl_Categorias.Text.Equals("--Seleccione--"), "S", ddl_Categorias.Text)
             datos(15) = txt_Coordenadas.Text
             datos(16) = If(chk_Calidad.Checked, "1", "0")
             datos(17) = If(chk_Tienda.Checked, "1", "0")
@@ -236,7 +238,9 @@ Public Class insertarAlojamientos
             Dim dar1 As MySqlDataReader
             'Creo los campos de descripciones abreviadas
             Dim desc_abre, desc_abre_eus As String
-            If datos(9).Length > 110 Then
+            If datos(9).Length = 0 Then
+                desc_abre = ""
+            ElseIf datos(9).Length > 110 Then
                 desc_abre = datos(9).Substring(0, 107) & "..."
             ElseIf datos(9).Length < 107 Then
                 desc_abre = datos(9) & "..."
@@ -244,7 +248,9 @@ Public Class insertarAlojamientos
                 desc_abre = datos(9)
             End If
 
-            If datos(10).Length > 110 Then
+            If datos(10).Length = 0 Then
+                desc_abre_eus = ""
+            ElseIf datos(10).Length > 110 Then
                 desc_abre_eus = datos(10).Substring(0, 107) & "..."
             ElseIf datos(10).Length < 107 Then
                 desc_abre_eus = datos(10) & "..."
