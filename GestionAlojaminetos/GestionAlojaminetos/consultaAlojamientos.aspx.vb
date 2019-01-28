@@ -161,12 +161,12 @@ Public Class consultaAlojamientos
         datos(3) = ddl_Cod.SelectedValue
         datos(4) = ddl_Tipo.SelectedValue
         datos(5) = ddl_Capa.SelectedValue
-        datos(6) = If(chk_Gas.Checked, "1", "0")
-        datos(7) = If(chk_Res.Checked, "1", "0")
-        datos(8) = If(chk_Surf.Checked, "1", "0")
-        datos(9) = If(Chk_Tie.Checked, "1", "0")
-        datos(10) = If(chk_Club.Checked, "1", "0")
-        datos(11) = If(chk_Auto.Checked, "1", "0")
+        datos(6) = If(chk_Gas.Checked, "1", "")
+        datos(7) = If(chk_Res.Checked, "1", "")
+        datos(8) = If(chk_Surf.Checked, "1", "")
+        datos(9) = If(Chk_Tie.Checked, "1", "")
+        datos(10) = If(chk_Club.Checked, "1", "")
+        datos(11) = If(chk_Auto.Checked, "1", "")
         comprobarDatos(datos)
     End Sub
 
