@@ -11,6 +11,7 @@ Public Class Global_asax
         ' Se desencadena al iniciar la sesión
         Session("firma") = Nothing
         Session("User") = Nothing
+        Session("select") = Nothing
     End Sub
 
     Sub Application_BeginRequest(ByVal sender As Object, ByVal e As EventArgs)

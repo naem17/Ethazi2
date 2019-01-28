@@ -25,9 +25,11 @@ Public Class consultaAlojamientos
         dar1.Close()
         ddl_Tipo.SelectedIndex = 0
 
+        ddl_Capa.Items.Add("--Seleccione--")
         For x As Integer = 0 To 999
             ddl_Capa.Items.Add(x)
         Next
+        ddl_Capa.SelectedIndex = 0
     End Sub
 
     Sub cargarProv()
@@ -155,7 +157,7 @@ Public Class consultaAlojamientos
 
     Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim datos(12) As String
-        datos(0) = txt_Nombre.Text
+        datos(0) = If(txt_Nombre.Text.Equals(""), "NULL", txt_Nombre.Text)
         datos(1) = ddl_Prov.SelectedValue
         datos(2) = ddl_Muni.SelectedValue
         datos(3) = ddl_Cod.SelectedValue
@@ -172,6 +174,88 @@ Public Class consultaAlojamientos
 
     Private Sub comprobarDatos(datos() As String)
         Dim sql As String = Nothing
-        sql = "SELECT A.`FIRMA`, A.`NOMBRE`, A.`DIRECCION`, A.`TELEFONO`, A.`EMAIL`, A.`WEB`, P.`PROVINCUA` AS `PROVINCIA`, M.`MUNICIPIO`, R.`CODIGO_POSTAL` AS `CODIGO POSTAL`, CONCAT(SUBSTRING(A.`DESCRIPCION`, 1, 50),'...') AS `DESCRIPCION`, CONCAT(SUBSTRING(A.`DESCRIPCION_EUSKERA`, 1, 50),'...') AS `DESCRIPCION EUSKERA`, A.`CAPACIDAD`, T.`TIPO`, Y.`TIPO_EUSKERA` AS `TIPO EUSKERA`, K.`CATEGORIA`, A.`COORDENADAS`, A.`CALIDAD_ASEGURADA` AS `CALIDAD ASEGURADA`, A.`TIENDA`, A.`GASTRONOMICO`, A.`CLUB`, A.`RESTAURANTE`, A.`AUTOCARAVANA`, A.`SURFING` FROM `ALOJAMIENTOS` A, `RELACION_CP_MUNICIPIOS_PROVINCIAS` R, `MUNICIPIOS` M, `PROVINCIAS` P, `CATEGORIAS` K, `TIPOS` T, `TIPOS_EUSKERA` Y  WHERE A.`CODIGO_TIPOS` = T.`CODIGO` AND A.`CODIGO_TIPOS_EUSKERA` = Y.`CODIGO` AND A.`CODIGO_CATEGORIAS` = K.`CODIGO` AND A.`ID_RELACIONES` = R.`ID` AND R.`CODIGO_PROVINCIA` = P.`CODIGO` AND R.`INDICE_MUNICIPIO` = M.`INDICE` ORDER BY A.`NOMBRE`"
+        Dim cmd1 = cnn1.CreateCommand
+        cmd1.CommandText = "SELECT A.`FIRMA`, A.`NOMBRE`, A.`DIRECCION`, A.`TELEFONO`, A.`EMAIL`, A.`WEB`, P.`PROVINCUA` AS `PROVINCIA`, M.`MUNICIPIO`, R.`CODIGO_POSTAL` AS `CODIGO POSTAL`, CONCAT(SUBSTRING(A.`DESCRIPCION`, 1, 50),'...') AS `DESCRIPCION`, CONCAT(SUBSTRING(A.`DESCRIPCION_EUSKERA`, 1, 50),'...') AS `DESCRIPCION EUSKERA`, A.`CAPACIDAD`, T.`TIPO`, Y.`TIPO_EUSKERA` AS `TIPO EUSKERA`, K.`CATEGORIA`, A.`COORDENADAS`, A.`CALIDAD_ASEGURADA` AS `CALIDAD ASEGURADA`, A.`TIENDA`, A.`GASTRONOMICO`, A.`CLUB`, A.`RESTAURANTE`, A.`AUTOCARAVANA`, A.`SURFING` FROM `ALOJAMIENTOS` A, `RELACION_CP_MUNICIPIOS_PROVINCIAS` R, `MUNICIPIOS` M, `PROVINCIAS` P, `CATEGORIAS` K, `TIPOS` T, `TIPOS_EUSKERA` Y  WHERE A.`CODIGO_TIPOS` = T.`CODIGO` AND A.`CODIGO_TIPOS_EUSKERA` = Y.`CODIGO` AND A.`CODIGO_CATEGORIAS` = K.`CODIGO` AND A.`ID_RELACIONES` = R.`ID` AND R.`CODIGO_PROVINCIA` = P.`CODIGO` AND R.`INDICE_MUNICIPIO` = M.`INDICE` "
+        sql = "SELECT A.`FIRMA`, A.`NOMBRE`, A.`DIRECCION`, A.`TELEFONO`, A.`EMAIL`, A.`WEB`, P.`PROVINCUA` AS `PROVINCIA`, M.`MUNICIPIO`, R.`CODIGO_POSTAL` AS `CODIGO POSTAL`, CONCAT(SUBSTRING(A.`DESCRIPCION`, 1, 50),'...') AS `DESCRIPCION`, CONCAT(SUBSTRING(A.`DESCRIPCION_EUSKERA`, 1, 50),'...') AS `DESCRIPCION EUSKERA`, A.`CAPACIDAD`, T.`TIPO`, Y.`TIPO_EUSKERA` AS `TIPO EUSKERA`, K.`CATEGORIA`, A.`COORDENADAS`, A.`CALIDAD_ASEGURADA` AS `CALIDAD ASEGURADA`, A.`TIENDA`, A.`GASTRONOMICO`, A.`CLUB`, A.`RESTAURANTE`, A.`AUTOCARAVANA`, A.`SURFING` FROM `ALOJAMIENTOS` A, `RELACION_CP_MUNICIPIOS_PROVINCIAS` R, `MUNICIPIOS` M, `PROVINCIAS` P, `CATEGORIAS` K, `TIPOS` T, `TIPOS_EUSKERA` Y  WHERE A.`CODIGO_TIPOS` = T.`CODIGO` AND A.`CODIGO_TIPOS_EUSKERA` = Y.`CODIGO` AND A.`CODIGO_CATEGORIAS` = K.`CODIGO` AND A.`ID_RELACIONES` = R.`ID` AND R.`CODIGO_PROVINCIA` = P.`CODIGO` AND R.`INDICE_MUNICIPIO` = M.`INDICE` "
+
+        If Not datos(0).Equals("NULL") Then
+            sql &= "AND A.`NOMBRE` LIKE '%" & "Pnombre" & "%' "
+            sql.Replace("Pnombre", datos(0))
+            cmd1.CommandText &= "AND A.`NOMBRE` LIKE '%" & "@nombre" & "%' "
+            cmd1.Parameters.AddWithValue("@nombre", datos(0))
+        End If
+
+        If Not datos(1).Equals("--Seleccione--") Then
+            sql &= "AND P.`PROVINCUA` = @prov "
+            sql.Replace("@prov", datos(1))
+            cmd1.CommandText &= "AND P.`PROVINCUA` = @prov "
+            cmd1.Parameters.AddWithValue("@prov", datos(1))
+        End If
+
+        If Not datos(2).Equals("--Seleccione--") Then
+            sql &= "AND M.`MUNICIPIO` = @muni "
+            sql.Replace("@muni", datos(2))
+            cmd1.CommandText &= "AND M.`MUNICIPIO` = @muni "
+            cmd1.Parameters.AddWithValue("@muni", datos(2))
+        End If
+
+        If Not datos(3).Equals("--Seleccione--") Then
+            sql &= "AND R.`CODIGO_POSTAL` = @cod "
+            sql.Replace("@cod", datos(3))
+            cmd1.CommandText &= "AND R.`CODIGO_POSTAL` = @cod "
+            cmd1.Parameters.AddWithValue("@cod", datos(3))
+        End If
+
+        If Not datos(4).Equals("--Seleccione--") Then
+            sql &= "AND T.`TIPO` = @tipo "
+            sql.Replace("@tipo", datos(4))
+            cmd1.CommandText &= "AND T.`TIPO` = @tipo "
+            cmd1.Parameters.AddWithValue("@tipo", datos(4))
+        End If
+
+        If Not datos(5).Equals("--Seleccione--") Then
+            sql &= "AND A.`CAPACIDAD` = @capa "
+            sql.Replace("@capa", datos(5))
+            cmd1.CommandText &= "AND A.`CAPACIDAD` = @capa "
+            cmd1.Parameters.AddWithValue("@capa", datos(5))
+        End If
+
+        If Not datos(6).Equals("") Then
+            cmd1.CommandText &= "AND A.`GASTRONOMICO` = @gas "
+            cmd1.Parameters.AddWithValue("@gas", datos(6))
+        End If
+
+        If Not datos(7).Equals("") Then
+            cmd1.CommandText &= "AND A.`RESTAURANTE` = @res "
+            cmd1.Parameters.AddWithValue("@res", datos(7))
+        End If
+
+        If Not datos(8).Equals("") Then
+            cmd1.CommandText &= "AND A.`SURFING` = @surf "
+            cmd1.Parameters.AddWithValue("@surf", datos(8))
+        End If
+
+        If Not datos(9).Equals("") Then
+            cmd1.CommandText &= "AND A.`TIENDA` = @tie "
+            cmd1.Parameters.AddWithValue("@tie", datos(9))
+        End If
+
+        If Not datos(10).Equals("") Then
+            cmd1.CommandText &= "AND A.`CLUB` = @club "
+            cmd1.Parameters.AddWithValue("@club", datos(10))
+        End If
+
+        If Not datos(11).Equals("") Then
+            cmd1.CommandText &= "AND A.`AUTOCARAVANA` = @auto "
+            cmd1.Parameters.AddWithValue("@auto", datos(11))
+        End If
+
+        cmd1.CommandText &= "ORDER BY A.`NOMBRE`"
+        sql &= "ORDER BY A.`NOMBRE`"
+        MsgBox(sql)
+
+        Session("select") = sql
+
+        Response.Redirect("verAlojamientos.aspx", False)
     End Sub
 End Class
