@@ -18,7 +18,18 @@
                 <td>
                     <asp:ContentPlaceHolder ID="Barra" runat="server">
                         <div style="float: right;">
-                            <asp:Button ID="btn_Logout" runat="server" Text="Cerrar Sesion" BackColor="#006D9C" BorderColor="#006D9C" BorderStyle="Solid" Font-Bold="True" ForeColor="White"/>
+                            <table style="width:100%;">
+                                <tr>
+                                    <td>Usuario:
+                                        <asp:Label ID="lbl_User" runat="server" Font-Bold="True" Font-Underline="True" Text="NoUser"></asp:Label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <asp:Button ID="btn_Logout" runat="server" BackColor="#006D9C" BorderColor="#006D9C" BorderStyle="Solid" Font-Bold="True" ForeColor="White" Text="Cerrar Sesion" />
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
                         <asp:Image ID="Image1" runat="server" Height="73px" ImageUrl="~/Imagenes/Logotipo.png" ToolTip="Etxebal" Width="308px" DescriptionUrl="~/Bienvenida.aspx" />
                         &nbsp;<br />

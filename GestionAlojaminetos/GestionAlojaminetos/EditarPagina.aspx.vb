@@ -245,7 +245,7 @@ Public Class EditaPaginaalojamientos
 
             If datos(10).Length > 110 Then
                 desc_abre_eus = datos(10).Substring(0, 107) & "..."
-            ElseIf datos(9).Length < 107 Then
+            ElseIf datos(10).Length < 107 Then
                 desc_abre_eus = datos(10) & "..."
             Else
                 desc_abre_eus = datos(10)

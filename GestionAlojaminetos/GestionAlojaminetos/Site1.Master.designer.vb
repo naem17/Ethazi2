@@ -41,6 +41,15 @@ Partial Public Class Site1
     Protected WithEvents Barra As Global.System.Web.UI.WebControls.ContentPlaceHolder
     
     '''<summary>
+    '''Control lbl_User.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents lbl_User As Global.System.Web.UI.WebControls.Label
+    
+    '''<summary>
     '''Control btn_Logout.
     '''</summary>
     '''<remarks>

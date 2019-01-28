@@ -30,6 +30,7 @@ Public Class Indice
             Dim das1 As MySqlDataReader
             das1 = cmd1.ExecuteReader()
             If das1.HasRows() Then
+                Session("User") = Me.Login1.UserName
                 Response.Redirect("Bienvenida.aspx")
             Else
                 MsgBox("Datos incorrectos")
