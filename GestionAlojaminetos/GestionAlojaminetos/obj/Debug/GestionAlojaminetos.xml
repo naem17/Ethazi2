@@ -1484,5 +1484,23 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:GestionAlojaminetos.WebForm2._CrystalReportViewer1">
+<summary>
+Control CrystalReportViewer1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:GestionAlojaminetos.WebForm2._CrystalReportSource1">
+<summary>
+Control CrystalReportSource1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 </members>
 </doc>

@@ -1,7 +1,7 @@
 ﻿Imports MySql.Data.MySqlClient
 Public Class Site1
     Inherits System.Web.UI.MasterPage
-    Public Shared cnstring As String = "Data Source=localhost;Database=labetxe;Uid=root;Pwd=;"
+    Public Shared cnstring As String = "User Id=gp2;Password=NuG7FqwibR1ZAuKy;Host=kasserver.synology.me;Port=3307;Database=reto_gp2;Persist Security Info=True"
     Public Shared cnn1 As New MySqlConnection(cnstring)
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         Try
