@@ -28,7 +28,6 @@ Partial Class Inicio
         Me.txt_password = New System.Windows.Forms.TextBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.lnk_registrar = New System.Windows.Forms.LinkLabel()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -83,24 +82,12 @@ Partial Class Inicio
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
         '
-        'lnk_registrar
-        '
-        Me.lnk_registrar.AutoSize = True
-        Me.lnk_registrar.Font = New System.Drawing.Font("Goudy Old Style", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lnk_registrar.Location = New System.Drawing.Point(435, 353)
-        Me.lnk_registrar.Name = "lnk_registrar"
-        Me.lnk_registrar.Size = New System.Drawing.Size(82, 21)
-        Me.lnk_registrar.TabIndex = 9
-        Me.lnk_registrar.TabStop = True
-        Me.lnk_registrar.Text = "¡Registrate!"
-        '
         'Inicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(668, 502)
-        Me.Controls.Add(Me.lnk_registrar)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.txt_password)
@@ -122,5 +109,4 @@ Partial Class Inicio
     Friend WithEvents txt_password As System.Windows.Forms.TextBox
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents lnk_registrar As System.Windows.Forms.LinkLabel
 End Class

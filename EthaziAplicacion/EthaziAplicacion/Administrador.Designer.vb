@@ -32,9 +32,10 @@ Partial Class Administrador
         Me.InsertarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DeleteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ActulizarBBDDToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MAPAToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.lbl_Alojamientos = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.MAPAToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReporteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -69,7 +70,7 @@ Partial Class Administrador
         '
         'FileToolStripMenuItem
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ImportarToolStripMenuItem, Me.ExportarToolStripMenuItem})
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ReporteToolStripMenuItem, Me.ExportarToolStripMenuItem, Me.ImportarToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(109, 27)
         Me.FileToolStripMenuItem.Text = "ARCHIVO"
@@ -77,13 +78,13 @@ Partial Class Administrador
         'ImportarToolStripMenuItem
         '
         Me.ImportarToolStripMenuItem.Name = "ImportarToolStripMenuItem"
-        Me.ImportarToolStripMenuItem.Size = New System.Drawing.Size(147, 28)
+        Me.ImportarToolStripMenuItem.Size = New System.Drawing.Size(152, 28)
         Me.ImportarToolStripMenuItem.Text = "Exportar"
         '
         'ExportarToolStripMenuItem
         '
         Me.ExportarToolStripMenuItem.Name = "ExportarToolStripMenuItem"
-        Me.ExportarToolStripMenuItem.Size = New System.Drawing.Size(144, 6)
+        Me.ExportarToolStripMenuItem.Size = New System.Drawing.Size(149, 6)
         '
         'EDITARToolStripMenuItem
         '
@@ -109,6 +110,12 @@ Partial Class Administrador
         Me.ActulizarBBDDToolStripMenuItem.Size = New System.Drawing.Size(194, 27)
         Me.ActulizarBBDDToolStripMenuItem.Text = "ACTUALIZAR BBDD"
         '
+        'MAPAToolStripMenuItem
+        '
+        Me.MAPAToolStripMenuItem.Name = "MAPAToolStripMenuItem"
+        Me.MAPAToolStripMenuItem.Size = New System.Drawing.Size(74, 27)
+        Me.MAPAToolStripMenuItem.Text = "MAPA"
+        '
         'lbl_Alojamientos
         '
         Me.lbl_Alojamientos.AutoSize = True
@@ -130,11 +137,11 @@ Partial Class Administrador
         Me.PictureBox1.TabIndex = 8
         Me.PictureBox1.TabStop = False
         '
-        'MAPAToolStripMenuItem
+        'ReporteToolStripMenuItem
         '
-        Me.MAPAToolStripMenuItem.Name = "MAPAToolStripMenuItem"
-        Me.MAPAToolStripMenuItem.Size = New System.Drawing.Size(74, 27)
-        Me.MAPAToolStripMenuItem.Text = "MAPA"
+        Me.ReporteToolStripMenuItem.Name = "ReporteToolStripMenuItem"
+        Me.ReporteToolStripMenuItem.Size = New System.Drawing.Size(152, 28)
+        Me.ReporteToolStripMenuItem.Text = "Reporte"
         '
         'Administrador
         '
@@ -172,4 +179,5 @@ Partial Class Administrador
     Friend WithEvents EDITARToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents MAPAToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ReporteToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

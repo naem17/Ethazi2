@@ -4,17 +4,21 @@ Imports System.Windows.Forms
 
 Public Class Inicio
     Dim sql As String
-    Dim cmd1
+
     Dim result As Integer
 
     Private Sub Button2_Click(sendeingr As Object, e As EventArgs) Handles Button2.Click
-        sql = "SELECT nombre_usuario,contrasenia from usuarios where perfil='A' or perfil='P'"
-        cmd1 = New MySqlCommand(sql, conexion)
+        '   sql = "SELECT nombre_usuario,contrasenia from usuarios where perfil='A' or perfil='P'"
+        sql = "SELECT nombre_usuario,contrasenia from usuarios where nombre_usuario=@nombre AND contrasenia=MD5(@pass) AND perfil='A' or perfil='P'  "
+        Dim cmd1 = New MySqlCommand(sql, conexion)
         Dim dr As MySqlDataReader = Nothing
         Dim respuesta As String = Nothing
+        cmd1.Parameters.AddWithValue("@nombre", Me.txt_usuario.Text)
+        cmd1.Parameters.AddWithValue("@pass", Me.txt_password.Text)
         Try
             dr = cmd1.ExecuteReader()
             While dr.Read
+
                 If Me.txt_usuario.Text = dr.Item(0).ToString And Me.txt_password.Text = dr.Item(1).ToString Then
                     result = 1
                 End If
@@ -39,13 +43,13 @@ Public Class Inicio
 
     End Sub
 
-    Private Sub lnk_registrar_LinkClicked(sender As Object, e As System.Windows.Forms.LinkLabelLinkClickedEventArgs) Handles lnk_registrar.LinkClicked
+    Private Sub lnk_registrar_LinkClicked(sender As Object, e As System.Windows.Forms.LinkLabelLinkClickedEventArgs)
         Me.Hide()
         Registro.ShowDialog()
     End Sub
 
     Private Sub txt_password_TextChanged(sender As Object, e As EventArgs) Handles txt_password.TextChanged
-        Me.txt_password.PasswordChar = "*"
+        ' Me.txt_password.PasswordChar = "*"
     End Sub
 
     Private Sub Inicio_Load(sender As Object, e As EventArgs) Handles Me.Load

@@ -4,35 +4,48 @@ Public Class Buscar
     Dim sql2 As String
     Dim das1 As New DataSet 'copia de los datos 
     Dim adap1
-    Dim cont As Integer
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         MsgBox(Me.txt_Nombre.Text)
-        If Me.txt_Nombre.Text <> "" Then
+        Dim campos As String
+        campos = ""
+        sql2 = "SELECT A.FIRMA, A.NOMBRE,A.EMAIL, T.TIPO AS 'TIPOS', TE.TIPO_EUSKERA AS 'TIPOS EUSKERA', C.CATEGORIA AS 'CATEGORIAS'"
+        sql2 &= ",A.TELEFONO, A.DIRECCION,M.MUNICIPIO, P.PROVINCUA AS 'PROVINCIA', R.CODIGO_POSTAL AS 'CODPOSTAL' FROM ALOJAMIENTOS A, RELACION_CP_MUNICIPIOS_PROVINCIAS R, MUNICIPIOS M,"
+        sql2 &= " PROVINCIAS P,TIPOS T,TIPOS_EUSKERA TE, CATEGORIAS C WHERE A.ID_RELACIONES = R.ID AND R.CODIGO_PROVINCIA = P.CODIGO AND R.INDICE_MUNICIPIO = M.INDICE AND A.CODIGO_TIPOS= T.CODIGO "
+        sql2 &= "AND A.CODIGO_TIPOS_EUSKERA=TE.CODIGO AND A.CODIGO_CATEGORIAS=C.CODIGO "
+        Dim sqlFinal As String = " ORDER BY A.NOMBRE"
+        Dim alojamiento As New ArrayList
+        alojamiento = cogerIdAlojamientos()
+        If Not Me.cmb_provincia.Text = "-Todas-" Then
+            sql2 &= "AND nombre LIKE '" & Me.txt_Nombre.Text & "%'"
+            sql2 &= " AND id_relaciones IN ("
+            For Each item In alojamiento
+                sql2 &= item & ","
+            Next
+            sql2 = sql2.Substring(0, sql2.Length - 1)
+            sql2 &= ")"
+            If Me.txt_capacidad.Text <> "" Then
+                MsgBox("He entrado en el if de capacidad")
+                sql2 &= " AND capacidad >=" & Me.txt_capacidad.Text
+            End If
+            If Me.cmb_tipo.Text <> "-Todas-" Then
+                sql2 &= " AND codigo_tipos=" & cogerTipo()
+            End If
+        Else
+            sql2 &= "AND nombre LIKE '" & Me.txt_Nombre.Text & "%'"
 
-            If Not Me.cmb_provincia.Text <> "-Todas-" Then
-                sql2 = "SELECT * FROM alojamientos WHERE nombre LIKE '%" & Me.txt_Nombre.Text & "%' AND id_relaciones IN (SELECT id FROM relacion_cp_municipios_provincias)"
-            Else
-                sql2 = "SELECT * FROM alojamientos"
+            If Me.txt_capacidad.Text <> "" Then
+                MsgBox("He entrado en el if de capacidad2")
+                sql2 &= " AND capacidad >=" & Me.txt_capacidad.Text
+            End If
+            If Me.cmb_tipo.Text <> "-Todas-" Then
+                sql2 &= " AND codigo_tipos=" & cogerTipo()
             End If
         End If
+        sql2 &= " ORDER BY A.NOMBRE"
+        Me.TextBox1.Text = sql2
 
-        'If capacidad <> "" Then
-        '    sql2 &= "nombre like '" & nombre & "%' and codigo_tipos=" & cogerTipo() & " and id_relaciones=" & cogerIdAlojamientos()
-        'Else
-        '    sql2 &= "nombre like '" & nombre & "%' and capacidad = " & capacidad & " and codigo_tipos=" & cogerTipo() & " and id_relaciones=" & cogerIdAlojamientos()
-        'End If
-        'If ckb_tipos.Checked Then
-        '    sql2 &= ""
-        'Else
-        '    sql2 &= "where codigo_tipos=" & cogerTipo()
-        'End If
-        'If ckb_provincias.Checked Then
-        '    sql2 &= ""
-        'Else
-        '    sql2 &= "where id_relaciones=" & cogerIdAlojamientos()
-        'End If
         MsgBox(sql2)
-        '----------------------------------------------------------------------------------------------------------------------ç
+        '----------------------------------------------------------------------------------------------------------------------
         cargar(sql2)
     End Sub
 
@@ -44,22 +57,10 @@ Public Class Buscar
         Me.cmb_tipo.SelectedIndex = 0
         sql = "SELECT A.FIRMA, A.NOMBRE,A.EMAIL, T.TIPO AS 'TIPOS', TE.TIPO_EUSKERA AS 'TIPOS EUSKERA', C.CATEGORIA AS 'CATEGORIAS'"
         sql &= ",A.TELEFONO, A.DIRECCION,M.MUNICIPIO, P.PROVINCUA AS 'PROVINCIA', R.CODIGO_POSTAL AS 'CODPOSTAL' FROM ALOJAMIENTOS A, RELACION_CP_MUNICIPIOS_PROVINCIAS R, MUNICIPIOS M, PROVINCIAS P,TIPOS T,TIPOS_EUSKERA TE, CATEGORIAS C WHERE A.ID_RELACIONES = R.ID AND R.CODIGO_PROVINCIA = P.CODIGO AND R.INDICE_MUNICIPIO = M.INDICE AND A.CODIGO_TIPOS= T.CODIGO AND A.CODIGO_TIPOS_EUSKERA=TE.CODIGO AND A.CODIGO_CATEGORIAS=C.CODIGO ORDER BY A.NOMBRE"
-
         cargar(sql)
 
     End Sub
 
-    Private Sub cmb_provincia_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmb_provincia.SelectedIndexChanged
-        If cont > 1 Then
-            '  MsgBox(cmb_provincia.SelectedItem)
 
-        End If
-        cont += 1
-
-    End Sub
-
-    Private Sub cmb_tipo_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmb_tipo.SelectedIndexChanged
-        MsgBox(Me.cmb_tipo.SelectedItem)
-    End Sub
 
 End Class

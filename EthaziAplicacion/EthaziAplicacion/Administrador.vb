@@ -64,6 +64,12 @@ Public Class Administrador
 
     Private Sub MAPAToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MAPAToolStripMenuItem.Click
         Me.Hide()
+        Dim mifila As Integer
+        Dim firma As String
+        mifila = DataGridView1.CurrentRow.Index
+        'Recorremos todas las columnas de la fila seleccionada en busca de un valor nulo
+        firma = DataGridView1.Item(0, mifila).Value
+        Mapa.mostrarAlojamiento(firma)
         Mapa.Show()
 
     End Sub
@@ -72,4 +78,10 @@ Public Class Administrador
 
     End Sub
 
+    Private Sub ReporteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReporteToolStripMenuItem.Click
+        MsgBox("hola")
+        Informe.Show()
+
+
+    End Sub
 End Class

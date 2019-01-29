@@ -8,21 +8,23 @@ Module Sentencias
     Dim id_rcmp As Integer
     Public idRelaciones As Integer
 
-    Public Function cogerIdAlojamientos()
-        Dim coger As Integer
-        conectar()
 
-        sql = "Select * from alojamientos where id_relaciones IN (select id from relacion_cp_municipios_provincias where codigo_provincia IN (Select codigo from provincias where provincua='" & Buscar.cmb_provincia.SelectedValue.ToString & "'))"
+    Public Function cogerIdAlojamientos()
+
+        Dim alojamientos As New ArrayList
+        conectar()
+        MsgBox(Buscar.cmb_provincia.SelectedItem)
+        sql = "Select distinct id_relaciones from alojamientos where id_relaciones IN (select id from relacion_cp_municipios_provincias where codigo_provincia IN (Select codigo from provincias where provincua='" & Buscar.cmb_provincia.SelectedItem & "'))"
         Dim cmd1 As New MySqlCommand
         cmd1 = New MySqlCommand(sql, conexion)
         Dim dr As MySqlDataReader
         dr = cmd1.ExecuteReader
-
         While dr.Read
-            coger = dr.Item(0)
+            alojamientos.add(dr.Item(0))
         End While
+        MsgBox(alojamientos.Count)
         dr.Close()
-        Return coger
+        Return alojamientos
     End Function
     Public Sub cargar(ByVal sql As String)
 
@@ -59,9 +61,7 @@ Module Sentencias
     End Sub
     Public Sub cargarCmbProvincia2()
         conectar()
-
         Buscar.cmb_provincia.Items.Clear()
-
         sql = "Select provincua from provincias"
         Dim cmd1 As New MySqlCommand
         cmd1 = New MySqlCommand(sql, conexion)
@@ -70,11 +70,8 @@ Module Sentencias
         Buscar.cmb_provincia.Items.Add("-Todas-")
         While dr.Read
             Buscar.cmb_provincia.Items.Add(dr.Item(0))
-
         End While
         dr.Close()
-
-
     End Sub
     Public Sub cargarCmbProvincia()
         Dim tabla As New DataTable
@@ -133,7 +130,6 @@ Module Sentencias
     End Sub
     Public Sub cargarCmbTipo2()
         conectar()
-
         Dim tabla As New DataTable
         sql = "Select tipo from tipos"
         Dim cmd1 As New MySqlCommand
@@ -143,20 +139,17 @@ Module Sentencias
         Buscar.cmb_tipo.Items.Add("-Todas-")
         While dr.Read
             Buscar.cmb_tipo.Items.Add(dr.Item(0))
-
         End While
         dr.Close()
     End Sub
     Public Function cogerTipo()
         Dim coger As Integer
         conectar()
-
         sql = "Select codigo_tipos from alojamientos where codigo_tipos in (Select codigo from tipos where tipo='" & Buscar.cmb_tipo.SelectedItem & "')"
         Dim cmd1 As New MySqlCommand
         cmd1 = New MySqlCommand(sql, conexion)
         Dim dr As MySqlDataReader
         dr = cmd1.ExecuteReader
-
         While dr.Read
             coger = dr.Item(0)
         End While
