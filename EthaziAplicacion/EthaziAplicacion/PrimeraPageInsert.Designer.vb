@@ -42,6 +42,7 @@ Partial Class PrimeraPageInsert
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -51,7 +52,7 @@ Partial Class PrimeraPageInsert
         '
         Me.Label9.AutoSize = True
         Me.Label9.BackColor = System.Drawing.Color.FromArgb(CType(CType(122, Byte), Integer), CType(CType(131, Byte), Integer), CType(CType(241, Byte), Integer))
-        Me.Label9.Location = New System.Drawing.Point(749, 14)
+        Me.Label9.Location = New System.Drawing.Point(750, 14)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(44, 25)
         Me.Label9.TabIndex = 33
@@ -61,7 +62,7 @@ Partial Class PrimeraPageInsert
         '
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.FromArgb(CType(CType(122, Byte), Integer), CType(CType(131, Byte), Integer), CType(CType(241, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(736, 14)
+        Me.Label8.Location = New System.Drawing.Point(735, 14)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(23, 25)
         Me.Label8.TabIndex = 32
@@ -71,7 +72,7 @@ Partial Class PrimeraPageInsert
         '
         Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.Color.FromArgb(CType(CType(122, Byte), Integer), CType(CType(131, Byte), Integer), CType(CType(241, Byte), Integer))
-        Me.Label10.Location = New System.Drawing.Point(725, 14)
+        Me.Label10.Location = New System.Drawing.Point(724, 14)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(18, 25)
         Me.Label10.TabIndex = 34
@@ -81,42 +82,42 @@ Partial Class PrimeraPageInsert
         '
         Me.btn_Siguiente.Location = New System.Drawing.Point(575, 492)
         Me.btn_Siguiente.Name = "btn_Siguiente"
-        Me.btn_Siguiente.Size = New System.Drawing.Size(148, 40)
+        Me.btn_Siguiente.Size = New System.Drawing.Size(148, 41)
         Me.btn_Siguiente.TabIndex = 31
         Me.btn_Siguiente.Text = "Siguiente"
         Me.btn_Siguiente.UseVisualStyleBackColor = True
         '
         'txt_Web
         '
-        Me.txt_Web.Location = New System.Drawing.Point(276, 411)
+        Me.txt_Web.Location = New System.Drawing.Point(277, 411)
         Me.txt_Web.Name = "txt_Web"
-        Me.txt_Web.Size = New System.Drawing.Size(363, 33)
+        Me.txt_Web.Size = New System.Drawing.Size(362, 33)
         Me.txt_Web.TabIndex = 30
         '
         'txt_Telefono
         '
-        Me.txt_Telefono.Location = New System.Drawing.Point(276, 336)
+        Me.txt_Telefono.Location = New System.Drawing.Point(277, 336)
         Me.txt_Telefono.Name = "txt_Telefono"
-        Me.txt_Telefono.Size = New System.Drawing.Size(363, 33)
+        Me.txt_Telefono.Size = New System.Drawing.Size(362, 33)
         Me.txt_Telefono.TabIndex = 29
         '
         'txt_Email
         '
-        Me.txt_Email.Location = New System.Drawing.Point(276, 267)
+        Me.txt_Email.Location = New System.Drawing.Point(277, 267)
         Me.txt_Email.Name = "txt_Email"
-        Me.txt_Email.Size = New System.Drawing.Size(363, 33)
+        Me.txt_Email.Size = New System.Drawing.Size(362, 33)
         Me.txt_Email.TabIndex = 28
         '
         'txt_Nombre
         '
-        Me.txt_Nombre.Location = New System.Drawing.Point(276, 199)
+        Me.txt_Nombre.Location = New System.Drawing.Point(277, 198)
         Me.txt_Nombre.Name = "txt_Nombre"
-        Me.txt_Nombre.Size = New System.Drawing.Size(363, 33)
+        Me.txt_Nombre.Size = New System.Drawing.Size(362, 33)
         Me.txt_Nombre.TabIndex = 27
         '
         'txt_Firma
         '
-        Me.txt_Firma.Location = New System.Drawing.Point(309, 94)
+        Me.txt_Firma.Location = New System.Drawing.Point(310, 94)
         Me.txt_Firma.Name = "txt_Firma"
         Me.txt_Firma.Size = New System.Drawing.Size(199, 33)
         Me.txt_Firma.TabIndex = 26
@@ -151,7 +152,7 @@ Partial Class PrimeraPageInsert
         'lbl_Firma
         '
         Me.lbl_Firma.AutoSize = True
-        Me.lbl_Firma.Location = New System.Drawing.Point(221, 97)
+        Me.lbl_Firma.Location = New System.Drawing.Point(222, 97)
         Me.lbl_Firma.Name = "lbl_Firma"
         Me.lbl_Firma.Size = New System.Drawing.Size(67, 25)
         Me.lbl_Firma.TabIndex = 22
@@ -160,7 +161,7 @@ Partial Class PrimeraPageInsert
         'lbl_Nombre
         '
         Me.lbl_Nombre.AutoSize = True
-        Me.lbl_Nombre.Location = New System.Drawing.Point(116, 207)
+        Me.lbl_Nombre.Location = New System.Drawing.Point(116, 206)
         Me.lbl_Nombre.Name = "lbl_Nombre"
         Me.lbl_Nombre.Size = New System.Drawing.Size(88, 25)
         Me.lbl_Nombre.TabIndex = 21
@@ -172,7 +173,7 @@ Partial Class PrimeraPageInsert
         Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(122, Byte), Integer), CType(CType(131, Byte), Integer), CType(CType(241, Byte), Integer))
         Me.Label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Label1.Font = New System.Drawing.Font("Goudy Old Style", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(304, 7)
+        Me.Label1.Location = New System.Drawing.Point(303, 6)
         Me.Label1.Name = "Label1"
         Me.Label1.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Label1.Size = New System.Drawing.Size(217, 35)
@@ -182,9 +183,9 @@ Partial Class PrimeraPageInsert
         'Label2
         '
         Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(122, Byte), Integer), CType(CType(131, Byte), Integer), CType(CType(241, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(0, -1)
+        Me.Label2.Location = New System.Drawing.Point(0, -2)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(819, 46)
+        Me.Label2.Size = New System.Drawing.Size(819, 45)
         Me.Label2.TabIndex = 20
         '
         'PictureBox1
@@ -199,7 +200,7 @@ Partial Class PrimeraPageInsert
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(645, 275)
+        Me.PictureBox2.Location = New System.Drawing.Point(644, 275)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(27, 25)
         Me.PictureBox2.TabIndex = 36
@@ -209,19 +210,29 @@ Partial Class PrimeraPageInsert
         '
         Me.PictureBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.PictureBox3.Image = Global.EthaziAplicacion.My.Resources.Resources.reply__1_
-        Me.PictureBox3.Location = New System.Drawing.Point(5, 7)
+        Me.PictureBox3.Location = New System.Drawing.Point(5, 6)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(32, 32)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox3.TabIndex = 49
         Me.PictureBox3.TabStop = False
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(444, 509)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 50
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'PrimeraPageInsert
         '
         Me.AcceptButton = Me.btn_Siguiente
         Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(816, 613)
+        Me.ClientSize = New System.Drawing.Size(816, 612)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
@@ -271,4 +282,5 @@ Partial Class PrimeraPageInsert
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class

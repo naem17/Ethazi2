@@ -26,8 +26,9 @@ Partial Class Administrador
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ImportarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReporteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExportarToolStripMenuItem = New System.Windows.Forms.ToolStripSeparator()
+        Me.ImportarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EDITARToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InsertarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DeleteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -35,7 +36,7 @@ Partial Class Administrador
         Me.MAPAToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.lbl_Alojamientos = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.ReporteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CerrarSesionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -70,21 +71,27 @@ Partial Class Administrador
         '
         'FileToolStripMenuItem
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ReporteToolStripMenuItem, Me.ExportarToolStripMenuItem, Me.ImportarToolStripMenuItem})
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ReporteToolStripMenuItem, Me.ExportarToolStripMenuItem, Me.ImportarToolStripMenuItem, Me.CerrarSesionToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(109, 27)
         Me.FileToolStripMenuItem.Text = "ARCHIVO"
         '
-        'ImportarToolStripMenuItem
+        'ReporteToolStripMenuItem
         '
-        Me.ImportarToolStripMenuItem.Name = "ImportarToolStripMenuItem"
-        Me.ImportarToolStripMenuItem.Size = New System.Drawing.Size(152, 28)
-        Me.ImportarToolStripMenuItem.Text = "Exportar"
+        Me.ReporteToolStripMenuItem.Name = "ReporteToolStripMenuItem"
+        Me.ReporteToolStripMenuItem.Size = New System.Drawing.Size(184, 28)
+        Me.ReporteToolStripMenuItem.Text = "Reporte"
         '
         'ExportarToolStripMenuItem
         '
         Me.ExportarToolStripMenuItem.Name = "ExportarToolStripMenuItem"
-        Me.ExportarToolStripMenuItem.Size = New System.Drawing.Size(149, 6)
+        Me.ExportarToolStripMenuItem.Size = New System.Drawing.Size(181, 6)
+        '
+        'ImportarToolStripMenuItem
+        '
+        Me.ImportarToolStripMenuItem.Name = "ImportarToolStripMenuItem"
+        Me.ImportarToolStripMenuItem.Size = New System.Drawing.Size(184, 28)
+        Me.ImportarToolStripMenuItem.Text = "Exportar"
         '
         'EDITARToolStripMenuItem
         '
@@ -137,11 +144,11 @@ Partial Class Administrador
         Me.PictureBox1.TabIndex = 8
         Me.PictureBox1.TabStop = False
         '
-        'ReporteToolStripMenuItem
+        'CerrarSesionToolStripMenuItem
         '
-        Me.ReporteToolStripMenuItem.Name = "ReporteToolStripMenuItem"
-        Me.ReporteToolStripMenuItem.Size = New System.Drawing.Size(152, 28)
-        Me.ReporteToolStripMenuItem.Text = "Reporte"
+        Me.CerrarSesionToolStripMenuItem.Name = "CerrarSesionToolStripMenuItem"
+        Me.CerrarSesionToolStripMenuItem.Size = New System.Drawing.Size(184, 28)
+        Me.CerrarSesionToolStripMenuItem.Text = "Cerrar Sesion"
         '
         'Administrador
         '
@@ -180,4 +187,5 @@ Partial Class Administrador
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents MAPAToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ReporteToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents CerrarSesionToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

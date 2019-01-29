@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{CE860772-1E92-4C02-B33C-5DA5CA3D8693}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>EthaziAplicacion.Administrador</StartupObject>
+    <StartupObject>EthaziAplicacion.Inicio</StartupObject>
     <RootNamespace>EthaziAplicacion</RootNamespace>
     <AssemblyName>EthaziAplicacion</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -250,8 +250,9 @@
     <Content Include="IMAGENES\buscar.png" />
     <Content Include="IMAGENES\New Project %282%29.png" />
     <Content Include="IMAGENES\NOMBRE.PNG" />
+    <Content Include="IMAGENES\ocultar.png" />
     <Content Include="IMAGENES\reply %281%29.png" />
-    <Content Include="IMAGENES\reply.png" />
+    <Content Include="IMAGENES\ver.png" />
     <None Include="Resources\reply %281%29.png" />
   </ItemGroup>
   <ItemGroup>

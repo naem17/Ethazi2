@@ -17,6 +17,7 @@ Public Class SegundaPageInsert
     End Sub
 
     Private Sub SegundaPageInsert_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Inicio.form_center(Me)
         conectar()
         cargarCmbProvincia()
     End Sub

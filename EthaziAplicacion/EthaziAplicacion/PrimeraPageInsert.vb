@@ -1,20 +1,39 @@
-﻿Public Class PrimeraPageInsert
+﻿Imports System.Text.RegularExpressions
+
+Public Class PrimeraPageInsert
 
     Private Sub btn_Siguiente_Click(sender As Object, e As EventArgs) Handles btn_Siguiente.Click
-        If Me.txt_Firma.Text = "" Or Me.txt_Email.Text = "" Then
-            PictureBox1.Visible = True
+
+        Dim sMail As String
+        Dim mailCorrecto, firmaCorrecta As Boolean
+        sMail = Me.txt_Email.Text
+        If Not validar_Mail(sMail) Or txt_Email.Text = "" Then
             PictureBox2.Visible = True
+            mailCorrecto = False
         Else
-            PictureBox1.Visible = False
+            mailCorrecto = True
             PictureBox2.Visible = False
+        End If
+
+        '--------------------------------------------
+
+        If Me.txt_Firma.Text = "" Then
+            firmaCorrecta = False
+            PictureBox1.Visible = True
+        Else
+            firmaCorrecta = True
+            PictureBox1.Visible = False
+        End If
+        If mailCorrecto And firmaCorrecta Then
             Me.Hide()
             SegundaPageInsert.ShowDialog()
-            Me.Hide()
 
         End If
+
     End Sub
 
     Private Sub PrimeraPageInsert_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Inicio.form_center(Me)
         conectar()
         PictureBox1.Visible = False
         PictureBox2.Visible = False
@@ -24,4 +43,11 @@
         Me.Hide()
         Administrador.Show()
     End Sub
+
+    Private Function validar_Mail(ByVal sMail As String) As Boolean
+        ' retorna true o false   
+        Return Regex.IsMatch(sMail, _
+                "^([\w-]+\.)*?[\w-]+@[\w-]+\.([\w-]+\.)*?[\w]+$")
+    End Function
+
 End Class

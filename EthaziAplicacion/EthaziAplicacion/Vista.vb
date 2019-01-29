@@ -11,7 +11,10 @@ Public Class Vista
     Public idRelaciones As Integer
     Dim prueba As String
     Dim codigo_muni As Integer
+
+    Private editable As Boolean = True
     Public Sub datosACargar(firma)
+        id = firma
         conectar()
         Dim sql As String
         sql = "select * from alojamientos where firma = '" & firma & "'"
@@ -117,19 +120,19 @@ Public Class Vista
                 Me.cmb_Tipo.Text = ""
             Else
                 Select Case datos(21)
-                    Case 1
+                    Case 0
                         Me.cmb_Categoria.Text = "S"
-                    Case 2
+                    Case 1
                         Me.cmb_Categoria.Text = "T"
-                    Case 3
+                    Case 2
                         Me.cmb_Categoria.Text = "P"
 
 
                 End Select
             End If
             'Me saca el id del alojamiento'
-          
-                Sentencias.idRelaciones = datos(22)
+
+            Sentencias.idRelaciones = datos(22)
 
         End While
         datos.Close()
@@ -334,7 +337,14 @@ Public Class Vista
 
     End Sub
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles pb_Restablecer.Click
-        datosACargar(txt_Firma)
+
+        If Not editable Then
+            datosACargar(id)
+        Else
+            Administrador.Show()
+            Me.Close()
+        End If
+
     End Sub
     Private Sub Vista_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -435,6 +445,26 @@ Public Class Vista
         Mapa.mostrarAlojamiento(Me.txt_Firma.Text)
         Mapa.ShowDialog()
     End Sub
+    Public Sub mostrarInformeEspecifico(nombre As String)
+
+        Dim oInforme As New CrystalReport2rpt
+        ' establecer la fórmula de selección de registros
+        oInforme.RecordSelectionFormula = "{Alojamientos1.nombre} = '" & nombre & "'"
+        Informe.CrystalReportViewer1.ReportSource = oInforme
 
 
+
+    End Sub
+
+    Private Sub btn_reporte_Click(sender As Object, e As EventArgs) Handles btn_reporte.Click
+        Me.mostrarInformeEspecifico(Me.txt_Nombre.Text)
+        Informe.informeEspecifico = True
+        Informe.ShowDialog()
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        Me.Hide()
+        Administrador.Show()
+
+    End Sub
 End Class

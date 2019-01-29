@@ -4,8 +4,7 @@ Public Class Informe
     Dim sql As String
     Dim das1 As New DataSet 'copia de los datos 
     Dim adap1
-    Dim id_rcmp As Integer
-    Public idRelaciones As Integer
+    Public informeEspecifico As Boolean
     ' Dim primera As Boolean = False
     Private Sub Informe_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -22,7 +21,7 @@ Public Class Informe
             dr.Close()
             desconectar()
         Catch ex As Exception
-            MsgBox("hola error")
+            MsgBox(ex.Message)
         End Try
 
 
@@ -44,4 +43,17 @@ Public Class Informe
     End Sub
 
     
+    Private Sub btn_back_Click(sender As Object, e As EventArgs) Handles btn_back.Click
+        MsgBox(informeEspecifico)
+        If informeEspecifico Then
+            MsgBox("Estoy en el if")
+            informeEspecifico = False
+            Me.Close()
+
+        Else
+            MsgBox("Estoy en el else")
+            Me.Close()
+            Administrador.Show()
+        End If
+    End Sub
 End Class

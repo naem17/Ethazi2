@@ -42,7 +42,6 @@ Public Class Buscar
             End If
         End If
         sql2 &= " ORDER BY A.NOMBRE"
-        Me.TextBox1.Text = sql2
 
         MsgBox(sql2)
         '----------------------------------------------------------------------------------------------------------------------
@@ -61,6 +60,20 @@ Public Class Buscar
 
     End Sub
 
+    Private Sub txt_capacidad_KeyPress(sender As Object, e As System.Windows.Forms.KeyPressEventArgs) Handles txt_capacidad.KeyPress
+        If (Asc(e.KeyChar) > 65 And Asc(e.KeyChar) < 90) Or (Asc(e.KeyChar) > 97 And Asc(e.KeyChar) < 122) Then
+            e.Handled = True
+            MsgBox("Este campo es solo numerico")
+        Else
+            e.Handled = False
+        End If
+    End Sub
 
+    Private Sub cmb_provincia_KeyPress(sender As Object, e As System.Windows.Forms.KeyPressEventArgs) Handles cmb_provincia.KeyPress
+        e.Handled = True
+    End Sub
 
+    Private Sub cmb_tipo_KeyPress(sender As Object, e As System.Windows.Forms.KeyPressEventArgs) Handles cmb_tipo.KeyPress
+        e.Handled = True
+    End Sub
 End Class

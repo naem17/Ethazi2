@@ -42,6 +42,9 @@ Public Class Administrador
     End Sub
 
     Private Sub EDITARToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EDITARToolStripMenuItem.Click
+        cargarProvinciaIdVISTA()
+        cargarMunicipioIDVISTA()
+        cargarCodPostalIDVISTA()
         Dim misdatos(17) As String
         Dim mifila As Integer
         Dim firma As String
@@ -49,7 +52,7 @@ Public Class Administrador
         'Recorremos todas las columnas de la fila seleccionada en busca de un valor nulo
         firma = DataGridView1.Item(0, mifila).Value
         Vista.datosACargar(firma)
-        Vista.Show()
+        Vista.ShowDialog()
     End Sub
 
     Private Sub ImportarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ImportarToolStripMenuItem.Click
@@ -79,9 +82,12 @@ Public Class Administrador
     End Sub
 
     Private Sub ReporteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReporteToolStripMenuItem.Click
-        MsgBox("hola")
         Informe.Show()
+    End Sub
 
-
+    Private Sub CerrarSesionToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CerrarSesionToolStripMenuItem.Click
+        Me.Close()
+        ConexionBBDD.desconectar()
+        Inicio.Show()
     End Sub
 End Class

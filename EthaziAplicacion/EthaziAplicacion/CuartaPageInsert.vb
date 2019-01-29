@@ -15,8 +15,9 @@ Public Class CuartaPageInsert
     End Sub
 
     Private Sub CuartaPageInsert_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Inicio.form_center(Me)
         conectar()
-        
+
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click

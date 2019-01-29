@@ -32,7 +32,6 @@ Partial Class Buscar
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.cmb_provincia = New System.Windows.Forms.ComboBox()
         Me.cmb_tipo = New System.Windows.Forms.ComboBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -112,20 +111,12 @@ Partial Class Buscar
         Me.cmb_tipo.Size = New System.Drawing.Size(179, 33)
         Me.cmb_tipo.TabIndex = 12
         '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(379, 225)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 33)
-        Me.TextBox1.TabIndex = 13
-        '
         'Buscar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(563, 274)
-        Me.Controls.Add(Me.TextBox1)
+        Me.ClientSize = New System.Drawing.Size(587, 281)
         Me.Controls.Add(Me.cmb_tipo)
         Me.Controls.Add(Me.cmb_provincia)
         Me.Controls.Add(Me.PictureBox1)
@@ -153,5 +144,4 @@ Partial Class Buscar
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents cmb_provincia As System.Windows.Forms.ComboBox
     Friend WithEvents cmb_tipo As System.Windows.Forms.ComboBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
 End Class

@@ -29,8 +29,6 @@ Public Class Mapa
     End Sub
 
     Private Sub Mapa_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-
         form_center(Me)
         ConexionBBDD.conectar()
         Dim sql As String
@@ -75,6 +73,8 @@ Public Class Mapa
 
     Private Sub AtrasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AtrasToolStripMenuItem.Click
         Me.Close()
+        Administrador.Show()
+
 
     End Sub
     Public Sub form_center(ByVal frm As Form, Optional ByVal parent As Form = Nothing)

@@ -67,7 +67,10 @@ Partial Class Vista
         Me.btn_euskera = New System.Windows.Forms.Button()
         Me.cmb_CodPostal = New System.Windows.Forms.ComboBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.btn_reporte = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.pb_Restablecer, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'txt_Firma
@@ -179,7 +182,7 @@ Partial Class Vista
         '
         'btn_actualizarDato
         '
-        Me.btn_actualizarDato.Location = New System.Drawing.Point(773, 637)
+        Me.btn_actualizarDato.Location = New System.Drawing.Point(839, 685)
         Me.btn_actualizarDato.Name = "btn_actualizarDato"
         Me.btn_actualizarDato.Size = New System.Drawing.Size(176, 40)
         Me.btn_actualizarDato.TabIndex = 27
@@ -189,7 +192,7 @@ Partial Class Vista
         'pb_Restablecer
         '
         Me.pb_Restablecer.Image = CType(resources.GetObject("pb_Restablecer.Image"), System.Drawing.Image)
-        Me.pb_Restablecer.Location = New System.Drawing.Point(735, 647)
+        Me.pb_Restablecer.Location = New System.Drawing.Point(781, 685)
         Me.pb_Restablecer.Name = "pb_Restablecer"
         Me.pb_Restablecer.Size = New System.Drawing.Size(30, 30)
         Me.pb_Restablecer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -397,7 +400,7 @@ Partial Class Vista
         Me.txt_descripcionNoAbreEus.Location = New System.Drawing.Point(37, 552)
         Me.txt_descripcionNoAbreEus.Multiline = True
         Me.txt_descripcionNoAbreEus.Name = "txt_descripcionNoAbreEus"
-        Me.txt_descripcionNoAbreEus.Size = New System.Drawing.Size(673, 115)
+        Me.txt_descripcionNoAbreEus.Size = New System.Drawing.Size(840, 115)
         Me.txt_descripcionNoAbreEus.TabIndex = 59
         Me.txt_descripcionNoAbreEus.Visible = False
         '
@@ -421,7 +424,7 @@ Partial Class Vista
         '
         Me.lbl_Aviso.AutoSize = True
         Me.lbl_Aviso.Font = New System.Drawing.Font("Goudy Old Style", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_Aviso.Location = New System.Drawing.Point(38, 685)
+        Me.lbl_Aviso.Location = New System.Drawing.Point(33, 722)
         Me.lbl_Aviso.Name = "lbl_Aviso"
         Me.lbl_Aviso.Size = New System.Drawing.Size(381, 21)
         Me.lbl_Aviso.TabIndex = 62
@@ -429,7 +432,7 @@ Partial Class Vista
         '
         'btn_euskera
         '
-        Me.btn_euskera.Location = New System.Drawing.Point(854, 518)
+        Me.btn_euskera.Location = New System.Drawing.Point(894, 539)
         Me.btn_euskera.Name = "btn_euskera"
         Me.btn_euskera.Size = New System.Drawing.Size(106, 37)
         Me.btn_euskera.TabIndex = 65
@@ -446,19 +449,39 @@ Partial Class Vista
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(635, 677)
+        Me.Button1.Location = New System.Drawing.Point(389, 681)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 29)
+        Me.Button1.Size = New System.Drawing.Size(75, 38)
         Me.Button1.TabIndex = 68
         Me.Button1.Text = "Mapa"
         Me.Button1.UseVisualStyleBackColor = True
+        '
+        'btn_reporte
+        '
+        Me.btn_reporte.Location = New System.Drawing.Point(56, 681)
+        Me.btn_reporte.Name = "btn_reporte"
+        Me.btn_reporte.Size = New System.Drawing.Size(93, 34)
+        Me.btn_reporte.TabIndex = 69
+        Me.btn_reporte.Text = "Reporte"
+        Me.btn_reporte.UseVisualStyleBackColor = True
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.EthaziAplicacion.My.Resources.Resources.reply__1_
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 12)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(39, 33)
+        Me.PictureBox1.TabIndex = 70
+        Me.PictureBox1.TabStop = False
         '
         'Vista
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(990, 715)
+        Me.ClientSize = New System.Drawing.Size(1041, 752)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.btn_reporte)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.cmb_CodPostal)
         Me.Controls.Add(Me.btn_euskera)
@@ -508,6 +531,7 @@ Partial Class Vista
         Me.Name = "Vista"
         Me.Text = "CamposInsersion"
         CType(Me.pb_Restablecer, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -556,4 +580,6 @@ Partial Class Vista
     Friend WithEvents btn_euskera As System.Windows.Forms.Button
     Friend WithEvents cmb_CodPostal As System.Windows.Forms.ComboBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btn_reporte As System.Windows.Forms.Button
+    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
 End Class

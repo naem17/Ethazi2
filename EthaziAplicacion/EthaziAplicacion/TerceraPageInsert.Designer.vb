@@ -77,7 +77,7 @@ Partial Class TerceraPageInsert
         '
         'btn_Siguiente
         '
-        Me.btn_Siguiente.Location = New System.Drawing.Point(618, 546)
+        Me.btn_Siguiente.Location = New System.Drawing.Point(627, 561)
         Me.btn_Siguiente.Name = "btn_Siguiente"
         Me.btn_Siguiente.Size = New System.Drawing.Size(148, 40)
         Me.btn_Siguiente.TabIndex = 49
@@ -189,6 +189,7 @@ Partial Class TerceraPageInsert
         '
         'PictureBox1
         '
+        Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(3, 7)
         Me.PictureBox1.Name = "PictureBox1"
