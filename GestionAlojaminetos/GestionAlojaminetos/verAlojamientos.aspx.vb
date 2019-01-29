@@ -28,7 +28,6 @@ Public Class verAlojamientos
         lbl_Num.Text = ds.Tables("alojamientos").Rows.Count & " alojamientos encontrados"
         Me.GridView1.DataSource = ds.Tables("alojamientos")
         Me.GridView1.DataBind()
-        Me.GridView1.AllowPaging = True
         Me.GridView1.AllowSorting = True
     End Sub
 
@@ -64,5 +63,23 @@ Public Class verAlojamientos
         Dim newPageNumber As Integer = e.NewPageIndex + 1
         GridView1.PageIndex = e.NewPageIndex
         cargarDatos()
+    End Sub
+
+    Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        If Session("sino") Then
+            Me.GridView1.AllowPaging = False
+            Me.Button1.Text = "Contraer"
+            Session("sino") = False
+        ElseIf Session("sino") = False Then
+            Me.GridView1.AllowPaging = True
+            Me.Button1.Text = "Ver Todos"
+            Session("sino") = True
+        End If
+
+        cargarDatos()
+    End Sub
+
+    Protected Sub btn_Excel_Click(sender As Object, e As EventArgs) Handles btn_Excel.Click
+
     End Sub
 End Class

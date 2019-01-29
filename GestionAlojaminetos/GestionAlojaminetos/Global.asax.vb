@@ -12,6 +12,7 @@ Public Class Global_asax
         Session("firma") = Nothing
         Session("User") = Nothing
         Session("select") = Nothing
+        Session("sino") = True
     End Sub
 
     Sub Application_BeginRequest(ByVal sender As Object, ByVal e As EventArgs)

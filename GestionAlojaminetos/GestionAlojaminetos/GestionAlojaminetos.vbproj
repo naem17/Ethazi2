@@ -157,6 +157,7 @@
       <DependentUpon>CrystalReport1.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Descargar.vb" />
     <Compile Include="EditarPagina.aspx.designer.vb">
       <DependentUpon>EditarPagina.aspx</DependentUpon>
     </Compile>

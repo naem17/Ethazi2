@@ -7,7 +7,7 @@
     <asp:Button ID="btn_New" runat="server" BackColor="#006D9C" BorderColor="#006D9C" BorderStyle="Solid" Font-Bold="True" ForeColor="White" Text="Nuevo Alojamiento" Font-Overline="False" Font-Size="Medium" Font-Strikeout="False" Font-Underline="True" Width="100%" />
     <br />
     <asp:Label ID="lbl_Num" runat="server" Text="NoRows" BackColor="#006D9C" Font-Bold="True" Font-Overline="True" Font-Size="Medium" Font-Underline="True" ForeColor="White" Width="100%"></asp:Label>
-    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" CellPadding="4" ForeColor="#333333" GridLines="None">
+    <asp:GridView ID="GridView1" runat="server" AllowSorting="True" CellPadding="4" ForeColor="#333333" GridLines="None" AllowCustomPaging="False" AllowPaging="True">
         <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
         <Columns>
             <asp:CommandField SelectText="Detalles" ShowDeleteButton="True" ShowEditButton="True" ShowSelectButton="True" />
@@ -24,4 +24,8 @@
         <SortedDescendingCellStyle BackColor="#FFFDF8" />
         <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
     </asp:GridView>
+    <asp:Button ID="Button1" runat="server" BackColor="#006D9C" BorderColor="#006D9C" BorderStyle="Solid" Font-Bold="True" Font-Size="Medium" Font-Underline="True" ForeColor="White" Text="Ver Todos" Width="100%" />
+    <br />
+    <asp:Button ID="btn_Excel" runat="server" BackColor="#006D9C" BorderColor="#006D9C" BorderStyle="Solid" Font-Bold="True" Font-Size="Medium" Font-Underline="True" ForeColor="White" Text="Descargar Informe" Width="100%" />
+    <br />
     </asp:Content>
