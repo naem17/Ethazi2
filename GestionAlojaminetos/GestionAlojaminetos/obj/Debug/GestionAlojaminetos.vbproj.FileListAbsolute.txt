@@ -512,3 +512,16 @@ C:\Users\admin1\Documents\GitHub\Ethazi2\GestionAlojaminetos\GestionAlojaminetos
 C:\Users\admin1\Documents\GitHub\Ethazi2\GestionAlojaminetos\GestionAlojaminetos\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
 C:\Users\admin1\Documents\GitHub\Ethazi2\GestionAlojaminetos\GestionAlojaminetos\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\admin1\Documents\GitHub\Ethazi2\GestionAlojaminetos\GestionAlojaminetos\bin\stdole.dll
+D:\Users\cwzs1233\Documents\GitHub\Ethazi2\GestionAlojaminetos\GestionAlojaminetos\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+D:\Users\cwzs1233\Documents\GitHub\Ethazi2\GestionAlojaminetos\GestionAlojaminetos\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\Users\cwzs1233\Documents\GitHub\Ethazi2\GestionAlojaminetos\GestionAlojaminetos\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+D:\Users\cwzs1233\Documents\GitHub\Ethazi2\GestionAlojaminetos\GestionAlojaminetos\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+D:\Users\cwzs1233\Documents\GitHub\Ethazi2\GestionAlojaminetos\GestionAlojaminetos\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+D:\Users\cwzs1233\Documents\GitHub\Ethazi2\GestionAlojaminetos\GestionAlojaminetos\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\Users\cwzs1233\Documents\GitHub\Ethazi2\GestionAlojaminetos\GestionAlojaminetos\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+D:\Users\cwzs1233\Documents\GitHub\Ethazi2\GestionAlojaminetos\GestionAlojaminetos\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+D:\Users\cwzs1233\Documents\GitHub\Ethazi2\GestionAlojaminetos\GestionAlojaminetos\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+D:\Users\cwzs1233\Documents\GitHub\Ethazi2\GestionAlojaminetos\GestionAlojaminetos\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+D:\Users\cwzs1233\Documents\GitHub\Ethazi2\GestionAlojaminetos\GestionAlojaminetos\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+D:\Users\cwzs1233\Documents\GitHub\Ethazi2\GestionAlojaminetos\GestionAlojaminetos\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\Users\cwzs1233\Documents\GitHub\Ethazi2\GestionAlojaminetos\GestionAlojaminetos\bin\stdole.dll
