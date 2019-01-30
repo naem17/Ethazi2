@@ -6,14 +6,11 @@
 
     End Sub
 
-    Private Sub cmb_Tipo_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmb_Tipo.SelectedIndexChanged
 
-    End Sub
 
     Private Sub TerceraPageInsert_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Inicio.form_center(Me)
         conectar()
-
         cargarCmbTipo()
         cargarCmbCategorias()
     End Sub

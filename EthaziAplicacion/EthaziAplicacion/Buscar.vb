@@ -42,8 +42,8 @@ Public Class Buscar
             End If
         End If
         sql2 &= " ORDER BY A.NOMBRE"
-
         MsgBox(sql2)
+        MsgBox("sa gs")
         '----------------------------------------------------------------------------------------------------------------------
         cargar(sql2)
     End Sub

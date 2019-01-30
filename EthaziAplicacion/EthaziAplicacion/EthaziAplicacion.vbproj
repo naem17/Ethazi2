@@ -126,7 +126,6 @@
     <Compile Include="Mapa.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sentencias2.vb" />
     <Compile Include="Vista.Designer.vb">
       <DependentUpon>Vista.vb</DependentUpon>
     </Compile>
