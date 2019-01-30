@@ -40,7 +40,11 @@ Partial Class SegundaPageInsert
         Me.lbl_Fondo = New System.Windows.Forms.Label()
         Me.cmb_CodPostal = New System.Windows.Forms.ComboBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btn_Siguiente
@@ -54,9 +58,9 @@ Partial Class SegundaPageInsert
         '
         'txt_Coordenadas
         '
-        Me.txt_Coordenadas.Location = New System.Drawing.Point(521, 346)
+        Me.txt_Coordenadas.Location = New System.Drawing.Point(526, 325)
         Me.txt_Coordenadas.Name = "txt_Coordenadas"
-        Me.txt_Coordenadas.Size = New System.Drawing.Size(209, 33)
+        Me.txt_Coordenadas.Size = New System.Drawing.Size(236, 33)
         Me.txt_Coordenadas.TabIndex = 47
         '
         'cmb_Municipio
@@ -64,7 +68,7 @@ Partial Class SegundaPageInsert
         Me.cmb_Municipio.FormattingEnabled = True
         Me.cmb_Municipio.Location = New System.Drawing.Point(521, 252)
         Me.cmb_Municipio.Name = "cmb_Municipio"
-        Me.cmb_Municipio.Size = New System.Drawing.Size(209, 33)
+        Me.cmb_Municipio.Size = New System.Drawing.Size(241, 33)
         Me.cmb_Municipio.TabIndex = 45
         '
         'cmb_Provincia
@@ -72,22 +76,22 @@ Partial Class SegundaPageInsert
         Me.cmb_Provincia.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest
         Me.cmb_Provincia.FormattingEnabled = True
         Me.cmb_Provincia.Items.AddRange(New Object() {""})
-        Me.cmb_Provincia.Location = New System.Drawing.Point(196, 252)
+        Me.cmb_Provincia.Location = New System.Drawing.Point(180, 252)
         Me.cmb_Provincia.Name = "cmb_Provincia"
         Me.cmb_Provincia.Size = New System.Drawing.Size(173, 33)
         Me.cmb_Provincia.TabIndex = 44
         '
         'txt_Direccion
         '
-        Me.txt_Direccion.Location = New System.Drawing.Point(196, 160)
+        Me.txt_Direccion.Location = New System.Drawing.Point(180, 160)
         Me.txt_Direccion.Name = "txt_Direccion"
-        Me.txt_Direccion.Size = New System.Drawing.Size(566, 33)
+        Me.txt_Direccion.Size = New System.Drawing.Size(582, 33)
         Me.txt_Direccion.TabIndex = 43
         '
         'lbl_Coordenadas
         '
         Me.lbl_Coordenadas.AutoSize = True
-        Me.lbl_Coordenadas.Location = New System.Drawing.Point(366, 349)
+        Me.lbl_Coordenadas.Location = New System.Drawing.Point(386, 333)
         Me.lbl_Coordenadas.Name = "lbl_Coordenadas"
         Me.lbl_Coordenadas.Size = New System.Drawing.Size(129, 25)
         Me.lbl_Coordenadas.TabIndex = 42
@@ -96,7 +100,7 @@ Partial Class SegundaPageInsert
         'lbl_CodPostal
         '
         Me.lbl_CodPostal.AutoSize = True
-        Me.lbl_CodPostal.Location = New System.Drawing.Point(90, 349)
+        Me.lbl_CodPostal.Location = New System.Drawing.Point(61, 333)
         Me.lbl_CodPostal.Name = "lbl_CodPostal"
         Me.lbl_CodPostal.Size = New System.Drawing.Size(113, 25)
         Me.lbl_CodPostal.TabIndex = 41
@@ -105,7 +109,7 @@ Partial Class SegundaPageInsert
         'lbl_Municipio
         '
         Me.lbl_Municipio.AutoSize = True
-        Me.lbl_Municipio.Location = New System.Drawing.Point(389, 260)
+        Me.lbl_Municipio.Location = New System.Drawing.Point(409, 255)
         Me.lbl_Municipio.Name = "lbl_Municipio"
         Me.lbl_Municipio.Size = New System.Drawing.Size(106, 25)
         Me.lbl_Municipio.TabIndex = 40
@@ -114,7 +118,7 @@ Partial Class SegundaPageInsert
         'lbl_Provincia
         '
         Me.lbl_Provincia.AutoSize = True
-        Me.lbl_Provincia.Location = New System.Drawing.Point(90, 260)
+        Me.lbl_Provincia.Location = New System.Drawing.Point(61, 260)
         Me.lbl_Provincia.Name = "lbl_Provincia"
         Me.lbl_Provincia.Size = New System.Drawing.Size(96, 25)
         Me.lbl_Provincia.TabIndex = 39
@@ -123,7 +127,7 @@ Partial Class SegundaPageInsert
         'lbl_Direccion
         '
         Me.lbl_Direccion.AutoSize = True
-        Me.lbl_Direccion.Location = New System.Drawing.Point(90, 168)
+        Me.lbl_Direccion.Location = New System.Drawing.Point(57, 168)
         Me.lbl_Direccion.Name = "lbl_Direccion"
         Me.lbl_Direccion.Size = New System.Drawing.Size(100, 25)
         Me.lbl_Direccion.TabIndex = 38
@@ -132,7 +136,7 @@ Partial Class SegundaPageInsert
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.BackColor = System.Drawing.Color.FromArgb(CType(CType(122, Byte), Integer), CType(CType(131, Byte), Integer), CType(CType(241, Byte), Integer))
+        Me.Label9.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.Label9.Location = New System.Drawing.Point(741, 10)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(44, 25)
@@ -142,7 +146,7 @@ Partial Class SegundaPageInsert
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.BackColor = System.Drawing.Color.FromArgb(CType(CType(122, Byte), Integer), CType(CType(131, Byte), Integer), CType(CType(241, Byte), Integer))
+        Me.Label8.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.Label8.Location = New System.Drawing.Point(728, 10)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(23, 25)
@@ -152,7 +156,7 @@ Partial Class SegundaPageInsert
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.BackColor = System.Drawing.Color.FromArgb(CType(CType(122, Byte), Integer), CType(CType(131, Byte), Integer), CType(CType(241, Byte), Integer))
+        Me.Label10.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.Label10.Location = New System.Drawing.Point(717, 10)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(18, 25)
@@ -162,7 +166,7 @@ Partial Class SegundaPageInsert
         'lbl_Titulo
         '
         Me.lbl_Titulo.AutoSize = True
-        Me.lbl_Titulo.BackColor = System.Drawing.Color.FromArgb(CType(CType(122, Byte), Integer), CType(CType(131, Byte), Integer), CType(CType(241, Byte), Integer))
+        Me.lbl_Titulo.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.lbl_Titulo.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.lbl_Titulo.Font = New System.Drawing.Font("Goudy Old Style", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_Titulo.Location = New System.Drawing.Point(304, 3)
@@ -174,7 +178,7 @@ Partial Class SegundaPageInsert
         '
         'lbl_Fondo
         '
-        Me.lbl_Fondo.BackColor = System.Drawing.Color.FromArgb(CType(CType(122, Byte), Integer), CType(CType(131, Byte), Integer), CType(CType(241, Byte), Integer))
+        Me.lbl_Fondo.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.lbl_Fondo.Location = New System.Drawing.Point(0, -2)
         Me.lbl_Fondo.Name = "lbl_Fondo"
         Me.lbl_Fondo.Size = New System.Drawing.Size(819, 43)
@@ -183,14 +187,14 @@ Partial Class SegundaPageInsert
         'cmb_CodPostal
         '
         Me.cmb_CodPostal.FormattingEnabled = True
-        Me.cmb_CodPostal.Location = New System.Drawing.Point(196, 341)
+        Me.cmb_CodPostal.Location = New System.Drawing.Point(180, 325)
         Me.cmb_CodPostal.Name = "cmb_CodPostal"
         Me.cmb_CodPostal.Size = New System.Drawing.Size(145, 33)
         Me.cmb_CodPostal.TabIndex = 49
         '
         'PictureBox1
         '
-        Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
         Me.PictureBox1.Location = New System.Drawing.Point(5, 5)
         Me.PictureBox1.Name = "PictureBox1"
@@ -199,12 +203,37 @@ Partial Class SegundaPageInsert
         Me.PictureBox1.TabIndex = 50
         Me.PictureBox1.TabStop = False
         '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = Global.EthaziAplicacion.My.Resources.Resources.exclamation_mark
+        Me.PictureBox3.Location = New System.Drawing.Point(768, 260)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(17, 18)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox3.TabIndex = 52
+        Me.PictureBox3.TabStop = False
+        Me.PictureBox3.Visible = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.Image = Global.EthaziAplicacion.My.Resources.Resources.exclamation_mark
+        Me.PictureBox4.Location = New System.Drawing.Point(331, 340)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(17, 18)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox4.TabIndex = 53
+        Me.PictureBox4.TabStop = False
+        Me.PictureBox4.Visible = False
+        '
         'SegundaPageInsert
         '
         Me.AcceptButton = Me.btn_Siguiente
         Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(816, 613)
+        Me.Controls.Add(Me.PictureBox4)
+        Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.cmb_CodPostal)
         Me.Controls.Add(Me.btn_Siguiente)
@@ -227,6 +256,8 @@ Partial Class SegundaPageInsert
         Me.Name = "SegundaPageInsert"
         Me.Text = "SegundaPageInsert"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -248,4 +279,6 @@ Partial Class SegundaPageInsert
     Friend WithEvents lbl_Fondo As System.Windows.Forms.Label
     Friend WithEvents cmb_CodPostal As System.Windows.Forms.ComboBox
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
+    Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
 End Class

@@ -1,10 +1,11 @@
 ﻿Imports MySql.Data.MySqlClient
+Imports System.Drawing
 
 Public Class Vista
-
+    Dim hexColor As Color
     Dim misDatos(17) As String
     Dim sql As String
-    Dim id As Integer
+    Dim id As String
     Dim euskera As Boolean
     Dim guardar As Boolean
     Dim cp As String
@@ -13,7 +14,7 @@ Public Class Vista
     Dim codigo_muni As Integer
 
     Private editable As Boolean = True
-    Public Sub datosACargar(firma)
+    Public Sub datosACargar(firma As String)
         id = firma
         conectar()
         Dim sql As String
@@ -23,7 +24,6 @@ Public Class Vista
         Dim datos As MySqlDataReader
         datos = cmd.ExecuteReader
         While datos.Read
-
             Me.txt_Firma.Text = datos(0)
             If IsDBNull(datos(1)) Then
                 Me.txt_Nombre.Text = ""
@@ -101,21 +101,34 @@ Public Class Vista
             Else
                 Me.txt_Coordenadas.Text = datos(18)
             End If
+            '-----------------------TIPOS---------------------------
             If IsDBNull(datos(19)) Then
                 Me.cmb_Tipo.Text = ""
             Else
                 Select Case datos(19)
-                    Case 1
+                    Case 0
                         Me.cmb_Tipo.Text = "Albergue"
-                    Case 2
+                    Case 1
                         Me.cmb_Tipo.Text = "Campings"
-                    Case 3
+                    Case 2
                         Me.cmb_Tipo.Text = "Agroturismos"
-                    Case 4
+                    Case 3
                         Me.cmb_Tipo.Text = "Casas Rurales"
-
                 End Select
+
+                Select Case datos(19)
+                    Case 0
+                        Me.cmb_tiposEuskera.Text = "Aterpetxeak"
+                    Case 1
+                        Me.cmb_tiposEuskera.Text = "Kanpinak"
+                    Case 2
+                        Me.cmb_tiposEuskera.Text = "Nekazaritza-turismoak"
+                    Case 3
+                        Me.cmb_tiposEuskera.Text = "Landetxeak"
+                End Select
+
             End If
+            '-------------------------CATEGORAIS-------------------------
             If IsDBNull(datos(21)) Then
                 Me.cmb_Tipo.Text = ""
             Else
@@ -126,17 +139,12 @@ Public Class Vista
                         Me.cmb_Categoria.Text = "T"
                     Case 2
                         Me.cmb_Categoria.Text = "P"
-
-
                 End Select
             End If
-            'Me saca el id del alojamiento'
-
             Sentencias.idRelaciones = datos(22)
 
         End While
         datos.Close()
-
 
         '-----------------------------CARGAR Tipos CMB--------------------------------------
         Dim sql2 As String
@@ -144,20 +152,37 @@ Public Class Vista
         Dim cmd2 As New MySqlCommand(sql2, conexion)
         Dim dr As MySqlDataReader
         dr = cmd2.ExecuteReader
-
         While dr.Read
-            ' Administrador.DataGridView1.SelectedColumns.Item(7) = 0 
-            If dr.Item(0) = 1 Then
+            If dr.Item(0) = 0 Then
                 Me.cmb_Tipo.Items.Add("Albergues")
-            ElseIf dr.Item(0) = 2 Then
+            ElseIf dr.Item(0) = 1 Then
                 Me.cmb_Tipo.Items.Add("Campings")
-            ElseIf dr.Item(0) = 3 Then
+            ElseIf dr.Item(0) = 2 Then
                 Me.cmb_Tipo.Items.Add("Agroturismos")
-            ElseIf dr.Item(0) = 4 Then
+            ElseIf dr.Item(0) = 3 Then
                 Me.cmb_Tipo.Items.Add("Casas Rurales")
             End If
         End While
         dr.Close()
+        '----------------------------------------------CARGAR TIPOS EUSKERA---------------------
+        Dim sql4 As String
+        sql4 = "select codigo from tipos_euskera"
+        Dim cmd4 As New MySqlCommand(sql4, conexion)
+        Dim dr4 As MySqlDataReader
+        dr4 = cmd4.ExecuteReader
+        While dr4.Read
+            If dr4.Item(0) = 0 Then
+                Me.cmb_tiposEuskera.Items.Add("Aterpetxeak")
+            ElseIf dr4.Item(0) = 1 Then
+                Me.cmb_tiposEuskera.Items.Add("Kanpinak")
+            ElseIf dr4.Item(0) = 2 Then
+                Me.cmb_tiposEuskera.Items.Add("Nekazaritza-turismoak")
+            ElseIf dr4.Item(0) = 3 Then
+                Me.cmb_tiposEuskera.Items.Add("Landetxeak")
+            End If
+
+        End While
+        dr4.Close()
         '-----------------------------CARGAR CATEGORIAS CMB--------------------------------------
         Dim sql3 As String
         sql3 = "select codigo from categorias"
@@ -165,11 +190,11 @@ Public Class Vista
         Dim dr1 As MySqlDataReader
         dr1 = cmd3.ExecuteReader
         While dr1.Read
-            If dr1.Item(0) = 1 Then
+            If dr1.Item(0) = 0 Then
                 Me.cmb_Categoria.Items.Add("S")
-            ElseIf dr1.Item(0) = 2 Then
+            ElseIf dr1.Item(0) = 1 Then
                 Me.cmb_Categoria.Items.Add("P")
-            ElseIf dr1.Item(0) = 3 Then
+            ElseIf dr1.Item(0) = 2 Then
                 Me.cmb_Categoria.Items.Add("T")
             End If
         End While
@@ -204,6 +229,7 @@ Public Class Vista
             Me.ckb_Gastro.Enabled = True
             Me.ckb_Tienda.Enabled = True
             Me.ckb_Surfing.Enabled = True
+            Me.cmb_tiposEuskera.Enabled = True
             cargarCmbProvinciaVISTA()
             guardar = True
 
@@ -233,6 +259,7 @@ Public Class Vista
             Me.ckb_Gastro.Enabled = False
             Me.ckb_Tienda.Enabled = False
             Me.ckb_Surfing.Enabled = False
+            Me.cmb_tiposEuskera.Enabled = False
             guardar = False
             actualizar()
         End If
@@ -240,6 +267,7 @@ Public Class Vista
     End Sub
     Public Sub actualizar()
         Dim codTipo As String = Nothing
+        Dim codTipoEus As String = Nothing
         Dim codCat As String = Nothing
         conectar()
 
@@ -252,9 +280,9 @@ Public Class Vista
             cmd1.Parameters.AddWithValue("@firma", Me.txt_Firma.Text)
             cmd1.Parameters.AddWithValue("@nombre", Me.txt_Nombre.Text)
             cmd1.Parameters.AddWithValue("@desc_abre", Me.txt_descripcionAbre.Text)
-            cmd1.Parameters.AddWithValue("@desc_abre_eus", "Celaya")
+            cmd1.Parameters.AddWithValue("@desc_abre_eus", Me.txt_descripcionAbreEus.Text)
             cmd1.Parameters.AddWithValue("@desc", Me.txt_descripcionNOabre.Text)
-            cmd1.Parameters.AddWithValue("@desc_eus", "123654789") 'Hacer otro form
+            cmd1.Parameters.AddWithValue("@desc_eus", Me.txt_descripcionNoAbreEus.Text) 'Hacer otro form
             cmd1.Parameters.AddWithValue("@phone", Me.txt_Telefono.Text)
             cmd1.Parameters.AddWithValue("@address", Me.txt_Direccion.Text) ' ver como sería
             If CuartaPageInsert.ckb_Calidad.Checked Then
@@ -299,26 +327,36 @@ Public Class Vista
             cmd1.Parameters.AddWithValue("@coordenadas", Me.txt_Coordenadas.Text)
             Select Case Me.cmb_Tipo.Text
                 Case "Albergues"
-                    codTipo = 1
+                    codTipo = 0
                 Case "Campings"
-                    codTipo = 2
+                    codTipo = 1
                 Case "Agroturismos"
-                    codTipo = 3
+                    codTipo = 2
                 Case "Casas Rurales"
-                    codTipo = 4
+                    codTipo = 3
             End Select
 
             cmd1.Parameters.AddWithValue("@cTipos", codTipo)
-            cmd1.Parameters.AddWithValue("@cTiposEus", 1)
-           
+            Select Case Me.cmb_Tipo.Text
+                Case "Aterpetxeak"
+                    codTipoEus = 0
+                Case "Kanpinak"
+                    codTipoEus = 1
+                Case "Nekazaritza-turismoak"
+                    codTipoEus = 2
+                Case "Landetxeak"
+                    codTipoEus = 3
+            End Select
+            cmd1.Parameters.AddWithValue("@cTiposEus", codTipoEus)
+
 
             Select Case Me.cmb_Categoria.Text
                 Case "S"
-                    codCat = 1
+                    codCat = 0
                 Case "P"
-                    codCat = 2
+                    codCat = 1
                 Case "T"
-                    codCat = 3
+                    codCat = 2
             End Select
             cmd1.Parameters.AddWithValue("@cCategorias", codCat)
             cmd1.Parameters.AddWithValue("@idRelaciones", cargarIdvista())
@@ -338,16 +376,21 @@ Public Class Vista
     End Sub
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles pb_Restablecer.Click
 
-        If Not editable Then
+        If editable Then
             datosACargar(id)
+            ' btn_actualizarDato.PerformClick()
         Else
             Administrador.Show()
             Me.Close()
         End If
 
     End Sub
-    Private Sub Vista_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+    Private Sub Vista_Disposed(sender As Object, e As EventArgs) Handles Me.Disposed
+        Administrador.Show()
+    End Sub
+    Private Sub Vista_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.txt_descripcionNOabre.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.btn_actualizarDato.Text = "Actualizar Dato"
         Me.txt_Nombre.Enabled = False
         Me.txt_Telefono.Enabled = False
@@ -372,17 +415,22 @@ Public Class Vista
         Me.ckb_Gastro.Enabled = False
         Me.ckb_Tienda.Enabled = False
         Me.ckb_Surfing.Enabled = False
+        Me.cmb_tiposEuskera.Enabled = False
+        Me.cmb_tiposEuskera.Visible = False
         guardar = False
         cargarProvinciaIdVISTA()
         cargarMunicipioIDVISTA()
         cargarCodPostalIDVISTA()
-
     End Sub
     Private Sub btn_euskera_Click(sender As Object, e As EventArgs) Handles btn_euskera.Click
         If Not euskera Then
             btn_euskera.Text = "*Español"
             Me.lbl_descripcionAbre.Text = "Deskribapen laburtuta"
             Me.lbl_DescripcionNOABRE.Text = "Deskribapen luzea"
+            hexColor = ColorTranslator.FromHtml("#BDF8FF")
+            Me.txt_descripcionAbreEus.BackColor = hexColor
+            Me.txt_descripcionNoAbreEus.BackColor = hexColor
+            Me.cmb_tiposEuskera.BackColor = hexColor
             Me.lbl_Firma.Text = "Sinadura:"
             Me.lbl_Nombre.Text = "Izena:"
             Me.lbl_Direccion.Text = "Helbidea:"
@@ -400,6 +448,8 @@ Public Class Vista
             Me.ckb_Tienda.Text = "Denda"
             Me.txt_descripcionAbreEus.Visible = True
             Me.txt_descripcionNoAbreEus.Visible = True
+            Me.cmb_Tipo.Visible = False
+            Me.cmb_tiposEuskera.Visible = True
             euskera = True
         ElseIf euskera Then
             btn_euskera.Text = "*Euskera"
@@ -422,23 +472,25 @@ Public Class Vista
             Me.ckb_Tienda.Text = "Tienda"
             Me.txt_descripcionAbreEus.Visible = False
             Me.txt_descripcionNoAbreEus.Visible = False
+            Me.cmb_Tipo.Visible = True
+            Me.cmb_tiposEuskera.Visible = False
+
             euskera = False
         End If
-
-
     End Sub
 
-   
+
     Private Sub cmb_Provincia_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmb_Provincia.SelectedIndexChanged
+        ' desconectar()
+
         cmb_Municipio.Text = "Todos"
         cargarCmbMunicipioVISTA()
-        'MsgBox(Me.cmb_Provincia.SelectedItem.ToString)
     End Sub
 
     Private Sub cmb_Municipio_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmb_Municipio.SelectedIndexChanged
+        ' desconectar()
 
         cargarCmbCodpostalVISTA()
-
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -446,14 +498,10 @@ Public Class Vista
         Mapa.ShowDialog()
     End Sub
     Public Sub mostrarInformeEspecifico(nombre As String)
-
         Dim oInforme As New CrystalReport2rpt
         ' establecer la fórmula de selección de registros
         oInforme.RecordSelectionFormula = "{Alojamientos1.nombre} = '" & nombre & "'"
         Informe.CrystalReportViewer1.ReportSource = oInforme
-
-
-
     End Sub
 
     Private Sub btn_reporte_Click(sender As Object, e As EventArgs) Handles btn_reporte.Click
@@ -463,8 +511,7 @@ Public Class Vista
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-        Me.Hide()
+        Me.Close()
         Administrador.Show()
-
     End Sub
 End Class

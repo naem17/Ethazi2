@@ -41,9 +41,11 @@ Partial Class CuartaPageInsert
         '
         'btn_Finalizar
         '
-        Me.btn_Finalizar.Location = New System.Drawing.Point(604, 519)
+        Me.btn_Finalizar.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_Finalizar.Location = New System.Drawing.Point(417, 351)
+        Me.btn_Finalizar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btn_Finalizar.Name = "btn_Finalizar"
-        Me.btn_Finalizar.Size = New System.Drawing.Size(148, 40)
+        Me.btn_Finalizar.Size = New System.Drawing.Size(94, 26)
         Me.btn_Finalizar.TabIndex = 47
         Me.btn_Finalizar.Text = "Finalizar"
         Me.btn_Finalizar.UseVisualStyleBackColor = True
@@ -51,7 +53,9 @@ Partial Class CuartaPageInsert
         'ckb_Tienda
         '
         Me.ckb_Tienda.AutoSize = True
-        Me.ckb_Tienda.Location = New System.Drawing.Point(383, 447)
+        Me.ckb_Tienda.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ckb_Tienda.Location = New System.Drawing.Point(99, 244)
+        Me.ckb_Tienda.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ckb_Tienda.Name = "ckb_Tienda"
         Me.ckb_Tienda.Size = New System.Drawing.Size(91, 29)
         Me.ckb_Tienda.TabIndex = 46
@@ -61,7 +65,9 @@ Partial Class CuartaPageInsert
         'ckb_Restaurante
         '
         Me.ckb_Restaurante.AutoSize = True
-        Me.ckb_Restaurante.Location = New System.Drawing.Point(585, 240)
+        Me.ckb_Restaurante.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ckb_Restaurante.Location = New System.Drawing.Point(296, 164)
+        Me.ckb_Restaurante.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ckb_Restaurante.Name = "ckb_Restaurante"
         Me.ckb_Restaurante.Size = New System.Drawing.Size(130, 29)
         Me.ckb_Restaurante.TabIndex = 45
@@ -71,7 +77,9 @@ Partial Class CuartaPageInsert
         'ckb_Club
         '
         Me.ckb_Club.AutoSize = True
-        Me.ckb_Club.Location = New System.Drawing.Point(490, 154)
+        Me.ckb_Club.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ckb_Club.Location = New System.Drawing.Point(296, 123)
+        Me.ckb_Club.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ckb_Club.Name = "ckb_Club"
         Me.ckb_Club.Size = New System.Drawing.Size(73, 29)
         Me.ckb_Club.TabIndex = 44
@@ -81,7 +89,9 @@ Partial Class CuartaPageInsert
         'ckb_Calidad
         '
         Me.ckb_Calidad.AutoSize = True
-        Me.ckb_Calidad.Location = New System.Drawing.Point(490, 332)
+        Me.ckb_Calidad.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ckb_Calidad.Location = New System.Drawing.Point(296, 214)
+        Me.ckb_Calidad.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ckb_Calidad.Name = "ckb_Calidad"
         Me.ckb_Calidad.Size = New System.Drawing.Size(97, 29)
         Me.ckb_Calidad.TabIndex = 43
@@ -91,7 +101,9 @@ Partial Class CuartaPageInsert
         'ckb_Gastronomico
         '
         Me.ckb_Gastronomico.AutoSize = True
-        Me.ckb_Gastronomico.Location = New System.Drawing.Point(204, 332)
+        Me.ckb_Gastronomico.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ckb_Gastronomico.Location = New System.Drawing.Point(99, 204)
+        Me.ckb_Gastronomico.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ckb_Gastronomico.Name = "ckb_Gastronomico"
         Me.ckb_Gastronomico.Size = New System.Drawing.Size(152, 29)
         Me.ckb_Gastronomico.TabIndex = 42
@@ -101,7 +113,9 @@ Partial Class CuartaPageInsert
         'ckb_Autocaravana
         '
         Me.ckb_Autocaravana.AutoSize = True
-        Me.ckb_Autocaravana.Location = New System.Drawing.Point(104, 240)
+        Me.ckb_Autocaravana.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ckb_Autocaravana.Location = New System.Drawing.Point(99, 154)
+        Me.ckb_Autocaravana.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ckb_Autocaravana.Name = "ckb_Autocaravana"
         Me.ckb_Autocaravana.Size = New System.Drawing.Size(145, 29)
         Me.ckb_Autocaravana.TabIndex = 41
@@ -111,7 +125,9 @@ Partial Class CuartaPageInsert
         'ckb_Surfing
         '
         Me.ckb_Surfing.AutoSize = True
-        Me.ckb_Surfing.Location = New System.Drawing.Point(204, 154)
+        Me.ckb_Surfing.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ckb_Surfing.Location = New System.Drawing.Point(99, 113)
+        Me.ckb_Surfing.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ckb_Surfing.Name = "ckb_Surfing"
         Me.ckb_Surfing.Size = New System.Drawing.Size(93, 29)
         Me.ckb_Surfing.TabIndex = 40
@@ -121,8 +137,10 @@ Partial Class CuartaPageInsert
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.BackColor = System.Drawing.Color.FromArgb(CType(CType(122, Byte), Integer), CType(CType(131, Byte), Integer), CType(CType(241, Byte), Integer))
-        Me.Label9.Location = New System.Drawing.Point(742, 9)
+        Me.Label9.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.Label9.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(475, 4)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(44, 25)
         Me.Label9.TabIndex = 38
@@ -131,8 +149,10 @@ Partial Class CuartaPageInsert
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.BackColor = System.Drawing.Color.FromArgb(CType(CType(122, Byte), Integer), CType(CType(131, Byte), Integer), CType(CType(241, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(729, 9)
+        Me.Label8.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.Label8.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(457, 4)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(23, 25)
         Me.Label8.TabIndex = 37
@@ -141,8 +161,10 @@ Partial Class CuartaPageInsert
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.BackColor = System.Drawing.Color.FromArgb(CType(CType(122, Byte), Integer), CType(CType(131, Byte), Integer), CType(CType(241, Byte), Integer))
-        Me.Label10.Location = New System.Drawing.Point(718, 9)
+        Me.Label10.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.Label10.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(445, 4)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(18, 25)
         Me.Label10.TabIndex = 39
@@ -151,29 +173,33 @@ Partial Class CuartaPageInsert
         'lbl_Titulo
         '
         Me.lbl_Titulo.AutoSize = True
-        Me.lbl_Titulo.BackColor = System.Drawing.Color.FromArgb(CType(CType(122, Byte), Integer), CType(CType(131, Byte), Integer), CType(CType(241, Byte), Integer))
+        Me.lbl_Titulo.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.lbl_Titulo.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.lbl_Titulo.Font = New System.Drawing.Font("Goudy Old Style", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_Titulo.Location = New System.Drawing.Point(304, 2)
+        Me.lbl_Titulo.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_Titulo.Location = New System.Drawing.Point(190, 4)
+        Me.lbl_Titulo.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lbl_Titulo.Name = "lbl_Titulo"
         Me.lbl_Titulo.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.lbl_Titulo.Size = New System.Drawing.Size(208, 35)
+        Me.lbl_Titulo.Size = New System.Drawing.Size(145, 25)
         Me.lbl_Titulo.TabIndex = 35
         Me.lbl_Titulo.Text = "Elementos extra"
         '
         'Label2
         '
-        Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(122, Byte), Integer), CType(CType(131, Byte), Integer), CType(CType(241, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(-4, -3)
+        Me.Label2.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.Label2.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(-3, -2)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(821, 43)
+        Me.Label2.Size = New System.Drawing.Size(522, 38)
         Me.Label2.TabIndex = 36
         '
         'PictureBox1
         '
-        Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.PictureBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.PictureBox1.Image = Global.EthaziAplicacion.My.Resources.Resources.reply__1_
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 7)
+        Me.PictureBox1.Location = New System.Drawing.Point(8, 4)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(32, 32)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -183,9 +209,9 @@ Partial Class CuartaPageInsert
         'CuartaPageInsert
         '
         Me.AcceptButton = Me.btn_Finalizar
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 25.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(816, 613)
+        Me.ClientSize = New System.Drawing.Size(522, 385)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btn_Finalizar)
         Me.Controls.Add(Me.ckb_Tienda)
@@ -200,8 +226,8 @@ Partial Class CuartaPageInsert
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.lbl_Titulo)
         Me.Controls.Add(Me.Label2)
-        Me.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Margin = New System.Windows.Forms.Padding(6)
+        Me.Font = New System.Drawing.Font("Goudy Old Style", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "CuartaPageInsert"
         Me.Text = "CuartaPageInsert"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

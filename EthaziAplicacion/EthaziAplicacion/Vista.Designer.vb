@@ -63,12 +63,12 @@ Partial Class Vista
         Me.txt_descripcionNoAbreEus = New System.Windows.Forms.TextBox()
         Me.lbl_Web = New System.Windows.Forms.Label()
         Me.txt_Web = New System.Windows.Forms.TextBox()
-        Me.lbl_Aviso = New System.Windows.Forms.Label()
         Me.btn_euskera = New System.Windows.Forms.Button()
         Me.cmb_CodPostal = New System.Windows.Forms.ComboBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.btn_reporte = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.cmb_tiposEuskera = New System.Windows.Forms.ComboBox()
         CType(Me.pb_Restablecer, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -92,12 +92,12 @@ Partial Class Vista
         '
         Me.txt_Email.Location = New System.Drawing.Point(496, 89)
         Me.txt_Email.Name = "txt_Email"
-        Me.txt_Email.Size = New System.Drawing.Size(453, 33)
+        Me.txt_Email.Size = New System.Drawing.Size(464, 33)
         Me.txt_Email.TabIndex = 24
         '
         'txt_Telefono
         '
-        Me.txt_Telefono.Location = New System.Drawing.Point(758, 159)
+        Me.txt_Telefono.Location = New System.Drawing.Point(769, 159)
         Me.txt_Telefono.Name = "txt_Telefono"
         Me.txt_Telefono.Size = New System.Drawing.Size(191, 33)
         Me.txt_Telefono.TabIndex = 23
@@ -107,7 +107,7 @@ Partial Class Vista
         Me.txt_descripcionNOabre.Location = New System.Drawing.Point(37, 552)
         Me.txt_descripcionNOabre.Multiline = True
         Me.txt_descripcionNOabre.Name = "txt_descripcionNOabre"
-        Me.txt_descripcionNOabre.Size = New System.Drawing.Size(673, 115)
+        Me.txt_descripcionNOabre.Size = New System.Drawing.Size(880, 115)
         Me.txt_descripcionNOabre.TabIndex = 22
         '
         'txt_Nombre
@@ -120,11 +120,11 @@ Partial Class Vista
         'lbl_Direccion
         '
         Me.lbl_Direccion.AutoSize = True
-        Me.lbl_Direccion.Location = New System.Drawing.Point(25, 172)
+        Me.lbl_Direccion.Location = New System.Drawing.Point(25, 162)
         Me.lbl_Direccion.Name = "lbl_Direccion"
-        Me.lbl_Direccion.Size = New System.Drawing.Size(95, 25)
+        Me.lbl_Direccion.Size = New System.Drawing.Size(100, 25)
         Me.lbl_Direccion.TabIndex = 20
-        Me.lbl_Direccion.Text = "Direccion"
+        Me.lbl_Direccion.Text = "Direccion:"
         '
         'lbl_Telefono
         '
@@ -156,7 +156,7 @@ Partial Class Vista
         'lbl_Nombre
         '
         Me.lbl_Nombre.AutoSize = True
-        Me.lbl_Nombre.Location = New System.Drawing.Point(32, 97)
+        Me.lbl_Nombre.Location = New System.Drawing.Point(25, 92)
         Me.lbl_Nombre.Name = "lbl_Nombre"
         Me.lbl_Nombre.Size = New System.Drawing.Size(88, 25)
         Me.lbl_Nombre.TabIndex = 16
@@ -219,7 +219,7 @@ Partial Class Vista
         'lbl_Coordenadas
         '
         Me.lbl_Coordenadas.AutoSize = True
-        Me.lbl_Coordenadas.Location = New System.Drawing.Point(32, 299)
+        Me.lbl_Coordenadas.Location = New System.Drawing.Point(25, 299)
         Me.lbl_Coordenadas.Name = "lbl_Coordenadas"
         Me.lbl_Coordenadas.Size = New System.Drawing.Size(129, 25)
         Me.lbl_Coordenadas.TabIndex = 38
@@ -228,7 +228,7 @@ Partial Class Vista
         'lbl_Municipio
         '
         Me.lbl_Municipio.AutoSize = True
-        Me.lbl_Municipio.Location = New System.Drawing.Point(32, 236)
+        Me.lbl_Municipio.Location = New System.Drawing.Point(329, 231)
         Me.lbl_Municipio.Name = "lbl_Municipio"
         Me.lbl_Municipio.Size = New System.Drawing.Size(106, 25)
         Me.lbl_Municipio.TabIndex = 39
@@ -237,7 +237,7 @@ Partial Class Vista
         'lbl_Provincia
         '
         Me.lbl_Provincia.AutoSize = True
-        Me.lbl_Provincia.Location = New System.Drawing.Point(346, 231)
+        Me.lbl_Provincia.Location = New System.Drawing.Point(25, 231)
         Me.lbl_Provincia.Name = "lbl_Provincia"
         Me.lbl_Provincia.Size = New System.Drawing.Size(96, 25)
         Me.lbl_Provincia.TabIndex = 40
@@ -246,7 +246,7 @@ Partial Class Vista
         'lbl_Tipo
         '
         Me.lbl_Tipo.AutoSize = True
-        Me.lbl_Tipo.Location = New System.Drawing.Point(32, 353)
+        Me.lbl_Tipo.Location = New System.Drawing.Point(25, 351)
         Me.lbl_Tipo.Name = "lbl_Tipo"
         Me.lbl_Tipo.Size = New System.Drawing.Size(58, 25)
         Me.lbl_Tipo.TabIndex = 41
@@ -264,7 +264,7 @@ Partial Class Vista
         'lbl_Codpostal
         '
         Me.lbl_Codpostal.AutoSize = True
-        Me.lbl_Codpostal.Location = New System.Drawing.Point(641, 236)
+        Me.lbl_Codpostal.Location = New System.Drawing.Point(672, 231)
         Me.lbl_Codpostal.Name = "lbl_Codpostal"
         Me.lbl_Codpostal.Size = New System.Drawing.Size(113, 25)
         Me.lbl_Codpostal.TabIndex = 43
@@ -273,15 +273,15 @@ Partial Class Vista
         'cmb_Municipio
         '
         Me.cmb_Municipio.FormattingEnabled = True
-        Me.cmb_Municipio.Location = New System.Drawing.Point(157, 228)
+        Me.cmb_Municipio.Location = New System.Drawing.Point(452, 223)
         Me.cmb_Municipio.Name = "cmb_Municipio"
-        Me.cmb_Municipio.Size = New System.Drawing.Size(183, 33)
+        Me.cmb_Municipio.Size = New System.Drawing.Size(214, 33)
         Me.cmb_Municipio.TabIndex = 44
         '
         'cmb_Provincia
         '
         Me.cmb_Provincia.FormattingEnabled = True
-        Me.cmb_Provincia.Location = New System.Drawing.Point(448, 228)
+        Me.cmb_Provincia.Location = New System.Drawing.Point(127, 223)
         Me.cmb_Provincia.Name = "cmb_Provincia"
         Me.cmb_Provincia.Size = New System.Drawing.Size(187, 33)
         Me.cmb_Provincia.TabIndex = 45
@@ -400,7 +400,7 @@ Partial Class Vista
         Me.txt_descripcionNoAbreEus.Location = New System.Drawing.Point(37, 552)
         Me.txt_descripcionNoAbreEus.Multiline = True
         Me.txt_descripcionNoAbreEus.Name = "txt_descripcionNoAbreEus"
-        Me.txt_descripcionNoAbreEus.Size = New System.Drawing.Size(840, 115)
+        Me.txt_descripcionNoAbreEus.Size = New System.Drawing.Size(880, 115)
         Me.txt_descripcionNoAbreEus.TabIndex = 59
         Me.txt_descripcionNoAbreEus.Visible = False
         '
@@ -420,19 +420,9 @@ Partial Class Vista
         Me.txt_Web.Size = New System.Drawing.Size(340, 33)
         Me.txt_Web.TabIndex = 61
         '
-        'lbl_Aviso
-        '
-        Me.lbl_Aviso.AutoSize = True
-        Me.lbl_Aviso.Font = New System.Drawing.Font("Goudy Old Style", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_Aviso.Location = New System.Drawing.Point(33, 722)
-        Me.lbl_Aviso.Name = "lbl_Aviso"
-        Me.lbl_Aviso.Size = New System.Drawing.Size(381, 21)
-        Me.lbl_Aviso.TabIndex = 62
-        Me.lbl_Aviso.Text = "*Si quieres que tus descripciones esten tambien en Euskera"
-        '
         'btn_euskera
         '
-        Me.btn_euskera.Location = New System.Drawing.Point(894, 539)
+        Me.btn_euskera.Location = New System.Drawing.Point(496, 678)
         Me.btn_euskera.Name = "btn_euskera"
         Me.btn_euskera.Size = New System.Drawing.Size(106, 37)
         Me.btn_euskera.TabIndex = 65
@@ -442,14 +432,14 @@ Partial Class Vista
         'cmb_CodPostal
         '
         Me.cmb_CodPostal.FormattingEnabled = True
-        Me.cmb_CodPostal.Location = New System.Drawing.Point(758, 233)
+        Me.cmb_CodPostal.Location = New System.Drawing.Point(813, 223)
         Me.cmb_CodPostal.Name = "cmb_CodPostal"
         Me.cmb_CodPostal.Size = New System.Drawing.Size(147, 33)
         Me.cmb_CodPostal.TabIndex = 67
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(389, 681)
+        Me.Button1.Location = New System.Drawing.Point(299, 679)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 38)
         Me.Button1.TabIndex = 68
@@ -474,18 +464,26 @@ Partial Class Vista
         Me.PictureBox1.TabIndex = 70
         Me.PictureBox1.TabStop = False
         '
+        'cmb_tiposEuskera
+        '
+        Me.cmb_tiposEuskera.FormattingEnabled = True
+        Me.cmb_tiposEuskera.Location = New System.Drawing.Point(96, 345)
+        Me.cmb_tiposEuskera.Name = "cmb_tiposEuskera"
+        Me.cmb_tiposEuskera.Size = New System.Drawing.Size(121, 33)
+        Me.cmb_tiposEuskera.TabIndex = 71
+        '
         'Vista
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1041, 752)
+        Me.Controls.Add(Me.cmb_tiposEuskera)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btn_reporte)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.cmb_CodPostal)
         Me.Controls.Add(Me.btn_euskera)
-        Me.Controls.Add(Me.lbl_Aviso)
         Me.Controls.Add(Me.txt_Web)
         Me.Controls.Add(Me.lbl_Web)
         Me.Controls.Add(Me.txt_descripcionNoAbreEus)
@@ -576,10 +574,10 @@ Partial Class Vista
     Friend WithEvents txt_descripcionNoAbreEus As System.Windows.Forms.TextBox
     Friend WithEvents lbl_Web As System.Windows.Forms.Label
     Friend WithEvents txt_Web As System.Windows.Forms.TextBox
-    Friend WithEvents lbl_Aviso As System.Windows.Forms.Label
     Friend WithEvents btn_euskera As System.Windows.Forms.Button
     Friend WithEvents cmb_CodPostal As System.Windows.Forms.ComboBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents btn_reporte As System.Windows.Forms.Button
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
+    Friend WithEvents cmb_tiposEuskera As System.Windows.Forms.ComboBox
 End Class

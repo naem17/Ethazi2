@@ -7,13 +7,11 @@ Module Sentencias
     Dim adap1
     Dim id_rcmp As Integer
     Public idRelaciones As Integer
-
-
     Public Function cogerIdAlojamientos()
+        conectar()
 
         Dim alojamientos As New ArrayList
         conectar()
-        MsgBox(Buscar.cmb_provincia.SelectedItem)
         sql = "Select distinct id_relaciones from alojamientos where id_relaciones IN (select id from relacion_cp_municipios_provincias where codigo_provincia IN (Select codigo from provincias where provincua='" & Buscar.cmb_provincia.SelectedItem & "'))"
         Dim cmd1 As New MySqlCommand
         cmd1 = New MySqlCommand(sql, conexion)
@@ -22,11 +20,14 @@ Module Sentencias
         While dr.Read
             alojamientos.add(dr.Item(0))
         End While
-        MsgBox(alojamientos.Count)
+
         dr.Close()
         Return alojamientos
+        desconectar()
+
     End Function
     Public Sub cargar(ByVal sql As String)
+        conectar()
 
         Dim cmd1 As New MySqlCommand
 
@@ -38,9 +39,12 @@ Module Sentencias
         Administrador.DataGridView1.DataSource = das1.Tables("Alojamientos")
         Administrador.DataGridView1.Columns(0).Width = 150
         Administrador.DataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.Aqua
+        desconectar()
 
     End Sub
     Public Sub cargarCmbCodpostal()
+        conectar()
+
         Dim tabla As New DataTable
         Dim codigo_muni As Integer
         sql = "Select indice from municipios where municipio = '" & SegundaPageInsert.cmb_Municipio.SelectedItem & "'"
@@ -58,6 +62,8 @@ Module Sentencias
         adap1.Fill(tabla)
         SegundaPageInsert.cmb_CodPostal.DataSource = tabla
         SegundaPageInsert.cmb_CodPostal.DisplayMember = "CODIGO_POSTAL"
+        desconectar()
+
     End Sub
     Public Sub cargarCmbProvincia2()
         conectar()
@@ -72,10 +78,14 @@ Module Sentencias
             Buscar.cmb_provincia.Items.Add(dr.Item(0))
         End While
         dr.Close()
+        desconectar()
+
     End Sub
     Public Sub cargarCmbProvincia()
+        conectar()
+
         Dim tabla As New DataTable
-        sql = "Select codigo,provincua from provincias"
+        sql = "Select codigo,provincua from provincias order by provincua"
         Dim cmd1 As New MySqlCommand(sql, conexion)
 
         adap1 = New MySqlDataAdapter(cmd1)
@@ -85,11 +95,15 @@ Module Sentencias
         SegundaPageInsert.cmb_Provincia.DataSource = tabla
         SegundaPageInsert.cmb_Provincia.DisplayMember = "provincua"
         SegundaPageInsert.cmb_Provincia.ValueMember = "codigo"
+        desconectar()
+
     End Sub
     Public Sub cargarCmbMunicipio()
+        conectar()
+
         SegundaPageInsert.cmb_Municipio.Items.Clear()
         Dim tabla As New DataTable
-        sql = "Select municipio from municipios where indice in (Select indice_municipio from relacion_cp_municipios_provincias where codigo_provincia = " & SegundaPageInsert.cmb_Provincia.SelectedValue.ToString & ")"
+        sql = "Select municipio from municipios where indice in (Select indice_municipio from relacion_cp_municipios_provincias where codigo_provincia = " & SegundaPageInsert.cmb_Provincia.SelectedValue.ToString & ") order by municipio"
 
         Dim cmd1 As New MySqlCommand
         cmd1 = New MySqlCommand(sql, conexion)
@@ -100,8 +114,12 @@ Module Sentencias
             SegundaPageInsert.cmb_Municipio.Items.Add(dr.Item(0))
         End While
         dr.Close()
+        desconectar()
+
     End Sub
     Public Function cargarId()
+        conectar()
+
         Dim tabla As New DataTable
         Dim cmd1 As New MySqlCommand("", conexion)
         cmd1.CommandText = "Select `id` from `relacion_cp_municipios_provincias` where `codigo_postal`= @param"
@@ -115,23 +133,52 @@ Module Sentencias
         End While
         dr.Close()
         Return id_rcmp
+        desconectar()
+
     End Function
     Public Sub cargarCmbTipo()
-        Dim tabla As New DataTable
-        sql = "Select tipo from tipos "
+        conectar()
+
+        sql = "select distinct tipo from tipos"
+
         Dim cmd1 As New MySqlCommand
         cmd1 = New MySqlCommand(sql, conexion)
-        adap1 = New MySqlDataAdapter(cmd1)
-        das1.Clear()
+        Dim dr As MySqlDataReader
+        dr = cmd1.ExecuteReader
+        Dim cont As Integer = 0
+        Dim texto(7) As String
 
-        adap1.Fill(tabla)
-        TerceraPageInsert.cmb_Tipo.DataSource = tabla
-        TerceraPageInsert.cmb_Tipo.DisplayMember = "tipo"
+        While dr.Read
+            texto(cont) = dr.Item(0)
+            cont += 1
+        End While
+
+        dr.Close()
+        sql = "select distinct tipo_euskera from tipos_euskera"
+        cmd1.CommandText = sql
+        Dim dr2 As MySqlDataReader
+        dr2 = cmd1.ExecuteReader
+        cont = 0
+        While dr2.Read
+
+            texto(cont) &= "/" & dr2.Item(0)
+            cont += 1
+
+        End While
+        Dim x As Integer
+        While x < cont
+
+            TerceraPageInsert.cmb_Tipo.Items.Add(texto(x))
+            x += 1
+        End While
+        dr2.Close()
+        desconectar()
+
     End Sub
     Public Sub cargarCmbTipo2()
         conectar()
         Dim tabla As New DataTable
-        sql = "Select tipo from tipos"
+        sql = "Select distinct tipo from tipos"
         Dim cmd1 As New MySqlCommand
         cmd1 = New MySqlCommand(sql, conexion)
         Dim dr As MySqlDataReader
@@ -141,8 +188,13 @@ Module Sentencias
             Buscar.cmb_tipo.Items.Add(dr.Item(0))
         End While
         dr.Close()
+        desconectar()
+
     End Sub
+
     Public Function cogerTipo()
+        conectar()
+
         Dim coger As Integer
         conectar()
         sql = "Select codigo_tipos from alojamientos where codigo_tipos in (Select codigo from tipos where tipo='" & Buscar.cmb_tipo.SelectedItem & "')"
@@ -155,8 +207,12 @@ Module Sentencias
         End While
         dr.Close()
         Return coger
+        desconectar()
+
     End Function
     Public Sub cargarCmbCategorias()
+        conectar()
+
         Dim tabla As New DataTable
         sql = "Select categoria from categorias "
         Dim cmd1 As New MySqlCommand
@@ -167,7 +223,8 @@ Module Sentencias
         adap1.Fill(tabla)
         TerceraPageInsert.cmb_Categorias.DataSource = tabla
         TerceraPageInsert.cmb_Categorias.DisplayMember = "categoria"
-        '  SegundaPageInsert.cmb_Provincia.ValueMember = "codigo"
+        desconectar()
+
 
     End Sub
     Public Sub insertar()
@@ -188,9 +245,9 @@ Module Sentencias
             cmd1.Parameters.AddWithValue("@firma", PrimeraPageInsert.txt_Firma.Text)
             cmd1.Parameters.AddWithValue("@nombre", PrimeraPageInsert.txt_Nombre.Text)
             cmd1.Parameters.AddWithValue("@descripcion_abre", TerceraPageInsert.txt_Corta.Text)
-            cmd1.Parameters.AddWithValue("@descripcion_abre_eus", "Celaya")
-            cmd1.Parameters.AddWithValue("@descripcion", TerceraPageInsert.txt_Larga.Text)
-            cmd1.Parameters.AddWithValue("@descripcion_eus", "123654789") 'Hacer otro form
+            cmd1.Parameters.AddWithValue("@descripcion_abre_eus", TerceraPageInsert.txt_descripcionAbreEus.Text)
+            cmd1.Parameters.AddWithValue("@descripcion", TerceraPageInsert.txt_descripcion.Text)
+            cmd1.Parameters.AddWithValue("@descripcion_eus", TerceraPageInsert.txt_descripcionNoAbreEus.Text) 'Hacer otro form
             cmd1.Parameters.AddWithValue("@telefono", PrimeraPageInsert.txt_Telefono.Text)
             cmd1.Parameters.AddWithValue("@direccion", SegundaPageInsert.txt_Direccion.Text) ' ver como sería
             If CuartaPageInsert.ckb_Calidad.Checked Then
@@ -211,7 +268,7 @@ Module Sentencias
                 cmd1.Parameters.AddWithValue("@restaurante", 0)
             End If
             If CuartaPageInsert.ckb_Autocaravana.Checked Then
-                MsgBox("Estoy mirando si esta checkeado auto")
+
                 cmd1.Parameters.AddWithValue("@autocaravana", 1)
             Else
                 cmd1.Parameters.AddWithValue("@autocaravana", 0)
@@ -234,21 +291,16 @@ Module Sentencias
             End If
             cmd1.Parameters.AddWithValue("@coordenadas", SegundaPageInsert.txt_Coordenadas.Text)
             cmd1.Parameters.AddWithValue("@cod_tipos", TerceraPageInsert.cmb_Tipo.SelectedItem)
-            cmd1.Parameters.AddWithValue("@cod_tipos_eus", 1)
+            cmd1.Parameters.AddWithValue("@cod_tipos_eus", TerceraPageInsert.cmb_Tipo.SelectedItem)
             cmd1.Parameters.AddWithValue("@cod_categoria", TerceraPageInsert.cmb_Categorias.SelectedItem)
             cmd1.Parameters.AddWithValue("@id_relaciones", Val(cargarId()))
-            MsgBox(sql)
+
             cmd1.ExecuteNonQuery()
             MsgBox("Insertado registro.")
 
         Catch ex As Exception
             MsgBox("Error")
             MsgBox(ex.Message)
-            'sql = "DELETE * from customers where customerid=@uno"
-            'Dim cmd2 = New OleDbCommand(sql, cnn1)
-            'cmd2.Parameters.AddWithValue("@uno", "Bilbo")
-            'Dim result As Integer = cmd2.ExecuteNonQuery
-            'MsgBox("Borrado " & result & " resgistro.")
         End Try
         ConexionBBDD.desconectar()
     End Sub
@@ -271,13 +323,19 @@ Module Sentencias
             MsgBox(ex.ToString)
 
         End Try
+        desconectar()
+
     End Sub
     Public Sub exEnXML()
+        conectar()
         das1.WriteXml(InputBox("Nombre de Archivo"))
+        desconectar()
+
     End Sub
     '___________________________CARGAR DATOS PARA LA VISTA________________________________________
     Public Sub cargarCmbProvinciaVISTA()
-        ' Dim tabla As New DataTable
+        conectar()
+
         Vista.cmb_Provincia.Items.Clear()
 
         sql = "Select provincua from provincias"
@@ -291,9 +349,12 @@ Module Sentencias
 
         End While
         dr.Close()
-        'MsgBox(Vista.cmb_Provincia.SelectedValue.ToString)
+        desconectar()
+
     End Sub
     Public Sub cargarCmbMunicipioVISTA()
+        ' desconectar()
+        conectar()
 
         Vista.cmb_Municipio.Items.Clear()
         Dim tabla As New DataTable
@@ -308,8 +369,14 @@ Module Sentencias
             Vista.cmb_Municipio.Items.Add(dr.Item(0))
         End While
         dr.Close()
+        desconectar()
+
     End Sub
     Public Sub cargarCmbCodpostalVISTA()
+        '  desconectar()
+
+        conectar()
+
         Dim tabla As New DataTable
         Dim codigo_muni As Integer
         sql = "Select indice from municipios where municipio = '" & Vista.cmb_Municipio.SelectedItem & "'"
@@ -327,6 +394,9 @@ Module Sentencias
         adap1.Fill(tabla)
         Vista.cmb_CodPostal.DataSource = tabla
         Vista.cmb_CodPostal.DisplayMember = "CODIGO_POSTAL"
+
+        desconectar()
+
     End Sub
     Public Sub cargarProvinciaIdVISTA()
         conectar()
@@ -341,9 +411,9 @@ Module Sentencias
             provincia = dr.Item(0)
         End While
         Vista.cmb_Provincia.Text = provincia
-
-        desconectar()
         dr.Close()
+        desconectar()
+
     End Sub
     Public Sub cargarMunicipioIDVISTA()
         conectar()
@@ -358,6 +428,8 @@ Module Sentencias
         End While
         Vista.cmb_Municipio.Text = municipios
         dr.Close()
+        desconectar()
+
     End Sub
     Public Sub cargarCodPostalIDVISTA()
         conectar()
@@ -372,8 +444,12 @@ Module Sentencias
         End While
         Vista.cmb_CodPostal.Text = codigo
         dr.Close()
+        desconectar()
+
     End Sub
     Public Function cargarIdvista()
+        conectar()
+
         Dim tabla As New DataTable
         Dim cmd1 As New MySqlCommand("", conexion)
         cmd1.CommandText = "Select id from relacion_cp_municipios_provincias where codigo_postal = @param"
@@ -386,7 +462,9 @@ Module Sentencias
 
         End While
         dr.Close()
-        MsgBox(id_rcmp)
+
         Return id_rcmp
+        desconectar()
+
     End Function
 End Module

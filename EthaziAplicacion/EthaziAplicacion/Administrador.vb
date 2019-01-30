@@ -6,6 +6,8 @@ Public Class Administrador
     Dim das1 As New DataSet 'copia de los datos 
     Dim adap1
 
+   
+
     Private Sub Administrador_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.MenuStrip1.ForeColor = Drawing.Color.Blue
         'sql = "SELECT A.FIRMA, A.NOMBRE,A.EMAIL, T.TIPO AS 'TIPOS', TE.TIPO_EUSKERA AS 'TIPOS EUSKERA', C.CATEGORIA AS 'CATEGORIAS',A.TELEFONO, A.DIRECCION,"
@@ -49,10 +51,13 @@ Public Class Administrador
         Dim mifila As Integer
         Dim firma As String
         mifila = DataGridView1.CurrentRow.Index
+
         'Recorremos todas las columnas de la fila seleccionada en busca de un valor nulo
         firma = DataGridView1.Item(0, mifila).Value
         Vista.datosACargar(firma)
-        Vista.ShowDialog()
+        Me.Close()
+        Vista.Show()
+
     End Sub
 
     Private Sub ImportarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ImportarToolStripMenuItem.Click
@@ -89,5 +94,9 @@ Public Class Administrador
         Me.Close()
         ConexionBBDD.desconectar()
         Inicio.Show()
+    End Sub
+
+    Private Sub MenuStrip1_ItemClicked(sender As Object, e As System.Windows.Forms.ToolStripItemClickedEventArgs) Handles MenuStrip1.ItemClicked
+
     End Sub
 End Class

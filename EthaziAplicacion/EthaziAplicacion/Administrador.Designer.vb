@@ -29,6 +29,7 @@ Partial Class Administrador
         Me.ReporteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExportarToolStripMenuItem = New System.Windows.Forms.ToolStripSeparator()
         Me.ImportarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CerrarSesionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EDITARToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InsertarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DeleteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -36,7 +37,6 @@ Partial Class Administrador
         Me.MAPAToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.lbl_Alojamientos = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.CerrarSesionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -93,6 +93,12 @@ Partial Class Administrador
         Me.ImportarToolStripMenuItem.Size = New System.Drawing.Size(184, 28)
         Me.ImportarToolStripMenuItem.Text = "Exportar"
         '
+        'CerrarSesionToolStripMenuItem
+        '
+        Me.CerrarSesionToolStripMenuItem.Name = "CerrarSesionToolStripMenuItem"
+        Me.CerrarSesionToolStripMenuItem.Size = New System.Drawing.Size(184, 28)
+        Me.CerrarSesionToolStripMenuItem.Text = "Cerrar Sesion"
+        '
         'EDITARToolStripMenuItem
         '
         Me.EDITARToolStripMenuItem.Name = "EDITARToolStripMenuItem"
@@ -143,12 +149,6 @@ Partial Class Administrador
         Me.PictureBox1.Size = New System.Drawing.Size(32, 31)
         Me.PictureBox1.TabIndex = 8
         Me.PictureBox1.TabStop = False
-        '
-        'CerrarSesionToolStripMenuItem
-        '
-        Me.CerrarSesionToolStripMenuItem.Name = "CerrarSesionToolStripMenuItem"
-        Me.CerrarSesionToolStripMenuItem.Size = New System.Drawing.Size(184, 28)
-        Me.CerrarSesionToolStripMenuItem.Text = "Cerrar Sesion"
         '
         'Administrador
         '
