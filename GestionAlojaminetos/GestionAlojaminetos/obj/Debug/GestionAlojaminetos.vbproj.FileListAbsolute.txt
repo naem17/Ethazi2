@@ -525,3 +525,16 @@ D:\Users\cwzs1233\Documents\GitHub\Ethazi2\GestionAlojaminetos\GestionAlojaminet
 D:\Users\cwzs1233\Documents\GitHub\Ethazi2\GestionAlojaminetos\GestionAlojaminetos\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
 D:\Users\cwzs1233\Documents\GitHub\Ethazi2\GestionAlojaminetos\GestionAlojaminetos\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
 D:\Users\cwzs1233\Documents\GitHub\Ethazi2\GestionAlojaminetos\GestionAlojaminetos\bin\stdole.dll
+H:\Documentos\GitHub\Ethazi2\GestionAlojaminetos\GestionAlojaminetos\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+H:\Documentos\GitHub\Ethazi2\GestionAlojaminetos\GestionAlojaminetos\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+H:\Documentos\GitHub\Ethazi2\GestionAlojaminetos\GestionAlojaminetos\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+H:\Documentos\GitHub\Ethazi2\GestionAlojaminetos\GestionAlojaminetos\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+H:\Documentos\GitHub\Ethazi2\GestionAlojaminetos\GestionAlojaminetos\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+H:\Documentos\GitHub\Ethazi2\GestionAlojaminetos\GestionAlojaminetos\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+H:\Documentos\GitHub\Ethazi2\GestionAlojaminetos\GestionAlojaminetos\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+H:\Documentos\GitHub\Ethazi2\GestionAlojaminetos\GestionAlojaminetos\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+H:\Documentos\GitHub\Ethazi2\GestionAlojaminetos\GestionAlojaminetos\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+H:\Documentos\GitHub\Ethazi2\GestionAlojaminetos\GestionAlojaminetos\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+H:\Documentos\GitHub\Ethazi2\GestionAlojaminetos\GestionAlojaminetos\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+H:\Documentos\GitHub\Ethazi2\GestionAlojaminetos\GestionAlojaminetos\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+H:\Documentos\GitHub\Ethazi2\GestionAlojaminetos\GestionAlojaminetos\bin\stdole.dll

@@ -80,6 +80,45 @@ Public Class verAlojamientos
     End Sub
 
     Protected Sub btn_Excel_Click(sender As Object, e As EventArgs) Handles btn_Excel.Click
+        descargarInforme(Session("select"))
+    End Sub
+
+    Sub descargarInforme(ByVal sql As String)
+        Dim htw As Html32TextWriter
+        Me.GridView1.RenderControl(htw)
+    End Sub
+
+    Private Sub GenerateXLSXFile(tbl As DataTable)
+
+        Dim excelPackage = New ExcelPackage
+
+        Dim excelWorksheet = excelPackage.Workbook.Worksheets.Add("DemoPage")
+
+        excelWorksheet.Cells("A1").LoadFromDataTable(tbl, True)
+
+        Response.ContentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        Response.AddHeader("content-disposition", "attachment;  filename=ExcelDemo.xlsx")
+        Dim stream As New MemoryStream(excelPackage.GetAsByteArray())
+
+        Response.OutputStream.Write(stream.ToArray(), 0, stream.ToArray().Length)
+
+        Response.Flush()
+
+        Response.Close()
 
     End Sub
+
+    Private Function CreateDataTable() As DataTable
+
+        Dim dataTable As New DataTable("DT")
+
+        Dim cmd As New MySqlCommand(Session("select"), cnn1)
+
+        Dim adaptor As New MySqlDataAdapter
+
+        adaptor.SelectCommand = cmd
+        adaptor.Fill(dataTable)
+
+        Return dataTable
+    End Function
 End Class
