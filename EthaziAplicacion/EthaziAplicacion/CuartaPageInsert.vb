@@ -11,7 +11,10 @@ Public Class CuartaPageInsert
         Sql &= "AND A.CODIGO_TIPOS_EUSKERA=TE.CODIGO AND A.CODIGO_CATEGORIAS=C.CODIGO ORDER BY A.NOMBRE"
         cargar(Sql)
         Administrador.Show()
-
+        PrimeraPageInsert.Close()
+        SegundaPageInsert.Close()
+        TerceraPageInsert.Close()
+        Me.Close()
     End Sub
 
     Private Sub CuartaPageInsert_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -23,5 +26,37 @@ Public Class CuartaPageInsert
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         Me.Hide()
         TerceraPageInsert.Show()
+    End Sub
+
+    Private Sub Label9_Click(sender As Object, e As EventArgs) Handles Label9.Click
+
+    End Sub
+
+    Private Sub ckb_Club_CheckedChanged(sender As Object, e As EventArgs) Handles ckb_Club.CheckedChanged
+
+    End Sub
+
+    Private Sub ckb_Restaurante_CheckedChanged(sender As Object, e As EventArgs) Handles ckb_Restaurante.CheckedChanged
+
+    End Sub
+
+    Private Sub ckb_Calidad_CheckedChanged(sender As Object, e As EventArgs) Handles ckb_Calidad.CheckedChanged
+
+    End Sub
+
+    Private Sub ckb_Tienda_CheckedChanged(sender As Object, e As EventArgs) Handles ckb_Tienda.CheckedChanged
+
+    End Sub
+
+    Private Sub ckb_Gastronomico_CheckedChanged(sender As Object, e As EventArgs) Handles ckb_Gastronomico.CheckedChanged
+
+    End Sub
+
+    Private Sub ckb_Autocaravana_CheckedChanged(sender As Object, e As EventArgs) Handles ckb_Autocaravana.CheckedChanged
+
+    End Sub
+
+    Private Sub ckb_Surfing_CheckedChanged(sender As Object, e As EventArgs) Handles ckb_Surfing.CheckedChanged
+
     End Sub
 End Class

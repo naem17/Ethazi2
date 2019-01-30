@@ -247,6 +247,7 @@
     <Content Include="IMAGENES\ADMIN.PNG" />
     <Content Include="IMAGENES\exclamation-mark.png" />
     <Content Include="IMAGENES\buscar.png" />
+    <Content Include="IMAGENES\logout.png" />
     <Content Include="IMAGENES\New Project %282%29.png" />
     <Content Include="IMAGENES\NOMBRE.PNG" />
     <Content Include="IMAGENES\ocultar.png" />

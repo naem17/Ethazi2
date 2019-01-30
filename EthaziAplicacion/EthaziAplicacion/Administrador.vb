@@ -1,12 +1,18 @@
 ﻿Imports MySql.Data.MySqlClient
 Imports System.Drawing
+Imports System.Windows.Forms
 
 Public Class Administrador
     Dim sql As String
     Dim das1 As New DataSet 'copia de los datos 
     Dim adap1
 
-   
+    Private Sub Administrador_KeyDown(sender As Object, e As System.Windows.Forms.KeyEventArgs) Handles Me.KeyDown
+        
+    End Sub
+
+
+
 
     Private Sub Administrador_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.MenuStrip1.ForeColor = Drawing.Color.Blue
@@ -97,6 +103,12 @@ Public Class Administrador
     End Sub
 
     Private Sub MenuStrip1_ItemClicked(sender As Object, e As System.Windows.Forms.ToolStripItemClickedEventArgs) Handles MenuStrip1.ItemClicked
+
+    End Sub
+
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+        Me.Close()
+        Inicio.Show()
 
     End Sub
 End Class

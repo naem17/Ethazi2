@@ -10,6 +10,7 @@ Public Class Inicio
     Dim ojito As Boolean = True
 
     Private Sub Button2_Click(sendeingr As Object, e As EventArgs) Handles Button2.Click
+        conectar()
         MD5EncryptPass(Me.txt_password.Text)
         '   sql = "SELECT nombre_usuario,contrasenia from usuarios where perfil='A' or perfil='P'"
         sql = "SELECT nombre_usuario,contrasenia from usuarios where nombre_usuario=@nombre AND contrasenia=@pass AND perfil='A' or perfil='P'  "
@@ -42,9 +43,12 @@ Public Class Inicio
             MsgBox(ex.Message)
 
         Finally
-
+            Me.txt_password.Text = ""
+            Me.txt_usuario.Text = ""
+            Me.txt_usuario.Focus()
+            PictureBox2.Image = My.Resources.ocultar
         End Try
-
+        desconectar()
 
     End Sub
 
@@ -53,9 +57,6 @@ Public Class Inicio
         Registro.ShowDialog()
     End Sub
 
-    Private Sub txt_password_TextChanged(sender As Object, e As EventArgs) Handles txt_password.TextChanged
-        Me.txt_password.PasswordChar = "*"
-    End Sub
 
     Private Sub Inicio_Load(sender As Object, e As EventArgs) Handles Me.Load
         form_center(Me)
