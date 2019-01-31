@@ -124,3 +124,7 @@ E:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicac
 E:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.Informe.resources
 G:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.Informe.resources
 G:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.btn_Buscar.resources
+G:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\bin\Debug\EthaziAplicacion.exe.manifest
+G:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\bin\Debug\EthaziAplicacion.application
+G:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.exe.manifest
+G:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.application
