@@ -5,10 +5,12 @@
     Private Sub btn_Siguiente_Click(sender As Object, e As EventArgs) Handles btn_Siguiente.Click
         CuartaPageInsert.Show()
         Me.Hide()
-
     End Sub
 
-
+    Private Sub TerceraPageInsert_Disposed(sender As Object, e As EventArgs) Handles Me.Disposed
+        Me.Close()
+        Inicio.Show()
+    End Sub
 
     Private Sub TerceraPageInsert_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Inicio.form_center(Me)
@@ -23,8 +25,6 @@
         Me.Hide()
         SegundaPageInsert.Show()
     End Sub
-
-
     Private Sub txt_Capacidad_KeyPress(sender As Object, e As System.Windows.Forms.KeyPressEventArgs) Handles txt_Capacidad.KeyPress
         If (Asc(e.KeyChar) > 65 And Asc(e.KeyChar) < 90) Or (Asc(e.KeyChar) > 97 And Asc(e.KeyChar) < 122) Then
             e.Handled = True
@@ -33,8 +33,6 @@
             e.Handled = False
         End If
     End Sub
-
-
     Private Sub btn_Euskera_Click(sender As Object, e As EventArgs) Handles btn_Euskera.Click
         If Not euskera Then
             btn_Euskera.Text = "*Español"
@@ -57,25 +55,5 @@
             Me.txt_descripcionNoAbreEus.Visible = False
             euskera = False
         End If
-    End Sub
-
-    Private Sub Label10_Click(sender As Object, e As EventArgs) Handles Label10.Click
-
-    End Sub
-
-    Private Sub Label9_Click(sender As Object, e As EventArgs) Handles Label9.Click
-
-    End Sub
-
-    Private Sub Label8_Click(sender As Object, e As EventArgs) Handles Label8.Click
-
-    End Sub
-
-    Private Sub lbl_Titulo_Click(sender As Object, e As EventArgs) Handles lbl_Titulo.Click
-
-    End Sub
-
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
-
     End Sub
 End Class

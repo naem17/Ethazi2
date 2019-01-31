@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Buscar
+Partial Class btn_Buscar
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
@@ -22,17 +22,15 @@ Partial Class Buscar
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Buscar))
         Me.Nombre = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txt_Nombre = New System.Windows.Forms.TextBox()
         Me.txt_capacidad = New System.Windows.Forms.TextBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.cmb_provincia = New System.Windows.Forms.ComboBox()
         Me.cmb_tipo = New System.Windows.Forms.ComboBox()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Nombre
@@ -76,23 +74,14 @@ Partial Class Buscar
         Me.txt_Nombre.Location = New System.Drawing.Point(168, 65)
         Me.txt_Nombre.Name = "txt_Nombre"
         Me.txt_Nombre.Size = New System.Drawing.Size(361, 33)
-        Me.txt_Nombre.TabIndex = 4
+        Me.txt_Nombre.TabIndex = 0
         '
         'txt_capacidad
         '
         Me.txt_capacidad.Location = New System.Drawing.Point(168, 161)
         Me.txt_capacidad.Name = "txt_capacidad"
         Me.txt_capacidad.Size = New System.Drawing.Size(65, 33)
-        Me.txt_capacidad.TabIndex = 6
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(250, 225)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(38, 37)
-        Me.PictureBox1.TabIndex = 9
-        Me.PictureBox1.TabStop = False
+        Me.txt_capacidad.TabIndex = 2
         '
         'cmb_provincia
         '
@@ -101,7 +90,7 @@ Partial Class Buscar
         Me.cmb_provincia.Location = New System.Drawing.Point(168, 112)
         Me.cmb_provincia.Name = "cmb_provincia"
         Me.cmb_provincia.Size = New System.Drawing.Size(121, 33)
-        Me.cmb_provincia.TabIndex = 10
+        Me.cmb_provincia.TabIndex = 1
         '
         'cmb_tipo
         '
@@ -109,17 +98,28 @@ Partial Class Buscar
         Me.cmb_tipo.Location = New System.Drawing.Point(350, 161)
         Me.cmb_tipo.Name = "cmb_tipo"
         Me.cmb_tipo.Size = New System.Drawing.Size(179, 33)
-        Me.cmb_tipo.TabIndex = 12
+        Me.cmb_tipo.TabIndex = 3
         '
-        'Buscar
+        'Button1
         '
+        Me.Button1.BackgroundImage = Global.EthaziAplicacion.My.Resources.Resources.buscar1
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button1.Location = New System.Drawing.Point(260, 230)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(45, 45)
+        Me.Button1.TabIndex = 10
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'btn_Buscar
+        '
+        Me.AcceptButton = Me.Button1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(587, 281)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.cmb_tipo)
         Me.Controls.Add(Me.cmb_provincia)
-        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.txt_capacidad)
         Me.Controls.Add(Me.txt_Nombre)
         Me.Controls.Add(Me.Label3)
@@ -128,9 +128,8 @@ Partial Class Buscar
         Me.Controls.Add(Me.Nombre)
         Me.Font = New System.Drawing.Font("Goudy Old Style", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(6)
-        Me.Name = "Buscar"
+        Me.Name = "btn_Buscar"
         Me.Text = "Buscar"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -141,7 +140,7 @@ Partial Class Buscar
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents txt_Nombre As System.Windows.Forms.TextBox
     Friend WithEvents txt_capacidad As System.Windows.Forms.TextBox
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents cmb_provincia As System.Windows.Forms.ComboBox
     Friend WithEvents cmb_tipo As System.Windows.Forms.ComboBox
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class

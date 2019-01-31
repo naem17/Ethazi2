@@ -2,7 +2,7 @@
 Public Class SegundaPageInsert
 
     Private Sub btn_Siguiente_Click(sender As Object, e As EventArgs) Handles btn_Siguiente.Click
-        Dim provincia, municipio, codpostal As Boolean
+        Dim municipio, codpostal As Boolean
      
         If cmb_Municipio.Text = "" Then
             PictureBox3.Visible = True
@@ -23,10 +23,6 @@ Public Class SegundaPageInsert
             TerceraPageInsert.Show()
             Me.Hide()
         End If
-
-
-
-
     End Sub
     Dim cont As Integer
     Private Sub cmb_Provincia_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmb_Provincia.SelectedIndexChanged
@@ -34,6 +30,12 @@ Public Class SegundaPageInsert
             cargarCmbMunicipio()
         End If
         cont += 1
+    End Sub
+
+    Private Sub SegundaPageInsert_Disposed(sender As Object, e As EventArgs) Handles Me.Disposed
+        Me.Close()
+        Inicio.Show()
+
     End Sub
 
     Private Sub SegundaPageInsert_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -54,16 +56,8 @@ Public Class SegundaPageInsert
     Private Sub cmb_Municipio_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmb_Municipio.SelectedIndexChanged
 
         If cont > 1 Then
-
-            MsgBox(Me.cmb_Municipio.SelectedItem)
-
             cargarCmbCodpostal()
         End If
         cont += 1
-
-    End Sub
-
-    Private Sub cmb_CodPostal_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmb_CodPostal.SelectedIndexChanged
-
     End Sub
 End Class

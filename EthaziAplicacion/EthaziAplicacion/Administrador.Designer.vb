@@ -61,7 +61,7 @@ Partial Class Administrador
         '
         Me.MenuStrip1.BackColor = System.Drawing.SystemColors.Control
         Me.MenuStrip1.Font = New System.Drawing.Font("Goudy Old Style", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EDITARToolStripMenuItem, Me.InsertarToolStripMenuItem, Me.DeleteToolStripMenuItem, Me.ActulizarBBDDToolStripMenuItem, Me.MAPAToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EDITARToolStripMenuItem, Me.InsertarToolStripMenuItem, Me.DeleteToolStripMenuItem, Me.MAPAToolStripMenuItem, Me.ActulizarBBDDToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(333, 2, 0, 2)
@@ -100,36 +100,42 @@ Partial Class Administrador
         'CerrarSesionToolStripMenuItem
         '
         Me.CerrarSesionToolStripMenuItem.Name = "CerrarSesionToolStripMenuItem"
-        Me.CerrarSesionToolStripMenuItem.Size = New System.Drawing.Size(209, 28)
+        Me.CerrarSesionToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.C), System.Windows.Forms.Keys)
+        Me.CerrarSesionToolStripMenuItem.Size = New System.Drawing.Size(248, 28)
         Me.CerrarSesionToolStripMenuItem.Text = "Cerrar Sesion"
         '
         'EDITARToolStripMenuItem
         '
         Me.EDITARToolStripMenuItem.Name = "EDITARToolStripMenuItem"
+        Me.EDITARToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.E), System.Windows.Forms.Keys)
         Me.EDITARToolStripMenuItem.Size = New System.Drawing.Size(90, 27)
         Me.EDITARToolStripMenuItem.Text = "EDITAR"
         '
         'InsertarToolStripMenuItem
         '
         Me.InsertarToolStripMenuItem.Name = "InsertarToolStripMenuItem"
+        Me.InsertarToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.I), System.Windows.Forms.Keys)
         Me.InsertarToolStripMenuItem.Size = New System.Drawing.Size(112, 27)
         Me.InsertarToolStripMenuItem.Text = "INSERTAR"
         '
         'DeleteToolStripMenuItem
         '
         Me.DeleteToolStripMenuItem.Name = "DeleteToolStripMenuItem"
+        Me.DeleteToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Delete), System.Windows.Forms.Keys)
         Me.DeleteToolStripMenuItem.Size = New System.Drawing.Size(110, 27)
         Me.DeleteToolStripMenuItem.Text = "ELIMINAR"
         '
         'ActulizarBBDDToolStripMenuItem
         '
         Me.ActulizarBBDDToolStripMenuItem.Name = "ActulizarBBDDToolStripMenuItem"
+        Me.ActulizarBBDDToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.A), System.Windows.Forms.Keys)
         Me.ActulizarBBDDToolStripMenuItem.Size = New System.Drawing.Size(194, 27)
         Me.ActulizarBBDDToolStripMenuItem.Text = "ACTUALIZAR BBDD"
         '
         'MAPAToolStripMenuItem
         '
         Me.MAPAToolStripMenuItem.Name = "MAPAToolStripMenuItem"
+        Me.MAPAToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.M), System.Windows.Forms.Keys)
         Me.MAPAToolStripMenuItem.Size = New System.Drawing.Size(74, 27)
         Me.MAPAToolStripMenuItem.Text = "MAPA"
         '

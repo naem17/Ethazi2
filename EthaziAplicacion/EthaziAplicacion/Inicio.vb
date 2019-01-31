@@ -13,29 +13,28 @@ Public Class Inicio
         conectar()
         MD5EncryptPass(Me.txt_password.Text)
         '   sql = "SELECT nombre_usuario,contrasenia from usuarios where perfil='A' or perfil='P'"
-        sql = "SELECT nombre_usuario,contrasenia from usuarios where nombre_usuario=@nombre AND contrasenia=@pass AND perfil='A' or perfil='P'  "
+        sql = "SELECT nombre_usuario,contrasenia,perfil from usuarios where nombre_usuario=@nombre AND contrasenia=@pass"
         Dim cmd1 = New MySqlCommand(sql, conexion)
         Dim dr As MySqlDataReader = Nothing
         Dim respuesta As String = Nothing
         cmd1.Parameters.AddWithValue("@nombre", Me.txt_usuario.Text)
         cmd1.Parameters.AddWithValue("@pass", PasConMD5)
-
         Try
             dr = cmd1.ExecuteReader()
             While dr.Read
-                MsgBox(dr.Item(0))
                 If Me.txt_usuario.Text = dr.Item(0) And PasConMD5 = dr.Item(1) Then
+                    If Not IsDBNull(dr.Item(2)) Or dr.Item(2).Equals("") Then
+                        result = 1
+                    End If
 
-                    result = 1
                 End If
             End While
             If result = 1 Then
                 dr.Close()
-                MsgBox("Administrador ACEPTADO")
                 Me.Hide()
                 Administrador.ShowDialog()
             Else
-                MsgBox("ERROR")
+                MsgBox("Usuario NO ACEPTADO")
                 dr.Close()
             End If
 
@@ -47,7 +46,9 @@ Public Class Inicio
             Me.txt_usuario.Text = ""
             Me.txt_usuario.Focus()
             PictureBox2.Image = My.Resources.ocultar
+            Me.txt_password.PasswordChar = "*"
         End Try
+
         desconectar()
 
     End Sub

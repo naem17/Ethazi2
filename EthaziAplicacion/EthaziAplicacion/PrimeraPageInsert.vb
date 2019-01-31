@@ -33,6 +33,12 @@ Public Class PrimeraPageInsert
 
     End Sub
 
+    Private Sub PrimeraPageInsert_Disposed(sender As Object, e As EventArgs) Handles Me.Disposed
+        Me.Close()
+        Inicio.Show()
+
+    End Sub
+
     Private Sub PrimeraPageInsert_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Inicio.form_center(Me)
         conectar()

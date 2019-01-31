@@ -28,6 +28,12 @@ Public Class Mapa
         ConexionBBDD.desconectar()
     End Sub
 
+    Private Sub Mapa_Disposed(sender As Object, e As EventArgs) Handles Me.Disposed
+        Me.Close()
+        Inicio.Show()
+
+    End Sub
+
     Private Sub Mapa_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         form_center(Me)
         ConexionBBDD.conectar()

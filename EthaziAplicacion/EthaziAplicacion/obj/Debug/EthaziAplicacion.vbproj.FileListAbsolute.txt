@@ -69,7 +69,6 @@ G:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\bin\Debug\EthaziAplicac
 G:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\bin\Debug\EthaziAplicacion.xml
 G:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.vbprojResolveAssemblyReference.cache
 G:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.Administrador.resources
-G:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.Buscar.resources
 G:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.Vista.resources
 G:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.CuartaPageInsert.resources
 G:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.Inicio.resources
@@ -124,3 +123,4 @@ E:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicac
 E:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.vbproj.GenerateResource.Cache
 E:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.Informe.resources
 G:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.Informe.resources
+G:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.btn_Buscar.resources
