@@ -26,6 +26,6 @@
     </asp:GridView>
     <asp:Button ID="Button1" runat="server" BackColor="#006D9C" BorderColor="#006D9C" BorderStyle="Solid" Font-Bold="True" Font-Size="Medium" Font-Underline="True" ForeColor="White" Text="Ver Todos" Width="100%" />
     <br />
-    <asp:Button ID="btn_Excel" runat="server" BackColor="#006D9C" BorderColor="#006D9C" BorderStyle="Solid" Font-Bold="True" Font-Size="Medium" Font-Underline="True" ForeColor="White" Text="Descargar Informe" Width="100%" />
+    <asp:Button ID="btn_Excel" runat="server" BackColor="#006D9C" BorderColor="#006D9C" BorderStyle="Solid" Font-Bold="True" Font-Size="Medium" Font-Underline="True" ForeColor="White" Text="Informe" Width="100%" />
     <br />
     </asp:Content>

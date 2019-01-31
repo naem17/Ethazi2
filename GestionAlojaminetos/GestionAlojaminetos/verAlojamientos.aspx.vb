@@ -84,41 +84,46 @@ Public Class verAlojamientos
     End Sub
 
     Sub descargarInforme(ByVal sql As String)
-        Dim htw As Html32TextWriter
-        Me.GridView1.RenderControl(htw)
+        Response.Redirect("verInforme.aspx")
     End Sub
 
-    Private Sub GenerateXLSXFile(tbl As DataTable)
+    Private Sub GridView1_RowDataBound(sender As Object, e As GridViewRowEventArgs) Handles GridView1.RowDataBound
+        If e.Row.RowType = DataControlRowType.DataRow Then
 
-        Dim excelPackage = New ExcelPackage
-
-        Dim excelWorksheet = excelPackage.Workbook.Worksheets.Add("DemoPage")
-
-        excelWorksheet.Cells("A1").LoadFromDataTable(tbl, True)
-
-        Response.ContentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-        Response.AddHeader("content-disposition", "attachment;  filename=ExcelDemo.xlsx")
-        Dim stream As New MemoryStream(excelPackage.GetAsByteArray())
-
-        Response.OutputStream.Write(stream.ToArray(), 0, stream.ToArray().Length)
-
-        Response.Flush()
-
-        Response.Close()
-
+        End If
     End Sub
 
-    Private Function CreateDataTable() As DataTable
+    'Private Sub GenerateXLSXFile(tbl As DataTable)
 
-        Dim dataTable As New DataTable("DT")
+    '    Dim excelPackage As New ExcelPackage
 
-        Dim cmd As New MySqlCommand(Session("select"), cnn1)
+    '    Dim excelWorksheet = excelPackage.Workbook.Worksheets.Add("DemoPage")
 
-        Dim adaptor As New MySqlDataAdapter
+    '    excelWorksheet.Cells("A1").LoadFromDataTable(tbl, True)
 
-        adaptor.SelectCommand = cmd
-        adaptor.Fill(dataTable)
+    '    Response.ContentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    '    Response.AddHeader("content-disposition", "attachment;  filename=ExcelDemo.xlsx")
+    '    Dim stream As New MemoryStream(excelPackage.GetAsByteArray())
 
-        Return dataTable
-    End Function
+    '    Response.OutputStream.Write(stream.ToArray(), 0, stream.ToArray().Length)
+
+    '    Response.Flush()
+
+    '    Response.Close()
+
+    'End Sub
+
+    'Private Function CreateDataTable() As DataTable
+
+    '    Dim dataTable As New DataTable("DT")
+
+    '    Dim cmd As New MySqlCommand(Session("select"), cnn1)
+
+    '    Dim adaptor As New MySqlDataAdapter
+
+    '    adaptor.SelectCommand = cmd
+    '    adaptor.Fill(dataTable)
+
+    '    Return dataTable
+    'End Function
 End Class
