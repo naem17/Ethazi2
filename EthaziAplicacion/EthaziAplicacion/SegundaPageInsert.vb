@@ -2,8 +2,9 @@
 Public Class SegundaPageInsert
 
     Private Sub btn_Siguiente_Click(sender As Object, e As EventArgs) Handles btn_Siguiente.Click
+
         Dim municipio, codpostal As Boolean
-     
+
         If cmb_Municipio.Text = "" Then
             PictureBox3.Visible = True
             municipio = False
@@ -11,7 +12,6 @@ Public Class SegundaPageInsert
             municipio = True
             PictureBox3.Visible = False
         End If
-        MsgBox(cmb_CodPostal.Text)
         If cmb_CodPostal.Text = "" Then
             codpostal = False
             PictureBox4.Visible = True
@@ -48,7 +48,7 @@ Public Class SegundaPageInsert
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-        Me.Hide()
+        Me.Close()
         PrimeraPageInsert.ShowDialog()
     End Sub
 

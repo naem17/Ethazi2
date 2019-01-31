@@ -27,6 +27,7 @@ Partial Class Mapa
         Me.MenuMapa = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripComboBox1 = New System.Windows.Forms.ToolStripComboBox()
         Me.AtrasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -71,11 +72,20 @@ Partial Class Mapa
         Me.AtrasToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
         Me.AtrasToolStripMenuItem.Text = "Atras"
         '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(783, 8)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
+        Me.ComboBox1.TabIndex = 6
+        '
         'Mapa
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1078, 595)
+        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.WebBrowser1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
@@ -92,4 +102,5 @@ Partial Class Mapa
     Friend WithEvents MenuMapa As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripComboBox1 As System.Windows.Forms.ToolStripComboBox
     Friend WithEvents AtrasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
 End Class

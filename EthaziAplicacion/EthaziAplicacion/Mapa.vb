@@ -7,7 +7,7 @@ Public Class Mapa
 
     Public Sub mostrarAlojamiento(id As String)
         ConexionBBDD.conectar()
-        Dim sql As String = "SELECT COORDENADAS FROM ALOJAMIENTOS WHERE FIRMA = '" & id & "'"
+        Dim sql As String = "SELECT COORDENADAS FROM ALOJAMIENTOS WHERE FIRMA ='" & id & "'"
         Dim cmd As New MySqlCommand(sql, ConexionBBDD.conexion)
         Dim coord As String = ""
 
@@ -29,8 +29,9 @@ Public Class Mapa
     End Sub
 
     Private Sub Mapa_Disposed(sender As Object, e As EventArgs) Handles Me.Disposed
+        'Me.Hide()
         Me.Close()
-        Inicio.Show()
+        Administrador.Show()
 
     End Sub
 
@@ -43,16 +44,10 @@ Public Class Mapa
         Dim dr As MySqlDataReader
         dr = cmd.ExecuteReader
         While dr.Read
-            Me.ToolStripComboBox1.Items.Add(dr.Item(0))
+            Me.ComboBox1.Items.Add(dr.Item(0))
         End While
-
-
-
         ConexionBBDD.desconectar()
     End Sub
-
-
-
     Private Sub ToolStripComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ToolStripComboBox1.SelectedIndexChanged
         ConexionBBDD.conectar()
         Dim coord As String = ""
@@ -78,8 +73,9 @@ Public Class Mapa
     End Sub
 
     Private Sub AtrasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AtrasToolStripMenuItem.Click
-        Me.Close()
-        Administrador.Show()
+        'Me.Hide()
+        'Me.Close()
+        'Administrador.Show()
 
 
     End Sub
@@ -104,5 +100,13 @@ Public Class Mapa
 
         frm.StartPosition = FormStartPosition.Manual
         frm.Location = New Point(x, y)
+    End Sub
+
+    Private Sub ToolStripComboBox1_Click(sender As Object, e As EventArgs) Handles ToolStripComboBox1.Click
+
+    End Sub
+
+    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
+
     End Sub
 End Class

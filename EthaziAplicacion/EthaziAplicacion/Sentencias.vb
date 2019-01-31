@@ -118,12 +118,13 @@ Module Sentencias
 
     End Sub
     Public Function cargarId()
+        
         conectar()
 
         Dim tabla As New DataTable
         Dim cmd1 As New MySqlCommand("", conexion)
         cmd1.CommandText = "SELECT `ID` FROM `RELACION_CP_MUNICIPIOS_PROVINCIAS` WHERE `CODIGO_POSTAL`= @param"
-        cmd1.Parameters.AddWithValue("@param", SegundaPageInsert.cmb_CodPostal.SelectedValue.ToString())
+        cmd1.Parameters.AddWithValue("@param", SegundaPageInsert.cmb_CodPostal.Text)
         Dim dr As MySqlDataReader
         dr = cmd1.ExecuteReader
 
@@ -171,6 +172,7 @@ Module Sentencias
             TerceraPageInsert.cmb_Tipo.Items.Add(texto(x))
             x += 1
         End While
+        MsgBox(TerceraPageInsert.cmb_Tipo.SelectedItem)
         dr2.Close()
         desconectar()
 
@@ -214,7 +216,7 @@ Module Sentencias
         conectar()
 
         Dim tabla As New DataTable
-        sql = "SELECT CATEGORIA FROM CATEGORIAS "
+        sql = "SELECT CODIGO,CATEGORIA FROM CATEGORIAS "
         Dim cmd1 As New MySqlCommand
         cmd1 = New MySqlCommand(sql, conexion)
         adap1 = New MySqlDataAdapter(cmd1)
@@ -223,6 +225,8 @@ Module Sentencias
         adap1.Fill(tabla)
         TerceraPageInsert.cmb_Categorias.DataSource = tabla
         TerceraPageInsert.cmb_Categorias.DisplayMember = "CATEGORIA"
+        TerceraPageInsert.cmb_Categorias.ValueMember = "CODIGO"
+        MsgBox(TerceraPageInsert.cmb_Categorias.SelectedValue.ToString)
         desconectar()
 
 
@@ -231,7 +235,7 @@ Module Sentencias
         ConexionBBDD.conectar()
 
         Try
-            sql = "INSERT INTO alojamientos (FIRMA, NOMBRE, DESCRIPCION_ABREVIADA, DESCRIPCION_ABREVIADA_EUSKERA, DESCRIPCION, DESCRIPCION_EUSKERA, TELEFONO, DIRECCION, "
+            sql = "INSERT INTO ALOJAMIENTOS (FIRMA, NOMBRE, DESCRIPCION_ABREVIADA, DESCRIPCION_ABREVIADA_EUSKERA, DESCRIPCION, DESCRIPCION_EUSKERA, TELEFONO, DIRECCION, "
             sql &= "CALIDAD_ASEGURADA, EMAIL, WEB, CLUB, RESTAURANTE, AUTOCARAVANA, TIENDA, CAPACIDAD, GASTRONOMICO, SURFING, COORDENADAS, "
             sql &= "CODIGO_TIPOS, CODIGO_TIPOS_EUSKERA, CODIGO_CATEGORIAS,ID_RELACIONES) "
 
@@ -256,7 +260,7 @@ Module Sentencias
                 cmd1.Parameters.AddWithValue("@calidad", 0)
             End If
             cmd1.Parameters.AddWithValue("@email", PrimeraPageInsert.txt_Email.Text)
-            cmd1.Parameters.AddWithValue("@web", PrimeraPageInsert.txt_Web.Text)
+            cmd1.Parameters.AddWithValue("@web", "http://" & PrimeraPageInsert.txt_Web.Text)
             If CuartaPageInsert.ckb_Club.Checked Then
                 cmd1.Parameters.AddWithValue("@club", 1)
             Else
@@ -278,7 +282,7 @@ Module Sentencias
             Else
                 cmd1.Parameters.AddWithValue("@tienda", 0)
             End If
-            cmd1.Parameters.AddWithValue("@capacidad", TerceraPageInsert.txt_Capacidad.Text)
+            cmd1.Parameters.AddWithValue("@capacidad", Val(TerceraPageInsert.txt_Capacidad.Text))
             If CuartaPageInsert.ckb_Gastronomico.Checked Then
                 cmd1.Parameters.AddWithValue("@gastronomico", 1)
             Else
@@ -290,9 +294,20 @@ Module Sentencias
                 cmd1.Parameters.AddWithValue("@surfing", 0)
             End If
             cmd1.Parameters.AddWithValue("@coordenadas", SegundaPageInsert.txt_Coordenadas.Text)
-            cmd1.Parameters.AddWithValue("@cod_tipos", TerceraPageInsert.cmb_Tipo.SelectedItem)
-            cmd1.Parameters.AddWithValue("@cod_tipos_eus", TerceraPageInsert.cmb_Tipo.SelectedItem)
-            cmd1.Parameters.AddWithValue("@cod_categoria", TerceraPageInsert.cmb_Categorias.SelectedItem)
+            Dim codTipo As Integer
+            If TerceraPageInsert.cmb_Tipo.SelectedItem = "Albergues/Aterpetxeak" Then
+                codTipo = 1
+            ElseIf TerceraPageInsert.cmb_Tipo.SelectedItem = "Campings/Kanpinak" Then
+                codTipo = 2
+            ElseIf TerceraPageInsert.cmb_Tipo.SelectedItem = "Agroturismos/Nekazaritza-turismoak" Then
+                codTipo = 3
+            ElseIf TerceraPageInsert.cmb_Tipo.SelectedItem = "Casas Rurales/Landetxeak" Then
+                codTipo = 4
+            End If
+            cmd1.Parameters.AddWithValue("@cod_tipos", codTipo)
+            cmd1.Parameters.AddWithValue("@cod_tipos_eus", codTipo)
+
+            cmd1.Parameters.AddWithValue("@cod_categoria", TerceraPageInsert.cmb_Categorias.SelectedValue.ToString)
             cmd1.Parameters.AddWithValue("@id_relaciones", Val(cargarId()))
 
             cmd1.ExecuteNonQuery()

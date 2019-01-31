@@ -8,8 +8,8 @@ Public Class Administrador
     Dim adap1
 
     Private Sub Administrador_Disposed(sender As Object, e As EventArgs) Handles Me.Disposed
-        Me.Close()
-        Inicio.Show()
+        Application.Exit()
+
     End Sub
     Private Sub Administrador_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.MenuStrip1.ForeColor = Drawing.Color.Blue
@@ -34,15 +34,6 @@ Public Class Administrador
         Me.DataGridView1.Columns(7).Width = 250
         Me.DataGridView1.Columns(9).Width = 160
         Me.DataGridView1.Columns(10).Width = 110
-
-
-
-
-
-
-
-
-
         Me.DataGridView1.RowsDefaultCellStyle.Font = New Font("Goudy Old Style", 12)
 
 
@@ -51,8 +42,10 @@ Public Class Administrador
     End Sub
 
     Private Sub InsertarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles InsertarToolStripMenuItem.Click
-        PrimeraPageInsert.Show()
         Me.Hide()
+        ' Me.Close()
+        PrimeraPageInsert.Show()
+
     End Sub
     Private Sub ActulizarBBDDToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ActulizarBBDDToolStripMenuItem.Click
         'sql = "SELECT A.FIRMA, A.NOMBRE,A.EMAIL, T.TIPO AS 'TIPOS', TE.TIPO_EUSKERA AS 'TIPOS EUSKERA', C.CATEGORIA AS 'CATEGORIAS',A.TELEFONO, A.DIRECCION,"
@@ -84,7 +77,7 @@ Public Class Administrador
         'Recorremos todas las columnas de la fila seleccionada en busca de un valor nulo
         firma = DataGridView1.Item(0, mifila).Value
         Vista.datosACargar(firma)
-        Me.Close()
+        Me.Hide()
         Vista.Show()
 
     End Sub
@@ -94,13 +87,13 @@ Public Class Administrador
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-        'Me.Hide()
+
         btn_Buscar.Show()
 
     End Sub
 
     Private Sub MAPAToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MAPAToolStripMenuItem.Click
-        Me.Hide()
+        '  Me.Close()
         Dim mifila As Integer
         Dim firma As String
         mifila = DataGridView1.CurrentRow.Index

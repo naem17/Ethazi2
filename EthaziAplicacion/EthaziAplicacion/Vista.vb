@@ -1,5 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
 Imports System.Drawing
+Imports System.Text.RegularExpressions
 
 Public Class Vista
     Dim hexColor As Color
@@ -106,24 +107,24 @@ Public Class Vista
                 Me.cmb_Tipo.Text = ""
             Else
                 Select Case datos(19)
-                    Case 0
-                        Me.cmb_Tipo.Text = "Albergue"
                     Case 1
-                        Me.cmb_Tipo.Text = "Campings"
+                        Me.cmb_Tipo.Text = "Albergue"
                     Case 2
-                        Me.cmb_Tipo.Text = "Agroturismos"
+                        Me.cmb_Tipo.Text = "Campings"
                     Case 3
+                        Me.cmb_Tipo.Text = "Agroturismos"
+                    Case 4
                         Me.cmb_Tipo.Text = "Casas Rurales"
                 End Select
 
                 Select Case datos(19)
-                    Case 0
-                        Me.cmb_tiposEuskera.Text = "Aterpetxeak"
                     Case 1
-                        Me.cmb_tiposEuskera.Text = "Kanpinak"
+                        Me.cmb_tiposEuskera.Text = "Aterpetxeak"
                     Case 2
-                        Me.cmb_tiposEuskera.Text = "Nekazaritza-turismoak"
+                        Me.cmb_tiposEuskera.Text = "Kanpinak"
                     Case 3
+                        Me.cmb_tiposEuskera.Text = "Nekazaritza-turismoak"
+                    Case 4
                         Me.cmb_tiposEuskera.Text = "Landetxeak"
                 End Select
 
@@ -133,11 +134,11 @@ Public Class Vista
                 Me.cmb_Tipo.Text = ""
             Else
                 Select Case datos(21)
-                    Case 0
-                        Me.cmb_Categoria.Text = "S"
                     Case 1
-                        Me.cmb_Categoria.Text = "T"
+                        Me.cmb_Categoria.Text = "S"
                     Case 2
+                        Me.cmb_Categoria.Text = "T"
+                    Case 3
                         Me.cmb_Categoria.Text = "P"
                 End Select
             End If
@@ -153,13 +154,13 @@ Public Class Vista
         Dim dr As MySqlDataReader
         dr = cmd2.ExecuteReader
         While dr.Read
-            If dr.Item(0) = 0 Then
+            If dr.Item(0) = 1 Then
                 Me.cmb_Tipo.Items.Add("Albergues")
-            ElseIf dr.Item(0) = 1 Then
-                Me.cmb_Tipo.Items.Add("Campings")
             ElseIf dr.Item(0) = 2 Then
-                Me.cmb_Tipo.Items.Add("Agroturismos")
+                Me.cmb_Tipo.Items.Add("Campings")
             ElseIf dr.Item(0) = 3 Then
+                Me.cmb_Tipo.Items.Add("Agroturismos")
+            ElseIf dr.Item(0) = 4 Then
                 Me.cmb_Tipo.Items.Add("Casas Rurales")
             End If
         End While
@@ -171,13 +172,13 @@ Public Class Vista
         Dim dr4 As MySqlDataReader
         dr4 = cmd4.ExecuteReader
         While dr4.Read
-            If dr4.Item(0) = 0 Then
+            If dr4.Item(0) = 1 Then
                 Me.cmb_tiposEuskera.Items.Add("Aterpetxeak")
-            ElseIf dr4.Item(0) = 1 Then
-                Me.cmb_tiposEuskera.Items.Add("Kanpinak")
             ElseIf dr4.Item(0) = 2 Then
-                Me.cmb_tiposEuskera.Items.Add("Nekazaritza-turismoak")
+                Me.cmb_tiposEuskera.Items.Add("Kanpinak")
             ElseIf dr4.Item(0) = 3 Then
+                Me.cmb_tiposEuskera.Items.Add("Nekazaritza-turismoak")
+            ElseIf dr4.Item(0) = 4 Then
                 Me.cmb_tiposEuskera.Items.Add("Landetxeak")
             End If
 
@@ -190,11 +191,11 @@ Public Class Vista
         Dim dr1 As MySqlDataReader
         dr1 = cmd3.ExecuteReader
         While dr1.Read
-            If dr1.Item(0) = 0 Then
+            If dr1.Item(0) = 1 Then
                 Me.cmb_Categoria.Items.Add("S")
-            ElseIf dr1.Item(0) = 1 Then
-                Me.cmb_Categoria.Items.Add("P")
             ElseIf dr1.Item(0) = 2 Then
+                Me.cmb_Categoria.Items.Add("P")
+            ElseIf dr1.Item(0) = 3 Then
                 Me.cmb_Categoria.Items.Add("T")
             End If
         End While
@@ -261,7 +262,12 @@ Public Class Vista
             Me.ckb_Surfing.Enabled = False
             Me.cmb_tiposEuskera.Enabled = False
             guardar = False
-            actualizar()
+            If Not Me.cmb_Municipio.Text = "-Todos-" And Me.cmb_CodPostal.Text = "" Then
+                actualizar()
+            Else
+                MsgBox("Nose puede actualizar municipio y codigo vacio")
+            End If
+
         End If
 
     End Sub
@@ -323,46 +329,45 @@ Public Class Vista
             Else
                 cmd1.Parameters.AddWithValue("@surf", 0)
             End If
-            MsgBox(Me.cmb_Categoria.Text & "--" & Me.cmb_Tipo.Text)
             cmd1.Parameters.AddWithValue("@coordenadas", Me.txt_Coordenadas.Text)
             Select Case Me.cmb_Tipo.Text
                 Case "Albergues"
-                    codTipo = 0
-                Case "Campings"
                     codTipo = 1
-                Case "Agroturismos"
+                Case "Campings"
                     codTipo = 2
-                Case "Casas Rurales"
+                Case "Agroturismos"
                     codTipo = 3
+                Case "Casas Rurales"
+                    codTipo = 4
             End Select
 
             cmd1.Parameters.AddWithValue("@cTipos", codTipo)
             Select Case Me.cmb_Tipo.Text
                 Case "Aterpetxeak"
-                    codTipoEus = 0
-                Case "Kanpinak"
                     codTipoEus = 1
-                Case "Nekazaritza-turismoak"
+                Case "Kanpinak"
                     codTipoEus = 2
-                Case "Landetxeak"
+                Case "Nekazaritza-turismoak"
                     codTipoEus = 3
+                Case "Landetxeak"
+                    codTipoEus = 4
             End Select
             cmd1.Parameters.AddWithValue("@cTiposEus", codTipoEus)
 
 
             Select Case Me.cmb_Categoria.Text
                 Case "S"
-                    codCat = 0
-                Case "P"
                     codCat = 1
-                Case "T"
+                Case "P"
                     codCat = 2
+                Case "T"
+                    codCat = 3
             End Select
             cmd1.Parameters.AddWithValue("@cCategorias", codCat)
             cmd1.Parameters.AddWithValue("@idRelaciones", cargarIdvista())
-            MsgBox(sql)
+
             cmd1.ExecuteNonQuery() ' devulve el numero de filas
-            MsgBox("Modificada")
+
             sql = "SELECT A.FIRMA, A.NOMBRE,A.EMAIL, T.TIPO AS 'TIPOS', TE.TIPO_EUSKERA AS 'TIPOS EUSKERA', C.CATEGORIA AS 'CATEGORIAS'"
             sql &= ",A.TELEFONO, A.DIRECCION,M.MUNICIPIO, P.PROVINCUA AS 'PROVINCIA', R.CODIGO_POSTAL AS 'CODPOSTAL' FROM ALOJAMIENTOS A, RELACION_CP_MUNICIPIOS_PROVINCIAS R, MUNICIPIOS M, PROVINCIAS P,TIPOS T,TIPOS_EUSKERA TE, CATEGORIAS C WHERE A.ID_RELACIONES = R.ID AND R.CODIGO_PROVINCIA = P.CODIGO AND R.INDICE_MUNICIPIO = M.INDICE AND A.CODIGO_TIPOS= T.CODIGO AND A.CODIGO_TIPOS_EUSKERA=TE.CODIGO AND A.CODIGO_CATEGORIAS=C.CODIGO ORDER BY A.NOMBRE"
             Sentencias.cargar(sql)
@@ -378,7 +383,6 @@ Public Class Vista
 
         If editable Then
             datosACargar(id)
-            ' btn_actualizarDato.PerformClick()
         Else
             Administrador.Show()
             Me.Close()
@@ -391,7 +395,7 @@ Public Class Vista
     End Sub
     Private Sub Vista_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.txt_descripcionNOabre.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-        Me.btn_actualizarDato.Text = "Actualizar Dato"
+
         Me.txt_Nombre.Enabled = False
         Me.txt_Telefono.Enabled = False
         Me.txt_Email.Enabled = False
@@ -481,17 +485,24 @@ Public Class Vista
 
 
     Private Sub cmb_Provincia_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmb_Provincia.SelectedIndexChanged
-        cmb_Municipio.Text = "Todos"
+        cmb_Municipio.Text = "-Todos-"
+        cmb_CodPostal.Text = ""
         cargarCmbMunicipioVISTA()
     End Sub
 
     Private Sub cmb_Municipio_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmb_Municipio.SelectedIndexChanged
+        If cmb_Municipio.SelectedIndex = 0 Then
+            cmb_CodPostal.Text = ""
+        End If
         cargarCmbCodpostalVISTA()
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
         Mapa.mostrarAlojamiento(Me.txt_Firma.Text)
         Mapa.ShowDialog()
+
+
     End Sub
     Public Sub mostrarInformeEspecifico(nombre As String)
         Dim oInforme As New CrystalReport2rpt
@@ -509,5 +520,45 @@ Public Class Vista
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         Me.Close()
         Administrador.Show()
+    End Sub
+
+
+    Private Sub txt_Telefono_KeyPress(sender As Object, e As System.Windows.Forms.KeyPressEventArgs) Handles txt_Telefono.KeyPress
+
+        Me.txt_Telefono.MaxLength = 9
+        If (Asc(e.KeyChar) > 65 And Asc(e.KeyChar) < 90) Or (Asc(e.KeyChar) > 97 And Asc(e.KeyChar) < 122) Then
+            e.Handled = True
+            MsgBox("Este campo es solo numerico")
+        Else
+            e.Handled = False
+        End If
+    End Sub
+    Private Function validar_Mail(ByVal sMail As String) As Boolean
+        ' retorna true o false   
+        Return Regex.IsMatch(sMail, _
+                "^([\w-]+\.)*?[\w-]+@[\w-]+\.([\w-]+\.)*?[\w]+$")
+    End Function
+
+    Private Sub txt_Email_KeyPress(sender As Object, e As System.Windows.Forms.KeyPressEventArgs) Handles txt_Email.KeyPress
+        Dim sMail As String
+        Dim mailCorrecto As Boolean
+        sMail = Me.txt_Email.Text
+        If Not validar_Mail(sMail) Or txt_Email.Text = "" Then
+            PictureBox2.Visible = True
+            mailCorrecto = False
+        Else
+            mailCorrecto = True
+            PictureBox2.Visible = False
+        End If
+      
+    End Sub
+
+    Private Sub txt_Capacidad_KeyPress(sender As Object, e As System.Windows.Forms.KeyPressEventArgs) Handles txt_Capacidad.KeyPress
+        If (Asc(e.KeyChar) > 65 And Asc(e.KeyChar) < 90) Or (Asc(e.KeyChar) > 97 And Asc(e.KeyChar) < 122) Then
+            e.Handled = True
+            MsgBox("Este campo es solo numerico")
+        Else
+            e.Handled = False
+        End If
     End Sub
 End Class

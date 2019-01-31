@@ -80,5 +80,8 @@ Public Class btn_Buscar
         sql2 &= " ORDER BY A.NOMBRE"
         '----------------------------------------------------------------------------------------------------------------------
         cargar(sql2)
+        Me.Hide()
+        Administrador.Show()
+
     End Sub
 End Class

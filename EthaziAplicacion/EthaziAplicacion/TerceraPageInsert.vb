@@ -3,6 +3,8 @@
     Dim euskera As Boolean
 
     Private Sub btn_Siguiente_Click(sender As Object, e As EventArgs) Handles btn_Siguiente.Click
+        MsgBox(Me.cmb_Tipo.SelectedItem)
+        MsgBox(cmb_Tipo.Text)
         CuartaPageInsert.Show()
         Me.Hide()
     End Sub
@@ -13,6 +15,8 @@
     End Sub
 
     Private Sub TerceraPageInsert_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.cmb_Categorias.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmb_Tipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Inicio.form_center(Me)
         Me.txt_descripcionAbreEus.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.txt_descripcion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
@@ -22,7 +26,7 @@
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-        Me.Hide()
+        Me.Close()
         SegundaPageInsert.Show()
     End Sub
     Private Sub txt_Capacidad_KeyPress(sender As Object, e As System.Windows.Forms.KeyPressEventArgs) Handles txt_Capacidad.KeyPress
@@ -41,8 +45,8 @@
             Me.lbl_Tipo.Text = "Mota:"
             Me.lbl_Capacidad.Text = "Edukiera:"
             Me.lbl_Categoria.Text = "Kategoriak:"
-            Me.txt_descripcionAbreEus.Visible = True
-            Me.txt_descripcionNoAbreEus.Visible = True
+            Me.txt_descripcionAbreEus.Visible = False
+            Me.txt_descripcionNoAbreEus.Visible = False
             euskera = True
         ElseIf euskera Then
             btn_Euskera.Text = "*Euskera"
@@ -51,8 +55,8 @@
             Me.lbl_Capacidad.Text = "Capacidad:"
             Me.lbl_Tipo.Text = "Tipo:"
             Me.lbl_Categoria.Text = "Categoria:"
-            Me.txt_descripcionAbreEus.Visible = False
-            Me.txt_descripcionNoAbreEus.Visible = False
+            Me.txt_descripcionAbreEus.Visible = True
+            Me.txt_descripcionNoAbreEus.Visible = True
             euskera = False
         End If
     End Sub

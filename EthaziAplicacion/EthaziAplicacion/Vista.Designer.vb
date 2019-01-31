@@ -69,14 +69,17 @@ Partial Class Vista
         Me.btn_reporte = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.cmb_tiposEuskera = New System.Windows.Forms.ComboBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         CType(Me.pb_Restablecer, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'txt_Firma
         '
         Me.txt_Firma.Enabled = False
         Me.txt_Firma.Location = New System.Drawing.Point(389, 27)
+        Me.txt_Firma.MaxLength = 8
         Me.txt_Firma.Name = "txt_Firma"
         Me.txt_Firma.Size = New System.Drawing.Size(235, 33)
         Me.txt_Firma.TabIndex = 26
@@ -84,6 +87,7 @@ Partial Class Vista
         'txt_Direccion
         '
         Me.txt_Direccion.Location = New System.Drawing.Point(126, 159)
+        Me.txt_Direccion.MaxLength = 250
         Me.txt_Direccion.Name = "txt_Direccion"
         Me.txt_Direccion.Size = New System.Drawing.Size(509, 33)
         Me.txt_Direccion.TabIndex = 25
@@ -98,6 +102,7 @@ Partial Class Vista
         'txt_Telefono
         '
         Me.txt_Telefono.Location = New System.Drawing.Point(769, 159)
+        Me.txt_Telefono.MaxLength = 9
         Me.txt_Telefono.Name = "txt_Telefono"
         Me.txt_Telefono.Size = New System.Drawing.Size(191, 33)
         Me.txt_Telefono.TabIndex = 23
@@ -105,6 +110,7 @@ Partial Class Vista
         'txt_descripcionNOabre
         '
         Me.txt_descripcionNOabre.Location = New System.Drawing.Point(37, 552)
+        Me.txt_descripcionNOabre.MaxLength = 1500
         Me.txt_descripcionNOabre.Multiline = True
         Me.txt_descripcionNOabre.Name = "txt_descripcionNOabre"
         Me.txt_descripcionNOabre.Size = New System.Drawing.Size(880, 115)
@@ -113,6 +119,7 @@ Partial Class Vista
         'txt_Nombre
         '
         Me.txt_Nombre.Location = New System.Drawing.Point(127, 92)
+        Me.txt_Nombre.MaxLength = 50
         Me.txt_Nombre.Name = "txt_Nombre"
         Me.txt_Nombre.Size = New System.Drawing.Size(292, 33)
         Me.txt_Nombre.TabIndex = 21
@@ -186,7 +193,7 @@ Partial Class Vista
         Me.btn_actualizarDato.Name = "btn_actualizarDato"
         Me.btn_actualizarDato.Size = New System.Drawing.Size(176, 40)
         Me.btn_actualizarDato.TabIndex = 27
-        Me.btn_actualizarDato.Text = "Editar datos"
+        Me.btn_actualizarDato.Text = "Editar Datos"
         Me.btn_actualizarDato.UseVisualStyleBackColor = True
         '
         'pb_Restablecer
@@ -202,6 +209,7 @@ Partial Class Vista
         'txt_descripcionAbre
         '
         Me.txt_descripcionAbre.Location = New System.Drawing.Point(37, 457)
+        Me.txt_descripcionAbre.MaxLength = 110
         Me.txt_descripcionAbre.Multiline = True
         Me.txt_descripcionAbre.Name = "txt_descripcionAbre"
         Me.txt_descripcionAbre.Size = New System.Drawing.Size(923, 47)
@@ -289,6 +297,7 @@ Partial Class Vista
         'txt_Coordenadas
         '
         Me.txt_Coordenadas.Location = New System.Drawing.Point(172, 291)
+        Me.txt_Coordenadas.MaxLength = 200
         Me.txt_Coordenadas.Name = "txt_Coordenadas"
         Me.txt_Coordenadas.Size = New System.Drawing.Size(184, 33)
         Me.txt_Coordenadas.TabIndex = 47
@@ -296,6 +305,7 @@ Partial Class Vista
         'txt_Capacidad
         '
         Me.txt_Capacidad.Location = New System.Drawing.Point(469, 291)
+        Me.txt_Capacidad.MaxLength = 3
         Me.txt_Capacidad.Name = "txt_Capacidad"
         Me.txt_Capacidad.Size = New System.Drawing.Size(59, 33)
         Me.txt_Capacidad.TabIndex = 48
@@ -389,6 +399,7 @@ Partial Class Vista
         'txt_descripcionAbreEus
         '
         Me.txt_descripcionAbreEus.Location = New System.Drawing.Point(37, 457)
+        Me.txt_descripcionAbreEus.MaxLength = 110
         Me.txt_descripcionAbreEus.Multiline = True
         Me.txt_descripcionAbreEus.Name = "txt_descripcionAbreEus"
         Me.txt_descripcionAbreEus.Size = New System.Drawing.Size(923, 47)
@@ -398,9 +409,10 @@ Partial Class Vista
         'txt_descripcionNoAbreEus
         '
         Me.txt_descripcionNoAbreEus.Location = New System.Drawing.Point(37, 552)
+        Me.txt_descripcionNoAbreEus.MaxLength = 1500
         Me.txt_descripcionNoAbreEus.Multiline = True
         Me.txt_descripcionNoAbreEus.Name = "txt_descripcionNoAbreEus"
-        Me.txt_descripcionNoAbreEus.Size = New System.Drawing.Size(880, 115)
+        Me.txt_descripcionNoAbreEus.Size = New System.Drawing.Size(923, 115)
         Me.txt_descripcionNoAbreEus.TabIndex = 59
         Me.txt_descripcionNoAbreEus.Visible = False
         '
@@ -472,12 +484,25 @@ Partial Class Vista
         Me.cmb_tiposEuskera.Size = New System.Drawing.Size(121, 33)
         Me.cmb_tiposEuskera.TabIndex = 71
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(965, 101)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(16, 16)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 72
+        Me.PictureBox2.TabStop = False
+        Me.PictureBox2.Visible = False
+        '
         'Vista
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1041, 752)
+        Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.cmb_tiposEuskera)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btn_reporte)
@@ -530,6 +555,7 @@ Partial Class Vista
         Me.Text = "CamposInsersion"
         CType(Me.pb_Restablecer, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -580,4 +606,5 @@ Partial Class Vista
     Friend WithEvents btn_reporte As System.Windows.Forms.Button
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents cmb_tiposEuskera As System.Windows.Forms.ComboBox
+    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
 End Class

@@ -51,6 +51,7 @@ Partial Class TerceraPageInsert
         '
         Me.txt_Capacidad.Location = New System.Drawing.Point(624, 71)
         Me.txt_Capacidad.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.txt_Capacidad.MaxLength = 3
         Me.txt_Capacidad.Name = "txt_Capacidad"
         Me.txt_Capacidad.Size = New System.Drawing.Size(92, 30)
         Me.txt_Capacidad.TabIndex = 53
