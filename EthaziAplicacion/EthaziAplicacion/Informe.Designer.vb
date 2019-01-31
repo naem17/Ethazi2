@@ -30,18 +30,20 @@ Partial Class Informe
         '
         'ComboBox1
         '
-        Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox1.Font = New System.Drawing.Font("Goudy Old Style", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(962, 12)
+        Me.ComboBox1.Location = New System.Drawing.Point(932, 19)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(283, 39)
+        Me.ComboBox1.Size = New System.Drawing.Size(283, 29)
         Me.ComboBox1.TabIndex = 1
+        Me.ComboBox1.Text = "-NINGUNA-"
         '
         'btn_back
         '
-        Me.btn_back.Location = New System.Drawing.Point(28, 25)
+        Me.btn_back.Font = New System.Drawing.Font("Goudy Old Style", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_back.Location = New System.Drawing.Point(28, 12)
         Me.btn_back.Name = "btn_back"
-        Me.btn_back.Size = New System.Drawing.Size(75, 23)
+        Me.btn_back.Size = New System.Drawing.Size(75, 36)
         Me.btn_back.TabIndex = 2
         Me.btn_back.Text = "Atrás"
         Me.btn_back.UseVisualStyleBackColor = True

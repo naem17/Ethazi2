@@ -13,7 +13,7 @@ Public Class Inicio
         conectar()
         MD5EncryptPass(Me.txt_password.Text)
         '   sql = "SELECT nombre_usuario,contrasenia from usuarios where perfil='A' or perfil='P'"
-        sql = "SELECT nombre_usuario,contrasenia,perfil from usuarios where nombre_usuario=@nombre AND contrasenia=@pass"
+        sql = "SELECT nombre_usuario,contrasenia,perfil from USUARIOS where nombre_usuario=@nombre AND contrasenia=@pass"
         Dim cmd1 = New MySqlCommand(sql, conexion)
         Dim dr As MySqlDataReader = Nothing
         Dim respuesta As String = Nothing

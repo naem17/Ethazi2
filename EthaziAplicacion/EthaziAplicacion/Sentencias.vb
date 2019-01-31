@@ -12,7 +12,7 @@ Module Sentencias
 
         Dim alojamientos As New ArrayList
         conectar()
-        sql = "Select distinct id_relaciones from alojamientos where id_relaciones IN (select id from relacion_cp_municipios_provincias where codigo_provincia IN (Select codigo from provincias where provincua='" & btn_Buscar.cmb_provincia.SelectedItem & "'))"
+        sql = "SELECT DISTINCT ID_RELACIONES FROM ALOJAMIENTOS WHERE ID_RELACIONES IN (SELECT ID FROM RELACION_CP_MUNICIPIOS_PROVINCIAS WHERE CODIGO_PROVINCIA IN (SELECT CODIGO FROM PROVINCIAS WHERE PROVINCUA='" & btn_Buscar.cmb_provincia.SelectedItem & "'))"
         Dim cmd1 As New MySqlCommand
         cmd1 = New MySqlCommand(sql, conexion)
         Dim dr As MySqlDataReader
@@ -35,8 +35,8 @@ Module Sentencias
         adap1 = New MySqlDataAdapter(cmd1)
         das1.Clear()
 
-        adap1.Fill(das1, "Alojamientos")
-        Administrador.DataGridView1.DataSource = das1.Tables("Alojamientos")
+        adap1.Fill(das1, "ALOJAMIENTOS")
+        Administrador.DataGridView1.DataSource = das1.Tables("ALOJAMIENTOS")
         Administrador.DataGridView1.Columns(0).Width = 150
         Administrador.DataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.Aqua
         desconectar()
@@ -47,7 +47,7 @@ Module Sentencias
 
         Dim tabla As New DataTable
         Dim codigo_muni As Integer
-        sql = "Select indice from municipios where municipio = '" & SegundaPageInsert.cmb_Municipio.SelectedItem & "'"
+        sql = "SELECT INDICE FROM MUNICIPIOS WHERE MUNICIPIO = '" & SegundaPageInsert.cmb_Municipio.SelectedItem & "'"
         Dim dr As MySqlDataReader
         Dim cmd2 As New MySqlCommand(sql, conexion)
         dr = cmd2.ExecuteReader
@@ -55,7 +55,7 @@ Module Sentencias
             codigo_muni = dr.Item(0)
         End While
         dr.Close()
-        sql = "Select CODIGO_POSTAL, INDICE_MUNICIPIO from relacion_cp_municipios_provincias  where INDICE_MUNICIPIO=" & codigo_muni
+        sql = "SELECT CODIGO_POSTAL, INDICE_MUNICIPIO FROM RELACION_CP_MUNICIPIOS_PROVINCIAS WHERE INDICE_MUNICIPIO=" & codigo_muni
         Dim cmd1 As New MySqlCommand(sql, conexion)
         adap1 = New MySqlDataAdapter(cmd1)
         das1.Clear()
@@ -68,7 +68,7 @@ Module Sentencias
     Public Sub cargarCmbProvincia2()
         conectar()
         btn_Buscar.cmb_provincia.Items.Clear()
-        sql = "Select provincua from provincias"
+        sql = "SELECT PROVINCUA FROM PROVINCIAS"
         Dim cmd1 As New MySqlCommand
         cmd1 = New MySqlCommand(sql, conexion)
         Dim dr As MySqlDataReader
@@ -85,7 +85,7 @@ Module Sentencias
         conectar()
 
         Dim tabla As New DataTable
-        sql = "Select codigo,provincua from provincias order by provincua"
+        sql = "SELECT CODIGO,PROVINCUA FROM PROVINCIAS ORDER BY PROVINCUA"
         Dim cmd1 As New MySqlCommand(sql, conexion)
 
         adap1 = New MySqlDataAdapter(cmd1)
@@ -93,8 +93,8 @@ Module Sentencias
 
         adap1.Fill(tabla)
         SegundaPageInsert.cmb_Provincia.DataSource = tabla
-        SegundaPageInsert.cmb_Provincia.DisplayMember = "provincua"
-        SegundaPageInsert.cmb_Provincia.ValueMember = "codigo"
+        SegundaPageInsert.cmb_Provincia.DisplayMember = "PROVINCUA"
+        SegundaPageInsert.cmb_Provincia.ValueMember = "CODIGO"
         desconectar()
 
     End Sub
@@ -103,7 +103,7 @@ Module Sentencias
 
         SegundaPageInsert.cmb_Municipio.Items.Clear()
         Dim tabla As New DataTable
-        sql = "Select municipio from municipios where indice in (Select indice_municipio from relacion_cp_municipios_provincias where codigo_provincia = " & SegundaPageInsert.cmb_Provincia.SelectedValue.ToString & ") order by municipio"
+        sql = "SELECT MUNICIPIO FROM MUNICIPIOS WHERE INDICE IN (SELECT INDICE_MUNICIPIO FROM RELACION_CP_MUNICIPIOS_PROVINCIAS WHERE CODIGO_PROVINCIA = " & SegundaPageInsert.cmb_Provincia.SelectedValue.ToString & ") ORDER BY MUNICIPIO"
 
         Dim cmd1 As New MySqlCommand
         cmd1 = New MySqlCommand(sql, conexion)
@@ -122,7 +122,7 @@ Module Sentencias
 
         Dim tabla As New DataTable
         Dim cmd1 As New MySqlCommand("", conexion)
-        cmd1.CommandText = "Select `id` from `relacion_cp_municipios_provincias` where `codigo_postal`= @param"
+        cmd1.CommandText = "SELECT `ID` FROM `RELACION_CP_MUNICIPIOS_PROVINCIAS` WHERE `CODIGO_POSTAL`= @param"
         cmd1.Parameters.AddWithValue("@param", SegundaPageInsert.cmb_CodPostal.SelectedValue.ToString())
         Dim dr As MySqlDataReader
         dr = cmd1.ExecuteReader
@@ -139,7 +139,7 @@ Module Sentencias
     Public Sub cargarCmbTipo()
         conectar()
 
-        sql = "select distinct tipo from tipos"
+        sql = "SELECT DISTINCT TIPO FROM TIPOS"
 
         Dim cmd1 As New MySqlCommand
         cmd1 = New MySqlCommand(sql, conexion)
@@ -154,7 +154,7 @@ Module Sentencias
         End While
 
         dr.Close()
-        sql = "select distinct tipo_euskera from tipos_euskera"
+        sql = "SELECT DISTINCT TIPO_EUSKERA FROM TIPOS_EUSKERA"
         cmd1.CommandText = sql
         Dim dr2 As MySqlDataReader
         dr2 = cmd1.ExecuteReader
@@ -178,7 +178,7 @@ Module Sentencias
     Public Sub cargarCmbTipo2()
         conectar()
         Dim tabla As New DataTable
-        sql = "Select distinct tipo from tipos"
+        sql = "SELECT DISTINCT TIPO FROM TIPOS"
         Dim cmd1 As New MySqlCommand
         cmd1 = New MySqlCommand(sql, conexion)
         Dim dr As MySqlDataReader
@@ -197,7 +197,7 @@ Module Sentencias
 
         Dim coger As Integer
         conectar()
-        sql = "Select codigo_tipos from alojamientos where codigo_tipos in (Select codigo from tipos where tipo='" & btn_Buscar.cmb_tipo.SelectedItem & "')"
+        sql = "SELECT CODIGO_TIPOS FROM ALOJAMIENTOS WHERE CODIGO_TIPOS IN (SELECT CODIGO FROM TIPOS WHERE TIPO='" & btn_Buscar.cmb_tipo.SelectedItem & "')"
         Dim cmd1 As New MySqlCommand
         cmd1 = New MySqlCommand(sql, conexion)
         Dim dr As MySqlDataReader
@@ -214,7 +214,7 @@ Module Sentencias
         conectar()
 
         Dim tabla As New DataTable
-        sql = "Select categoria from categorias "
+        sql = "SELECT CATEGORIA FROM CATEGORIAS "
         Dim cmd1 As New MySqlCommand
         cmd1 = New MySqlCommand(sql, conexion)
         adap1 = New MySqlDataAdapter(cmd1)
@@ -222,7 +222,7 @@ Module Sentencias
 
         adap1.Fill(tabla)
         TerceraPageInsert.cmb_Categorias.DataSource = tabla
-        TerceraPageInsert.cmb_Categorias.DisplayMember = "categoria"
+        TerceraPageInsert.cmb_Categorias.DisplayMember = "CATEGORIA"
         desconectar()
 
 
@@ -306,7 +306,7 @@ Module Sentencias
     End Sub
     Public Sub eliminar()
         conectar()
-        sql = "DELETE from Alojamientos where firma=@iden"
+        sql = "DELETE FROM ALOJAMIENTOS WHERE FIRMA=@iden"
         'Crear un comando
         Dim cmd1 As New MySqlCommand(sql, conexion)
         Dim miFila As Integer
@@ -338,7 +338,7 @@ Module Sentencias
 
         Vista.cmb_Provincia.Items.Clear()
 
-        sql = "Select provincua from provincias"
+        sql = "SELECT PROVINCUA FROM PROVINCIAS"
         Dim cmd1 As New MySqlCommand
         cmd1 = New MySqlCommand(sql, conexion)
         Dim dr As MySqlDataReader
@@ -358,7 +358,7 @@ Module Sentencias
 
         Vista.cmb_Municipio.Items.Clear()
         Dim tabla As New DataTable
-        sql = "Select distinct municipio from municipios where indice in (Select indice_municipio from relacion_cp_municipios_provincias where codigo_provincia = (SELECT codigo FROM provincias WHERE provincua='" & Vista.cmb_Provincia.SelectedItem.ToString & "'))"
+        sql = "SELECT DISTINCT MUNICIPIO FROM MUNICIPIOS WHERE INDICE IN (SELECT INDICE_MUNICIPIO FROM RELACION_CP_MUNICIPIOS_PROVINCIAS WHERE CODIGO_PROVINCIA = (SELECT CODIGO FROM PROVINCIAS WHERE PROVINCUA='" & Vista.cmb_Provincia.SelectedItem.ToString & "'))"
 
         Dim cmd1 As New MySqlCommand
         cmd1 = New MySqlCommand(sql, conexion)
@@ -379,7 +379,7 @@ Module Sentencias
 
         Dim tabla As New DataTable
         Dim codigo_muni As Integer
-        sql = "Select indice from municipios where municipio = '" & Vista.cmb_Municipio.SelectedItem & "'"
+        sql = "SELECT INDICE FROM MUNICIPIOS WHERE MUNICIPIO = '" & Vista.cmb_Municipio.SelectedItem & "'"
         Dim dr As MySqlDataReader
         Dim cmd2 As New MySqlCommand(sql, conexion)
         dr = cmd2.ExecuteReader
@@ -387,7 +387,7 @@ Module Sentencias
             codigo_muni = dr.Item(0)
         End While
         dr.Close()
-        sql = "Select CODIGO_POSTAL, INDICE_MUNICIPIO from relacion_cp_municipios_provincias  where INDICE_MUNICIPIO=" & codigo_muni
+        sql = "SELECT CODIGO_POSTAL, INDICE_MUNICIPIO FROM RELACION_CP_MUNICIPIOS_PROVINCIAS  WHERE INDICE_MUNICIPIO=" & codigo_muni
         Dim cmd1 As New MySqlCommand(sql, conexion)
         adap1 = New MySqlDataAdapter(cmd1)
         das1.Clear()
@@ -402,7 +402,7 @@ Module Sentencias
         conectar()
 
         Dim provincia As String = ""
-        sql = "Select p.provincua from provincias p, RELACION_CP_MUNICIPIOS_PROVINCIAS r where codigo=codigo_provincia and r.id=" & idRelaciones
+        sql = "SELECT P.PROVINCUA FROM PROVINCIAS P, RELACION_CP_MUNICIPIOS_PROVINCIAS R WHERE CODIGO=CODIGO_PROVINCIA AND R.ID=" & idRelaciones
         Dim cmd1 As New MySqlCommand
         cmd1 = New MySqlCommand(sql, conexion)
         Dim dr As MySqlDataReader
@@ -418,7 +418,7 @@ Module Sentencias
     Public Sub cargarMunicipioIDVISTA()
         conectar()
         Dim municipios As String = ""
-        sql = "Select m.municipio from municipios m, RELACION_CP_MUNICIPIOS_PROVINCIAS r where indice=r.indice_municipio and r.id=" & idRelaciones
+        sql = "SELECT M.MUNICIPIO FROM MUNICIPIOS M, RELACION_CP_MUNICIPIOS_PROVINCIAS R WHERE INDICE=R.INDICE_MUNICIPIO AND R.ID=" & idRelaciones
         Dim cmd1 As New MySqlCommand
         cmd1 = New MySqlCommand(sql, conexion)
         Dim dr As MySqlDataReader
@@ -434,7 +434,7 @@ Module Sentencias
     Public Sub cargarCodPostalIDVISTA()
         conectar()
         Dim codigo As Integer
-        sql = "Select CODIGO_POSTAL FROM RELACION_CP_MUNICIPIOS_PROVINCIAS where id=" & idRelaciones
+        sql = "SELECT CODIGO_POSTAL FROM RELACION_CP_MUNICIPIOS_PROVINCIAS WHERE ID=" & idRelaciones
         Dim cmd1 As New MySqlCommand
         cmd1 = New MySqlCommand(sql, conexion)
         Dim dr As MySqlDataReader
@@ -452,7 +452,7 @@ Module Sentencias
 
         Dim tabla As New DataTable
         Dim cmd1 As New MySqlCommand("", conexion)
-        cmd1.CommandText = "Select id from relacion_cp_municipios_provincias where codigo_postal = @param"
+        cmd1.CommandText = "SELECT ID FROM RELACION_CP_MUNICIPIOS_PROVINCIAS WHERE CODIGO_POSTAL = @param"
         cmd1.Parameters.AddWithValue("@param", Vista.cmb_CodPostal.Text)
         Dim dr As MySqlDataReader
         dr = cmd1.ExecuteReader

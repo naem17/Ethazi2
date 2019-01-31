@@ -19,7 +19,7 @@ Public Class CuartaPageInsert
 
     Private Sub CuartaPageInsert_Disposed(sender As Object, e As EventArgs) Handles Me.Disposed
         Me.Close()
-        Inicio.Show()
+        Administrador.Show()
 
     End Sub
 

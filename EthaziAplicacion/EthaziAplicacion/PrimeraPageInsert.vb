@@ -35,7 +35,7 @@ Public Class PrimeraPageInsert
 
     Private Sub PrimeraPageInsert_Disposed(sender As Object, e As EventArgs) Handles Me.Disposed
         Me.Close()
-        Inicio.Show()
+        Administrador.Show()
 
     End Sub
 

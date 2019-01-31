@@ -19,7 +19,7 @@ Public Class Informe
     Private Sub Informe_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
             conectar()
-            sql = "Select nombre from alojamientos"
+            sql = "SELECT NOMBRE FROM ALOJAMIENTOS"
             Dim cmd1 As New MySqlCommand
             cmd1 = New MySqlCommand(sql, conexion)
             Dim dr As MySqlDataReader

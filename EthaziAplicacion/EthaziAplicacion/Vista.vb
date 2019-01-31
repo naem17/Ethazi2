@@ -18,7 +18,7 @@ Public Class Vista
         id = firma
         conectar()
         Dim sql As String
-        sql = "select * from alojamientos where firma = '" & firma & "'"
+        sql = "SELECT * FROM ALOJAMIENTOS WHERE FIRMA = '" & firma & "'"
         Dim cmd As New MySqlCommand(sql, ConexionBBDD.conexion)
 
         Dim datos As MySqlDataReader
@@ -148,7 +148,7 @@ Public Class Vista
 
         '-----------------------------CARGAR Tipos CMB--------------------------------------
         Dim sql2 As String
-        sql2 = "select codigo from tipos"
+        sql2 = "SELECT CODIGO FROM TIPOS"
         Dim cmd2 As New MySqlCommand(sql2, conexion)
         Dim dr As MySqlDataReader
         dr = cmd2.ExecuteReader
@@ -166,7 +166,7 @@ Public Class Vista
         dr.Close()
         '----------------------------------------------CARGAR TIPOS EUSKERA---------------------
         Dim sql4 As String
-        sql4 = "select codigo from tipos_euskera"
+        sql4 = "SELECT CODIGO FROM TIPOS_EUSKERA"
         Dim cmd4 As New MySqlCommand(sql4, conexion)
         Dim dr4 As MySqlDataReader
         dr4 = cmd4.ExecuteReader
@@ -185,7 +185,7 @@ Public Class Vista
         dr4.Close()
         '-----------------------------CARGAR CATEGORIAS CMB--------------------------------------
         Dim sql3 As String
-        sql3 = "select codigo from categorias"
+        sql3 = "SELECT CODIGO FROM CATEGORIAS"
         Dim cmd3 As New MySqlCommand(sql3, conexion)
         Dim dr1 As MySqlDataReader
         dr1 = cmd3.ExecuteReader
@@ -272,10 +272,10 @@ Public Class Vista
         conectar()
 
         Try
-            sql = "UPDATE alojamientos SET nombre=@nombre, DESCRIPCION_ABREVIADA=@desc_abre,DESCRIPCION_ABREVIADA_EUSKERA=@desc_abre_eus,DESCRIPCION=@desc,DESCRIPCION_EUSKERA=@desc_eus,telefono=@phone,direccion=@address,"
-            sql &= "CALIDAD_ASEGURADA=@calidad,email=@mail,web=@web,club=@club,restaurante=@restaurante,autocaravana=@caravana,tienda=@shop,capacidad=@capacidad,gastronomico=@gastro,surfing=@surf,coordenadas=@coordenadas,"
-            sql &= "codigo_tipos=@cTipos,codigo_tipos_euskera=@cTiposEus,codigo_categorias=@cCategorias,id_relaciones=@idRelaciones"
-            sql &= " where firma=@firma"
+            sql = "UPDATE ALOJAMIENTOS SET NOMBRE=@nombre, DESCRIPCION_ABREVIADA=@desc_abre,DESCRIPCION_ABREVIADA_EUSKERA=@desc_abre_eus,DESCRIPCION=@desc,DESCRIPCION_EUSKERA=@desc_eus,TELEFONO=@phone,DIRECCION=@address,"
+            sql &= "CALIDAD_ASEGURADA=@calidad,EMAIL=@mail,WEB=@web,CLUB=@club,RESTAURANTE=@restaurante,AUTOCARAVANA=@caravana,TIENDA=@shop,CAPACIDAD=@capacidad,GASTRONOMICO=@gastro,SURFING=@surf,COORDENADAS=@coordenadas,"
+            sql &= "CODIGO_TIPOS=@cTipos,CODIGO_TIPOS_EUSKERA=@cTiposEus,CODIGO_CATEGORIAS=@cCategorias,ID_RELACIONES=@idRelaciones"
+            sql &= " where FIRMA=@firma"
             Dim cmd1 = New MySqlCommand(sql, conexion)
             cmd1.Parameters.AddWithValue("@firma", Me.txt_Firma.Text)
             cmd1.Parameters.AddWithValue("@nombre", Me.txt_Nombre.Text)
@@ -481,15 +481,11 @@ Public Class Vista
 
 
     Private Sub cmb_Provincia_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmb_Provincia.SelectedIndexChanged
-        ' desconectar()
-
         cmb_Municipio.Text = "Todos"
         cargarCmbMunicipioVISTA()
     End Sub
 
     Private Sub cmb_Municipio_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmb_Municipio.SelectedIndexChanged
-        ' desconectar()
-
         cargarCmbCodpostalVISTA()
     End Sub
 
@@ -500,7 +496,7 @@ Public Class Vista
     Public Sub mostrarInformeEspecifico(nombre As String)
         Dim oInforme As New CrystalReport2rpt
         ' establecer la fórmula de selección de registros
-        oInforme.RecordSelectionFormula = "{Alojamientos1.nombre} = '" & nombre & "'"
+        oInforme.RecordSelectionFormula = "{ALOJAMIENTOS1.NOMBRE} = '" & nombre & "'"
         Informe.CrystalReportViewer1.ReportSource = oInforme
     End Sub
 

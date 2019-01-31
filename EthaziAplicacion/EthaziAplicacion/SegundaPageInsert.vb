@@ -33,9 +33,8 @@ Public Class SegundaPageInsert
     End Sub
 
     Private Sub SegundaPageInsert_Disposed(sender As Object, e As EventArgs) Handles Me.Disposed
-        Me.Close()
-        Inicio.Show()
-
+         Me.Close()
+        Administrador.Show()
     End Sub
 
     Private Sub SegundaPageInsert_Load(sender As Object, e As EventArgs) Handles MyBase.Load

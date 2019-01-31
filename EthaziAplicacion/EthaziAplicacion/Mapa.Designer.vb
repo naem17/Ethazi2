@@ -33,10 +33,10 @@ Partial Class Mapa
         'WebBrowser1
         '
         Me.WebBrowser1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.WebBrowser1.Location = New System.Drawing.Point(0, 24)
+        Me.WebBrowser1.Location = New System.Drawing.Point(0, 29)
         Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
         Me.WebBrowser1.Name = "WebBrowser1"
-        Me.WebBrowser1.Size = New System.Drawing.Size(1078, 571)
+        Me.WebBrowser1.Size = New System.Drawing.Size(1078, 566)
         Me.WebBrowser1.TabIndex = 0
         '
         'MenuStrip1
@@ -45,27 +45,30 @@ Partial Class Mapa
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuMapa})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1078, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1078, 29)
         Me.MenuStrip1.TabIndex = 5
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'MenuMapa
         '
         Me.MenuMapa.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripComboBox1, Me.AtrasToolStripMenuItem})
+        Me.MenuMapa.Font = New System.Drawing.Font("Goudy Old Style", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MenuMapa.Name = "MenuMapa"
-        Me.MenuMapa.Size = New System.Drawing.Size(69, 20)
+        Me.MenuMapa.Size = New System.Drawing.Size(82, 25)
         Me.MenuMapa.Text = "Opciones"
         '
         'ToolStripComboBox1
         '
+        Me.ToolStripComboBox1.Font = New System.Drawing.Font("Goudy Old Style", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ToolStripComboBox1.Name = "ToolStripComboBox1"
-        Me.ToolStripComboBox1.Size = New System.Drawing.Size(121, 23)
+        Me.ToolStripComboBox1.Size = New System.Drawing.Size(121, 29)
         Me.ToolStripComboBox1.Text = "-Ninguna Seleccionanda-"
         '
         'AtrasToolStripMenuItem
         '
+        Me.AtrasToolStripMenuItem.Font = New System.Drawing.Font("Goudy Old Style", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AtrasToolStripMenuItem.Name = "AtrasToolStripMenuItem"
-        Me.AtrasToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
+        Me.AtrasToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
         Me.AtrasToolStripMenuItem.Text = "Atras"
         '
         'Mapa

@@ -7,7 +7,7 @@ Public Class Mapa
 
     Public Sub mostrarAlojamiento(id As String)
         ConexionBBDD.conectar()
-        Dim sql As String = "select coordenadas from Alojamientos where firma = '" & id & "'"
+        Dim sql As String = "SELECT COORDENADAS FROM ALOJAMIENTOS WHERE FIRMA = '" & id & "'"
         Dim cmd As New MySqlCommand(sql, ConexionBBDD.conexion)
         Dim coord As String = ""
 
@@ -38,7 +38,7 @@ Public Class Mapa
         form_center(Me)
         ConexionBBDD.conectar()
         Dim sql As String
-        sql = "SELECT NOMBRE FROM alojamientos "
+        sql = "SELECT NOMBRE FROM ALOJAMIENTOS "
         Dim cmd As New MySqlCommand(sql, ConexionBBDD.conexion)
         Dim dr As MySqlDataReader
         dr = cmd.ExecuteReader
@@ -57,7 +57,7 @@ Public Class Mapa
         ConexionBBDD.conectar()
         Dim coord As String = ""
         Dim sql As String
-        sql = "select coordenadas from alojamientos where nombre ='" & Me.ToolStripComboBox1.SelectedItem & "'"
+        sql = "SELECT COORDENADAS FROM ALOJAMIENTOS WHERE NOMBRE ='" & Me.ToolStripComboBox1.SelectedItem & "'"
         Dim cmd As New MySqlCommand(sql, ConexionBBDD.conexion)
         Dim dr As MySqlDataReader
         dr = cmd.ExecuteReader
