@@ -60,7 +60,6 @@ Public Class btn_Buscar
             sql2 = sql2.Substring(0, sql2.Length - 1)
             sql2 &= ")"
             If Me.txt_capacidad.Text <> "" Then
-                MsgBox("He entrado en el if de capacidad")
                 sql2 &= " AND capacidad >=" & Me.txt_capacidad.Text
             End If
             If Me.cmb_tipo.Text <> "-Todas-" Then
@@ -70,7 +69,6 @@ Public Class btn_Buscar
             sql2 &= "AND nombre LIKE '" & Me.txt_Nombre.Text & "%'"
 
             If Me.txt_capacidad.Text <> "" Then
-                MsgBox("He entrado en el if de capacidad2")
                 sql2 &= " AND capacidad >=" & Me.txt_capacidad.Text
             End If
             If Me.cmb_tipo.Text <> "-Todas-" Then

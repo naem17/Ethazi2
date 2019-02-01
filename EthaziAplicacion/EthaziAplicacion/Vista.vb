@@ -13,7 +13,7 @@ Public Class Vista
     Public idRelaciones As Integer
     Dim prueba As String
     Dim codigo_muni As Integer
-
+    Dim tipo, cat, tipoEus As String
     Private editable As Boolean = True
     Public Sub datosACargar(firma As String)
         id = firma
@@ -106,9 +106,10 @@ Public Class Vista
             If IsDBNull(datos(19)) Then
                 Me.cmb_Tipo.Text = ""
             Else
+                tipo = datos(19)
                 Select Case datos(19)
                     Case 1
-                        Me.cmb_Tipo.Text = "Albergue"
+                        Me.cmb_Tipo.Text = "Albergues"
                     Case 2
                         Me.cmb_Tipo.Text = "Campings"
                     Case 3
@@ -116,7 +117,7 @@ Public Class Vista
                     Case 4
                         Me.cmb_Tipo.Text = "Casas Rurales"
                 End Select
-
+                tipoEus = datos(19)
                 Select Case datos(19)
                     Case 1
                         Me.cmb_tiposEuskera.Text = "Aterpetxeak"
@@ -133,6 +134,7 @@ Public Class Vista
             If IsDBNull(datos(21)) Then
                 Me.cmb_Tipo.Text = ""
             Else
+                cat = datos(21)
                 Select Case datos(21)
                     Case 1
                         Me.cmb_Categoria.Text = "S"
@@ -233,8 +235,6 @@ Public Class Vista
             Me.cmb_tiposEuskera.Enabled = True
             cargarCmbProvinciaVISTA()
             guardar = True
-
-
         ElseIf guardar Then
             Me.btn_actualizarDato.Text = "Editar Datos"
             Me.txt_Nombre.Enabled = False
@@ -262,7 +262,9 @@ Public Class Vista
             Me.ckb_Surfing.Enabled = False
             Me.cmb_tiposEuskera.Enabled = False
             guardar = False
-            If Not Me.cmb_Municipio.Text = "-Todos-" And Me.cmb_CodPostal.Text = "" Then
+           
+            
+            If Not Me.cmb_Municipio.Text = "-Todos-" And Not Me.cmb_CodPostal.Text = "" Then
                 actualizar()
             Else
                 MsgBox("Nose puede actualizar municipio y codigo vacio")
@@ -380,7 +382,6 @@ Public Class Vista
 
     End Sub
     Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles pb_Restablecer.Click
-
         If editable Then
             datosACargar(id)
         Else
@@ -389,13 +390,11 @@ Public Class Vista
         End If
 
     End Sub
-
     Private Sub Vista_Disposed(sender As Object, e As EventArgs) Handles Me.Disposed
         Administrador.Show()
     End Sub
     Private Sub Vista_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.txt_descripcionNOabre.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-
         Me.txt_Nombre.Enabled = False
         Me.txt_Telefono.Enabled = False
         Me.txt_Email.Enabled = False
@@ -425,6 +424,41 @@ Public Class Vista
         cargarProvinciaIdVISTA()
         cargarMunicipioIDVISTA()
         cargarCodPostalIDVISTA()
+        'Me.cmb_Categoria.SelectedIndex = 0
+        Select Case tipo
+            Case 1
+                Me.cmb_Tipo.Text = "Albergues"
+            Case 2
+                Me.cmb_Tipo.Text = "Campings"
+            Case 3
+                Me.cmb_Tipo.Text = "Agroturismos"
+            Case 4
+                Me.cmb_Tipo.Text = "Casas Rurales"
+        End Select
+        Me.cmb_Tipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Select Case tipoEus
+            Case 1
+                Me.cmb_tiposEuskera.Text = "Aterpetxeak"
+            Case 2
+                Me.cmb_tiposEuskera.Text = "Kanpinak"
+            Case 3
+                Me.cmb_tiposEuskera.Text = "Nekazaritza-turismoak"
+            Case 4
+                Me.cmb_tiposEuskera.Text = "Landetxeak"
+        End Select
+        Me.cmb_tiposEuskera.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Select Case cat
+            Case 1
+                Me.cmb_Categoria.Text = "S"
+            Case 2
+                Me.cmb_Categoria.Text = "T"
+            Case 3
+                Me.cmb_Categoria.Text = "P"
+        End Select
+
+        Me.cmb_Categoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+
+
     End Sub
     Private Sub btn_euskera_Click(sender As Object, e As EventArgs) Handles btn_euskera.Click
         If Not euskera Then
@@ -482,21 +516,20 @@ Public Class Vista
             euskera = False
         End If
     End Sub
-
-
     Private Sub cmb_Provincia_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmb_Provincia.SelectedIndexChanged
+        Me.cmb_Provincia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmb_Municipio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmb_CodPostal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         cmb_Municipio.Text = "-Todos-"
         cmb_CodPostal.Text = ""
         cargarCmbMunicipioVISTA()
     End Sub
-
     Private Sub cmb_Municipio_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmb_Municipio.SelectedIndexChanged
         If cmb_Municipio.SelectedIndex = 0 Then
             cmb_CodPostal.Text = ""
         End If
         cargarCmbCodpostalVISTA()
     End Sub
-
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
         Mapa.mostrarAlojamiento(Me.txt_Firma.Text)
@@ -510,19 +543,15 @@ Public Class Vista
         oInforme.RecordSelectionFormula = "{ALOJAMIENTOS1.NOMBRE} = '" & nombre & "'"
         Informe.CrystalReportViewer1.ReportSource = oInforme
     End Sub
-
     Private Sub btn_reporte_Click(sender As Object, e As EventArgs) Handles btn_reporte.Click
         Me.mostrarInformeEspecifico(Me.txt_Nombre.Text)
         Informe.informeEspecifico = True
         Informe.ShowDialog()
     End Sub
-
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         Me.Close()
         Administrador.Show()
     End Sub
-
-
     Private Sub txt_Telefono_KeyPress(sender As Object, e As System.Windows.Forms.KeyPressEventArgs) Handles txt_Telefono.KeyPress
 
         Me.txt_Telefono.MaxLength = 9
@@ -538,7 +567,6 @@ Public Class Vista
         Return Regex.IsMatch(sMail, _
                 "^([\w-]+\.)*?[\w-]+@[\w-]+\.([\w-]+\.)*?[\w]+$")
     End Function
-
     Private Sub txt_Email_KeyPress(sender As Object, e As System.Windows.Forms.KeyPressEventArgs) Handles txt_Email.KeyPress
         Dim sMail As String
         Dim mailCorrecto As Boolean
@@ -552,7 +580,6 @@ Public Class Vista
         End If
       
     End Sub
-
     Private Sub txt_Capacidad_KeyPress(sender As Object, e As System.Windows.Forms.KeyPressEventArgs) Handles txt_Capacidad.KeyPress
         If (Asc(e.KeyChar) > 65 And Asc(e.KeyChar) < 90) Or (Asc(e.KeyChar) > 97 And Asc(e.KeyChar) < 122) Then
             e.Handled = True
@@ -561,4 +588,45 @@ Public Class Vista
             e.Handled = False
         End If
     End Sub
+    Private Sub btn_eliminar_Click(sender As Object, e As EventArgs) Handles btn_eliminar.Click
+        eliminar(Me.txt_Firma.Text)
+        Me.Close()
+
+        sql = "SELECT A.FIRMA, A.NOMBRE,A.EMAIL, T.TIPO AS 'TIPOS', TE.TIPO_EUSKERA AS 'TIPOS EUSKERA', C.CATEGORIA AS 'CATEGORIAS'"
+        sql &= ",A.TELEFONO, A.DIRECCION,M.MUNICIPIO, P.PROVINCUA AS 'PROVINCIA', R.CODIGO_POSTAL AS 'CODPOSTAL' FROM ALOJAMIENTOS A, RELACION_CP_MUNICIPIOS_PROVINCIAS R, MUNICIPIOS M, PROVINCIAS P,TIPOS T,TIPOS_EUSKERA TE, CATEGORIAS C WHERE A.ID_RELACIONES = R.ID AND R.CODIGO_PROVINCIA = P.CODIGO AND R.INDICE_MUNICIPIO = M.INDICE AND A.CODIGO_TIPOS= T.CODIGO AND A.CODIGO_TIPOS_EUSKERA=TE.CODIGO AND A.CODIGO_CATEGORIAS=C.CODIGO ORDER BY A.NOMBRE"
+        Sentencias.cargar(sql)
+        Administrador.Show()
+
+    End Sub
+    Private Sub txt_Web_TextChanged(sender As Object, e As EventArgs) Handles txt_Web.TextChanged
+        Dim sWeb As String
+        Dim webCorrecto As Boolean
+        sWeb = Me.txt_Web.Text
+        If Not validar_Web(sWeb) Then
+            PictureBox3.Visible = True
+            webCorrecto = False
+        Else
+            PictureBox3.Visible = False
+            webCorrecto = True
+        End If
+    End Sub
+    Private Function validar_Web(ByVal sWeb As String) As Boolean
+        Dim valido As Boolean
+        ' retorna true o false   
+        Dim web() As String
+        If txt_Web.Text.Contains(".") Then
+            web = Split(txt_Web.Text, ".")
+            If web(1) <> "" Then
+                If web.Length > 1 Then
+                    valido = True
+                Else
+                    valido = False
+                End If
+
+            End If
+        End If
+
+
+        Return valido
+    End Function
 End Class

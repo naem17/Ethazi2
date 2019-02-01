@@ -172,7 +172,6 @@ Module Sentencias
             TerceraPageInsert.cmb_Tipo.Items.Add(texto(x))
             x += 1
         End While
-        MsgBox(TerceraPageInsert.cmb_Tipo.SelectedItem)
         dr2.Close()
         desconectar()
 
@@ -226,7 +225,6 @@ Module Sentencias
         TerceraPageInsert.cmb_Categorias.DataSource = tabla
         TerceraPageInsert.cmb_Categorias.DisplayMember = "CATEGORIA"
         TerceraPageInsert.cmb_Categorias.ValueMember = "CODIGO"
-        MsgBox(TerceraPageInsert.cmb_Categorias.SelectedValue.ToString)
         desconectar()
 
 
@@ -319,15 +317,15 @@ Module Sentencias
         End Try
         ConexionBBDD.desconectar()
     End Sub
-    Public Sub eliminar()
+    Public Sub eliminar(Valor As String)
         conectar()
         sql = "DELETE FROM ALOJAMIENTOS WHERE FIRMA=@iden"
         'Crear un comando
         Dim cmd1 As New MySqlCommand(sql, conexion)
-        Dim miFila As Integer
+        ' Dim miFila As Integer
         Dim firma As String
-        miFila = Administrador.DataGridView1.CurrentRow.Index
-        firma = Administrador.DataGridView1.Item(0, miFila).Value
+        ' miFila = Administrador.DataGridView1.CurrentRow.Index
+        firma = Valor
 
         cmd1.Parameters.AddWithValue("@iden", firma)
         Dim result As Integer

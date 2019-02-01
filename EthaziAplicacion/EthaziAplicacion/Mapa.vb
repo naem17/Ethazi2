@@ -36,6 +36,7 @@ Public Class Mapa
     End Sub
 
     Private Sub Mapa_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.MenuStrip1.Height = 50
         form_center(Me)
         ConexionBBDD.conectar()
         Dim sql As String
@@ -44,11 +45,11 @@ Public Class Mapa
         Dim dr As MySqlDataReader
         dr = cmd.ExecuteReader
         While dr.Read
-            Me.ComboBox1.Items.Add(dr.Item(0))
+            Me.ToolStripComboBox1.Items.Add(dr.Item(0))
         End While
         ConexionBBDD.desconectar()
     End Sub
-    Private Sub ToolStripComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ToolStripComboBox1.SelectedIndexChanged
+    Private Sub ToolStripComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs)
         ConexionBBDD.conectar()
         Dim coord As String = ""
         Dim sql As String
@@ -72,13 +73,6 @@ Public Class Mapa
         ConexionBBDD.desconectar()
     End Sub
 
-    Private Sub AtrasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AtrasToolStripMenuItem.Click
-        'Me.Hide()
-        'Me.Close()
-        'Administrador.Show()
-
-
-    End Sub
     Public Sub form_center(ByVal frm As Form, Optional ByVal parent As Form = Nothing)
         'Esta funcion es para que el formulario aparezca en el centro de la pantalla
         Dim x As Integer
@@ -102,11 +96,28 @@ Public Class Mapa
         frm.Location = New Point(x, y)
     End Sub
 
+
     Private Sub ToolStripComboBox1_Click(sender As Object, e As EventArgs) Handles ToolStripComboBox1.Click
+        ConexionBBDD.conectar()
+        Dim coord As String = ""
+        Dim sql As String
+        sql = "SELECT COORDENADAS FROM ALOJAMIENTOS WHERE NOMBRE ='" & Me.ToolStripComboBox1.SelectedItem & "'"
+        Dim cmd As New MySqlCommand(sql, ConexionBBDD.conexion)
+        Dim dr As MySqlDataReader
+        dr = cmd.ExecuteReader
+        While dr.Read
 
-    End Sub
+            coord = dr.Item(0)
+        End While
 
-    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
-
+        'Creamos variable para almacenar la url
+        Dim urlMaps As String
+        'Concatenamos la dirección con el Textbox añadimos la última sentencia para indicar que sólo se muestre el mapa
+        'urlMaps = "http://maps.google.es/maps?q=" & txtdireccion.Text & "&output=embed" 'Creamos una variable direccion para que el WebBrowser lo pueda abrir puesto que no puede abrir directamente un string
+        urlMaps = "http://maps.google.es/maps?q=" & coord
+        Dim direccion As New Uri(urlMaps)
+        'ASignamos como URL la direccion
+        WebBrowser1.Url = direccion
+        ConexionBBDD.desconectar()
     End Sub
 End Class

@@ -3,8 +3,7 @@
     Dim euskera As Boolean
 
     Private Sub btn_Siguiente_Click(sender As Object, e As EventArgs) Handles btn_Siguiente.Click
-        MsgBox(Me.cmb_Tipo.SelectedItem)
-        MsgBox(cmb_Tipo.Text)
+
         CuartaPageInsert.Show()
         Me.Hide()
     End Sub

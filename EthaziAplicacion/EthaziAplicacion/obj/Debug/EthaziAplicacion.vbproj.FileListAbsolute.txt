@@ -110,7 +110,6 @@ E:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\bin\Debug\EthaziAplicac
 E:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\bin\Debug\EthaziAplicacion.xml
 E:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.vbprojResolveAssemblyReference.cache
 E:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.Administrador.resources
-E:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.Buscar.resources
 E:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.Mapa.resources
 E:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.Vista.resources
 E:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.CuartaPageInsert.resources
@@ -128,3 +127,8 @@ G:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\bin\Debug\EthaziAplicac
 G:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\bin\Debug\EthaziAplicacion.application
 G:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.exe.manifest
 G:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.application
+E:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\bin\Debug\EthaziAplicacion.exe.manifest
+E:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\bin\Debug\EthaziAplicacion.application
+E:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.btn_Buscar.resources
+E:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.exe.manifest
+E:\GitHubClone\Ethazi2\EthaziAplicacion\EthaziAplicacion\obj\Debug\EthaziAplicacion.application

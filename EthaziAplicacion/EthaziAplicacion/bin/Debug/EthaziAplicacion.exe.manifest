@@ -152,14 +152,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EthaziAplicacion.exe" size="921088">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EthaziAplicacion.exe" size="922624">
       <assemblyIdentity name="EthaziAplicacion" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ob0MKZzm03CqtdUNtbWbDn5Zmto0c0ZzI+8JtYDOqVU=</dsig:DigestValue>
+        <dsig:DigestValue>J1BKk9xV4v1vojj3nfsz/muN5K9MC9hhJcfxCRXBvj4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

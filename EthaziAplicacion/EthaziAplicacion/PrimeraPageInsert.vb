@@ -61,7 +61,6 @@ Public Class PrimeraPageInsert
         Inicio.form_center(Me)
         conectar()
         Me.txt_Telefono.MaxLength = 9
-
         PictureBox1.Visible = False
         PictureBox2.Visible = False
     End Sub
@@ -81,7 +80,7 @@ Public Class PrimeraPageInsert
         Dim valido As Boolean
         ' retorna true o false   
         Dim web() As String
-        If txt_Web.Text.Length Then
+        If txt_Web.Text.Contains(".") Then
             web = Split(txt_Web.Text, ".")
             If web(1) <> "" Then
                 If web.Length > 1 Then

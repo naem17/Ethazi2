@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="EthaziAplicacion.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="EthaziAplicacion.exe" version="1.0.0.1" publicKeyToken="3e1e98310dbf0535" language="neutral" processorArchitecture="msil" type="win32" />
   <application />
   <entryPoint>
     <assemblyIdentity name="EthaziAplicacion" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -152,14 +152,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EthaziAplicacion.exe" size="923648">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EthaziAplicacion.exe" size="922624">
       <assemblyIdentity name="EthaziAplicacion" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>pJYMPRmUPLKBcwLzUBrExpkIpKFvU9usP4xxmc5+YBg=</dsig:DigestValue>
+        <dsig:DigestValue>J1BKk9xV4v1vojj3nfsz/muN5K9MC9hhJcfxCRXBvj4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -253,4 +253,4 @@
       <dsig:DigestValue>BmWjdjs1vw8Ph3BOM2i5MmUmt0M2FJPmpo+QDqssZ7s=</dsig:DigestValue>
     </hash>
   </file>
-</asmv1:assembly>
+<publisherIdentity name="CN=HZ327426\admin1" issuerKeyHash="2bbc804db1ea994c12620b1b253009ee8b2ec0d5" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>f0ilFmEuX8Xnf/8BP3zuY4xh1auJtS9Nu9oADyOs15U=</DigestValue></Reference></SignedInfo><SignatureValue>QAZBbYs2kWUxRT2BdwStjZGilDy9dbEGG0iQ7jkA/ldrAKDrXmUXVHLTXY1yER6Cmpfs8kKC1U96inla/+8vDWG+oMNXpxBQah6I7YjlCsU3ia5OH2+AS8R+jZcH0hAaDeMNBdjzFCW3NDzBgHwx18oyFXd2eiK5MHqlH+hfhXQ=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>p/+R5qDrhay2h5vP2DJtfjRyc+mtLX6UeIX6DmEe+2vjkDHPyqBTYzeXV3s7fxT/ZUocyMuBteFbJwx/N7FfhhEektL6dMoxehGk84UhoqtGnuiphXUcPWr+SxAhHmtdtT3KSRrT/8nOEPflVMccKtn8PZzHH7Vj9M4Kw0RBN2E=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="95d7ac230f00dabb4d2fb589abd5618c63ee7c3f01ff7fe7c55f2e6116a5487f" Description="" Url=""><as:assemblyIdentity name="EthaziAplicacion.exe" version="1.0.0.1" publicKeyToken="3e1e98310dbf0535" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=HZ327426\admin1</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>xMFQlKLyPOdaMOhqiah6oibATS4Z47Iiqvb2E14xxnE=</DigestValue></Reference></SignedInfo><SignatureValue>JLYWoofVA+KO0pnxBZnxCIGwlB7iyJHt8clWgsieq9SzJM39eSz8vqb6LYsi7huBaEfyAPTPepyjS4TzlwX9OJ2XWkqUwX1hky6GKofT6Isxc2ifId3K1LP5ImRsWCKy++Qtj/dnK0D4dYZ4eyrmfxNkr3SgP77FR4SvzeTqFqU=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>p/+R5qDrhay2h5vP2DJtfjRyc+mtLX6UeIX6DmEe+2vjkDHPyqBTYzeXV3s7fxT/ZUocyMuBteFbJwx/N7FfhhEektL6dMoxehGk84UhoqtGnuiphXUcPWr+SxAhHmtdtT3KSRrT/8nOEPflVMccKtn8PZzHH7Vj9M4Kw0RBN2E=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB1TCCAT6gAwIBAgIQLbLSEs1BBa5EzHQzGsREjjANBgkqhkiG9w0BAQsFADApMScwJQYDVQQDHh4ASABaADMAMgA3ADQAMgA2AFwAYQBkAG0AaQBuADEwHhcNMTkwMTMxMDkxODQ4WhcNMjAwMTMxMTUxODQ4WjApMScwJQYDVQQDHh4ASABaADMAMgA3ADQAMgA2AFwAYQBkAG0AaQBuADEwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKf/keag64Wstoebz9gybX40cnPprS1+lHiF+g5hHvtr45Axz8qgU2M3l1d7O38U/2VKHMjLgbXhWycMfzexX4YRHpLS+nTKMXoRpPOFIaKrRp7oqYV1HD1q/ksQIR5rXbU9ykka0//JzhD35VTHHCrZ/D2cxx+1Y/TOCsNEQTdhAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAAwgHu+r/rlvO22cNYxG6O/YwwjgyIwajQx91EUecWT0Tz8tSctTG0vkeZljGWXJt4Dy9E+xhNet3tnJ6HHF4A6XggdgGHXaugZ70KLeTjMB/9vcWUQSc7C6F8NjiXtcYlTXNBmdHIyHrlfcMRu1kdo2g0h7LQH/GABjD5+ojaqc=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

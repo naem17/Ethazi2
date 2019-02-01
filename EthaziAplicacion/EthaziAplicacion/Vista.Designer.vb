@@ -70,9 +70,12 @@ Partial Class Vista
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.cmb_tiposEuskera = New System.Windows.Forms.ComboBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.btn_eliminar = New System.Windows.Forms.Button()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         CType(Me.pb_Restablecer, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'txt_Firma
@@ -434,7 +437,7 @@ Partial Class Vista
         '
         'btn_euskera
         '
-        Me.btn_euskera.Location = New System.Drawing.Point(496, 678)
+        Me.btn_euskera.Location = New System.Drawing.Point(620, 688)
         Me.btn_euskera.Name = "btn_euskera"
         Me.btn_euskera.Size = New System.Drawing.Size(106, 37)
         Me.btn_euskera.TabIndex = 65
@@ -451,7 +454,7 @@ Partial Class Vista
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(299, 679)
+        Me.Button1.Location = New System.Drawing.Point(469, 687)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 38)
         Me.Button1.TabIndex = 68
@@ -460,7 +463,7 @@ Partial Class Vista
         '
         'btn_reporte
         '
-        Me.btn_reporte.Location = New System.Drawing.Point(56, 681)
+        Me.btn_reporte.Location = New System.Drawing.Point(61, 691)
         Me.btn_reporte.Name = "btn_reporte"
         Me.btn_reporte.Size = New System.Drawing.Size(93, 34)
         Me.btn_reporte.TabIndex = 69
@@ -496,12 +499,35 @@ Partial Class Vista
         Me.PictureBox2.TabStop = False
         Me.PictureBox2.Visible = False
         '
+        'btn_eliminar
+        '
+        Me.btn_eliminar.Location = New System.Drawing.Point(265, 692)
+        Me.btn_eliminar.Name = "btn_eliminar"
+        Me.btn_eliminar.Size = New System.Drawing.Size(91, 34)
+        Me.btn_eliminar.TabIndex = 73
+        Me.btn_eliminar.Text = "Eliminar"
+        Me.btn_eliminar.UseVisualStyleBackColor = True
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
+        Me.PictureBox3.Location = New System.Drawing.Point(965, 299)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(16, 16)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox3.TabIndex = 74
+        Me.PictureBox3.TabStop = False
+        Me.PictureBox3.Visible = False
+        '
         'Vista
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1041, 752)
+        Me.Controls.Add(Me.PictureBox3)
+        Me.Controls.Add(Me.btn_eliminar)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.cmb_tiposEuskera)
         Me.Controls.Add(Me.PictureBox1)
@@ -556,6 +582,7 @@ Partial Class Vista
         CType(Me.pb_Restablecer, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -607,4 +634,6 @@ Partial Class Vista
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents cmb_tiposEuskera As System.Windows.Forms.ComboBox
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Friend WithEvents btn_eliminar As System.Windows.Forms.Button
+    Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
 End Class
