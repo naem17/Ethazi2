@@ -94,37 +94,37 @@ Public Class verAlojamientos
         End If
     End Sub
 
-    Private Sub GenerateXLSXFile(tbl As DataTable)
+    'Private Sub GenerateXLSXFile(tbl As DataTable)
 
-        Dim excelPackage As New ExcelPackage
+    '    Dim excelPackage As New ExcelPackage
 
-        Dim excelWorksheet = excelPackage.Workbook.Worksheets.Add("DemoPage")
+    '    Dim excelWorksheet = excelPackage.Workbook.Worksheets.Add("DemoPage")
 
-        excelWorksheet.Cells("A1").LoadFromDataTable(tbl, True)
+    '    excelWorksheet.Cells("A1").LoadFromDataTable(tbl, True)
 
-        Response.ContentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-        Response.AddHeader("content-disposition", "attachment;  filename=ExcelDemo.xlsx")
-        Dim stream As New MemoryStream(excelPackage.GetAsByteArray())
+    '    Response.ContentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    '    Response.AddHeader("content-disposition", "attachment;  filename=ExcelDemo.xlsx")
+    '    Dim stream As New MemoryStream(excelPackage.GetAsByteArray())
 
-        Response.OutputStream.Write(stream.ToArray(), 0, stream.ToArray().Length)
+    '    Response.OutputStream.Write(stream.ToArray(), 0, stream.ToArray().Length)
 
-        Response.Flush()
+    '    Response.Flush()
 
-        Response.Close()
+    '    Response.Close()
 
-    End Sub
+    'End Sub
 
-    Private Function CreateDataTable() As DataTable
+    'Private Function CreateDataTable() As DataTable
 
-        Dim dataTable As New DataTable("DT")
+    '    Dim dataTable As New DataTable("DT")
 
-        Dim cmd As New MySqlCommand(Session("select"), cnn1)
+    '    Dim cmd As New MySqlCommand(Session("select"), cnn1)
 
-        Dim adaptor As New MySqlDataAdapter
+    '    Dim adaptor As New MySqlDataAdapter
 
-        adaptor.SelectCommand = cmd
-        adaptor.Fill(dataTable)
+    '    adaptor.SelectCommand = cmd
+    '    adaptor.Fill(dataTable)
 
-        Return dataTable
-    End Function
+    '    Return dataTable
+    'End Function
 End Class
