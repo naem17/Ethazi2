@@ -1,0 +1,70 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site1.master.vb" Inherits="GestionAlojaminetos.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" charset="utf-8" />
+    <title>ETXEBAL</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" type="text/css" href="Estilos.css"/>
+</head>
+<body>
+    <form id="form1" runat="server" style="width: 100%">
+       
+        <table class="tabla_madre" style="width: 100%">
+            <tr>
+                <td>
+                    <asp:ContentPlaceHolder ID="Barra" runat="server">
+                        <div style="float: right;">
+                            <table style="width:100%;">
+                                <tr>
+                                    <td>Usuario:
+                                        <asp:Label ID="lbl_User" runat="server" Font-Bold="True" Font-Underline="True" Text="NoUser"></asp:Label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <asp:Button ID="btn_Logout" runat="server" BackColor="#006D9C" BorderColor="#006D9C" BorderStyle="Solid" Font-Bold="True" ForeColor="White" Text="Cerrar Sesion" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <asp:Image ID="Image1" runat="server" Height="73px" ImageUrl="~/Imagenes/Logotipo.png" ToolTip="Etxebal" Width="308px" DescriptionUrl="~/Bienvenida.aspx" />
+                        &nbsp;<br />
+                        <br />
+                        <div class="titulo">
+                            Tablas:</div>
+                        <br />
+                        <div id="Tablas">
+                            <div>
+                                &nbsp; <a href="consultaAlojamientos.aspx" class="supbtn">Alojamientos</a> &nbsp;
+                                &nbsp; <a href="Categorias.aspx" class="supbtn">Categorias</a> &nbsp;
+                                &nbsp; <a href="CodPostales.aspx" class="supbtn">Codigos Postales</a> &nbsp;
+                                &nbsp; <a href="Municipios.aspx" class="supbtn">Municipios</a> &nbsp;
+                                &nbsp; <a href="Provincias.aspx" class="supbtn">Provincias</a> &nbsp;
+                                &nbsp; <a href="Tipos.aspx" class="supbtn">Tipos</a> &nbsp;
+                                &nbsp; <a href="T_Euskera.aspx" class="supbtn">Tipos Euskera</a> &nbsp;
+                                &nbsp; <%--<a href="Mapa.aspx">Mapa</a>
+                                &nbsp;
+                                &nbsp;--%>
+                            </div>
+                        </div>
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:ContentPlaceHolder ID="Cuerpo" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="footer"><marquee scrolldelay="20" behavior="alternate">Ibon Alonso, Litze Barroz, Nestor Echevarria</marquee></td>
+            </tr>
+        </table>
+       
+    </form>
+</body>
+</html>
