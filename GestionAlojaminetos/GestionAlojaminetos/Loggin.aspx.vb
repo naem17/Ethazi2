@@ -3,7 +3,7 @@ Imports System.Security.Cryptography
 Public Class Indice
     Inherits System.Web.UI.Page
 
-    Dim cnstring As String = "Data Source=localhost;Database=labetxe;Uid=root;Pwd=;"
+    Dim cnstring As String = "User Id=gp2;Password=NuG7FqwibR1ZAuKy;Host=kasserver.synology.me;Port=3307;Database=reto_gp2;Persist Security Info=True"
     Dim cnn1 As New MySqlConnection(cnstring)
     Dim PasConMd5 As String
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
@@ -12,7 +12,7 @@ Public Class Indice
                 cnn1.Open()
             End If
         Catch ex As Exception
-            MsgBox("Error al conectar con la BBDD" & "     " & ex.Message)
+            MsgBox("Error al conectar con la BBDD")
             If cnn1.State = ConnectionState.Open Then
                 cnn1.Close()
             End If
