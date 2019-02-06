@@ -89,42 +89,38 @@ Public Class verAlojamientos
     End Sub
 
     Private Sub GridView1_RowDataBound(sender As Object, e As GridViewRowEventArgs) Handles GridView1.RowDataBound
-        If e.Row.RowType = DataControlRowType.DataRow Then
-
-        End If
+        For x As Integer = 1 To e.Row.Cells.Count - 1
+            If e.Row.RowType = DataControlRowType.DataRow Then
+                Dim dato As String
+                dato = e.Row.Cells(x).Text.ToUpper
+                'MsgBox(dato)
+                If dato.Equals("&NBSP;") Then
+                    e.Row.Cells(x).Font.Bold = True
+                    e.Row.Cells(x).Text = " --- "
+                End If
+            End If
+        Next
     End Sub
 
-    'Private Sub GenerateXLSXFile(tbl As DataTable)
+    Private Sub GridView1_Sorting(sender As Object, e As GridViewSortEventArgs) Handles GridView1.Sorting
+        Try
 
-    '    Dim excelPackage As New ExcelPackage
+        Catch ex As Exception
+            MsgBox(ex.Message.ToString)
+        End Try
+    End Sub
 
-    '    Dim excelWorksheet = excelPackage.Workbook.Worksheets.Add("DemoPage")
-
-    '    excelWorksheet.Cells("A1").LoadFromDataTable(tbl, True)
-
-    '    Response.ContentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-    '    Response.AddHeader("content-disposition", "attachment;  filename=ExcelDemo.xlsx")
-    '    Dim stream As New MemoryStream(excelPackage.GetAsByteArray())
-
-    '    Response.OutputStream.Write(stream.ToArray(), 0, stream.ToArray().Length)
-
-    '    Response.Flush()
-
-    '    Response.Close()
-
+    'Protected Sub GridView1_RowDataBound(sender As Object, e As GridViewRowEventArgs) Handles GridView1.RowDataBound
+    '    If e.Row.RowType = DataControlRowType.DataRow Then
+    '        Dim precio As Double
+    '        'precio = DataBinder.Eval(e.Row.DataItem, "unitprice") 'funciona
+    '        precio = e.Row.Cells(2).Text
+    '        If precio > 20 Then
+    '            e.Row.ForeColor = Drawing.Color.Red
+    '            e.Row.BackColor = Drawing.Color.Yellow
+    '            e.Row.Font.Bold = True
+    '            e.Row.Cells(2).Text = " --- "
+    '        End If
+    '    End If
     'End Sub
-
-    'Private Function CreateDataTable() As DataTable
-
-    '    Dim dataTable As New DataTable("DT")
-
-    '    Dim cmd As New MySqlCommand(Session("select"), cnn1)
-
-    '    Dim adaptor As New MySqlDataAdapter
-
-    '    adaptor.SelectCommand = cmd
-    '    adaptor.Fill(dataTable)
-
-    '    Return dataTable
-    'End Function
 End Class
