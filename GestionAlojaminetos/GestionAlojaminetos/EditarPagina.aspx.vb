@@ -2,7 +2,7 @@
 Public Class EditaPaginaalojamientos
     Inherits System.Web.UI.Page
     Dim cnn1 As MySqlConnection = Site1.cnn1
-    Dim param As String
+    Dim param As String = Nothing
     Dim Pprov, Pmuni, PcodPos As String
     Private Sub EditaPaginaalojamientos_PreLoad(sender As Object, e As EventArgs) Handles Me.PreLoad
         If Not Page.IsPostBack Then

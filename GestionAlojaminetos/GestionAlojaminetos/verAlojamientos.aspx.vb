@@ -53,7 +53,8 @@ Public Class verAlojamientos
         End If
     End Sub
     Private Sub GridView1_RowEditing(sender As Object, e As GridViewEditEventArgs) Handles GridView1.RowEditing
-        Response.Redirect("EditarPagina.aspx?" & Me.GridView1.Rows(e.NewEditIndex).Cells(1).Text)
+        Session("firma") = Me.GridView1.Rows(e.NewEditIndex).Cells(1).Text
+        Response.Redirect("EditarPagina.aspx")
     End Sub
 
     Protected Sub btn_New_Click(sender As Object, e As EventArgs) Handles btn_New.Click
