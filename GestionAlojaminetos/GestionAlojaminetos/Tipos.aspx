@@ -5,7 +5,7 @@
     <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="CODIGO" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None">
         <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
         <Columns>
-            <asp:BoundField DataField="CODIGO" HeaderText="CODIGO" ReadOnly="True" SortExpression="CODIGO" />
+            <asp:BoundField DataField="CODIGO" HeaderText="CODIGO" ReadOnly="True" SortExpression="CODIGO" InsertVisible="False" />
             <asp:BoundField DataField="TIPO" HeaderText="TIPO" SortExpression="TIPO" />
         </Columns>
         <EditRowStyle BackColor="#999999" />
@@ -19,7 +19,7 @@
         <SortedDescendingCellStyle BackColor="#FFFDF8" />
         <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
     </asp:GridView>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:labetxeConnectionString %>" DeleteCommand="DELETE FROM `tipos` WHERE `CODIGO` = ?" InsertCommand="INSERT INTO `tipos` (`CODIGO`, `TIPO`) VALUES (?, ?)" ProviderName="<%$ ConnectionStrings:labetxeConnectionString.ProviderName %>" SelectCommand="SELECT * FROM `tipos` ORDER BY `CODIGO`" UpdateCommand="UPDATE `tipos` SET `TIPO` = ? WHERE `CODIGO` = ?">
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:reto_gp2ConnectionString2 %>" DeleteCommand="DELETE FROM `tipos` WHERE `CODIGO` = ?" InsertCommand="INSERT INTO `tipos` (`CODIGO`, `TIPO`) VALUES (?, ?)" ProviderName="<%$ ConnectionStrings:reto_gp2ConnectionString2.ProviderName %>" SelectCommand="SELECT * FROM `TIPOS` ORDER BY `CODIGO`" UpdateCommand="UPDATE `tipos` SET `TIPO` = ? WHERE `CODIGO` = ?">
         <DeleteParameters>
             <asp:Parameter Name="CODIGO" Type="Decimal" />
         </DeleteParameters>

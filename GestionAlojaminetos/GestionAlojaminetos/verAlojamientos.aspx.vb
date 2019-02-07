@@ -51,6 +51,7 @@ Public Class verAlojamientos
             End While
             dar1.Close()
         End If
+        Response.Redirect("verAlojamientos.aspx")
     End Sub
     Private Sub GridView1_RowEditing(sender As Object, e As GridViewEditEventArgs) Handles GridView1.RowEditing
         Session("firma") = Me.GridView1.Rows(e.NewEditIndex).Cells(1).Text
@@ -109,6 +110,10 @@ Public Class verAlojamientos
         Catch ex As Exception
             MsgBox(ex.Message.ToString)
         End Try
+    End Sub
+
+    Private Sub GridView1_RowDeleted(sender As Object, e As GridViewDeletedEventArgs) Handles GridView1.RowDeleted
+        Response.Redirect("verAlojamientos.aspx")
     End Sub
 
     'Protected Sub GridView1_RowDataBound(sender As Object, e As GridViewRowEventArgs) Handles GridView1.RowDataBound

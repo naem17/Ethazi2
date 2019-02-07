@@ -19,7 +19,7 @@
         <SortedDescendingCellStyle BackColor="#FFFDF8" />
         <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
     </asp:GridView>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:labetxeConnectionString %>" DeleteCommand="DELETE FROM `provincias` WHERE `CODIGO` = ?" InsertCommand="INSERT INTO `provincias` (`CODIGO`, `PROVINCUA`) VALUES (?, ?)" ProviderName="<%$ ConnectionStrings:labetxeConnectionString.ProviderName %>" SelectCommand="SELECT * FROM `provincias` ORDER BY `CODIGO`" UpdateCommand="UPDATE `provincias` SET `PROVINCUA` = ? WHERE `CODIGO` = ?">
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:reto_gp2ConnectionString2 %>" DeleteCommand="DELETE FROM `provincias` WHERE `CODIGO` = ?" InsertCommand="INSERT INTO `provincias` (`CODIGO`, `PROVINCUA`) VALUES (?, ?)" ProviderName="<%$ ConnectionStrings:reto_gp2ConnectionString2.ProviderName %>" SelectCommand="SELECT * FROM `PROVINCIAS` ORDER BY `CODIGO`" UpdateCommand="UPDATE `provincias` SET `PROVINCUA` = ? WHERE `CODIGO` = ?">
         <DeleteParameters>
             <asp:Parameter Name="CODIGO" Type="Decimal" />
         </DeleteParameters>

@@ -7,7 +7,7 @@
         <Columns>
             <asp:BoundField DataField="CODIGO" HeaderText="CODIGO" SortExpression="CODIGO" />
             <asp:BoundField DataField="MUNICIPIO" HeaderText="MUNICIPIO" SortExpression="MUNICIPIO" />
-            <asp:BoundField DataField="INDICE" HeaderText="INDICE" ReadOnly="True" SortExpression="INDICE" />
+            <asp:BoundField DataField="INDICE" HeaderText="INDICE" ReadOnly="True" SortExpression="INDICE" InsertVisible="False" />
         </Columns>
         <EditRowStyle BackColor="#999999" />
         <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
@@ -20,7 +20,7 @@
         <SortedDescendingCellStyle BackColor="#FFFDF8" />
         <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
     </asp:GridView>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:labetxeConnectionString %>" DeleteCommand="DELETE FROM `municipios` WHERE `INDICE` = ?" InsertCommand="INSERT INTO `municipios` (`CODIGO`, `MUNICIPIO`, `INDICE`) VALUES (?, ?, ?)" ProviderName="<%$ ConnectionStrings:labetxeConnectionString.ProviderName %>" SelectCommand="SELECT * FROM `municipios` ORDER BY `CODIGO`" UpdateCommand="UPDATE `municipios` SET `CODIGO` = ?, `MUNICIPIO` = ? WHERE `INDICE` = ?">
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:reto_gp2ConnectionString2 %>" DeleteCommand="DELETE FROM `municipios` WHERE `INDICE` = ?" InsertCommand="INSERT INTO `municipios` (`CODIGO`, `MUNICIPIO`, `INDICE`) VALUES (?, ?, ?)" ProviderName="<%$ ConnectionStrings:reto_gp2ConnectionString2.ProviderName %>" SelectCommand="SELECT * FROM `MUNICIPIOS` ORDER BY `INDICE`" UpdateCommand="UPDATE `municipios` SET `CODIGO` = ?, `MUNICIPIO` = ? WHERE `INDICE` = ?">
         <DeleteParameters>
             <asp:Parameter Name="INDICE" Type="Decimal" />
         </DeleteParameters>
