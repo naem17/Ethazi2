@@ -153,7 +153,7 @@ Public Class EditaPaginaalojamientos
             dar1.Close()
 
             Dim indMuni As Integer
-            cmd3.CommandText = "SELECT `INDICE` FROM `MUNICIPIOS` WHERE `MUNICIPIO` = @param"
+            cmd3.CommandText = "SELECT `INDICE` FROM `MUNICIPIOS` WHERE `MUNICIPIO` = @param AND `INDICE` BETWEEN 1 AND 255"
             cmd3.Parameters.AddWithValue("@param", Pmuni)
             dar1 = cmd3.ExecuteReader
             While dar1.Read

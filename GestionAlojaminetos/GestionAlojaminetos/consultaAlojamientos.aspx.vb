@@ -109,7 +109,7 @@ Public Class consultaAlojamientos
             Dim cmd1 = cnn1.CreateCommand()
             Dim dar1 As MySqlDataReader
             Dim indMuni As Integer
-            cmd1.CommandText = "SELECT `INDICE` FROM `MUNICIPIOS` WHERE `MUNICIPIO` = @param"
+            cmd1.CommandText = "SELECT `INDICE` FROM `MUNICIPIOS` WHERE `MUNICIPIO` = @param AND `INDICE` BETWEEN 1 AND 255"
             cmd1.Parameters.AddWithValue("@param", ddl_Muni.SelectedValue)
             dar1 = cmd1.ExecuteReader
             While dar1.Read
