@@ -18,6 +18,6 @@
         <SortedDescendingCellStyle BackColor="#FFFDF8" />
         <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
     </asp:GridView>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:reto_gp2ConnectionString2 %>" ProviderName="<%$ ConnectionStrings:reto_gp2ConnectionString2.ProviderName %>" SelectCommand="SELECT * FROM `CODIGOS_POSTALES` ORDER BY `CODIGO_POSTAL`">
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:reto_gp2ConnectionString3 %>" ProviderName="<%$ ConnectionStrings:reto_gp2ConnectionString3.ProviderName %>" SelectCommand="SELECT * FROM `CODIGOS_POSTALES` ORDER BY `CODIGO_POSTAL`">
     </asp:SqlDataSource>
 </asp:Content>

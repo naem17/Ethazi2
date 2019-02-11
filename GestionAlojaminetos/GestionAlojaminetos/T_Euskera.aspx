@@ -19,7 +19,7 @@
         <SortedDescendingCellStyle BackColor="#FFFDF8" />
         <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
     </asp:GridView>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:reto_gp2ConnectionString2 %>" DeleteCommand="DELETE FROM `tipos_euskera` WHERE `CODIGO` = ?" InsertCommand="INSERT INTO `tipos_euskera` (`CODIGO`, `TIPO_EUSKERA`) VALUES (?, ?)" ProviderName="<%$ ConnectionStrings:reto_gp2ConnectionString2.ProviderName %>" SelectCommand="SELECT * FROM `TIPOS_EUSKERA` ORDER BY `CODIGO`" UpdateCommand="UPDATE `tipos_euskera` SET `TIPO_EUSKERA` = ? WHERE `CODIGO` = ?">
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:reto_gp2ConnectionString3 %>" DeleteCommand="DELETE FROM `tipos_euskera` WHERE `CODIGO` = ?" InsertCommand="INSERT INTO `tipos_euskera` (`CODIGO`, `TIPO_EUSKERA`) VALUES (?, ?)" ProviderName="<%$ ConnectionStrings:reto_gp2ConnectionString3.ProviderName %>" SelectCommand="SELECT * FROM `TIPOS_EUSKERA` ORDER BY `CODIGO`" UpdateCommand="UPDATE `tipos_euskera` SET `TIPO_EUSKERA` = ? WHERE `CODIGO` = ?">
         <DeleteParameters>
             <asp:Parameter Name="CODIGO" Type="Decimal" />
         </DeleteParameters>

@@ -19,7 +19,7 @@
         <SortedDescendingCellStyle BackColor="#FFFDF8" />
         <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
     </asp:GridView>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:reto_gp2ConnectionString2 %>" DeleteCommand="DELETE FROM 'categorias' WHERE 'CODIGO' = ?" InsertCommand="INSERT INTO 'categorias' ('CODIGO', 'CATEGORIA') VALUES (?, ?)" ProviderName="<%$ ConnectionStrings:reto_gp2ConnectionString2.ProviderName %>" SelectCommand="SELECT * FROM `CATEGORIAS` ORDER BY `CATEGORIAS`.`CODIGO` ASC " UpdateCommand="UPDATE 'categorias' SET 'CATEGORIA' = ? WHERE 'CODIGO' = ?">
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:reto_gp2ConnectionString3 %>" DeleteCommand="DELETE FROM 'categorias' WHERE 'CODIGO' = ?" InsertCommand="INSERT INTO 'categorias' ('CODIGO', 'CATEGORIA') VALUES (?, ?)" ProviderName="<%$ ConnectionStrings:reto_gp2ConnectionString3.ProviderName %>" SelectCommand="SELECT * FROM `CATEGORIAS` ORDER BY `CATEGORIAS`.`CODIGO` ASC " UpdateCommand="UPDATE 'categorias' SET 'CATEGORIA' = ? WHERE 'CODIGO' = ?">
         <DeleteParameters>
             <asp:Parameter Name="CODIGO" Type="Decimal" />
         </DeleteParameters>
